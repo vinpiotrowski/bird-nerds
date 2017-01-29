@@ -1,0 +1,39 @@
+---
+layout: default
+title: Expeditions
+permalink: /expeditions/
+section: "expeditions"
+---
+
+
+<div class="container-fluid no-gutter-xs">
+
+        <div class="hero tall col-xs-12 no-gutter-xs">
+            <div class="container-image show-large">
+                <img src="{{ "/images/hero-expeditions.jpg" | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="container-image show-small">
+                <img src="{{ "/images/hero-expeditions-small.jpg" | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="inner-page">
+                <div class="headline fancy right expeditions">
+                    <h3>. Bird Nerds .</h3>
+                    <h1>Expeditions</h1>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="clearfix"> </div>
+
+    <div class="expeditions inner-page">
+        {% for post in site.posts %}
+            {% if post.categories contains 'expeditions' %}
+                <div class='content'>
+                    {{ post.content }}
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+</div>

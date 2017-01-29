@@ -1,0 +1,294 @@
+
+
+.headline.fancy.expeditions *,
+.headline.fancy.essentials *,
+.headline.fancy.about * {
+    color: $white;
+    line-height: 1.1;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.headline.fancy.expeditions h1 {
+    font-size: 56pt;
+    text-shadow: 0 5px 0 $blue;
+}
+
+.headline.fancy.essentials h1 {
+    font-size: 56pt;
+    text-shadow: 0 5px 0 $green;
+}
+
+.headline.fancy.about h1 {
+    font-size: 56pt;
+    text-shadow: 0 5px 0 $yellow;
+}
+
+.expeditions.inner-page .headline {
+    /*border: solid 3.5px;*/
+    background: rgba(250,247,242,0.3);
+    max-width: 320px!important;
+    padding: 42px 21px 14px;
+    text-align: center;
+}
+
+.expeditions.inner-page .headline:before {
+    background: #27B8B4;
+    content: ' ';
+    height: 7px;
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
+    width: 160px;
+    top: -3.5px;
+}
+
+.expeditions .headline,
+.expeditions .headline * {
+    color: $brown;
+}
+
+.expeditions .headline.reverse * {
+    color: $white;
+}
+
+
+.expeditions.inner-page .headline * {
+    margin: 3.5px auto;
+}
+
+.expeditions.inner-page .headline h1,
+.expeditions.inner-page .headline h3 {
+    max-width: 240px;
+}
+
+.expeditions.inner-page .headline h1 {
+    font-family: $cursive-font;
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 1.25em;
+    padding-bottom: 35px;
+    text-shadow: 0 3px 0 $blue;
+
+}
+
+.expeditions.inner-page .headline h3 {
+    text-transform: uppercase;
+}
+
+.expeditions.inner-page .headline p {
+    border-top: solid 3.5px $blue;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.expeditions.inner-page .headline p:before {
+    content: 'coords : ';
+    display: inline;
+    font-family: $cursive-font;
+    font-size: 17px;
+}
+
+.post-content {
+    border-left: solid $blue 3.5px;
+    margin: 0 0 21px 7px;
+    padding: 0 14px 0 21px;
+}
+
+.post-content p {
+    margin: 0 21px;
+}
+
+.expeditions .big img {
+    border-bottom: solid 7px $orange;
+}
+
+.expeditions.inner-page section {
+    padding-bottom: 70px;
+}
+
+.expeditions.inner-page div.clearfix:first-child {
+    margin-bottom: 21px;
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+.expeditions.inner-page div.clearfix:first-child > div {
+    padding: 0;
+}
+
+body.expeditions {
+    background: $white;
+}
+
+.expeditions.inner-page .content,
+.expeditions .content {
+    background: #FFF;
+    padding: 35px 35px 0;
+}
+
+.essentials .inner-page .content,
+.essentials .content {
+    background: $white;
+    padding: 35px;
+}
+
+.about .inner-page .content,
+.about .content {
+    background: $white;
+    padding: 35px;
+}
+
+.container-image.thumbnail {
+    display: block;
+    margin: 7px 0;
+    position: relative;
+}
+
+.container-image.thumbnail img {
+    width: 100%;
+}
+
+.container-image.thumbnail:nth-child(odd),
+.container-image.thumbnail:nth-child(odd) a {
+    color: $green;
+}
+
+.container-image.thumbnail:nth-child(even),
+.container-image.thumbnail:nth-child(even) a {
+    color: $yellow;
+}
+
+.container-image.thumbnail:nth-child(2) a,
+.container-image.thumbnail:nth-child(5) a,
+.container-image.thumbnail:nth-child(8) a {
+    color: $blue;
+}
+
+.container-image.thumbnail a:after {
+    background: #FFF;
+    content: '\e98b';
+    display: block;
+    font-family: $glyph-font;
+    font-size: 28px;
+    font-weight: 700;
+    height: 42px;
+    padding: 7px 0 0;
+    position: absolute;
+    left: 7px;
+    text-align: center;
+    bottom: 0;
+    width: 42px;
+}
+
+.expeditions .badges {
+    float: right;
+}
+
+.badges ul {
+    padding: 0;
+}
+
+.badge {
+    color: $text;
+    display: inline-block;
+    font-size: 13px;
+    height: 91px;
+    line-height: 1.0;
+    margin: 14px 3.5px 0;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    width: 91px;
+    z-index: 5;
+}
+
+.badge:before {
+    content: '\e900';
+    display: block;
+    font-family: $glyph-font;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: normal;
+    padding: 14px 0 0;
+    position: absolute;
+    top: 3.5px;
+    width: 91px;
+    z-index: 3;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.badge:after {
+    border: solid 3.5px;
+    border-radius: 50%;
+    content: ' ';
+    display: block;
+    height: 91px;
+    margin: 0;
+    position: absolute;
+    top: -21px;
+    width: 91px;
+    z-index: -1;
+}
+
+.badge.snowing:before {
+    content: '\e90e';
+}
+
+.badge.windy:before {
+    content: '\e8f5';
+}
+
+.badge.stormy:before {
+    content: '\e8f9';
+}
+
+.badge.count:before {
+    content: attr(data-count);
+    font-family: $base-font;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 14px 0 0;
+}
+
+@media(max-width: 991px) {
+    .expeditions .badges {
+        float: left;
+    }
+}
+
+@media(max-width: 767px) {
+    .expeditions.inner-page .headline {
+        background: $white;
+        border: solid 3.5px $brown;
+        bottom: auto!important;
+        left: auto!important;
+        right: auto!important;
+        margin: -70px auto;
+        max-width: 306px;
+        padding: 21px 21px 7px;
+        position: relative;
+        top: auto!important;
+    }
+
+    .expeditions.inner-page .headline,
+    .expeditions.inner-page .headline *,
+    .expeditions.inner-page .headline.reverse,
+    .expeditions.inner-page .headline.reverse * {
+        color: $brown;
+        text-shadow: none;
+    }
+
+    .expeditions.inner-page .content {
+        padding: 14px;
+    }
+
+}
+
+@media(max-width: 480px) {
+    .badge {
+        margin: 14px 0 0;
+    }
+}

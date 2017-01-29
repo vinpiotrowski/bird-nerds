@@ -1,0 +1,133 @@
+
+.photo .page-content {
+  background: #FFF;
+}
+
+.container-photo {
+  height: calc(100vh - 105px);
+  overflow: hidden;
+  padding: 21px 21px 21px 0;
+  position: relative;
+}
+
+.fixed + .container-photo {
+  max-width: calc(100% - 310px);
+  width: auto;
+}
+
+.container-photo img {
+  display: block;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+.photo-title {
+  background: $white;
+  border-bottom: solid 7px $orange;
+  height: 105px;
+  letter-spacing: 3px;
+  padding: 7px 14px;
+}
+
+.photo-description {
+  margin: 35px 35px 14px 21px;
+}
+
+.photo-description:after {
+  background: $blue;
+  content: ' ';
+  display: block;
+  height: 3.5px;
+  margin: 14px 0 0;
+  width: 140px;
+}
+
+.close-link {
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+
+.close-link:after {
+  color: $text;
+  content: '\e913';
+  display: block;
+  font-family: bn-glyphs;
+  font-size: 49px;
+  position: absolute;
+  z-index:7;
+}
+
+.prev-link, .next-link {
+  background: rgba(255,255,255,0.6);
+  display: block;
+  font-size:0;
+  height: 84px;
+  left: 0;
+  margin-top: -42px;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  width: 63px;
+}
+
+.next-link {
+  left: auto;
+  right: 21px;
+}
+
+.prev-link:before, .next-link:before {
+  color: $brown;
+  content: '\e914';
+  display:block;
+  font-family: bn-glyphs;
+  padding: 7px 0 0;
+  font-size: 70px;
+  text-align: center;
+  text-decoration: none;
+  width: 56px;
+}
+
+.next-link:before {
+  content: '\e915';
+}
+
+@media(max-width: 479px) {
+  .fixed {
+    background: #FFF;
+    bottom: 0;
+    position:absolute;
+    width: 100%;
+    z-index: 3;
+  }
+
+  .fixed + .container-photo {
+    max-width: 767px;
+    padding: 0;
+  }
+
+  .container-photo img {
+    position: relative;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  .next-link {
+    right: 0;
+  }
+
+  .prev-link, .next-link {
+    height: 70px;
+    margin-top: -35px;
+    top: 35%;
+    width: 42px;
+  }
+
+  .prev-link:before, .next-link:before {
+    font-size: 49px;
+    width: 42px;
+  }
+}

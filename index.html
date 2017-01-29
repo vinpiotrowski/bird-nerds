@@ -1,0 +1,128 @@
+---
+layout: default
+section: "home"
+---
+
+<div class="content">
+    <div class="container-fluid no-gutter-xs">
+
+        <section class="hero intro tall col-xs-12 no-gutter-xs">
+            <div class="container-image show-large">
+                <img src="{{ "/images/hero-homepage.jpg" | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="container-image show-small">
+                <img src="{{ "/images/hero-homepage-small.jpg" | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="inner-page">
+                <div class="headline fancy left">
+                    <div id="arc">
+                        <span class="w14">T</span><span class="w15">h</span><span class="w16">e</span><span class="w17"> </span><span class="w18">i</span><span class="w19">n</span><span class="w20">t</span><span class="w21">r</span><span class="w22">e</span><span class="w23">p</span><span class="w24">i</span><span class="w25">d</span><span class="w26"> </span><span class="w27">V</span><span class="w28">i</span><span class="w29">n</span><span class="w30">c</span><span class="w31">e</span><span class="w32"> </span><span class="w33">a</span><span class="w34">n</span><span class="w35">d</span><span class="w36"> </span><span class="w37">S</span><span class="w38">a</span><span class="w39">n</span><span class="w40">d</span><span class="w41">r</span><span class="w42">a</span>
+                    </div>
+                    <h3>. Present .</h3>
+                    <h1>Adventures</h1>
+                    <h2>in birding</h2>
+                    <h4>a website about birds</h4>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="clearfix"> </div>
+
+        <section class="sections inner-page">
+            <div class="col-sm-6 section expeditions">
+                <div class="container-image">
+                    <img src="{{ "/images/thumb-expeditions.jpg" | prepend: site.baseurl }}" alt="">
+                </div>
+                <h2>Expeditions</h2>
+                <p>It's the digital version of our field journal!  Check out which birds we're spotting and where.</p>
+                <a href="/expeditions/" class="button">Expeditions</a>
+            </div>
+            <div class="col-sm-6 section essentials">
+                <div class="container-image">
+                    <img src="{{ "/images/thumb-essentials.jpg" | prepend: site.baseurl }}" alt="">
+                </div>
+                <h2>Essentials</h2>
+                <p>Take the bird nerd creed, check out tips for better birding, and acquire fun bird knowledge.</p>
+                <a href="/essentials/" class="button">Essentials</a>
+            </div>
+            <div class="clearfix"> </div>
+        </section>
+
+        <div class="clearfix"> </div>
+
+        {% for post in site.posts %}
+            {% if post.categories contains 'feature' %}
+                {{ post.content }}
+                {% break %}
+            {% endif %}
+        {% endfor %}
+
+        <div class="clearfix"> </div>
+
+        <section class="facts inner-page">
+            <div class="col-sm-4 fact nerd">
+                <h2>–Nerd Tip–</h2>
+                <p>Watch out for turtles. They'll bite you if you put your fingers in their mouths.</p>
+            </div>
+            <div class="col-sm-4 fact bird">
+                <h2>–Bird Tip–</h2>
+                <p>Alberta's official provincial bird is the Great Horned Owl.</p>
+            </div>
+            <div class="col-sm-4 fact nerd">
+                <h2>–Nerd Tip–</h2>
+                <p>Throw some pine needles in the air to see which direction the wind is blowing.</p>
+            </div>
+            <div class="clearfix"> </div>
+        </section>
+
+        <div class="clearfix"> </div>
+
+        <section class="alberta hero tall col-xs-12 no-gutter-xs">
+            <div class="container-image">
+                <img src="{{ "/images/hero-alberta.jpg" | prepend: site.baseurl }}" alt="">
+            </div>
+            <div class="overlay"> </div>
+            <div class="headline top">
+                <h1>We nest in Alberta, Canada</h1>
+                <p>Did you know that Alberta is Canada's duckiest province?  From alpine meadows to prairie potholes, from the northern forests to the southern badlands, Alberta's range of habitats, with a bird list of 385 species, offers a wide variety of places for the avid birder to explore.  The Bird Nerds are common to uncommon, year round, usually spotted in the parks and areas around the city of Calgary.  If you see them be sure to approach and say hi.</p>
+            </div>
+        </section>
+
+        <div class="clearfix"> </div>
+
+        <section class="updates container-fluid">
+            <h1>Recent Expeditions</h1>
+            <div class="inner-page">
+                {% assign idx = 0 %}
+                {% for post in site.posts %}
+                    {% if post.categories contains 'expeditions' %}
+                        <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
+                                <a href="{{post.permalink}}">
+                                <div class="container-image">
+                                    <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                </div>
+                                <h3>{{post.title}}</h3>
+                                <p>{{post.description}}</p>
+                                <div class="clearfix"></div>
+                            </a>
+                        </div>
+                        {% assign idx = idx | plus:1 %}
+                        {% assign mod = idx | modulo:2 %}
+                        {% if mod == 0 %}
+
+                        {% endif %}
+                    {% endif %}
+                    {% if idx == 4 %}
+                        <div class="clearfix"> </div>
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+

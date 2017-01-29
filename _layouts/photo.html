@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="photo {{page.section}}">
+
+    {% include header-light.html %}
+    <a class="close-link" href="#" onclick="window.history.back();">Close</a>
+
+    <main class="page-content">
+
+      <div class="fixed">
+        <div class="photo-description">
+          <h4>{{ page.position}}</h4>
+          <p>{{ page.description}}</p>
+        </div>
+      </div>
+
+      <div class="container-photo">
+          {{ content }}
+          {% if page.previousOverride %}
+            <a class="prev-link" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
+          {% else %}
+            <a class="prev-link" href="#" onclick="window.location.replace( '{{page.previous.url | prepend: site.baseurl}}' );">Previous</a>
+          {% endif %}
+
+          {% if page.nextOverride %}
+            <a class="next-link" href="#" onclick="window.location.replace( '{{page.nextOverride | prepend: site.baseurl}}' );">Next</a>
+          {% else %}
+            <a class="next-link" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
+          {% endif %}
+
+        <div class="clearfix"> </div>
+      </div>
+      <div class="clearfix"> </div>
+    </main>
+
+
+  </body>
+
+</html>

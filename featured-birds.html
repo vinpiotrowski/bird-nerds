@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /essentials/featured-birds/
+title:  "Featured Birds"
+description: "The list of all featured birds (past & present) that have been listed on the bird nerds website"
+date:   2011-11-11 11:11:11 -0700
+categories: essentials featured birds
+thumbnail: 2016-12-12-downy-sm.jpg
+section: essentials
+---
+
+
+
+<div class="content">
+    <div class="inner-page">
+        {% for post in site.posts %}
+            {% if post.categories contains 'feature' %}
+                {{ post.content }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

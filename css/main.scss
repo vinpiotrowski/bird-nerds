@@ -1,0 +1,225 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+
+// Our variables
+$base-font: 'Quicksand', sans-serif;
+
+$cursive-font: 'Pacifico', cursive;
+
+$heading-font: 'Quicksand', sans-serif;
+
+$glyph-font: 'bn-glyphs';
+
+
+$brown:            #5A3A33;
+
+$orange:           #E45238;
+
+$yellow:           #FFA500;
+
+$green:            #97BA60;
+
+$blue:             #27B8B4;
+
+$off-white:        #FFFEE7;
+
+$white:            #FAF7F2;
+
+$grey:             #333333;
+
+$black:            #111111;
+
+$light-border:     #f2f2f2;
+
+$border:           #BAA4A3;
+
+$text:             #7A5453;
+
+@font-face {
+  font-family: 'bn-glyphs';
+  src: url('../fonts/icomoon.eot?v=3.2.1');
+  src: url('../fonts/icomoon.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/icomoon.woff?v=3.2.1') format('woff'), url('../fonts/icomoon.ttf?v=3.2.1') format('truetype'), url('../fonts/icomoon.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  font-family: $base-font;
+  font-size: 12pt;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+h1 {
+  color: $brown;
+  font-family: $heading-font;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 14px 0;
+}
+
+h2 {
+  color: $brown;
+  font-family: $heading-font;
+  font-size: 35px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+
+h3 {
+  color: $brown;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+
+p, ul li {
+  color: $text;
+  line-height: 1.9em;
+}
+
+a {
+  outline: none;
+}
+
+.inner-page {
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.fixed {
+  float: left;
+  min-height: 7px;
+  width: 310px;
+}
+
+.fixed + div {
+  float: left;
+  width: calc(100% - 310px);
+}
+
+
+
+.show-small {
+  display: none;
+}
+
+.show-large {
+  display: block;
+}
+
+.container-image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+
+.button {
+  background: #FFF;
+  border: solid 1px;
+  border-radius: 7px;
+  display: inline-block;
+  font-size: 14pt;
+  font-weight: 700;
+  min-width: 105px;
+  padding: 14px 28px;
+  text-decoration: none;
+}
+
+.button:after {
+  content: '\ea3c';
+  display: inline-block;
+  font-family: $glyph-font;
+  padding: 0 0 0 3.5px;
+  vertical-align: middle;
+}
+
+.counted li {
+  counter-increment: step-counter;
+  font-size: 19px;
+  font-weight: 400;
+  min-height: 70px;
+  padding: 14px 14px 14px 14px;
+  list-style: none;
+}
+
+.counted li:before {
+  background: $orange;
+  border-radius: 50%;
+  content: counter(step-counter);
+  color: $white;
+  font-size: 28px;
+  height: 49px;
+  left: -14px;
+  padding: 7px 0 0;
+  position: absolute;
+  text-align: center;
+  width: 49px;
+}
+
+@media(max-width: 991px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+}
+
+@media(max-width: 767px) {
+
+  article.inner-page {
+    margin: 14px auto;
+  }
+
+  .show-small {
+    display: block;
+  }
+
+  .show-large {
+    display: none;
+  }
+
+  .counted {
+    padding: 0;
+  }
+
+  .counted li {
+    font-size: 12pt;
+    line-height: 2.0;
+    padding: 7px 35px 7px 70px;
+  }
+
+  .counted li:before {
+    left: 14px;
+    line-height: 1.25;
+  }
+
+}
+
+
+
+@import "grid";
+@import "navigation";
+@import "home";
+@import "expeditions";
+@import "about";
+@import "litebox";
