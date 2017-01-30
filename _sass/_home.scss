@@ -215,6 +215,7 @@
 
 .alberta p {
     font-weight: 700;
+    padding: 0 21px;
 }
 
 .updates {
@@ -228,9 +229,11 @@
     color: $white;
     background: $orange;
     display: inline-block;
+    font-family: $cursive-font;
     left: 50%;
+    line-height: 1.1;
     margin: 0;
-    padding: 7px 14px;
+    padding: 7px 21px 21px;
     position: absolute;
     top: -1px;
     transform: translateX(-50%);
@@ -534,11 +537,11 @@
     }
 
     .headline.left {
-        left: 21px;
+        left: -14px;
     }
 
     .headline.right {
-        right: 21px;
+        right: -14px;
     }
 
     .headline.top {
@@ -575,6 +578,7 @@
 
     .update .container-image {
         float: left;
+        margin-right: 14px;
         width: 50%;
     }
 
@@ -607,7 +611,7 @@
     .headline.fancy {
         left: 50%;
         top: 35px;
-        transform: translateX(-50%) scale(0.85);
+        transform: translateX(-50%) scale(0.95);
     }
 
     .headline.fancy h1 {
@@ -616,7 +620,13 @@
 
     .sections .section, .facts .fact {
         border-left: none;
-        padding: 0 35px;
+        border-top: solid 1px $border;
+        padding: 35px;
+        margin: 21px auto 21px;
+    }
+
+    .sections .section:first-child, .facts .fact:first-child {
+        border-top: none;
     }
 
     .featured {
@@ -627,14 +637,20 @@
         max-height: 1000px;
     }
 
-    .featured .headline {
+    .featured .headline, .featured .inner-page {
         position: static;
     }
 
-
+    .featured .inner-page {
+        transform: translateX(0);
+    }
 
     .updates {
         padding: 105px 0 21px;
+    }
+
+    .update {
+        padding: 0 21px;
     }
 
     .update a {
@@ -647,6 +663,7 @@
 
     .update .container-image {
         float: none;
+        margin-right: auto;
         width: 100%;
     }
 
