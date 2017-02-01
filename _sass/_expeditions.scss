@@ -24,15 +24,13 @@
     text-shadow: 0 5px 0 $yellow;
 }
 
-.expeditions.inner-page .headline {
-    /*border: solid 3.5px;*/
+.expeditions .content .headline {
     background: rgba(250,247,242,0.3);
-    max-width: 320px!important;
     padding: 42px 21px 14px;
     text-align: center;
 }
 
-.expeditions.inner-page .headline:before {
+.expeditions .content .headline:before {
     background: #27B8B4;
     content: ' ';
     height: 7px;
@@ -48,21 +46,28 @@
     color: $brown;
 }
 
+.expeditions .headline.reverse {
+
+}
+
 .expeditions .headline.reverse * {
     color: $white;
 }
 
+.expeditions .headline.reverse {
+    background: rgba(51,51,51,0.3);
+}
 
-.expeditions.inner-page .headline * {
+.expeditions .content .headline * {
     margin: 3.5px auto;
 }
 
-.expeditions.inner-page .headline h1,
-.expeditions.inner-page .headline h3 {
+.expeditions .content .headline h1,
+.expeditions .content .headline h3 {
     max-width: 240px;
 }
 
-.expeditions.inner-page .headline h1 {
+.expeditions .content .headline h1 {
     font-family: $cursive-font;
     font-size: 49px;
     font-weight: 400;
@@ -72,17 +77,17 @@
 
 }
 
-.expeditions.inner-page .headline h3 {
+.expeditions .content .headline h3 {
     text-transform: uppercase;
 }
 
-.expeditions.inner-page .headline p {
+.expeditions .content .headline p {
     border-top: solid 3.5px $blue;
     padding: 7px 0;
     width: 100%;
 }
 
-.expeditions.inner-page .headline p:before {
+.expeditions .content .headline p:before {
     content: 'coords : ';
     display: inline;
     font-family: $cursive-font;
@@ -166,19 +171,20 @@ body.expeditions {
 }
 
 .container-image.thumbnail a:after {
-    background: #FFF;
+    background: rgba(250,247,242,0.6);
+    bottom: 0;
     content: '\e98b';
+    color: $brown;
     display: block;
     font-family: $glyph-font;
     font-size: 28px;
     font-weight: 700;
-    height: 42px;
-    padding: 7px 0 0;
+    height: 35px;
+    padding: 3.5px 0 0;
     position: absolute;
-    left: 7px;
+    right: 7px;
     text-align: center;
-    bottom: 0;
-    width: 42px;
+    width: 35px;
 }
 
 .expeditions .badges {
