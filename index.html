@@ -24,7 +24,6 @@ section: "home"
                     <h4>a website about birds</h4>
                 </div>
             </div>
-
         </section>
 
         <div class="clearfix"> </div>
@@ -36,7 +35,7 @@ section: "home"
                 </div>
                 <h2>Expeditions</h2>
                 <p>Join Vince and Sandra as they trek through vast tracks of wilderness in search of birds.</p>
-                <a href="/expeditions/" class="button">Expeditions</a>
+                <a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">Expeditions</a>
             </div>
             <div class="col-sm-6 section essentials">
                 <div class="container-image">
@@ -44,7 +43,7 @@ section: "home"
                 </div>
                 <h2>Essentials</h2>
                 <p>Tips, tricks and tools for achieving expert levels of Bird Nerdery.</p>
-                <a href="/essentials/" class="button">Essentials</a>
+                <a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Essentials</a>
             </div>
             <div class="clearfix"> </div>
         </section>
@@ -98,7 +97,7 @@ section: "home"
                 {% for post in site.posts %}
                     {% if post.categories contains 'expeditions' %}
                         <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
-                                <a href="{{post.permalink}}">
+                                <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
                                     <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
                                 </div>
