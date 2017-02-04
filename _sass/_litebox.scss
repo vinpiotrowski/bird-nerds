@@ -97,6 +97,11 @@
 }
 
 @media(max-width: 479px) {
+
+  .close-link:after {
+    color: $white;
+  }
+
   .fixed {
     background: #FFF;
     bottom: 0;
@@ -112,8 +117,8 @@
 
   .container-photo img {
     position: relative;
-    top: 35%;
-    transform: translateY(-50%);
+    top: 7px;
+    transform: none;
   }
 
   .next-link {
@@ -123,7 +128,7 @@
   .prev-link, .next-link {
     height: 70px;
     margin-top: -35px;
-    top: 35%;
+    top: 21%;
     width: 42px;
   }
 
