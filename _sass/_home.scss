@@ -537,11 +537,15 @@
     }
 
     .headline.left {
+        left: 14px;
+    }
+
+    .headline.fancy.left {
         left: -14px;
     }
 
     .headline.right {
-        right: -14px;
+        right: 14px;
     }
 
     .headline.top {

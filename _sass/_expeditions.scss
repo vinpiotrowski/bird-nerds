@@ -25,13 +25,14 @@
 }
 
 .expeditions .content .headline {
-    background: rgba(250,247,242,0.3);
-    padding: 42px 21px 14px;
+    /*background: rgba(250,247,242,0.3);*/
+    border: solid 10.5px;
+    padding: 42px 7px 14px;
     text-align: center;
 }
 
 .expeditions .content .headline:before {
-    background: #27B8B4;
+    background: $blue;
     content: ' ';
     height: 7px;
     left: 50%;
@@ -46,16 +47,13 @@
     color: $brown;
 }
 
-.expeditions .headline.reverse {
-
-}
-
+.expeditions .headline.reverse,
 .expeditions .headline.reverse * {
     color: $white;
 }
 
 .expeditions .headline.reverse {
-    background: rgba(51,51,51,0.3);
+    /*background: rgba(51,51,51,0.3);*/
 }
 
 .expeditions .content .headline * {
@@ -268,15 +266,15 @@ body.expeditions {
 @media(max-width: 767px) {
     .expeditions.inner-page .headline {
         background: $white;
-        border: solid 3.5px $brown;
         bottom: auto!important;
         left: auto!important;
         right: auto!important;
-        margin: -70px auto;
+        margin: -70px auto 0;
         max-width: 306px;
         padding: 21px 21px 7px;
         position: relative;
         top: auto!important;
+        transform: none;
     }
 
     .expeditions.inner-page .headline,
