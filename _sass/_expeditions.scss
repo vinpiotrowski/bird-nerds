@@ -27,11 +27,11 @@
 .expeditions .content .headline {
     /*background: rgba(250,247,242,0.3);*/
     border: solid 10.5px;
-    padding: 42px 7px 14px;
+    padding: 42px 7px 0;
     text-align: center;
 }
 
-.expeditions .content .headline:before {
+/*.expeditions .content .headline:before {
     background: $blue;
     content: ' ';
     height: 7px;
@@ -40,7 +40,7 @@
     position: absolute;
     width: 160px;
     top: -3.5px;
-}
+}*/
 
 .expeditions .headline,
 .expeditions .headline * {
@@ -278,6 +278,7 @@ body.expeditions {
 @media(max-width: 767px) {
     .expeditions.inner-page .headline {
         background: $white;
+        border: solid 7px;
         bottom: auto!important;
         left: auto!important;
         right: auto!important;
