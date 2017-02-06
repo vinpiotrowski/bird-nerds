@@ -618,6 +618,10 @@
         transform: translateX(-50%) scale(0.95);
     }
 
+    .headline.fancy.left {
+        left: 50%;
+    }
+
     .headline.fancy h1 {
         font-size: 42pt;
     }

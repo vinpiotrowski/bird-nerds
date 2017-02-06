@@ -45,24 +45,35 @@
 }
 
 .close-link {
+  color: $brown;
+  font-size: 0;
+  height: 62px;
   position: absolute;
-  right: 35px;
+  right: 0;
   top: 0;
+  width: 77px;
+  z-index: 22;
 }
 
 .close-link:after {
-  color: $text;
   content: '\e913';
   display: block;
   font-family: bn-glyphs;
   font-size: 49px;
   position: absolute;
+  right: 14px;
   top: 7px;
   z-index:7;
 }
 
+.close-link:hover {
+  background: $brown;
+  color: $white;
+}
+
 .prev-link, .next-link {
   background: rgba(255,255,255,0.6);
+  color: $brown;
   display: block;
   font-size:0;
   height: 84px;
@@ -81,7 +92,6 @@
 }
 
 .prev-link:before, .next-link:before {
-  color: $brown;
   content: '\e914';
   display:block;
   font-family: bn-glyphs;
@@ -94,6 +104,11 @@
 
 .next-link:before {
   content: '\e915';
+}
+
+.next-link:hover, .prev-link:hover {
+  background: $brown;
+  color: #FFF;
 }
 
 @media(max-width: 479px) {

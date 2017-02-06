@@ -45,11 +45,18 @@
 .expeditions .headline,
 .expeditions .headline * {
     color: $brown;
+    text-shadow: 0 0 42px #FFF;
 }
 
 .expeditions .headline.reverse,
 .expeditions .headline.reverse * {
     color: $white;
+    text-shadow: 0 0 42px #000;
+}
+
+.expeditions .headline.no-shadow,
+.expeditions .headline.no-shadow * {
+    text-shadow: none;
 }
 
 .expeditions .headline.reverse {
@@ -183,6 +190,11 @@ body.expeditions {
     right: 7px;
     text-align: center;
     width: 35px;
+}
+
+.container-image.thumbnail a:hover:after {
+    background: $brown;
+    color: #FFF;
 }
 
 .expeditions .badges {

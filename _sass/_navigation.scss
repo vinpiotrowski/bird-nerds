@@ -39,6 +39,7 @@
 
 .site-header .container-menu div {
     height: 105px;
+    padding: 0;
 }
 
 .site-header.light .container-menu div {
@@ -50,9 +51,19 @@
     color: $brown;
 }
 
+.site-header .container-menu div:nth-child(1) a:hover {
+    color: #FFFFFF;
+    background: $brown;
+}
+
 .site-header .container-menu div:nth-child(2) {
     border-bottom: 11px solid $blue;
     color: $blue;
+}
+
+.site-header .container-menu div:nth-child(2) a:hover {
+    color: #FFFFFF;
+    background: $blue;
 }
 
 .site-header .container-menu div:nth-child(3) {
@@ -60,10 +71,21 @@
     color: $green;
 }
 
+.site-header .container-menu div:nth-child(3) a:hover {
+    background: $green;
+    color: #FFF;
+}
+
 .site-header .container-menu div:nth-child(4) {
     border-bottom: 11px solid $yellow;
     color: $yellow;
 }
+
+.site-header .container-menu div:nth-child(4) a:hover {
+    background: $yellow;
+    color: #FFF;
+}
+
 
 .site-header nav a {
     color: inherit;
@@ -71,8 +93,11 @@
     font-family: $base-font;
     font-size: 14pt;
     font-weight: 700;
+    height: 100%;
+    height: calc(100% - 1px);
     text-align: center;
     text-decoration: none;
+    width: 100%;
 }
 
 .site-header nav a.menu-toggle {
