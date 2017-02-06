@@ -113,6 +113,33 @@
     letter-spacing: 5px;
 }
 
+.scroll-link {
+    bottom: 14px;
+    color: #FFF;
+    font-weight: 700;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 0 35px #000;
+}
+
+.scroll-link:before {
+    /*border: solid 1px;*/
+    border-radius: 50%;
+    content: '\e917';
+    display:block;
+    font-family: $glyph-font;
+    font-size: 49px;
+    font-weight: 100;
+    height: 70px;
+    margin: 0 auto;
+    padding: 14px 0 0;
+    text-decoration: none;
+    text-shadow: none;
+    width: 70px;
+}
 
 
 .section .container-image {
