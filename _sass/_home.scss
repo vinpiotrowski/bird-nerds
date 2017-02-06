@@ -4,10 +4,26 @@
 
 .hero {
     border-bottom: solid 7px $orange;
-    max-height: 540px;
     overflow: hidden;
     position: relative;
     z-index: 1;
+}
+
+.hero.intro, .hero.featured, .hero.alberta {
+    height: 540px;
+}
+
+.hero.intro > div:first-child:after {
+    background: url(../images/hero-homepage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .hero > .container-image img {
@@ -593,6 +609,13 @@
 }
 
 @media(max-width: 767px) {
+
+    .hero.intro > div:first-child:after {
+        background: url(../images/hero-homepage-small.jpg);
+        background-position: -140px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .hero > .container-image img {
         left: 50%;
