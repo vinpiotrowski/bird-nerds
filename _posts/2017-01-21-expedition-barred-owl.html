@@ -16,7 +16,6 @@ temperature: -5
 
 <section>
 
-    <div class="clearfix">
         <div class="container-image col-xs-12 big">
             <img src="{{ '/images/2017-01-25-downy-and-nutchatch-lg.jpg' | prepend: site.baseurl }}" alt="">
             <div class="headline top reverse">
@@ -25,9 +24,9 @@ temperature: -5
                 <p>50.984963,-114.1689267</p>
             </div>
         </div>
-    </div>
 
-    <div class="clearfix">
+        <div class="clearfix"> </div>
+
         <div class="col-xs-12 col-sm-8">
             <div class="col-xs-12">
                 <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
@@ -82,7 +81,8 @@ temperature: -5
                 </a>
             </div>
         </div>
-    </div>
+
+    <div class="clearfix"> </div>
 
 </section>
 
