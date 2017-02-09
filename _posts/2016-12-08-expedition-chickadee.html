@@ -16,64 +16,62 @@ temperature: -13
 
 <section>
 
-    <div class="clearfix">
-        <div class="container-image col-xs-12 big">
-            <img src="{{ '/images/2016-12-12-downyalt-lg.jpg' | prepend: site.baseurl }}" alt="">
-            <div class="headline top left reverse">
-                <h3>Weaselhead Wildlife Area</h3>
-                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-                <p>50.984963,-114.1689267</p>
+    <div class="container-image col-xs-12 big">
+        <img src="{{ '/images/2016-12-12-downyalt-lg.jpg' | prepend: site.baseurl }}" alt="">
+        <div class="headline top left reverse">
+            <h3>Weaselhead Wildlife Area</h3>
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p>50.984963,-114.1689267</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12">
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <h2>Bird nerds notes</h2>
+            <div class="post-content">
+                <p>The mercury was plunging past -30&deg;C so when we saw warmer temperatures in the forecast we made sure to get outside; turns out that minus thirteen will still freeze your toes but we saw a lot of neat birds.  The following day we went to the Inglewood Bird Sanctuary and saw our first eagles of the season.</p>
             </div>
+        </div>
+
+        <div class="badges col-xs-12 col-md-7">
+            <h3>Conditions</h3>
+            <ul>
+                <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
+                <li class="badge {{ page.weather }}">{{ page.weather }}</li>
+                <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
+            </ul>
+        </div>
+
+        <div class="sightings col-xs-12 col-md-5">
+            <h3>Sightings</h3>
+            <ul>
+                <li>40x Chickadee</li>
+                <li>4x White breasted nuthatch</li>
+                <li>2x Red breasted nuthatch</li>
+                <li>3x Pine grosbeak</li>
+                <li>5x Bohemian waxwing</li>
+                <li>2x Downy woodpecker</li>
+                <li>5x Black billed magpie</li>
+            </ul>
         </div>
     </div>
 
-    <div class="clearfix">
-        <div class="col-xs-12 col-sm-8">
-            <div class="col-xs-12">
-                <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-                <h2>Bird nerds notes</h2>
-                <div class="post-content">
-                    <p>The mercury was plunging past -30&deg;C so when we saw warmer temperatures in the forecast we made sure to get outside; turns out that minus thirteen will still freeze your toes but we saw a lot of neat birds.  The following day we went to the Inglewood Bird Sanctuary and saw our first eagles of the season.</p>
-                </div>
-            </div>
-
-            <div class="badges col-xs-12 col-md-7">
-                <h3>Conditions</h3>
-                <ul>
-                    <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
-                    <li class="badge {{ page.weather }}">{{ page.weather }}</li>
-                    <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
-                </ul>
-            </div>
-
-            <div class="sightings col-xs-12 col-md-5">
-                <h3>Sightings</h3>
-                <ul>
-                    <li>40x Chickadee</li>
-                    <li>4x White breasted nuthatch</li>
-                    <li>2x Red breasted nuthatch</li>
-                    <li>3x Pine grosbeak</li>
-                    <li>5x Bohemian waxwing</li>
-                    <li>2x Downy woodpecker</li>
-                    <li>5x Black billed magpie</li>
-                </ul>
-            </div>
+    <div class="col-xs-12 col-sm-4 thumbnails">
+        <h3>Photos</h3>
+        <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <a href="{{ '/expeditions/photos/fluffed-up-chickadee.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2016-12-12-chickadee-sm.jpg' | prepend: site.baseurl }}" alt="fluffed up chickadee photo">
+            </a>
         </div>
-
-        <div class="col-xs-12 col-sm-4 thumbnails">
-            <h3>Photos</h3>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
-                <a href="{{ '/expeditions/photos/fluffed-up-chickadee.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2016-12-12-chickadee-sm.jpg' | prepend: site.baseurl }}" alt="fluffed up chickadee photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
-                <a href="{{ '/expeditions/photos/male-downy-woodpecker-in-winter.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2016-12-12-downy-sm.jpg' | prepend: site.baseurl }}" alt="male downy woodpecker in winter">
-                </a>
-            </div>
+        <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <a href="{{ '/expeditions/photos/male-downy-woodpecker-in-winter.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2016-12-12-downy-sm.jpg' | prepend: site.baseurl }}" alt="male downy woodpecker in winter">
+            </a>
         </div>
     </div>
+    <div class="clearfix"></div>
 
 </section>
 

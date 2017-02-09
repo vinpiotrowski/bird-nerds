@@ -16,63 +16,61 @@ temperature: -18
 
 <section>
 
-    <div class="clearfix">
-        <div class="container-image col-xs-12 big">
-            <img src="{{ '/images/2017-01-08-redpoll-02-lg.jpg' | prepend: site.baseurl }}" alt="">
-            <div class="headline top left reverse">
-                <h3>Weaselhead Wildlife Area</h3>
-                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-                <p>50.984963,-114.1689267</p>
+    <div class="container-image col-xs-12 big">
+        <img src="{{ '/images/2017-01-08-redpoll-02-lg.jpg' | prepend: site.baseurl }}" alt="">
+        <div class="headline top left reverse">
+            <h3>Weaselhead Wildlife Area</h3>
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p>50.984963,-114.1689267</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12">
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <h2>Bird nerds notes</h2>
+            <div class="post-content">
+                <p>It was properly cold when we set out into the Weaselhead.  We hurried down to the bridge where we discovered a bird nerd first sighting -- the Common Redpoll.  We watched them for a couple minutes then ran back to the vehicle before hypothermia set in.  Even though we were only out for about 45 minutes we saw a lot of birds.</p>
             </div>
+        </div>
+        <div class="badges col-xs-12 col-md-7">
+            <h3>Conditions</h3>
+            <ul>
+                <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
+                <li class="badge {{ page.weather }}">{{ page.weather }}</li>
+                <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-5">
+            <h3>Sightings</h3>
+            <ul>
+                <li>24x Pine grosbeak</li>
+                <li>2x Northern flickers</li>
+                <li>4x Redpoll</li>
+                <li>3x Downy woodpecker</li>
+                <li>1x Harry woodpecker</li>
+                <li>10x Chickadee</li>
+                <li>10x Black billed magpie</li>
+                <li>3x Raven</li>
+            </ul>
         </div>
     </div>
 
-    <div class="clearfix">
-        <div class="col-xs-12 col-sm-8">
-            <div class="col-xs-12">
-                <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-                <h2>Bird nerds notes</h2>
-                <div class="post-content">
-                    <p>It was properly cold when we set out into the Weaselhead.  We hurried down to the bridge where we discovered a bird nerd first sighting -- the Common Redpoll.  We watched them for a couple minutes then ran back to the vehicle before hypothermia set in.  Even though we were only out for about 45 minutes we saw a lot of birds.</p>
-                </div>
-            </div>
-            <div class="badges col-xs-12 col-md-7">
-                <h3>Conditions</h3>
-                <ul>
-                    <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
-                    <li class="badge {{ page.weather }}">{{ page.weather }}</li>
-                    <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-5">
-                <h3>Sightings</h3>
-                <ul>
-                    <li>24x Pine grosbeak</li>
-                    <li>2x Northern flickers</li>
-                    <li>4x Redpoll</li>
-                    <li>3x Downy woodpecker</li>
-                    <li>1x Harry woodpecker</li>
-                    <li>10x Chickadee</li>
-                    <li>10x Black billed magpie</li>
-                    <li>3x Raven</li>
-                </ul>
-            </div>
+    <div class="col-xs-12 col-sm-4 thumbnails">
+        <h3>Photos</h3>
+        <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <a href="{{ '/expeditions/photos/grosbeak-in-the-snow.html' | prepend: site.baseurl }}" >
+                <img src="{{ '/images/2017-01-08-pine-grosbeak-sm.jpg' | prepend: site.baseurl }}" alt="grosbeak in the snow">
+            </a>
         </div>
-
-        <div class="col-xs-12 col-sm-4 thumbnails">
-            <h3>Photos</h3>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
-                <a href="{{ '/expeditions/photos/grosbeak-in-the-snow.html' | prepend: site.baseurl }}" >
-                    <img src="{{ '/images/2017-01-08-pine-grosbeak-sm.jpg' | prepend: site.baseurl }}" alt="grosbeak in the snow">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
-                <a href="{{ '/expeditions/photos/redpoll-vest.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-08-redpoll-01-sm.jpg' | prepend: site.baseurl }}" alt="redpoll vest">
-                </a>
-            </div>
+        <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <a href="{{ '/expeditions/photos/redpoll-vest.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-08-redpoll-01-sm.jpg' | prepend: site.baseurl }}" alt="redpoll vest">
+            </a>
         </div>
     </div>
+    <div class="clearfix"></div>
 
 </section>
 

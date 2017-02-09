@@ -32,7 +32,7 @@ section: "home"
                     <img src="{{ "/images/thumb-expeditions.jpg" | prepend: site.baseurl }}" alt="">
                 </div>
                 <h2>Expeditions</h2>
-                <p>Join Vince and Sandra as they trek through vast tracks of wilderness in search of birds.</p>
+                <p>Join Vince and Sandra as they trek through wilderness in search of birds.</p>
                 <a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">Expeditions</a>
             </div>
             <div class="col-sm-6 section essentials">
@@ -94,12 +94,12 @@ section: "home"
                 {% assign idx = 0 %}
                 {% for post in site.posts %}
                     {% if post.categories contains 'expeditions' %}
-                        <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
+                        <div class="col-xs-12 update {{ post.categories | join: ' ' }}">
                                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
                                     <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
                                 </div>
-                                <h3>{{post.title}}</h3>
+                                <h2>{{post.title}}</h2>
                                 <p>{{post.description}}</p>
                                 <div class="clearfix"></div>
                             </a>
@@ -110,7 +110,7 @@ section: "home"
 
                         {% endif %}
                     {% endif %}
-                    {% if idx == 4 %}
+                    {% if idx == 3 %}
                         <div class="clearfix"> </div>
                         {% break %}
                     {% endif %}

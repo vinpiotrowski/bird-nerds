@@ -49,8 +49,8 @@ $text:             #7A5453;
 
 body, html {
   font-family: $base-font;
-  font-size: 12pt;
-  font-weight: 100;
+  font-size: 13pt;
+  font-weight: 700;
   margin: 0;
   padding: 0;
 
@@ -96,7 +96,7 @@ a {
 
 .inner-page {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1200px;
   position: relative;
 }
 
@@ -159,8 +159,7 @@ a {
 
 .counted li {
   counter-increment: step-counter;
-  font-size: 19px;
-  font-weight: 400;
+  font-size: 15pt;
   min-height: 70px;
   padding: 14px 14px 14px 14px;
   list-style: none;
@@ -231,5 +230,6 @@ a {
 @import "navigation";
 @import "home";
 @import "expeditions";
+@import "essentials";
 @import "about";
 @import "litebox";

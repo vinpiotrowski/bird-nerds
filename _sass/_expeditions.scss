@@ -1,8 +1,6 @@
 
 
-.headline.fancy.expeditions *,
-.headline.fancy.essentials *,
-.headline.fancy.about * {
+.headline.fancy.expeditions * {
     color: $white;
     line-height: 1.1;
     margin: 0px auto;
@@ -10,18 +8,7 @@
 }
 
 .headline.fancy.expeditions h1 {
-    font-size: 56pt;
     text-shadow: 0 5px 0 $blue;
-}
-
-.headline.fancy.essentials h1 {
-    font-size: 56pt;
-    text-shadow: 0 5px 0 $green;
-}
-
-.headline.fancy.about h1 {
-    font-size: 56pt;
-    text-shadow: 0 5px 0 $yellow;
 }
 
 .expeditions .content .headline {
@@ -111,6 +98,7 @@
 
 .expeditions .big img {
     border-bottom: solid 7px $blue;
+    margin-bottom: 21px;
 }
 
 .expeditions.inner-page section {
@@ -135,12 +123,6 @@ body.expeditions {
 .expeditions .content {
     background: #FFF;
     padding: 35px 35px 0;
-}
-
-.essentials .inner-page .content,
-.essentials .content {
-    background: $white;
-    padding: 35px;
 }
 
 .about .inner-page .content,

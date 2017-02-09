@@ -26,6 +26,24 @@ section: "expeditions"
 
     <div class="clearfix"> </div>
 
+    <div class="inner-page" style="background: #FFF;">
+        <div>
+            <div class="col-sm-1 col-md-2"></div>
+            <div class="col-sm-6 col-md-4" style="padding-top: 35px;">
+                <p>Being outdoors is awesome for sure, but when you start paying attention to the critters around you, it changes the experience and makes it way better!</p>
+                <p>We still think of our trips into the wilderness as enjoyable walks but we always pack our binoculars and a notepad just in case.  This section is where we post our field notes.</p>
+            </div>
+            <div class="col-sm-5 col-md-5">
+                <div class="container-image">
+                    <img src="{{ "/images/sil-01.jpg" | prepend: site.baseurl }}" alt="">
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
     <div class="expeditions inner-page">
         {% for post in site.posts %}
             {% if post.categories contains 'expeditions' %}

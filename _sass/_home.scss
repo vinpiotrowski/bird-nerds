@@ -153,6 +153,7 @@
     display: block;
     font-family: bn-glyphs;
     font-size: 49px;
+    font-weight: 100;
 }
 
 .section.essentials:before {
@@ -263,7 +264,7 @@
 
 .updates {
     background: $white;
-    padding: 140px 0 70px;
+    padding: 91px 0 70px;
     position: relative;
     text-align: center;
 }
@@ -322,116 +323,198 @@
     color: $white;
 }
 
-.essentials .update a:after {
-    color: $green;
-}
-
-.essentials .update a:hover:after {
-    background: $green;
-    color: $white;
-}
-
 .update img {
     border-bottom: solid 3.5px $blue;
     width: 100%;
 }
 
-.essentials .update img {
-    border-bottom: solid 3.5px $green;
-}
-
-
-.update h3 {
-    padding: 14px 21px 0;
+.update h2 {
+    padding: 49px 21px 0;
 }
 
 .update p {
     padding: 0 21px 14px;
 }
 
-
-/*.update .container-image:after {
-    background: $blue;
-    border: solid 3.5px;
-    border-radius: 50%;
-    box-shadow: 0 3px 0 $text;
-    color: $white;
-    content: '\f278';
-    display: block;
-    font-family: bn-glyphs;
-    font-size: 42px;
-    height: 91px;
-    right: 49px;
-    margin: 0;
-    padding: 21px 0 0;
-    position: absolute;
-    text-align: center;
-    bottom: -49px;
-    width: 91px;
-}*/
-
-
-
-/*.updates h1 {
-    background: $blue;
-    border: dotted 2px;
-    box-shadow: 0 0 0 5px $blue;
-    border-radius: 7px;
-    color: $white;
-    display: inline-block;
-    font-size: 28px;
-    font-weight: 700;
-    margin: 42px 0;
-    padding: 7px 14px;
-    position: relative;
-    z-index: 3;
+.updates {
+    max-width: 920px;
+    padding: 91px 0 21px;
 }
 
-.updates h1:before {
-    background: $blue;
-    border: dotted 2px;
-    box-shadow: 0 0 0 5px $blue;
-    border-radius: 7px;
-    color: $white;
-    content: ' ';
-    display: block;
-    left: 50%;
-    margin-left: -53px;
-    margin-top: -105px;
-    position: absolute;
-    height: 105px;
-    transform: rotate(45deg);
-    width: 105px;
-    z-index: -1;
+.update {
+    margin: 7px auto 14px;
 }
 
-.updates h1:after {
-    background: $blue;
-    content: '\f278';
-    font-family: $glyph-font;
-    font-size: 49px;
-    font-weight: 100;
-    left: 50%;
-    margin-top: -77px;
-    padding: 0 7px 49px;
-    position: absolute;
-    transform: translateX(-50%);
-    z-index: -1;
-
-}*/
-
-/*.update:nth-child(1) {
-    border-right: solid 1px $border;
+.update a {
+    min-height: 0;
 }
 
-.update:nth-child(4) {
-    border-right: solid 1px $border;
-    border-top: solid 1px $border;
+.update a:after {
+    left: 75%;
 }
 
-.update:nth-child(5) {
-    border-top: solid 1px $border;
-}*/
+.update .container-image {
+    float: left;
+    margin-right: 14px;
+    width: 50%;
+}
+
+.update img {
+    border-bottom: none;
+    border-right: solid 3.5px $blue;
+}
+
+@media(max-width: 991px) {
+
+    .headline.bottom {
+        bottom: 35px;
+    }
+
+    .headline.left {
+        left: 14px;
+    }
+
+    .headline.fancy.left {
+        left: -14px;
+    }
+
+    .headline.right {
+        right: 14px;
+    }
+
+    .headline.top {
+        top: 35px;
+    }
+
+    .headline-fancy {
+        width: 360px;
+    }
+
+    .headline.fancy h1 {
+        font-size: 56pt;
+    }
+
+    .expeditions .badges {
+        float: left;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .hero.intro > div:first-child:after {
+        background: url(../images/hero-homepage-small.jpg);
+        background-position: -140px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero > .container-image img {
+        left: 50%;
+        max-width: 1600px;
+        position: relative;
+        transform: translateX(-50%);
+    }
+
+    .hero.tall > .container-image img {
+        width: auto;
+    }
+
+    .headline {
+        left: 0;
+        margin: 0;
+        max-width: 100%;
+        padding: 0 14px;
+    }
+
+    .headline.fancy {
+        left: 50%;
+        top: 35px;
+        transform: translateX(-50%) scale(0.95);
+    }
+
+    .headline.fancy.left {
+        left: 50%;
+    }
+
+    .headline.fancy h1 {
+        font-size: 42pt;
+    }
+
+    .sections .section, .facts .fact {
+        border-left: none;
+        border-top: solid 1px $border;
+        padding: 35px;
+        margin: 21px auto 21px;
+    }
+
+    .sections .section:first-child, .facts .fact:first-child {
+        border-top: none;
+    }
+
+    .featured {
+        background: $grey;
+    }
+
+    .hero.featured {
+        height: auto;
+        max-height: 1000px;
+    }
+
+    .featured .headline, .featured .inner-page {
+        position: static;
+    }
+
+    .featured .inner-page {
+        transform: translateX(0);
+    }
+
+    .updates {
+        padding: 105px 0 21px;
+    }
+
+    .update {
+        padding: 0 21px;
+    }
+
+    .update a {
+        min-height: 485px;
+    }
+
+    .update h2 {
+        padding: 28px 0 0;
+    }
+
+    .update a:after {
+        left: 50%;
+    }
+
+    .update .container-image {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .update img {
+        border-bottom: solid 3.5px $blue;
+        border-right: none;
+    }
+
+    .alberta .headline {
+        margin-left: 0;
+        max-width: 100%;
+        top: 14px;
+        transform: translateX(0);
+    }
+
+    .alberta .headline:before {
+        font-size: 70px;
+    }
+
+    .alberta p {
+        line-height: 1.5;
+    }
+}
+
 
 #arc {position: relative; display: block; height:33px; margin: 0 auto; width: 270px;}
 
@@ -561,188 +644,3 @@
 
 
 
-
-
-@media(min-width: 1599px) {
-    .hero.intro img {
-        margin-top: -140px;
-    }
-
-    .hero.intro .headline img {
-        margin-top: 0;
-    }
-}
-
-@media(max-width: 991px) {
-
-    .headline.bottom {
-        bottom: 35px;
-    }
-
-    .headline.left {
-        left: 14px;
-    }
-
-    .headline.fancy.left {
-        left: -14px;
-    }
-
-    .headline.right {
-        right: 14px;
-    }
-
-    .headline.top {
-        top: 35px;
-    }
-
-    .headline-fancy {
-        width: 360px;
-    }
-
-    .headline.fancy h1 {
-        font-size: 56pt;
-    }
-
-    .expeditions .badges {
-        float: left;
-    }
-
-    .updates {
-        padding: 70px 0 21px;
-    }
-
-    .update {
-        margin: 7px auto 14px;
-    }
-
-    .update a {
-        min-height: 0;
-    }
-
-    .update a:after {
-        left: 75%;
-    }
-
-    .update .container-image {
-        float: left;
-        margin-right: 14px;
-        width: 50%;
-    }
-
-    .update img {
-        border-bottom: none;
-        border-right: solid 3.5px $blue;
-    }
-}
-
-@media(max-width: 767px) {
-
-    .hero.intro > div:first-child:after {
-        background: url(../images/hero-homepage-small.jpg);
-        background-position: -140px center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .hero > .container-image img {
-        left: 50%;
-        max-width: 1600px;
-        position: relative;
-        transform: translateX(-50%);
-    }
-
-    .hero.tall > .container-image img {
-        width: auto;
-    }
-
-    .headline {
-        left: 0;
-        margin: 0;
-        max-width: 100%;
-        padding: 0 14px;
-    }
-
-    .headline.fancy {
-        left: 50%;
-        top: 35px;
-        transform: translateX(-50%) scale(0.95);
-    }
-
-    .headline.fancy.left {
-        left: 50%;
-    }
-
-    .headline.fancy h1 {
-        font-size: 42pt;
-    }
-
-    .sections .section, .facts .fact {
-        border-left: none;
-        border-top: solid 1px $border;
-        padding: 35px;
-        margin: 21px auto 21px;
-    }
-
-    .sections .section:first-child, .facts .fact:first-child {
-        border-top: none;
-    }
-
-    .featured {
-        background: $grey;
-    }
-
-    .hero.featured {
-        height: auto;
-        max-height: 1000px;
-    }
-
-    .featured .headline, .featured .inner-page {
-        position: static;
-    }
-
-    .featured .inner-page {
-        transform: translateX(0);
-    }
-
-    .updates {
-        padding: 105px 0 21px;
-    }
-
-    .update {
-        padding: 0 21px;
-    }
-
-    .update a {
-        min-height: 455px;
-    }
-
-    .update a:after {
-        left: 50%;
-    }
-
-    .update .container-image {
-        float: none;
-        margin-right: auto;
-        width: 100%;
-    }
-
-    .update img {
-        border-bottom: solid 3.5px $blue;
-        border-right: none;
-    }
-
-    .alberta .headline {
-        margin-left: 0;
-        max-width: 100%;
-        top: 14px;
-        transform: translateX(0);
-    }
-
-    .alberta .headline:before {
-        font-size: 70px;
-    }
-
-    .alberta p {
-        line-height: 1.5;
-    }
-}

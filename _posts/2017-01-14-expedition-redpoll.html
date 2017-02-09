@@ -16,93 +16,92 @@ temperature: -7
 
 <section>
 
-    <div class="clearfix">
-        <div class="container-image col-xs-12 big">
-            <img src="{{ '/images/2017-01-14-redpoll-2-lg.jpg' | prepend: site.baseurl }}" alt="">
-            <div class="headline top right reverse">
-                <h3>Weaselhead Wildlife Area</h3>
-                <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-                <p>50.984963,-114.1689267</p>
+
+    <div class="container-image col-xs-12 big">
+        <img src="{{ '/images/2017-01-14-redpoll-2-lg.jpg' | prepend: site.baseurl }}" alt="">
+        <div class="headline top right reverse">
+            <h3>Weaselhead Wildlife Area</h3>
+            <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+            <p>50.984963,-114.1689267</p>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12">
+            <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+            <h2>Bird nerds notes</h2>
+            <div class="post-content">
+                <p>The Weaslehead Wildlife Area is quickly turning into one of our favorite spots for birding.  We were reunited with a large group of Redpoll on this outing.  It was the first time we'd seen Redpolls in a flock.  Watching a flock of Redpolls was different than watching a couple individuals.  The next day we ventured into Carburn Park but didn't enjoy it as much because of all the noise. </p>
             </div>
+        </div>
+        <div class="badges col-xs-12 col-md-7">
+            <h3>Conditions</h3>
+            <ul>
+                <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
+                <li class="badge {{ page.weather }}">{{ page.weather }}</li>
+                <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-5">
+            <h3>Sightings</h3>
+            <ul>
+                <li>2x Northern flicker</li>
+                <li>6x Downy woodpecker</li>
+                <li>20+ Redpoll</li>
+                <li>10x Pine grosbeak</li>
+                <li>20+ Chickadee</li>
+                <li>1x Raven</li>
+                <li>5x Black billed magpie</li>
+                <li>2x Mystery raptors</li>
+            </ul>
         </div>
     </div>
 
-    <div class="clearfix">
-        <div class="col-xs-12 col-sm-8">
-            <div class="col-xs-12">
-                <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-                <h2>Bird nerds notes</h2>
-                <div class="post-content">
-                    <p>The Weaslehead Wildlife Area is quickly turning into one of our favorite spots for birding.  We were reunited with a large group of Redpoll on this outing.  It was the first time we'd seen Redpolls in a flock.  Watching a flock of Redpolls was different than watching a couple individuals.  The next day we ventured into Carburn Park but didn't enjoy it as much because of all the noise. </p>
-                </div>
-            </div>
-            <div class="badges col-xs-12 col-md-7">
-                <h3>Conditions</h3>
-                <ul>
-                    <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
-                    <li class="badge {{ page.weather }}">{{ page.weather }}</li>
-                    <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-md-5">
-                <h3>Sightings</h3>
-                <ul>
-                    <li>2x Northern flicker</li>
-                    <li>6x Downy woodpecker</li>
-                    <li>20+ Redpoll</li>
-                    <li>10x Pine grosbeak</li>
-                    <li>20+ Chickadee</li>
-                    <li>1x Raven</li>
-                    <li>5x Black billed magpie</li>
-                    <li>2x Mystery raptors</li>
-                </ul>
-            </div>
+    <div class="col-xs-12 col-sm-4 thumbnails">
+        <h3>Photos</h3>
+        <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <a href="{{ '/expeditions/photos/black-capped-chickadee-in-flight.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-chickadee-sm.jpg' | prepend: site.baseurl }}" alt="black capped chickadee in flight photo">
+            </a>
         </div>
-
-        <div class="col-xs-12 col-sm-4 thumbnails">
-            <h3>Photos</h3>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
-                <a href="{{ '/expeditions/photos/black-capped-chickadee-in-flight.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-chickadee-sm.jpg' | prepend: site.baseurl }}" alt="black capped chickadee in flight photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6">
-                <a href="{{ '/expeditions/photos/redpoll-on-a-branch.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-redpoll-3-sm.jpg' | prepend: site.baseurl }}" alt="redpoll on a branch photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6">
-                <a href="{{ '/expeditions/photos/redpoll-staring.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-redpoll-sm.jpg' | prepend: site.baseurl }}" alt="redpoll staring photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
-                <a href="{{ '/expeditions/photos/downy-woodpecker-peaking-over-post.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-downy-woodpecker-sm.jpg' | prepend: site.baseurl }}" alt="downy woodpecker peaking over post photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
-                <a href="{{ '/expeditions/photos/female-pine-grosbeak-on-a-feeder.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-pine-grosbeak-sm.jpg' | prepend: site.baseurl }}" alt="female pine grosbeak on a feeder photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6 col-sm-12 col-lg-4">
-                <a href="{{ '/expeditions/photos/downy-woodpecker-with-glowing-plummage.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-14-downy-woodpecker-2-sm.jpg' | prepend: site.baseurl }}" alt="downy woodpecker with glowing plummage photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6">
-                <a href="{{ '/expeditions/photos/black-billed-magpie-perched.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-15-black-billed-magpie-sm.jpg' | prepend: site.baseurl }}" alt="black-billed magpie perched photo">
-                </a>
-            </div>
-            <div class="container-image thumbnail col-xs-6">
-                <a href="{{ '/expeditions/photos/northern-flicker-on-a-stick.html' | prepend: site.baseurl }}">
-                    <img src="{{ '/images/2017-01-15-northern-flicker-sm.jpg' | prepend: site.baseurl }}" alt="northern flicker on a stick photo">
-                </a>
-            </div>
+        <div class="container-image thumbnail col-xs-6">
+            <a href="{{ '/expeditions/photos/redpoll-on-a-branch.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-redpoll-3-sm.jpg' | prepend: site.baseurl }}" alt="redpoll on a branch photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6">
+            <a href="{{ '/expeditions/photos/redpoll-staring.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-redpoll-sm.jpg' | prepend: site.baseurl }}" alt="redpoll staring photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <a href="{{ '/expeditions/photos/downy-woodpecker-peaking-over-post.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-downy-woodpecker-sm.jpg' | prepend: site.baseurl }}" alt="downy woodpecker peaking over post photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <a href="{{ '/expeditions/photos/female-pine-grosbeak-on-a-feeder.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-pine-grosbeak-sm.jpg' | prepend: site.baseurl }}" alt="female pine grosbeak on a feeder photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6 col-sm-12 col-lg-4">
+            <a href="{{ '/expeditions/photos/downy-woodpecker-with-glowing-plummage.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-14-downy-woodpecker-2-sm.jpg' | prepend: site.baseurl }}" alt="downy woodpecker with glowing plummage photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6">
+            <a href="{{ '/expeditions/photos/black-billed-magpie-perched.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-15-black-billed-magpie-sm.jpg' | prepend: site.baseurl }}" alt="black-billed magpie perched photo">
+            </a>
+        </div>
+        <div class="container-image thumbnail col-xs-6">
+            <a href="{{ '/expeditions/photos/northern-flicker-on-a-stick.html' | prepend: site.baseurl }}">
+                <img src="{{ '/images/2017-01-15-northern-flicker-sm.jpg' | prepend: site.baseurl }}" alt="northern flicker on a stick photo">
+            </a>
         </div>
     </div>
+    <div class="clearfix"></div>
 
 </section>
 

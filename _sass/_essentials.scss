@@ -1,0 +1,133 @@
+.headline.fancy.essentials * {
+    color: $white;
+    line-height: 1.1;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.headline.fancy.essentials h1 {
+    text-shadow: 0 5px 0 $green;
+}
+
+.essentials .inner-page .content,
+.essentials .content {
+    background: $white;
+    padding: 35px;
+}
+
+.article * {
+    text-decoration :none;
+}
+
+.article .container-image {
+    position: relative;
+}
+
+.article a {
+    background: #FFF;
+    display:block;
+    min-height: 455px;
+    position:relative;
+}
+
+.article a:after {
+    background: #FFF;
+    border: solid 1px;
+    border-radius: 50%;
+    color: $blue;
+    content: '\ea3c';
+    display: block;
+    font-family: "bn-glyphs";
+    font-size: 14pt;
+    font-weight: 700;
+    height: 49px;
+    left: 50%;
+    margin-left: -24.5px;
+    padding: 14px 0 0;
+    position: absolute;
+    text-align: center;
+    bottom: 14px;
+    width: 49px;
+}
+
+.article a:after {
+    color: $green;
+}
+
+.article a:hover:after {
+    background: $green;
+    color: $white;
+}
+
+.article img {
+    border-bottom: solid 3.5px $blue;
+    width: 100%;
+}
+
+.essentials .article img {
+    border-bottom: solid 3.5px $green;
+}
+
+.article h3 {
+    padding: 14px 21px 0;
+}
+
+.article p {
+    padding: 0 21px 14px;
+}
+
+
+@media(max-width: 991px) {
+    .article {
+        margin: 7px auto 14px;
+    }
+
+    .article a {
+        min-height: 0;
+    }
+
+    .article a:after {
+        left: 75%;
+    }
+
+    .article .container-image {
+        float: left;
+        margin-right: 14px;
+        width: 50%;
+    }
+
+    .article img {
+        border-bottom: none;
+        border-right: solid 3.5px $green;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .article {
+        padding: 0 21px;
+    }
+
+    .article a {
+        min-height: 485px;
+    }
+
+    .article h2 {
+        padding: 28px 0 0;
+    }
+
+    .article a:after {
+        left: 50%;
+    }
+
+    .article .container-image {
+        float: none;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .article img {
+        border-bottom: solid 3.5px $green;
+        border-right: none;
+    }
+}
