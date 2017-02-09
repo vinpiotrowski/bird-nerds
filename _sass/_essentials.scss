@@ -34,7 +34,7 @@
     background: #FFF;
     border: solid 1px;
     border-radius: 50%;
-    color: $blue;
+    color: $green;
     content: '\ea3c';
     display: block;
     font-family: "bn-glyphs";
@@ -50,22 +50,14 @@
     width: 49px;
 }
 
-.article a:after {
-    color: $green;
-}
-
 .article a:hover:after {
     background: $green;
     color: $white;
 }
 
 .article img {
-    border-bottom: solid 3.5px $blue;
-    width: 100%;
-}
-
-.essentials .article img {
     border-bottom: solid 3.5px $green;
+    width: 100%;
 }
 
 .article h3 {

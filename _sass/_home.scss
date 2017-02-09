@@ -294,7 +294,7 @@
 .update a {
     background: #FFF;
     display:block;
-    min-height: 455px;
+    min-height: 476px;
     position:relative;
 }
 
@@ -328,41 +328,14 @@
     width: 100%;
 }
 
-.update h2 {
-    padding: 49px 21px 0;
+.update h3 {
+    padding: 14px 21px 0;
 }
 
 .update p {
     padding: 0 21px 14px;
 }
 
-.updates {
-    max-width: 920px;
-    padding: 91px 0 21px;
-}
-
-.update {
-    margin: 7px auto 14px;
-}
-
-.update a {
-    min-height: 0;
-}
-
-.update a:after {
-    left: 75%;
-}
-
-.update .container-image {
-    float: left;
-    margin-right: 14px;
-    width: 50%;
-}
-
-.update img {
-    border-bottom: none;
-    border-right: solid 3.5px $blue;
-}
 
 @media(max-width: 991px) {
 
@@ -396,6 +369,29 @@
 
     .expeditions .badges {
         float: left;
+    }
+
+    .update {
+        margin: 7px auto 14px;
+    }
+
+    .update a {
+        min-height: 0;
+    }
+
+    .update a:after {
+        left: 75%;
+    }
+
+    .update .container-image {
+        float: left;
+        margin-right: 14px;
+        width: 50%;
+    }
+
+    .update img {
+        border-bottom: none;
+        border-right: solid 3.5px $green;
     }
 }
 
