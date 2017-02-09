@@ -264,12 +264,12 @@
 
 .updates {
     background: $white;
-    padding: 91px 0 70px;
+    padding: 105px 0 70px;
     position: relative;
     text-align: center;
 }
 
-.updates h1 {
+.updates > h1, .updates > h2 {
     color: $white;
     background: $orange;
     display: inline-block;
@@ -391,7 +391,7 @@
 
     .update img {
         border-bottom: none;
-        border-right: solid 3.5px $green;
+        border-right: solid 3.5px $blue;
     }
 }
 

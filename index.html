@@ -88,9 +88,9 @@ section: "home"
 
         <div class="clearfix"> </div>
 
-        <section class="updates container-fluid">
-            <h1>Recent Expeditions</h1>
-            <div class="inner-page">
+        <section class="container-fluid">
+            <div class="inner-page updates">
+                <h1>Recent Expeditions</h1>
                 {% assign idx = 0 %}
                 {% for post in site.posts %}
                     {% if post.categories contains 'expeditions' %}
