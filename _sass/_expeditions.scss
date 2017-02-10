@@ -269,26 +269,29 @@ body.expeditions {
 }
 
 @media(max-width: 767px) {
-    .expeditions.inner-page .headline {
-        background: $white;
-        border: solid 7px;
-        bottom: auto!important;
-        left: auto!important;
-        right: auto!important;
+    .expeditions .content .headline {
+        background: $blue;
         margin: -70px auto 0;
-        max-width: 306px;
-        padding: 21px 21px 7px;
         position: relative;
-        top: auto!important;
+        top: auto !important;
         transform: none;
+        width: 280px;
+    }
+
+
+    .expeditions .content .headline h1:after {
+        background: $white;
     }
 
     .expeditions.inner-page .headline,
     .expeditions.inner-page .headline *,
     .expeditions.inner-page .headline.reverse,
     .expeditions.inner-page .headline.reverse * {
-        color: $brown;
-        text-shadow: none;
+        color: $white;
+    }
+
+    .expeditions .content .headline:after {
+        border-top: 42px solid $blue;
     }
 
     .expeditions.inner-page .content {
