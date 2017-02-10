@@ -12,42 +12,29 @@
 }
 
 .expeditions .content .headline {
-    /*background: rgba(250,247,242,0.3);*/
-    border: solid 10.5px;
-    padding: 42px 7px 0;
+    background: rgba(250,247,242,0.6);
+    padding: 28px 7px 0;
     text-align: center;
+    width: 266px;
 }
 
-/*.expeditions .content .headline:before {
-    background: $blue;
+.expeditions .content .headline:after {
     content: ' ';
-    height: 7px;
-    left: 50%;
-    margin-left: -80px;
-    position: absolute;
-    width: 160px;
-    top: -3.5px;
-}*/
+    border-left: 133px solid transparent;
+    border-right: 133px solid transparent;
+    border-top: 42px solid rgba(250,247,242,0.6);
+    bottom: -42px;
+    display: block;
+    height: 0;
+    left: -7px;
+    position: relative;
+    width: 0;
+    z-index: 33;
+}
 
 .expeditions .headline,
 .expeditions .headline * {
     color: $brown;
-    text-shadow: 0 0 42px #FFF;
-}
-
-.expeditions .headline.reverse,
-.expeditions .headline.reverse * {
-    color: $white;
-    text-shadow: 0 0 42px #000;
-}
-
-.expeditions .headline.no-shadow,
-.expeditions .headline.no-shadow * {
-    text-shadow: none;
-}
-
-.expeditions .headline.reverse {
-    /*background: rgba(51,51,51,0.3);*/
 }
 
 .expeditions .content .headline * {
@@ -62,28 +49,52 @@
 .expeditions .content .headline h1 {
     font-family: $cursive-font;
     font-size: 49px;
-    font-weight: 400;
+    font-weight: 100;
     line-height: 1.25em;
-    padding-bottom: 35px;
     text-shadow: 0 3px 0 $blue;
 
 }
 
 .expeditions .content .headline h3 {
+    font-weight: 700;
     text-transform: uppercase;
 }
 
 .expeditions .content .headline p {
-    border-top: solid 3.5px $blue;
-    padding: 7px 0;
-    width: 100%;
+    font-size: 11pt;
+    height: 0;
+    padding: 0;
 }
 
 .expeditions .content .headline p:before {
     content: 'coords : ';
     display: inline;
     font-family: $cursive-font;
-    font-size: 17px;
+}
+
+.expeditions .content .headline h1:after {
+    background: $blue;
+    content: ' ';
+    display: block;
+    height: 3.5px;
+    margin: 21px auto;
+    width: 175px;
+}
+
+.expeditions .intro {
+    background: #FFF;
+    padding-top: 21px;
+}
+
+.expeditions .intro p {
+    color: $blue;
+    max-width: 480px;
+    padding: 0 14px;
+}
+
+.expeditions .intro .container-image {
+    margin: 0 auto;
+    max-width: 360px;
 }
 
 .post-content {

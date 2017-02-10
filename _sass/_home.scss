@@ -363,8 +363,16 @@
         width: 360px;
     }
 
+    .hero.intro, .hero.featured, .hero.alberta {
+        height: auto;
+    }
+
     .headline.fancy h1 {
         font-size: 56pt;
+    }
+
+    .alberta .headline {
+        top: 14px;
     }
 
     .expeditions .badges {
@@ -477,7 +485,8 @@
     }
 
     .update a {
-        min-height: 485px;
+        min-height: 0;
+        padding-bottom: 49px;
     }
 
     .update h2 {
