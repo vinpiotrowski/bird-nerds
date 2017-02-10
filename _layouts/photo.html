@@ -18,7 +18,9 @@
       </div>
 
       <div class="container-photo">
-          {{ content }}
+          <div class="wrap">
+              {{ content }}
+          </div>
           {% if page.previousOverride %}
             <a class="prev-link" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
           {% else %}

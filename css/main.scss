@@ -130,6 +130,7 @@ a {
 
 .button {
   background: #FFF;
+  color: $blue;
   border: solid 1px;
   border-radius: 7px;
   display: inline-block;
@@ -138,6 +139,11 @@ a {
   min-width: 105px;
   padding: 14px 28px;
   text-decoration: none;
+}
+
+.button:hover {
+  background: $blue;
+  color: #FFF;
 }
 
 .button:before {
