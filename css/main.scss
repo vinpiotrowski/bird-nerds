@@ -201,6 +201,10 @@ a {
 
 @media(max-width: 767px) {
 
+  body, html {
+    font-size: 12pt;
+  }
+
   article.inner-page {
     margin: 14px auto;
   }
