@@ -363,7 +363,11 @@
         width: 360px;
     }
 
-    .hero.featured, .hero.alberta {
+    .hero.alberta {
+        height: 580px;
+    }
+
+    .hero.featured {
         height: auto;
     }
 
@@ -513,14 +517,6 @@
         max-width: 100%;
         top: 14px;
         transform: translateX(0);
-    }
-
-    .alberta .headline:before {
-        font-size: 70px;
-    }
-
-    .alberta p {
-        line-height: 1.5;
     }
 }
 
