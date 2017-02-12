@@ -29,14 +29,14 @@ section: "expeditions"
         <div class="content">
             <div class="col-xs-12 col-sm-6">
                 <div class="container-image">
-                    <img src="{{ "/images/sil-01.jpg" | prepend: site.baseurl }}" alt="" style="transform: scaleX(-1);">
+                    <img src="{{ "/images/thumb-expeditions.jpg" | prepend: site.baseurl }}" alt="">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6">
                 <p><em>Being outdoors is awesome for sure, but when you start paying attention to the critters around you, it changes the experience and makes it way better!</em></p>
-                <p><em>We still think of our trips into the wilderness as leisure hikes but we always pack our binoculars and a notepad.  This section is where we post our field notes.</em></p>
+                <p><em>We still think of our trips into the wilderness as fun-hiking-times but we always pack our binoculars and a notepad now.  This section is where we post our field notes.</em></p>
             </div>
-            <div class="clearfix"> </div>
+            <div class="clearfix"></div>
         </div>
     </section>
 
@@ -61,7 +61,7 @@ section: "expeditions"
     </div>
 
     <div class="updates inner-page" style="border-top: solid 7px #E45238;">
-        <h2>More Adventures</h2>
+        <h2>More adventures</h2>
         {% for post in site.posts offset:idx %}
             {% if post.categories contains 'expeditions' %}
                 <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">

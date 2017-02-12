@@ -344,7 +344,7 @@
     }
 
     .headline.left {
-        left: 14px;
+        left: 21px;
     }
 
     .headline.fancy.left {
@@ -352,7 +352,7 @@
     }
 
     .headline.right {
-        right: 14px;
+        right: 21px;
     }
 
     .headline.top {
@@ -363,11 +363,7 @@
         width: 360px;
     }
 
-    .hero.alberta {
-        height: 580px;
-    }
-
-    .hero.featured {
+    .hero.alberta, .hero.featured {
         height: auto;
     }
 
@@ -375,7 +371,7 @@
         font-size: 56pt;
     }
 
-    .alberta .headline {
+    .alberta .headline, .featured .headline {
         top: 14px;
     }
 
@@ -510,6 +506,10 @@
     .update img {
         border-bottom: solid 3.5px $blue;
         border-right: none;
+    }
+
+    .hero.alberta {
+        height: 595px;
     }
 
     .alberta .headline {

@@ -276,7 +276,11 @@ body.expeditions {
     .expeditions.inner-page .headline.reverse * {
         color: $white;
     }
-
+    
+    .expeditions .intro .container-image {
+        border: solid 3.5px $grey;
+        max-width: 240px;
+    }
 
     .expeditions .content {
         padding: 0;

@@ -68,31 +68,6 @@
     padding: 0 21px 14px;
 }
 
-
-@media(max-width: 991px) {
-    .article {
-        margin: 7px auto 14px;
-    }
-
-    .article a {
-        min-height: 0;
-    }
-
-    .article a:after {
-        left: 75%;
-    }
-
-    .article .container-image {
-        float: left;
-        margin-right: 14px;
-        width: 50%;
-    }
-
-    .article img {
-        border-bottom: none;
-    }
-}
-
 @media(max-width: 767px) {
 
     .article {
