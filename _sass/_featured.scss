@@ -1,0 +1,146 @@
+.hero.featured {
+  height: 540px;
+  margin-bottom: 35px;
+}
+
+.hero.featured > div:first-child:after {
+  background: url(../images/hero-homepage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.featured .headline * {
+   color: $brown;
+ }
+
+.featured .headline.reverse * {
+  color: $white;
+}
+
+.featured .headline {
+  max-width: 480px;
+}
+
+.featured h3 {
+  font-family: $cursive-font;
+}
+
+.featured h1,
+.featured h3,
+.featured a.button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.counted {
+  padding-left: 49px;
+}
+
+.counted li {
+  counter-increment: step-counter;
+  font-size: 15pt;
+  min-height: 70px;
+  padding: 14px 14px 14px 14px;
+  list-style: none;
+}
+
+.blue .counted li:before {
+  background: $blue;
+}
+
+.featured.blue {
+  border-color: $blue;
+}
+
+.green .counted li:before {
+  background: $green;
+}
+
+.featured.green {
+  border-color: $green;
+}
+
+.yellow .counted li:before {
+  background: $yellow;
+}
+
+.featured.yellow {
+  border-color: $yellow;
+}
+
+.counted li:before {
+  background: $orange;
+  border-radius: 50%;
+  content: counter(step-counter);
+  color: $white;
+  font-size: 28px;
+  height: 49px;
+  left: 0;
+  padding: 7px 0 0;
+  position: absolute;
+  text-align: center;
+  width: 49px;
+}
+
+@media(max-width: 991px) {
+
+  .featured .headline {
+    top: 14px;
+    width: 420px;
+  }
+}
+
+@media(max-width: 767px) {
+  .featured {
+    background: $grey;
+  }
+
+  .hero.featured {
+    height: auto;
+  }
+
+  .featured .headline * {
+    color: $white;
+  }
+
+  .hero.featured > div:first-child {
+    height: 240px;
+  }
+
+  .hero.featured > div:first-child:after {
+    bottom: auto;
+    height: 240px;
+  }
+
+  .featured .headline, .featured .inner-page {
+    position: static;
+    width: 100%;
+  }
+
+  .featured .inner-page {
+    transform: translateX(0);
+  }
+
+  .counted {
+    padding: 0;
+  }
+
+  .counted li {
+    font-size: 12pt;
+    line-height: 2.0;
+    padding: 7px 35px 7px 70px;
+  }
+
+  .counted li:before {
+    left: 14px;
+    line-height: 1.25;
+  }
+}

@@ -9,7 +9,6 @@
     text-shadow: 0 5px 0 $green;
 }
 
-.essentials .inner-page .content,
 .essentials .content {
     background: $white;
     padding: 35px;
@@ -69,6 +68,10 @@
 }
 
 @media(max-width: 767px) {
+
+    .essentials .content {
+        padding: 0;
+    }
 
     .article {
         padding: 0 21px;

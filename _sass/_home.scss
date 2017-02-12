@@ -9,7 +9,7 @@
     z-index: 1;
 }
 
-.hero.intro, .hero.featured, .hero.alberta {
+.hero.intro, .hero.alberta {
     height: 540px;
 }
 
@@ -224,22 +224,6 @@
     content: '\e911';
 }
 
-.featured * {
-    color: $white;
-}
-
-.featured h3 {
-    font-family: $cursive-font;
-}
-
-.featured h1,
-.featured h3,
-.featured a.button {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
 .alberta .headline {
     width: 700px;
     text-align: center;
@@ -363,7 +347,7 @@
         width: 360px;
     }
 
-    .hero.alberta, .hero.featured {
+    .hero.alberta {
         height: auto;
     }
 
@@ -371,7 +355,7 @@
         font-size: 56pt;
     }
 
-    .alberta .headline, .featured .headline {
+    .alberta .headline {
         top: 14px;
     }
 
@@ -410,10 +394,8 @@
 @media(max-width: 767px) {
 
     .hero.intro > div:first-child:after {
-        background: url(../images/hero-homepage-small.jpg);
+        background-image: url(../images/hero-homepage-small.jpg);
         background-position: -140px center;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     .hero > .container-image img {
@@ -457,23 +439,6 @@
 
     .sections .section:first-child, .facts .fact:first-child {
         border-top: none;
-    }
-
-    .featured {
-        background: $grey;
-    }
-
-    .hero.featured {
-        height: auto;
-        max-height: 1000px;
-    }
-
-    .featured .headline, .featured .inner-page {
-        position: static;
-    }
-
-    .featured .inner-page {
-        transform: translateX(0);
     }
 
     .updates {

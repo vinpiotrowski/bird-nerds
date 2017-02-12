@@ -5,22 +5,32 @@ title:  "Downy Woodpecker"
 description: "Our featured Alberta bird this season is the Downy Woodpecker"
 date:   2016-12-27 11:11:11 -0700
 categories: feature downy woodpecker
+photo: hero-featured-downy-woodpecker
 thumbnail: 2016-12-12-downy-sm.jpg
 section: essentials
 ---
 
+<style>
+    #downy-woodpecker > div:first-child:after {
+        background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }} );
+    }
+
+    @media(max-width: 767px) {
+        #downy-woodpecker > div:first-child:after {
+            background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-small.jpg' }} );
+            background-position: center top;
+        }
+    }
+</style>
 
 
-<section class="featured hero col-xs-12 no-gutter-xs">
+<section class="featured hero col-xs-12 no-gutter-xs" id="downy-woodpecker">
 
-    <div class="container-image show-large">
-        <img src="{{ '/images/hero-featured-downy-woodpecker.jpg' | prepend: site.baseurl }}" alt="">
+    <div class="container-image">
     </div>
-    <div class="container-image show-small">
-        <img src="{{ '/images/hero-featured-downy-woodpecker-small.jpg' | prepend: site.baseurl }}" alt="">
-    </div>
+
     <div class="inner-page">
-        <div class="headline right top" style="left: 50%; margin-left: 0;">
+        <div class="headline right top reverse">
             <h3>–Featured Bird–</h3>
             <h1>Downy Woodpecker</h1>
             <ol class="counted">
