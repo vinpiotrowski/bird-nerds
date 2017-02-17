@@ -76,12 +76,11 @@
 
 .expeditions .intro {
     background: #FFF;
-    padding-top: 21px;
+    min-height: 210px;
 }
 
 .expeditions .intro p {
     color: $blue;
-    max-width: 480px;
     padding: 0 14px;
 }
 
@@ -116,6 +115,24 @@ body.expeditions {
 .expeditions .content {
     background: #FFF;
     padding: 35px 35px 0;
+}
+
+.glyph {
+  min-height: 210px;
+}
+
+.glyph:before {
+    content: '\f278';
+    font-family: $glyph-font;
+    font-size: 140px;
+    font-weight: 100;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.expeditions .glyph:before {
+    color: $blue;
 }
 
 .container-image.thumbnail {
