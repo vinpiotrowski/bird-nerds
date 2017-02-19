@@ -162,10 +162,8 @@ body.expeditions {
 }
 
 .container-image.thumbnail a:after {
-    background: rgba(250,247,242,0.6);
     bottom: 0;
     content: '\e98b';
-    color: $brown;
     display: block;
     font-family: $glyph-font;
     font-size: 28px;
@@ -261,6 +259,8 @@ body.expeditions {
     }
 }
 
+
+
 @media(max-width: 767px) {
 
     .expeditions .big {
@@ -317,4 +317,21 @@ body.expeditions {
         margin: 14px 0 0;
         transform: scale(0.80);
     }
+}
+
+
+.expeditions .content .headline {
+    background: $brown;
+
+}
+
+.expeditions .content .headline:after {
+    border-top: 42px solid $brown;
+}
+
+.expeditions.inner-page .headline,
+.expeditions.inner-page .headline *,
+.expeditions.inner-page .headline.reverse,
+.expeditions.inner-page .headline.reverse * {
+    color: $white;
 }

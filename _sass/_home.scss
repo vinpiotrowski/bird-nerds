@@ -233,7 +233,7 @@
 }
 
 .alberta .headline {
-    width: 700px;
+    width: 960px;
     text-align: center;
 }
 
@@ -328,6 +328,13 @@
 
 .update p {
     padding: 0 21px 14px;
+}
+
+
+@media(max-width: 1199px) {
+    .alberta .headline {
+        width: 700px;
+    }
 }
 
 

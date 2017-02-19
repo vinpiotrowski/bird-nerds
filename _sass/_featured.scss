@@ -25,7 +25,7 @@
 }
 
 .featured .headline {
-  max-width: 480px;
+  max-width: 700px;
 }
 
 .featured h3 {
@@ -88,6 +88,14 @@
   position: absolute;
   text-align: center;
   width: 49px;
+}
+
+
+@media(max-width: 1199px) {
+
+  .featured .headline {
+    width: 480px;
+  }
 }
 
 @media(max-width: 991px) {
