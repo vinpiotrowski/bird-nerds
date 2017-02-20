@@ -163,6 +163,9 @@ body.expeditions {
 
 .container-image.thumbnail a:after {
     bottom: 0;
+    border-left: solid 1px $blue;
+    border-top: solid 1px $blue;
+    color: $blue;
     content: '\e98b';
     display: block;
     font-family: $glyph-font;
@@ -178,6 +181,7 @@ body.expeditions {
 
 .container-image.thumbnail a:hover:after {
     background: $brown;
+    border: none;
     color: #FFF;
 }
 
