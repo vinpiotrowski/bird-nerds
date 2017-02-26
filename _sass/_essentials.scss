@@ -63,9 +63,32 @@
     padding: 14px 21px 0;
 }
 
+.article h4 {
+    padding: 0 21px;
+}
+
 .article p {
     padding: 0 21px 14px;
 }
+
+.article#featured-birds a:before,
+.article#bird-photography a:before {
+    background: $orange;
+    color: $white;
+    content: '\e91e';
+    display: block;
+    font-family: bn-glyphs;
+    font-size: 112pt;
+    font-weight: 100;
+    padding: 14px 0;
+    text-align: center;
+}
+
+.article#bird-photography a:before {
+    background: $yellow;
+    content: '\e91c';
+}
+
 
 @media(max-width: 767px) {
 

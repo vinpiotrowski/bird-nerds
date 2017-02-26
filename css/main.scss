@@ -84,6 +84,13 @@ h3 {
   margin: 7px 0;
 }
 
+h4 {
+  color: $brown;
+  font-size: 21px;
+  font-weight: 400;
+  margin: 7px 0;
+}
+
 p, ul li {
   color: $text;
   line-height: 1.9em;
@@ -96,7 +103,7 @@ a {
 
 .inner-page {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1200px;
   position: relative;
 }
 

@@ -1,3 +1,52 @@
+.container-image.thumbnail {
+  display: block;
+  margin: 7px 0;
+  position: relative;
+}
+
+.container-image.thumbnail img {
+  width: 100%;
+}
+
+.container-image.thumbnail:nth-child(odd),
+.container-image.thumbnail:nth-child(odd) a {
+  color: $green;
+}
+
+.container-image.thumbnail:nth-child(even),
+.container-image.thumbnail:nth-child(even) a {
+  color: $yellow;
+}
+
+.container-image.thumbnail:nth-child(2) a,
+.container-image.thumbnail:nth-child(5) a,
+.container-image.thumbnail:nth-child(8) a {
+  color: $blue;
+}
+
+.container-image.thumbnail a:after {
+  background: rgba(250,247,242,0.6);
+  bottom: 0;
+  color: $brown;
+  content: '\e98b';
+  display: block;
+  font-family: $glyph-font;
+  font-size: 28px;
+  font-weight: 700;
+  height: 35px;
+  padding: 3.5px 0 0;
+  position: absolute;
+  right: 7px;
+  text-align: center;
+  width: 35px;
+}
+
+.container-image.thumbnail a:hover:after {
+  background: $brown;
+  border: none;
+  color: #FFF;
+}
+
 
 .photo .page-content {
   background: #FFF;
