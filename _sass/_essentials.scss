@@ -90,6 +90,29 @@
 }
 
 
+#bird-photography .intro {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 21px 0 35px;
+    text-align: center;
+}
+
+#bird-photography .intro * {
+    color: $yellow;
+}
+
+#bird-photography h1:before {
+    content: '\e91c';
+    display: block;
+    font-family: bn-glyphs;
+    font-size: 112pt;
+    font-weight: 100;
+    padding: 14px 0;
+    text-align: center;
+    z-index: 1;
+}
+
+
 @media(max-width: 767px) {
 
     .essentials .content {

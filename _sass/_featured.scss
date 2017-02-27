@@ -56,6 +56,10 @@
   background: $blue;
 }
 
+.yellow .counted li:before {
+  background: $yellow;
+}
+
 .featured.blue {
   border-color: $blue;
 }
