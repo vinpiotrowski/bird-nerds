@@ -35,7 +35,7 @@
     border: solid 1px;
     border-radius: 50%;
     color: $green;
-    content: '\ea3c';
+    content: $arrow;
     display: block;
     font-family: "bn-glyphs";
     font-size: 14pt;
@@ -75,41 +75,50 @@
 .article#bird-photography a:before {
     background: $orange;
     color: $white;
-    content: '\e91e';
+    content: ' ';
     display: block;
     font-family: bn-glyphs;
     font-size: 112pt;
     font-weight: 100;
     padding: 14px 0;
     text-align: center;
+}
+
+.article#featured-birds a:before {
+    background: $orange;
+    content: $featured;
 }
 
 .article#bird-photography a:before {
     background: $yellow;
-    content: '\e91c';
+    content: $camera;
 }
 
 
-#bird-photography .intro {
+.lead {
     margin: 0 auto;
     max-width: 700px;
-    padding: 21px 0 35px;
+    padding: 0 0 35px;
     text-align: center;
 }
 
-#bird-photography .intro * {
+#bird-photography .lead * {
     color: $yellow;
 }
 
-#bird-photography h1:before {
-    content: '\e91c';
+.lead h1:before {
+    content: ' ';
     display: block;
     font-family: bn-glyphs;
     font-size: 112pt;
     font-weight: 100;
-    padding: 14px 0;
+    padding: 21px 0 0;
     text-align: center;
     z-index: 1;
+}
+
+#bird-photography .lead h1:before {
+    content: $camera;
 }
 
 

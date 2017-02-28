@@ -39,6 +39,16 @@ $border:           #BAA4A3;
 
 $text:             #7A5453;
 
+
+
+$arrow:            '\ea3c';
+
+$binoculars:       '\f1e5';
+
+$camera:           '\e91c';
+
+$featured:         '\e91e';
+
 @font-face {
   font-family: 'bn-glyphs';
   src: url('../fonts/icomoon.eot?v=3.2.1');
@@ -163,7 +173,7 @@ a {
 }
 
 .button:after {
-  content: '\ea3c';
+  content: $arrow;
   display: inline-block;
   font-family: $glyph-font;
   padding: 0 0 0 3.5px;
