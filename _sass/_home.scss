@@ -201,12 +201,12 @@
 }
 
 .section.expeditions h2,
-.section.expeditions .button {
+.expeditions .button {
     color: $blue;
 }
 
 .section.essentials h2,
-.section.essentials .button {
+.essentials .button {
     color: $green;
 }
 
@@ -214,12 +214,12 @@
     color: $yellow;
 }
 
-.section.expeditions .button:hover {
+.expeditions .button:hover {
     background: $blue;
     color: $white;
 }
 
-.section.essentials .button:hover {
+.essentials .button:hover {
     background: $green;
     color: $white;
 }
@@ -264,6 +264,10 @@
     padding: 105px 0 70px;
     position: relative;
     text-align: center;
+}
+
+.update {
+    margin-bottom: 21px;
 }
 
 .updates > h1, .updates > h2 {

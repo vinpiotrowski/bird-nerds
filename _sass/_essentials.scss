@@ -121,6 +121,10 @@
     content: $camera;
 }
 
+.border-sandwich {
+    border-bottom: solid 1px $border;
+    border-top: solid 1px $border;
+}
 
 @media(max-width: 767px) {
 
