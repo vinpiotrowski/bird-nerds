@@ -100,6 +100,10 @@
     max-width: 700px;
 }
 
+.slim.orange * {
+    color: $orange;
+}
+
 .slim.yellow * {
     color: $yellow;
 }
@@ -115,6 +119,10 @@
 
 #bird-photography .slim h1:before {
     content: $camera;
+}
+
+#featured-birds .slim h1:before {
+    content: $featured;
 }
 
 @media(max-width: 767px) {
