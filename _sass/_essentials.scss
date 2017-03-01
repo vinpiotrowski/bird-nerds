@@ -95,41 +95,32 @@
 }
 
 
-.lead {
+.slim {
     margin: 0 auto;
     max-width: 700px;
-    padding: 0 0 35px;
-    text-align: center;
 }
 
-#bird-photography .lead * {
+.slim.yellow * {
     color: $yellow;
 }
 
-.lead h1:before {
+.slim h1:before {
     content: ' ';
     display: block;
     font-family: bn-glyphs;
     font-size: 112pt;
     font-weight: 100;
-    padding: 21px 0 0;
-    text-align: center;
     z-index: 1;
 }
 
-#bird-photography .lead h1:before {
+#bird-photography .slim h1:before {
     content: $camera;
-}
-
-.border-sandwich {
-    border-bottom: solid 1px $border;
-    border-top: solid 1px $border;
 }
 
 @media(max-width: 767px) {
 
     .essentials .content {
-        padding: 0;
+        padding: 21px;
     }
 
     .article {
