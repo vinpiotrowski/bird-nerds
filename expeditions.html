@@ -6,7 +6,8 @@ section: "expeditions"
 ---
 
 
-<div class="container-fluid no-gutter-xs">
+<div class="container-fluid no-gutter-xs" id="expeditions-list">
+
 
     <div class="hero tall col-xs-12 no-gutter-xs">
         <div class="container-image show-large">
@@ -23,27 +24,31 @@ section: "expeditions"
         </div>
     </div>
 
-    <div class="clearfix"></div>
+    <div class="clearfix"> </div>
 
-    <div class="expeditions inner-page">
-            {% assign idx = 1 %}
-            {% assign cnt = 0 %}
-            {% for post in site.posts %}
-                {% if post.categories contains 'expeditions' %}
-                    <div class='content'>
+    <div class="expeditions">
+        {% assign idx = 1 %}
+        {% assign idx = 0 %}
+        {% assign cnt = 0 %}
+        {% for post in site.posts %}
+            {% break %}
+            {% if post.categories contains 'expeditions' %}
+                <div class="content">
+                    <div class="inner-page">
                         {{ post.content }}
                     </div>
-                    {% assign cnt = cnt | plus:1 %}
-                {% endif %}
-                {% assign idx = idx | plus:1 %}
-                {% if cnt == 1%}
-                    {% break %}
-                {% endif %}
-            {% endfor %}
+                </div>
+                {% assign cnt = cnt | plus:1 %}
+            {% endif %}
+            {% assign idx = idx | plus:1 %}
+            {% if cnt == 3%}
+                {% break %}
+            {% endif %}
+        {% endfor %}
     </div>
 
-    <div class="updates inner-page" style="border-top: solid 7px #E45238;">
-        <h2>More adventures</h2>
+    <div class="updates inner-page">
+        <h2>Field notes</h2>
         {% for post in site.posts offset:idx %}
             {% if post.categories contains 'expeditions' %}
                 <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
@@ -61,3 +66,7 @@ section: "expeditions"
         <div class="clearfix"> </div>
     </div>
 </div>
+
+
+
+<div class="clearfix"></div>

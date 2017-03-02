@@ -112,9 +112,8 @@ body.expeditions {
     background: $white;
 }
 
-.expeditions .content {
-    background: #FFF;
-    padding: 35px 35px 0;
+.expeditions .content:nth-child(even) {
+    background: #FFFFFF;
 }
 
 .glyph {

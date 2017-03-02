@@ -9,11 +9,6 @@
     text-shadow: 0 5px 0 $green;
 }
 
-.essentials .content {
-    background: $white;
-    padding: 35px;
-}
-
 .article * {
     text-decoration :none;
 }
@@ -104,6 +99,10 @@
     color: $orange;
 }
 
+.slim.blue * {
+    color: $blue;
+}
+
 .slim.yellow * {
     color: $yellow;
 }
@@ -121,15 +120,17 @@
     content: $camera;
 }
 
+#expeditions-list .slim h1:before {
+    content: $map;
+    font-size: 90pt;
+    padding-bottom: 14px;
+}
+
 #featured-birds .slim h1:before {
     content: $featured;
 }
 
 @media(max-width: 767px) {
-
-    .essentials .content {
-        padding: 21px;
-    }
 
     .article {
         padding: 0 21px;

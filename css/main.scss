@@ -40,14 +40,21 @@ $border:           #BAA4A3;
 $text:             #7A5453;
 
 
-
 $arrow:            '\ea3c';
 
 $binoculars:       '\f1e5';
 
+$bird-house:       '\e921';
+
 $camera:           '\e91c';
 
+$chev-right:       '\e915';
+
+$feather:          '\f02d';
+
 $featured:         '\e91e';
+
+$map:              '\f278';
 
 @font-face {
   font-family: 'bn-glyphs';
@@ -117,6 +124,11 @@ a {
   position: relative;
 }
 
+.content {
+  background: $white;
+  padding: 35px;
+}
+
 .fixed {
   float: left;
   min-height: 7px;
@@ -151,7 +163,6 @@ a {
   border: solid 1px;
   border-radius: 7px;
   display: inline-block;
-  font-size: 14pt;
   font-weight: 700;
   min-width: 105px;
   padding: 14px 28px;
@@ -180,6 +191,18 @@ a {
   vertical-align: middle;
 }
 
+.button.next {
+  border-radius: 14px 14px 0 0;
+  position: fixed;
+  bottom: 0;
+  right: 7%;
+  z-index: 700;
+}
+
+.button.next:after {
+  content: $chev-right;
+}
+
 @media(max-width: 991px) {
   h1 {
     font-size: 35px;
@@ -200,8 +223,16 @@ a {
     font-size: 11pt;
   }
 
+  .content {
+    padding: 21px;
+  }
+
   article.inner-page {
     margin: 14px auto;
+  }
+
+  .button.next {
+    display: none;
   }
 
   .show-small {

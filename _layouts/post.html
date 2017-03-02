@@ -1,18 +1,42 @@
 ---
 layout: default
 ---
+
 <article class="post inner-page expeditions" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="content">
+    <div class="content" style="background: #FFF;">
         {{ content }}
+
+        <!-- next button -->
+
+        {% assign idx = 0 %}
+        {% assign cnt = 0 %}
+        {% assign fountIt = false %}
+        {% for post in site.posts %}
+            {% if post.categories contains 'expeditions' %}
+                {% if foundIt == true %}
+                    {% assign cnt = idx %}
+                    {% break %}
+                {% endif %}
+                {% if post.url == page.url %}
+                    {% assign foundIt = true %}
+                {% endif %}
+            {% endif %}
+            {% assign idx = idx | plus:1 %}
+        {% endfor %}
+        {% assign idx = idx | plus:1 %}
+        {% for post in site.posts limit:1 offset:cnt %}
+            <div class="col-xs-12" style="text-align: right">
+                <a href="{{ post.permalink | prepend: site.baseurl }}" class="button next">Next expedition</a>
+            </div>
+            <div class="clearfix"></div>
+        {% endfor %}
     </div>
 </article>
-
-
 
 <div class="container-fluid">
 
     <div class="inner-page updates" style="border-top: solid 7px #E45238;">
-        <h2>Continue reading</h2>
+        <h2>More adventures</h2>
 
         {% assign maxRelated = 4 %}
         {% assign minCommonTags =  2 %}
