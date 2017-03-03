@@ -13,14 +13,14 @@ body.expeditions {
     text-shadow: 0 5px 0 $blue;
 }
 
-.expeditions .content .headline {
+#expedition-article .headline {
     background: rgba(250,247,242,0.6);
     padding: 28px 7px 0;
     text-align: center;
     width: 266px;
 }
 
-.expeditions .content .headline:after {
+#expedition-article .headline:after {
     content: ' ';
     border-left: 133px solid transparent;
     border-right: 133px solid transparent;
@@ -34,17 +34,17 @@ body.expeditions {
     z-index: 33;
 }
 
-.expeditions .content .headline * {
+#expedition-article .headline * {
     color: $brown;
     margin: 3.5px auto;
 }
 
-.expeditions .content .headline h1,
-.expeditions .content .headline h3 {
+#expedition-article .headline h1,
+#expedition-article .headline h3 {
     max-width: 240px;
 }
 
-.expeditions .content .headline h1 {
+#expedition-article .headline h1 {
     font-family: $cursive-font;
     font-size: 49px;
     font-weight: 100;
@@ -52,24 +52,24 @@ body.expeditions {
     text-shadow: 0 3px 0 $blue;
 }
 
-.expeditions .content .headline h3 {
+#expedition-article .headline h3 {
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.expeditions .content .headline p {
+#expedition-article .headline p {
     font-size: 11pt;
     height: 0;
     padding: 0;
 }
 
-.expeditions .content .headline p:before {
+#expedition-article .headline p:before {
     content: 'coords : ';
     display: inline;
     font-family: $cursive-font;
 }
 
-.expeditions .content .headline h1:after {
+#expedition-article .headline h1:after {
     background: $blue;
     content: ' ';
     display: block;
@@ -88,12 +88,12 @@ body.expeditions {
     margin: 0 21px;
 }
 
-.expeditions .big img {
+.big img {
     border-bottom: solid 7px $blue;
     margin-bottom: 21px;
 }
 
-.expeditions .badges {
+.badges {
     float: right;
 }
 
@@ -163,23 +163,23 @@ body.expeditions {
 }
 
 @media(max-width: 991px) {
-    .expeditions .badges {
+    .badges {
         float: left;
     }
 }
 
 @media(max-width: 767px) {
 
-    .expeditions .big {
+    .big {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .expeditions .big img {
+    .big img {
         margin: 0;
     }
 
-    .expeditions .content .headline {
+    #expedition-article .headline {
         background: $brown;
         margin: 0 auto 35px;
         position: static;
@@ -187,21 +187,21 @@ body.expeditions {
         width: 100%;
     }
 
-    .expeditions .content .headline:after {
+    #expedition-article .headline:after {
         border-left: 50vw solid transparent;
         border-right: 50vw solid transparent;
         border-top: 42px solid $brown;
         margin-top: -1px;
     }
 
-    .expeditions.inner-page .headline,
-    .expeditions.inner-page .headline *,
-    .expeditions.inner-page .headline.reverse,
-    .expeditions.inner-page .headline.reverse * {
+    #expedition-article .headline,
+    #expedition-article .headline *,
+    #expedition-article .headline.reverse,
+    #expedition-article .headline.reverse * {
         color: $white;
     }
 
-    .expeditions .content {
+    #expedition-article .content {
         padding: 0;
     }
 

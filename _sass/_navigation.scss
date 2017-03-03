@@ -8,7 +8,7 @@
 }
 
 .site-header > nav {
-    background: #FFFFFF;
+    background: $pure-white;
     background: rgba(255,255,255,0.98);
     left: 0;
     min-height: 105px;
@@ -25,7 +25,7 @@
 }
 
 .site-header nav div:first-child {
-    color: $white;
+    color: $pure-white;
     height: 105px;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .site-header .container-menu div:nth-child(1) a:hover {
-    color: #FFFFFF;
+    color: $pure-white;
     background: $brown;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .site-header .container-menu div:nth-child(2) a:hover {
-    color: #FFFFFF;
+    color: $pure-white;
     background: $blue;
 }
 
@@ -73,7 +73,7 @@
 
 .site-header .container-menu div:nth-child(3) a:hover {
     background: $green;
-    color: #FFF;
+    color: $pure-white;
 }
 
 .site-header .container-menu div:nth-child(4) {
@@ -83,7 +83,7 @@
 
 .site-header .container-menu div:nth-child(4) a:hover {
     background: $yellow;
-    color: #FFF;
+    color: $pure-white;
 }
 
 
@@ -187,7 +187,7 @@ body.about .container-menu div:nth-child(4) a:after{
 
 .site-footer:before {
     content: '\e920';
-    color: $white;
+    color: $pure-white;
     display: block;
     font-family: $glyph-font;
     font-size: 63px;
@@ -202,7 +202,7 @@ body.about .container-menu div:nth-child(4) a:after{
 }
 
 .site-footer p {
-    color: $white;
+    color: $pure-white;
     font-weight: 700;
     padding: 77px 0 0;
     text-align: center;
@@ -222,7 +222,7 @@ body.about .container-menu div:nth-child(4) a:after{
 
 #follow:after {
     content: '\e916';
-    color: $white;
+    color: $pure-white;
     display: block;
     font-family: $glyph-font;
     font-size: 70pt;
@@ -237,7 +237,7 @@ body.about .container-menu div:nth-child(4) a:after{
 }
 
 #follow h4 {
-    color: $white;
+    color: $pure-white;
     margin-top: 91px;
     text-align:center;
 }
@@ -260,7 +260,7 @@ body.about .container-menu div:nth-child(4) a:after{
 #follow .mail:before,
 #follow .insta:before {
     background: $brown;
-    color: $white;
+    color: $pure-white;
     content: '\f003';
     display: block;
     font-family: bn-glyphs;
@@ -288,7 +288,7 @@ body.about .container-menu div:nth-child(4) a:after{
 }
 
 #garnish>span[class^=w]:nth-of-type(n+0):before {
-    color: $white;
+    color: $pure-white;
     content: '\e909';
     font-family: $glyph-font;
     font-size: 42px;

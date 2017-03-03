@@ -86,7 +86,7 @@
   color: $white;
   font-size: 28px;
   height: 49px;
-  margin: 0 0 0 -63px;
+  margin: -14px 0 0 -63px;
   padding: 7px 0 0;
   position: absolute;
   text-align: center;
@@ -152,5 +152,6 @@
 
   .counted li:before {
     line-height: 1.25;
+    margin: -7px 0 0 -63px;
   }
 }
