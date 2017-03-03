@@ -1,3 +1,7 @@
+body.expeditions {
+    background: $white;
+}
+
 .headline.fancy.expeditions * {
     color: $white;
     line-height: 1.1;
@@ -74,21 +78,6 @@
     width: 175px;
 }
 
-.expeditions .intro {
-    background: #FFF;
-    min-height: 210px;
-}
-
-.expeditions .intro p {
-    color: $blue;
-    padding: 0 14px;
-}
-
-.expeditions .intro .container-image {
-    margin: 0 auto;
-    max-width: 360px;
-}
-
 .post-content {
     border-left: solid $blue 3.5px;
     margin: 0 0 21px 7px;
@@ -102,36 +91,6 @@
 .expeditions .big img {
     border-bottom: solid 7px $blue;
     margin-bottom: 21px;
-}
-
-.expeditions.inner-page section {
-    padding-bottom: 70px;
-}
-
-body.expeditions {
-    background: $white;
-}
-
-.expeditions .content:nth-child(even) {
-    background: #FFFFFF;
-}
-
-.glyph {
-  min-height: 210px;
-}
-
-.glyph:before {
-    content: '\f278';
-    font-family: $glyph-font;
-    font-size: 140px;
-    font-weight: 100;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
-.expeditions .glyph:before {
-    color: $blue;
 }
 
 .expeditions .badges {
@@ -168,9 +127,6 @@ body.expeditions {
     top: 3.5px;
     width: 91px;
     z-index: 3;
-
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
 }
 
 .badge:after {
@@ -212,8 +168,6 @@ body.expeditions {
     }
 }
 
-
-
 @media(max-width: 767px) {
 
     .expeditions .big {
@@ -245,11 +199,6 @@ body.expeditions {
     .expeditions.inner-page .headline.reverse,
     .expeditions.inner-page .headline.reverse * {
         color: $white;
-    }
-
-    .expeditions .intro .container-image {
-        border: solid 3.5px $grey;
-        max-width: 240px;
     }
 
     .expeditions .content {

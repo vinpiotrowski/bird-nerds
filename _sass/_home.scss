@@ -2,13 +2,6 @@
     background: $white;
 }
 
-.hero {
-    border-bottom: solid 7px $orange;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-}
-
 .hero.intro, .hero.alberta {
     height: 540px;
 }
@@ -25,135 +18,6 @@
     right: 0;
     top: 0;
 }
-
-.hero > .container-image img {
-    width: 100%;
-}
-
-.hero .inner-page {
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    width: 100%;
-}
-
-.overlay {
-    bottom: 0;
-    background: $blue;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.yellow .overlay {
-    background: $yellow;
-    z-index: -1;
-}
-
-.headline {
-    left: 50%;
-    position: absolute;
-    top: 49px;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    z-index: 7;
-}
-
-.headline.bottom {
-    bottom: 70px;
-    top: auto;
-}
-
-.headline.left {
-    left: 105px;
-    margin-left: 0;
-    right: auto;
-    transform: translateX(0);
-    -ms-transform: translateX(0);
-    -webkit-transform: translateX(0);
-}
-
-.headline.right {
-    left: auto;
-    margin-left: 0;
-    right: 105px;
-    transform: translateX(0);
-    -ms-transform: translateX(0);
-    -webkit-transform: translateX(0);
-}
-
-.headline.top {
-    bottom: auto;
-    top: 70px;
-}
-
-.headline.fancy {
-    text-align: center;
-    width: 455px;
-}
-
-.headline.fancy * {
-    color: $brown;
-}
-
-.headline.fancy h1 {
-    font-family: $cursive-font;
-    font-size: 70pt;
-    font-weight: 100;
-    line-height: 1.2;
-    margin: 0;
-    text-shadow: 0 5px 0 $blue;
-}
-
-.headline.fancy h2 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.headline.fancy h3 {
-    font-family: $cursive-font;
-    margin: 0;
-}
-
-.headline.fancy h4 {
-    letter-spacing: 5px;
-}
-
-.scroll-link {
-    bottom: 14px;
-    color: #FFF;
-    font-weight: 700;
-    left: 0;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    text-decoration: none;
-    text-shadow: 0 0 35px #000;
-}
-
-.scroll-link:before {
-    /*border: solid 1px;*/
-    border-radius: 50%;
-    content: '\e917';
-    display:block;
-    font-family: $glyph-font;
-    font-size: 49px;
-    font-weight: 100;
-    height: 70px;
-    margin: 0 auto;
-    padding: 14px 0 0;
-    text-decoration: none;
-    text-shadow: none;
-    width: 70px;
-}
-
 
 .section .container-image {
     border: solid 3.5px $grey;
@@ -259,87 +123,6 @@
     padding: 0 21px;
 }
 
-.updates {
-    background: $white;
-    padding: 105px 0 70px;
-    position: relative;
-    text-align: center;
-}
-
-.update {
-    margin-bottom: 21px;
-}
-
-.updates > h1, .updates > h2 {
-    color: $white;
-    background: $orange;
-    display: inline-block;
-    font-family: $cursive-font;
-    left: 50%;
-    line-height: 1.1;
-    margin: 0;
-    padding: 7px 21px 21px;
-    position: absolute;
-    top: -1px;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-}
-
-.update * {
-    text-decoration :none;
-}
-
-.update .container-image {
-    position: relative;
-}
-
-.update a {
-    background: #FFF;
-    display:block;
-    min-height: 476px;
-    position:relative;
-}
-
-.update a:after {
-    background: #FFF;
-    border: solid 1px;
-    border-radius: 50%;
-    color: $blue;
-    content: '\ea3c';
-    display: block;
-    font-family: "bn-glyphs";
-    font-size: 14pt;
-    font-weight: 700;
-    height: 49px;
-    left: 50%;
-    margin-left: -24.5px;
-    padding: 14px 0 0;
-    position: absolute;
-    text-align: center;
-    bottom: 14px;
-    width: 49px;
-}
-
-.update a:hover:after {
-    background: $blue;
-    color: $white;
-}
-
-.update img {
-    border-bottom: solid 3.5px $blue;
-    width: 100%;
-}
-
-.update h3 {
-    padding: 14px 21px 0;
-}
-
-.update p {
-    padding: 0 21px 14px;
-}
-
-
 @media(max-width: 1199px) {
     .alberta .headline {
         width: 700px;
@@ -348,72 +131,12 @@
 
 
 @media(max-width: 991px) {
-
-    .headline.bottom {
-        bottom: 35px;
-    }
-
-    .headline.left {
-        left: 21px;
-    }
-
-    .headline.fancy.left {
-        left: -14px;
-    }
-
-    .headline.right {
-        right: 21px;
-    }
-
-    .headline.top {
-        top: 35px;
-    }
-
-    .headline-fancy {
-        width: 360px;
-    }
-
-    .hero.alberta {
-        height: auto;
-    }
-
-    .headline.fancy h1 {
-        font-size: 56pt;
-    }
-
     .alberta .headline {
         top: 14px;
     }
 
     .expeditions .badges {
         float: left;
-    }
-
-    .updates {
-        padding: 105px 35px;
-    }
-
-    .update {
-        margin: 7px auto 14px;
-    }
-
-    .update a {
-        min-height: 0;
-    }
-
-    .update a:after {
-        left: 75%;
-    }
-
-    .update .container-image {
-        float: left;
-        margin-right: 14px;
-        width: 50%;
-    }
-
-    .update img {
-        border-bottom: none;
-        border-right: solid 3.5px $blue;
     }
 }
 
@@ -422,42 +145,6 @@
     .hero.intro > div:first-child:after {
         background-image: url(../images/hero-homepage-small.jpg);
         background-position: -140px center;
-    }
-
-    .hero > .container-image img {
-        left: 50%;
-        max-width: 1600px;
-        position: relative;
-        transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-    }
-
-    .hero.tall > .container-image img {
-        width: auto;
-    }
-
-    .headline {
-        left: 0;
-        margin: 0;
-        max-width: 100%;
-        padding: 0 14px;
-    }
-
-    .headline.fancy {
-        left: 50%;
-        top: 35px;
-        transform: translateX(-50%) scale(0.95);
-        -ms-transform: translateX(-50%) scale(0.95);
-        -webkit-transform: translateX(-50%) scale(0.95);
-    }
-
-    .headline.fancy.left {
-        left: 50%;
-    }
-
-    .headline.fancy h1 {
-        font-size: 42pt;
     }
 
     .sections .section, .facts .fact {
@@ -469,38 +156,6 @@
 
     .sections .section:first-child, .facts .fact:first-child {
         border-top: none;
-    }
-
-    .updates {
-        padding: 105px 0 21px;
-    }
-
-    .update {
-        padding: 0 21px;
-    }
-
-    .update a {
-        min-height: 0;
-        padding-bottom: 49px;
-    }
-
-    .update h2 {
-        padding: 28px 0 0;
-    }
-
-    .update a:after {
-        left: 50%;
-    }
-
-    .update .container-image {
-        float: none;
-        margin-right: auto;
-        width: 100%;
-    }
-
-    .update img {
-        border-bottom: solid 3.5px $blue;
-        border-right: none;
     }
 
     .hero.alberta {

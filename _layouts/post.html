@@ -35,7 +35,7 @@ layout: default
 
 <div class="container-fluid">
 
-    <div class="inner-page updates" style="border-top: solid 7px #E45238;">
+    <div class="inner-page tiles" style="border-top: solid 7px #E45238;">
         <h2>More adventures</h2>
 
         {% assign maxRelated = 4 %}
@@ -60,7 +60,7 @@ layout: default
             {% endfor %}
 
             {% if sameTagCount >= minCommonTags %}
-                <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
+                <div class="col-xs-12 col-md-3 tile blue">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
                             <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">

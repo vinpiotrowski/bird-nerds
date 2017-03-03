@@ -89,12 +89,12 @@ section: "home"
         <div class="clearfix"> </div>
 
         <section class="container-fluid">
-            <div class="inner-page updates">
+            <div class="inner-page tiles">
                 <h1>Recent Expeditions</h1>
                 {% assign idx = 0 %}
                 {% for post in site.posts %}
                     {% if post.categories contains 'expeditions' %}
-                        <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
+                        <div class="col-xs-12 col-md-3 tile blue">
                                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
                                     <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">

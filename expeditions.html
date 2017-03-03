@@ -26,32 +26,16 @@ section: "expeditions"
 
     <div class="clearfix"> </div>
 
-    <div class="expeditions">
-        {% assign idx = 1 %}
-        {% assign idx = 0 %}
-        {% assign cnt = 0 %}
-        {% for post in site.posts %}
-            {% break %}
-            {% if post.categories contains 'expeditions' %}
-                <div class="content">
-                    <div class="inner-page">
-                        {{ post.content }}
-                    </div>
-                </div>
-                {% assign cnt = cnt | plus:1 %}
-            {% endif %}
-            {% assign idx = idx | plus:1 %}
-            {% if cnt == 3%}
-                {% break %}
-            {% endif %}
-        {% endfor %}
+    <div class="content">
+        <div class="slim blue" style="text-align: center;">
+            <p>Being outdoors is great, but when you start paying attention to the critters around you, it makes the experience even better!  For us, birding is a form of meditation that provides relaxation and exercise.  This section is where we keep our field notes.</p>
+        </div>
     </div>
 
-    <div class="updates inner-page">
-        <h2>Field notes</h2>
+    <div class="inner-page" style="padding-bottom: 70px;">
         {% for post in site.posts offset:idx %}
             {% if post.categories contains 'expeditions' %}
-                <div class="col-xs-12 col-md-3 update {{ post.categories | join: ' ' }}">
+                <div class="col-xs-12 col-md-3 tile blue">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
                             <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">

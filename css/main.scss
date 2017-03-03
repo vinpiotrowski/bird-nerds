@@ -129,6 +129,13 @@ a {
   padding: 35px;
 }
 
+.hero {
+  border-bottom: solid 7px $orange;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
 .fixed {
   float: left;
   min-height: 7px;
@@ -140,8 +147,6 @@ a {
   width: calc(100% - 310px);
 }
 
-
-
 .show-small {
   display: none;
 }
@@ -150,12 +155,134 @@ a {
   display: block;
 }
 
+.hero > .container-image img {
+  width: 100%;
+}
+
+.hero .inner-page {
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 100%;
+}
+
+.overlay {
+  bottom: 0;
+  background: $blue;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.headline {
+  left: 50%;
+  position: absolute;
+  top: 49px;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  z-index: 7;
+}
+
+.headline.bottom {
+  bottom: 70px;
+  top: auto;
+}
+
+.headline.left {
+  left: 105px;
+  margin-left: 0;
+  right: auto;
+  transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.headline.right {
+  left: auto;
+  margin-left: 0;
+  right: 105px;
+  transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+.headline.top {
+  bottom: auto;
+  top: 70px;
+}
+
+.headline.fancy {
+  text-align: center;
+  width: 455px;
+}
+
+.headline.fancy * {
+  color: $brown;
+}
+
+.headline.fancy h1 {
+  font-family: $cursive-font;
+  font-size: 70pt;
+  font-weight: 100;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 0 5px 0 $blue;
+}
+
+.headline.fancy h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.headline.fancy h3 {
+  font-family: $cursive-font;
+  margin: 0;
+}
+
+.headline.fancy h4 {
+  letter-spacing: 5px;
+}
+
+.scroll-link {
+  bottom: 14px;
+  color: #FFF;
+  font-weight: 700;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 35px #000;
+}
+
+.scroll-link:before {
+  border-radius: 50%;
+  content: '\e917';
+  display:block;
+  font-family: $glyph-font;
+  font-size: 49px;
+  font-weight: 100;
+  height: 70px;
+  margin: 0 auto;
+  padding: 14px 0 0;
+  text-decoration: none;
+  text-shadow: none;
+  width: 70px;
+}
+
+
 .container-image img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-
 
 .button {
   background: #FFF;
@@ -203,6 +330,149 @@ a {
   content: $chev-right;
 }
 
+.tiles {
+  background: $white;
+  padding: 105px 0 70px;
+  position: relative;
+  text-align: center;
+}
+
+.tiles > h1, .tiles > h2 {
+  color: $white;
+  background: $orange;
+  display: inline-block;
+  font-family: $cursive-font;
+  left: 50%;
+  line-height: 1.1;
+  margin: 0;
+  padding: 7px 21px 21px;
+  position: absolute;
+  top: -1px;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.tile {
+  margin-bottom: 21px;
+}
+
+.tile * {
+  text-decoration :none;
+}
+
+.tile .container-image {
+  position: relative;
+}
+
+.tile a {
+  background: #FFF;
+  display:block;
+  min-height: 476px;
+  position:relative;
+}
+
+.tile a:after {
+  background: #FFF;
+  border: solid 1px;
+  border-radius: 50%;
+  content: $arrow;
+  display: block;
+  font-family: $glyph-font;
+  font-size: 14pt;
+  font-weight: 700;
+  height: 49px;
+  left: 50%;
+  margin-left: -24.5px;
+  padding: 14px 0 0;
+  position: absolute;
+  text-align: center;
+  bottom: 14px;
+  width: 49px;
+}
+
+.tile.orange a:after {
+  color: $orange;
+}
+
+.tile.orange a:hover:after {
+  background: $orange;
+  color: $white;
+}
+
+.tile.brown a:after {
+  color: $brown;
+}
+
+.tile.brown a:hover:after {
+  background: $brown;
+  color: $white;
+}
+
+.tile.blue a:after {
+  color: $blue;
+}
+
+.tile.blue a:hover:after {
+  background: $blue;
+  color: $white;
+}
+
+.tile.green a:after {
+  color: $green;
+}
+
+.tile.green a:hover:after {
+  background: $green;
+  color: $white;
+}
+
+.tile.yellow a:after {
+  color: $yellow;
+}
+
+.tile.yellow a:hover:after {
+  background: $yellow;
+  color: $white;
+}
+
+.tile img {
+  border-bottom: solid 3.5px $white;
+  width: 100%;
+}
+
+.tile.orange img {
+  border-color: $orange;
+}
+
+.tile.brown img {
+  border-color: $brown;
+}
+
+.tile.blue img {
+  border-color: $blue;
+}
+
+.tile.green img {
+  border-color: $green;
+}
+
+.tile.yellow img {
+  border-color: $yellow;
+}
+
+.tile h3 {
+  padding: 14px 21px 0;
+}
+
+.tile h4 {
+  padding: 7px 21px 0;
+}
+
+.tile p {
+  padding: 0 21px 14px;
+}
+
 @media(max-width: 991px) {
   h1 {
     font-size: 35px;
@@ -214,6 +484,66 @@ a {
 
   h3 {
     font-size: 21px;
+  }
+
+
+  .headline.bottom {
+    bottom: 35px;
+  }
+
+  .headline.left {
+    left: 21px;
+  }
+
+  .headline.fancy.left {
+    left: -14px;
+  }
+
+  .headline.right {
+    right: 21px;
+  }
+
+  .headline.top {
+    top: 35px;
+  }
+
+  .headline-fancy {
+    width: 360px;
+  }
+
+  .hero.alberta {
+    height: auto;
+  }
+
+  .headline.fancy h1 {
+    font-size: 56pt;
+  }
+
+  .tiles {
+    padding: 105px 35px;
+  }
+
+  .tile {
+    margin: 7px auto 14px;
+  }
+
+  .tile a {
+    min-height: 0;
+  }
+
+  .tile a:after {
+    left: 75%;
+  }
+
+  .tile .container-image {
+    float: left;
+    margin-right: 14px;
+    width: 50%;
+  }
+
+  .tile img {
+    border-bottom: none;
+    border-right: solid 3.5px;
   }
 }
 
@@ -243,9 +573,75 @@ a {
     display: none;
   }
 
+  .hero > .container-image img {
+    left: 50%;
+    max-width: 1600px;
+    position: relative;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  }
+
+  .hero.tall > .container-image img {
+    width: auto;
+  }
+
+  .headline {
+    left: 0;
+    margin: 0;
+    max-width: 100%;
+    padding: 0 14px;
+  }
+
+  .headline.fancy {
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%) scale(0.95);
+    -ms-transform: translateX(-50%) scale(0.95);
+    -webkit-transform: translateX(-50%) scale(0.95);
+  }
+
+  .headline.fancy.left {
+    left: 50%;
+  }
+
+  .headline.fancy h1 {
+    font-size: 42pt;
+  }
+
+  .tiles {
+    padding: 105px 0 21px;
+  }
+
+  .tile {
+    padding: 0 21px;
+  }
+
+  .tile a {
+    min-height: 0;
+    padding-bottom: 49px;
+  }
+
+  .tile h2 {
+    padding: 28px 0 0;
+  }
+
+  .tile a:after {
+    left: 50%;
+  }
+
+  .tile .container-image {
+    float: none;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .tile img {
+    border-bottom: solid 3.5px;
+    border-right: none;
+  }
+
 }
-
-
 
 @import "grid";
 @import "navigation";
