@@ -28,7 +28,7 @@
   background: rgba(250,247,242,0.6);
   bottom: 0;
   color: $brown;
-  content: '\e98b';
+  content: $expand;
   display: block;
   font-family: $glyph-font;
   font-size: 28px;
@@ -57,6 +57,17 @@
   overflow: hidden;
   padding: 21px 21px 21px 0;
   position: relative;
+}
+
+.fixed {
+  float: left;
+  min-height: 7px;
+  width: 310px;
+}
+
+.fixed + div {
+  float: left;
+  width: calc(100% - 310px);
 }
 
 .fixed + .container-photo {
@@ -106,7 +117,7 @@
 }
 
 .close-link:after {
-  content: '\e913';
+  content: $close;
   display: block;
   font-family: bn-glyphs;
   font-size: 35px;
@@ -125,12 +136,12 @@
 .prev-link, .next-link {
   display: block;
   font-size:0;
-  height: 100%;
   left: 0;
   position: absolute;
   text-align: center;
   text-decoration: none;
-  top: 0;
+  top: 50%;
+  top: calc(50% - 42px);
   width: 63px;
   z-index: 22;
 }
@@ -140,44 +151,37 @@
   right: 21px;
 }
 
-.container-photo .wrap {
-  display: block;
-  height: auto;
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-}
-
-.container-photo .wrap:before, .container-photo .wrap:after {
+.container-photo .prev-link:before, .container-photo .next-link:after {
   background: rgba(255,255,255,0.6);
   color: $brown;
-  content: '\e914';
+  content: $chev-left;
   display:block;
   font-family: bn-glyphs;
   left: 0;
-  margin-top: -38.5px;
   padding: 7px 0 0;
   position: absolute;
   font-size: 70px;
   font-weight: 100;
   text-align: center;
   text-decoration: none;
-  top: 50%;
+  top: 0;
   width: 56px;
   z-index: 21;
 }
 
-.container-photo .wrap:after {
+.container-photo .next-link:after {
   left: auto;
-  content: '\e915';
-  right: 21px;
+  content: $chev-right;
+  right: 0;
 }
 
-@media(max-width: 479px) {
+.container-photo .prev-link:hover:before, .container-photo .next-link:hover:after {
+  background: $brown;
+  color: $white;
+}
 
-  .close-link:after {
-    color: $white;
-  }
+
+@media(max-width: 479px) {
 
   .fixed {
     background: #FFF;
@@ -194,7 +198,7 @@
 
   .container-photo img {
     position: relative;
-    top: 7px;
+    top: 0;
     transform: none;
   }
 
@@ -202,11 +206,13 @@
     margin: 7px 21px 14px;
   }
 
-  .next-link {
-    right: 0;
+  .container-photo .prev-link:before, .container-photo .next-link:after {
+    font-size: 35px;
+    padding: 0;
+    width: 28px;
   }
 
-  .container-photo .wrap:after {
+  .next-link {
     right: 0;
   }
 

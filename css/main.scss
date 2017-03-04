@@ -48,7 +48,13 @@ $bird-house:       '\e921';
 
 $camera:           '\e91c';
 
+$chev-left:        '\e914';
+
 $chev-right:       '\e915';
+
+$close:            '\e913';
+
+$expand:           '\e98b';
 
 $feather:          '\f02d';
 
@@ -115,7 +121,6 @@ p, ul li {
 
 a {
   outline: none;
-  transition: all 0.2s ease-out 0s;
 }
 
 .inner-page {
@@ -134,17 +139,6 @@ a {
   overflow: hidden;
   position: relative;
   z-index: 1;
-}
-
-.fixed {
-  float: left;
-  min-height: 7px;
-  width: 310px;
-}
-
-.fixed + div {
-  float: left;
-  width: calc(100% - 310px);
 }
 
 .show-small {
@@ -556,11 +550,7 @@ a {
   .content {
     padding: 21px;
   }
-
-  article.inner-page {
-    margin: 14px auto;
-  }
-
+  
   .button.next {
     display: none;
   }

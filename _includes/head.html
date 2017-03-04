@@ -20,7 +20,11 @@
       $(".menu-toggle").on("click", function() {
         $(this).toggleClass("active");
       });
-
+      var h = $(".container-photo img").height();
+      if(h) {
+        h = h / 2 - 18;
+        $(".next-link, .prev-link").css("top", h + "px");
+      }
       $(".next-link, .prev-link").on("click", function(e) {
         e.preventDefault();
       });
