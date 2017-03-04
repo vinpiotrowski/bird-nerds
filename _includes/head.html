@@ -20,11 +20,14 @@
       $(".menu-toggle").on("click", function() {
         $(this).toggleClass("active");
       });
-      var h = $(".container-photo img").height();
-      if(h) {
-        h = h / 2 - 7;
-        $(".next-link, .prev-link").css("top", h + "px");
-      }
+
+      $(".container-photo img").load( function(){
+        var h = $(this).height();
+        if(h) {
+          h = h / 2 - 21;
+          $(".next-link, .prev-link").css("top", h + "px");
+        }
+      });
       $(".next-link, .prev-link").on("click", function(e) {
         e.preventDefault();
       });
