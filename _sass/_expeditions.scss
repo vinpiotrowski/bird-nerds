@@ -154,6 +154,10 @@ body.expeditions {
     content: '\e8f9';
 }
 
+.badge.mixed:before {
+    content: $mixed;
+}
+
 .badge.count:before {
     content: attr(data-count);
     font-family: $base-font;
