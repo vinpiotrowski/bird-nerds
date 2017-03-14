@@ -42,6 +42,12 @@ $text:             #7A5453;
 
 $arrow:            '\ea3c';
 
+$badge-bird-house: '\e918';
+
+$badge-magpie:     '\e919';
+
+$badge-squirrel:   '\e91a';
+
 $binoculars:       '\f1e5';
 
 $bird-house:       '\e921';
@@ -125,6 +131,26 @@ p, ul li {
 
 a {
   outline: none;
+}
+
+.orange {
+  color: $orange;
+}
+
+.brown {
+  color: $brown;
+}
+
+.blue {
+  color: $blue;
+}
+
+.green {
+  color: $green;
+}
+
+.yellow {
+  color: $yellow;
 }
 
 .inner-page {
@@ -282,6 +308,10 @@ a {
   max-width: 100%;
 }
 
+.comic img {
+  image-rendering: auto;
+}
+
 .button {
   background: $pure-white;
   color: $blue;
@@ -335,7 +365,15 @@ a {
   text-align: center;
 }
 
-.tiles > h1, .tiles > h2 {
+.divider {
+  border-top: solid 7px;
+  height: 70px;
+  position: relative;
+  text-align: center;
+}
+
+
+.tiles > h1, .tiles > h2, .divider > h1, .divider > h2 {
   color: $white;
   background: $orange;
   display: inline-block;
@@ -469,6 +507,14 @@ a {
 
 .tile p {
   padding: 0 21px 14px;
+}
+
+.divider.green {
+  border-color: $green;
+}
+
+.divider.green > h1, .divider.green > h2 {
+  background: $green;
 }
 
 @media(max-width: 991px) {
