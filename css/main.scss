@@ -66,8 +66,13 @@ $feather:          '\f02d';
 
 $featured:         '\e91e';
 
-$map:              '\f278';
+$feeder1:          '\e91f';
 
+$feeder2:          '\e922';
+
+$feeder3:          '\e923';
+
+$map:              '\f278';
 
 $mixed:            '\e902';
 
@@ -310,6 +315,10 @@ a {
 
 .comic img {
   image-rendering: auto;
+}
+
+.comic h1, .comic h2, .comic h3 {
+  font-family: $cursive-font;
 }
 
 .button {

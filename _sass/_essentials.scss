@@ -85,7 +85,10 @@ ul.definition > li > p {
 
 
 .magpie:before,
-.squirrel:before {
+.squirrel:before,
+.feeder-1:before,
+.feeder-2:before,
+.feeder-3:before {
     color: $brown;
     content: $badge-magpie;
     display: block;
@@ -96,4 +99,16 @@ ul.definition > li > p {
 
 .squirrel:before {
     content: $badge-squirrel;
+}
+
+.feeder-1:before {
+    content: $feeder1;
+}
+
+.feeder-2:before {
+    content: $feeder2;
+}
+
+.feeder-3:before {
+    content: $feeder3;
 }
