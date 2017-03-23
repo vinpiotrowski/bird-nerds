@@ -14,7 +14,8 @@
 }
 
 #featured-birds a:before,
-#bird-photography a:before {
+#bird-photography a:before,
+#bird-feeder a:before {
     background: $orange;
     color: $white;
     content: ' ';
@@ -34,6 +35,11 @@
 #bird-photography a:before {
     background: $yellow;
     content: $camera;
+}
+
+#bird-feeder a:before {
+    background: $green;
+    content: $badge-bird-house;
 }
 
 ul.definition > li > p {
@@ -111,4 +117,10 @@ ul.definition > li > p {
 
 .feeder-3:before {
     content: $feeder3;
+}
+
+.comic > div:first-child img {
+    margin: 0;
+    max-width: 240px;
+    padding: 21px 2% 14px;
 }

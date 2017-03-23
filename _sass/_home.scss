@@ -59,9 +59,13 @@
     max-width: 320px;
 }
 
-.section h2,
-.fact h2 {
+.section h2 {
     font-family: $cursive-font;
+}
+
+.fact h2, .fact h3 {
+    font-family: $cursive-font;
+    text-align: center;
 }
 
 .section.expeditions h2,
@@ -95,6 +99,7 @@
     font-family: bn-glyphs;
     font-size: 112pt;
     font-weight: 100;
+    text-align: center;
 }
 
 .fact.bird:before {
