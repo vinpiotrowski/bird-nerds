@@ -167,6 +167,10 @@ body.expeditions {
 }
 
 @media(max-width: 991px) {
+    .post-content p {
+        margin: 0 7px;
+    }
+
     .badges {
         float: left;
     }

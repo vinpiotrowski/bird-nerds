@@ -486,23 +486,28 @@ a {
   width: 100%;
 }
 
-.tile.orange img {
+.tile.orange img,
+.tile.orange.exp img {
   border-color: $orange;
 }
 
-.tile.brown img {
+.tile.brown img,
+.tile.brown.exp img {
   border-color: $brown;
 }
 
-.tile.blue img {
+.tile.blue img,
+.tile.blue.exp img {
   border-color: $blue;
 }
 
-.tile.green img {
+.tile.green img,
+.tile.green.exp img {
   border-color: $green;
 }
 
-.tile.yellow img {
+.tile.yellow img,
+.tile.yellow.exp img {
   border-color: $yellow;
 }
 
@@ -584,17 +589,17 @@ a {
     min-height: 0;
   }
 
-  .tile a:after {
+  .tile.exp a:after {
     left: 75%;
   }
 
-  .tile .container-image {
+  .tile.exp .container-image {
     float: left;
     margin-right: 14px;
     width: 50%;
   }
 
-  .tile img {
+  .tile.exp img {
     border-bottom: none;
     border-right: solid 3.5px;
   }
@@ -676,17 +681,20 @@ a {
     padding: 28px 0 0;
   }
 
-  .tile a:after {
+  .tile a:after,
+  .tile.exp a:after {
     left: 50%;
   }
 
-  .tile .container-image {
+  .tile .container-image,
+  .tile.exp .container-image {
     float: none;
     margin-right: auto;
     width: 100%;
   }
 
-  .tile img {
+  .tile img,
+  .tile.exp img {
     border-bottom: solid 3.5px;
     border-right: none;
   }

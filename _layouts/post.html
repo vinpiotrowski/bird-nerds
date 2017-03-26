@@ -60,7 +60,7 @@ layout: default
             {% endfor %}
 
             {% if sameTagCount >= minCommonTags %}
-                <div class="col-xs-12 col-md-3 tile blue">
+                <div class="col-xs-12 col-md-3 tile exp blue">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
                             <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">

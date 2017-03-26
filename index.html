@@ -94,7 +94,7 @@ section: "home"
                 {% assign idx = 0 %}
                 {% for post in site.posts %}
                     {% if post.categories contains 'expeditions' %}
-                        <div class="col-xs-12 col-md-3 tile blue">
+                        <div class="col-xs-12 col-md-3 tile exp blue">
                                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
                                     <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
