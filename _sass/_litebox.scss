@@ -181,7 +181,7 @@
 }
 
 
-@media(max-width: 479px) {
+@media(max-width: 768px) {
 
   .fixed {
     background: #FFF;
@@ -206,15 +206,17 @@
     margin: 7px 21px 14px;
   }
 
+  .next-link {
+    right: 0;
+  }
+
+}
+
+
+@media(max-width: 480px) {
   .container-photo .prev-link:before, .container-photo .next-link:after {
     font-size: 35px;
     padding: 0;
     width: 28px;
   }
-
-  .next-link {
-    right: 0;
-  }
-
-
 }
