@@ -374,15 +374,7 @@ a {
   text-align: center;
 }
 
-.divider {
-  border-top: solid 7px;
-  height: 70px;
-  position: relative;
-  text-align: center;
-}
-
-
-.tiles > h1, .tiles > h2, .divider > h1, .divider > h2 {
+.tiles > h1, .tiles > h2 {
   color: $white;
   background: $orange;
   display: inline-block;
@@ -525,6 +517,23 @@ a {
   padding: 0 21px 14px;
 }
 
+.divider {
+  border-top: solid 7px;
+  position: relative;
+  text-align: center;
+}
+
+.divider > h1, .divider > h2 {
+  color: $white;
+  background: $orange;
+  display: inline-block;
+  font-family: $cursive-font;
+  line-height: 1.1;
+  margin: 0;
+  padding: 7px 21px 21px;
+  top: -1px;
+}
+
 .divider.green {
   border-color: $green;
 }
@@ -602,8 +611,8 @@ a {
   }
 
   .tile.exp img {
+    border-radius: 7px 0 0 7px;
     border-bottom: none;
-    border-right: solid 3.5px;
   }
 }
 
@@ -697,7 +706,7 @@ a {
 
   .tile img,
   .tile.exp img {
-    border-bottom: solid 3.5px;
+    border-radius: 7px 7px 0 0;
     border-right: none;
   }
 
