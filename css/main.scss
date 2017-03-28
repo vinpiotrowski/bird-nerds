@@ -412,6 +412,8 @@ a {
 
 .tile a {
   background: $pure-white;
+  border: solid 1px;
+  border-radius: 7px;
   display:block;
   min-height: 476px;
   position:relative;
@@ -482,32 +484,32 @@ a {
 }
 
 .tile img {
-  border-bottom: solid 3.5px $white;
+  border-radius: 6px 6px 0 0;
   width: 100%;
 }
 
-.tile.orange img,
-.tile.orange.exp img {
+.tile.orange a,
+.tile.orange.exp a {
   border-color: $orange;
 }
 
-.tile.brown img,
-.tile.brown.exp img {
+.tile.brown a,
+.tile.brown.exp a {
   border-color: $brown;
 }
 
-.tile.blue img,
-.tile.blue.exp img {
+.tile.blue a,
+.tile.blue.exp a {
   border-color: $blue;
 }
 
-.tile.green img,
-.tile.green.exp img {
+.tile.green a,
+.tile.green.exp a {
   border-color: $green;
 }
 
-.tile.yellow img,
-.tile.yellow.exp img {
+.tile.yellow a,
+.tile.yellow.exp a {
   border-color: $yellow;
 }
 

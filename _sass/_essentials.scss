@@ -17,6 +17,7 @@
 #bird-photography a:before,
 #bird-feeder a:before {
     background: $orange;
+    border-radius: 6px 6px 0 0;
     color: $white;
     content: ' ';
     display: block;
