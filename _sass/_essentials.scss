@@ -125,3 +125,9 @@ ul.definition > li > p {
     max-width: 240px;
     padding: 21px 2% 14px;
 }
+
+@media(max-width: 767px) {
+    #essentials .fact {
+        display: none;
+    }
+}
