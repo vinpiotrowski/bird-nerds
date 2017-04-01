@@ -153,7 +153,6 @@
 
     .hero.intro > div:first-child:after {
         background-image: url(../images/hero-homepage-small.jpg);
-        background-position: -140px center;
     }
 
     .sections .section, .facts .fact {
@@ -182,6 +181,12 @@
 
     .hero.alberta img {
         width: auto;
+    }
+}
+
+@media(max-width: 479px) {
+    .hero.intro > div:first-child:after {
+        background-position: -140px center;
     }
 }
 
