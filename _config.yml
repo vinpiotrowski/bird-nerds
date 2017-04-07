@@ -8,9 +8,9 @@
 # Site settings
 title: Bird Nerds
 email: vin.piotrowski@gmail.com
-description: Vincent and Sandra go birding
+description: Vincent and Sandra go searching for birds in Alberta and talk bird nerd craft.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "www.birdnerds.ca/"
 
 # Build settings
 markdown: kramdown

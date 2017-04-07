@@ -4,7 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Bird Nerds | {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url"                content="{{ page.url }}" />
+  <meta property="og:type"               content="article" />
+  <meta property="og:title"              content="Bird Nerds | {{ page.title }}" />
+  <meta property="og:description"        content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image"              content="{% if page.thumbnail %}{{ '/images/' | prepend: site.baseurl | append: page.thumbnail }}{% else %}{{ '/images/' | prepend: site.baseurl | append: 'thumb-website.png' }}{% endif %}" />
 
   <link href="https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel="stylesheet">
 
