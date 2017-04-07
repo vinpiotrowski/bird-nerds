@@ -10,7 +10,7 @@ title: Bird Nerds
 email: vin.piotrowski@gmail.com
 description: Vincent and Sandra go searching for birds in Alberta and talk bird nerd craft.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.birdnerds.ca/"
+url: "http://birdnerds.ca/"
 
 # Build settings
 markdown: kramdown
