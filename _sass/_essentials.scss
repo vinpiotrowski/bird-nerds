@@ -50,7 +50,7 @@ ul.definition > li > p {
 
 .slim {
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 777px;
 }
 
 .slim.orange * {
@@ -88,6 +88,10 @@ ul.definition > li > p {
 
 #featured-birds-article .slim h1:before {
     content: $featured;
+}
+
+#bird-identification-article .slim h1:before {
+    content: $badge-eagle-eye;
 }
 
 

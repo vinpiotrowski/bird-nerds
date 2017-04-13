@@ -78,7 +78,7 @@
 }
 
 .section.essentials h2,
-.essentials .button {
+.section.essentials .button {
     color: $green;
 }
 
@@ -86,12 +86,12 @@
     color: $yellow;
 }
 
-.expeditions .button:hover {
+.section.expeditions .button:hover {
     background: $blue;
     color: $white;
 }
 
-.essentials .button:hover {
+.section.essentials .button:hover {
     background: $green;
     color: $white;
 }

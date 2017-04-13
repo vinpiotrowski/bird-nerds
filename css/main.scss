@@ -44,6 +44,8 @@ $arrow:            '\ea3c';
 
 $badge-bird-house: '\e918';
 
+$badge-eagle-eye:  '\e91d';
+
 $badge-magpie:     '\e919';
 
 $badge-squirrel:   '\e91a';
@@ -168,6 +170,35 @@ a {
   background: $white;
   padding: 35px;
 }
+
+hr {
+  background: $light-border;
+  border: none;
+  height: 3.5px;
+  margin: 0 auto 35px;
+  max-width: 60%;
+}
+
+.orange hr {
+  background: $orange;
+}
+
+.brown hr {
+  background: $brown;
+}
+
+.blue hr {
+  background: $blue;
+}
+
+.green hr {
+  background: $green;
+}
+
+.yellow hr {
+  background: $yellow;
+}
+
 
 .hero {
   border-bottom: solid 7px $orange;
@@ -306,7 +337,6 @@ a {
   width: 70px;
 }
 
-
 .container-image img {
   display: block;
   margin: 0 auto;
@@ -353,6 +383,51 @@ a {
   font-family: $glyph-font;
   padding: 0 0 0 3.5px;
   vertical-align: middle;
+}
+
+.brown .button {
+  color: $brown;
+}
+
+.brown .button:hover {
+  background: $brown;
+  color: $pure-white;
+}
+
+.orange .button {
+  color: $orange;
+}
+
+.orange .button:hover {
+  background: $orange;
+  color: $pure-white;
+}
+
+.blue .button {
+  color: $blue;
+}
+
+.blue .button:hover {
+  background: $blue;
+  color: $pure-white;
+}
+
+.green .button {
+  color: $green;
+}
+
+.green .button:hover {
+  background: $green;
+  color: $pure-white;
+}
+
+.yellow .button {
+  color: $yellow;
+}
+
+.yellow .button:hover {
+  background: $yellow;
+  color: $pure-white;
 }
 
 .button.next {
@@ -540,6 +615,10 @@ a {
 
 .divider.green > h1, .divider.green > h2 {
   background: $green;
+}
+
+.divider.blue > h1, .divider.blue > h2 {
+  background: $blue;
 }
 
 @media(max-width: 991px) {
