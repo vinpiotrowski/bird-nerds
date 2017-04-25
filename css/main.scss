@@ -442,6 +442,11 @@ hr {
   content: $chev-right;
 }
 
+.button.next:hover {
+  border-color: $blue;
+  color: #FFFFFF;
+}
+
 .tiles {
   background: $white;
   padding: 105px 0 70px;
