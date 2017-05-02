@@ -59,6 +59,14 @@
   position: relative;
 }
 
+.container-video {
+  height: calc(100vh - 91px);
+  overflow: hidden;
+  padding: 21px 21px 21px 0;
+  position: relative;
+  width: 100%;
+}
+
 .fixed {
   float: left;
   min-height: 7px;
@@ -194,6 +202,12 @@
   .fixed + .container-photo {
     max-width: 767px;
     padding: 0;
+  }
+
+  .fixed + .container-video {
+    max-width: 767px;
+    padding: 0;
+    width: 100%;
   }
 
   .container-photo img {

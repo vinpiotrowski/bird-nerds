@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body class="photo {{page.section}}">
+
+  <header class="site-header light">
+      <nav>
+          <div class="fixed">
+              <a href="/" class="site-title">Bird Nerds</a>
+          </div>
+          <div class="photo-title">
+              <h2>Videos</h2>
+          </div>
+      </nav>
+  </header>
+    <a class="close-link" href="#" onclick="window.history.back();return false;">Close</a>
+
+    <main class="page-content">
+
+      <div class="fixed">
+        <div class="photo-description">
+          <p>{{ page.description}}</p>
+        </div>
+      </div>
+
+      <div class="container-video">
+          {{ content }}
+        <div class="clearfix"> </div>
+      </div>
+      <div class="clearfix"> </div>
+    </main>
+
+
+  </body>
+
+</html>
