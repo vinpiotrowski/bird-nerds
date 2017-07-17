@@ -157,6 +157,10 @@ body.expeditions {
     content: $mixed;
 }
 
+.badge.thunder:before {
+    content: '\e905'
+}
+
 .badge.count:before {
     content: attr(data-count);
     font-family: $base-font;
