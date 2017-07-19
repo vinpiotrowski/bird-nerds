@@ -14,7 +14,7 @@ weather: partly
 temperature: 24
 ---
 
-<section>
+<section class="mega">
 
         <div class="container-image col-xs-12 big">
             <img src="{{ '/images/2017-07-03-three-toed-woodpecker-hero-lg.jpg' | prepend: site.baseurl }}" alt="">
@@ -25,9 +25,7 @@ temperature: 24
             </div>
         </div>
 
-        <div class="clearfix"> </div>
-
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12">
             <div class="col-xs-12">
                 <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
                 <h2>Bird nerds notes</h2>
@@ -35,121 +33,109 @@ temperature: 24
                     <p>A short drive can completely change the type of birds you see in Alberta.  On this expedition we headed West of Calgary into the foothills, along highway 8, and into Brown-Lowery Provincial Park.  We were looking for three-toed woodpeckers and found six!  We also saw some warblers, phoebes, and vireos which seem to be way more abundant on the West side of Calgary.</p>
                 </div>
             </div>
-
-
-            <div class="mega">
-            <div class="sightings col-xs-12">
-                <h3>Sightings</h3>
-                <ul>
-                    <li>3x American goldfinch</li>
-                    <li>3x Mountain bluebird</li>
-                    <li>6x Three-toed woodpecker</li>
-                    <li>1x Downy woodpecker</li>
-                    <li>4x Tennessee warbler</li>
-                    <li>5x Tree swallow</li>
-                    <li>1x Great blue heron</li>
-                    <li>1x Night heron</li>
-                    <li>2x Clay-coloured sparrow</li>
-                    <li>4x Double-breasted cormorant</li>
-                    <li>10x White pelican</li>
-                    <li>5x Black-billed gull</li>
-                    <li>7x Red-winged blackbird</li>
-                    <li>1x Eastern phoebe</li>
-                    <li>1x Warbling vireo</li>
-                    <li>4x Ruddy duck</li>
-                    <li>2x Redhead</li>
-                    <li>5x Lesser scaup</li>
-                    <li>14x Canada goose</li>
-                    <li>2x Black swift</li>
-                </ul>
-            </div>
-            <div class="badges col-xs-12">
-                <h3>Conditions</h3>
-                <ul>
-                    <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
-                    <li class="badge {{ page.weather }}">{{ page.weather }}</li>
-                    <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
-                </ul>
-            </div>
-            </div>
         </div>
 
-
-
-        <div class="col-xs-12 col-sm-4 thumbnails">
+        <div class="col-xs-12 thumbnails">
             <h3>Photos</h3>
-            <div class="container-image thumbnail col-xs-6 col-sm-12">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/american-goldfinch-backside.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-american-goldfinch-sm.jpg' | prepend: site.baseurl }}" alt="american goldfinch backside photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/eastern-phoebe-on-a-post.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-eastern-phoebe-sm.jpg' | prepend: site.baseurl }}" alt="eastern phoebe on a post photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/mountain-bluebird-eating.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-mountain-bluebird-sm.jpg' | prepend: site.baseurl }}" alt="mountain bluebird eating photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/warbling-vireo-from-underneath.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-warbling-vireo-sm.jpg' | prepend: site.baseurl }}" alt="warbling vireo from underneath photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/banded-downy-woodpecker.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-downy-woodpecker-sm.jpg' | prepend: site.baseurl }}" alt="banded downy woodpecker photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/three-toed-woodpecker-by-hole.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-male-three-toed-woodpecker-sm.jpg' | prepend: site.baseurl }}" alt="three-toed woodpecker by hole photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/clay-coloured-sparrow-in-shrub.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-clay-coloured-sparrow-sm.jpg' | prepend: site.baseurl }}" alt="clay-coloured sparrow in a shrub photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/tennessee-warbler-on-a-limb.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-tenessee-warbler-sm.jpg' | prepend: site.baseurl }}" alt="tennessee warbler on a limb photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/ring-billed-gull-posed.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-ring-billed-gull-sm.jpg' | prepend: site.baseurl }}" alt="ring-billed gull posed photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/lesser-scaup.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-lesser-scaup-sm.jpg' | prepend: site.baseurl }}" alt="lesser-scaup photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/redhead-cleaning.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-redhead-sm.jpg' | prepend: site.baseurl }}" alt="redhead cleaning photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/canada-goose-teenager.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-canada-goose-teenager-sm.jpg' | prepend: site.baseurl }}" alt="canada goose teenager photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/cormorant-on-a-branch.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-cormorant-sm.jpg' | prepend: site.baseurl }}" alt="cormorant on a branch photo">
                 </a>
             </div>
-            <div class="container-image thumbnail col-xs-6 col-lg-4">
+            <div class="container-image thumbnail col-xs-6 col-sm-3">
                 <a href="{{ '/expeditions/photos/swainsons-hawk-over-gopher.html' | prepend: site.baseurl }}">
                     <img src="{{ '/images/2017-07-03-swainsons-hawk-sm.jpg' | prepend: site.baseurl }}" alt="swainson's hawk over gopher photo">
                 </a>
             </div>
+        </div>
 
-    <div class="clearfix"> </div>
+        <div class="clearfix"></div>
+        <div class="blue">
+            <hr />
+        </div>
+
+        <div class="badges col-xs-12 col-md-4">
+            <h3>Conditions</h3>
+            <ul>
+                <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
+                <li class="badge {{ page.weather }}">{{ page.weather }}</li>
+                <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
+            </ul>
+        </div>
+
+        <div class="sightings col-xs-12 col-md-8">
+            <h3>First sightings (lifers)</h3>
+            <ul>
+                <li>Three-toed woodpecker</li>
+                <li>Tennessee warbler</li>
+                <li>Night heron</li>
+                <li>Eastern phoebe</li>
+                <li>Warbling vireo</li>
+                <li>Black swift</li>
+            </ul>
+        </div>
+
+    <div class="clearfix"></div>
 
 </section>
 

@@ -92,9 +92,9 @@ body.expeditions {
     margin-bottom: 21px;
 }
 
-.badges {
+/*.badges {
     float: right;
-}
+}*/
 
 .badges ul {
     padding: 0;
@@ -104,7 +104,7 @@ body.expeditions {
     color: $text;
     display: inline-block;
     font-size: 13px;
-    height: 91px;
+    height: 77px;
     line-height: 1.0;
     margin: 14px 3.5px 0;
     position: relative;
@@ -169,14 +169,15 @@ body.expeditions {
     padding: 14px 0 0;
 }
 
-.mega .sightings ul {
+.sightings ul {
     padding-left: 14px;
+    padding-top: 7px;
 }
 
-.mega .sightings li {
+.sightings li {
     float: left;
     padding: 0;
-    margin: 0 0 0 28px;
+    margin: 0 0 0 35px;
 }
 
 @media(max-width: 991px) {
@@ -230,6 +231,10 @@ body.expeditions {
         content: ' ';
         display: table;
         min-height: 1px;
+    }
+
+    .sightings li {
+        float: none;
     }
 
 }
