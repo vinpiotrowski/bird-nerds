@@ -18,7 +18,6 @@ section: "essentials"
     .c100.p80 .fill,
     .c100.p100 .fill {
         position: absolute;
-        border: 0.08em solid #FFA500;
         width: 0.84em;
         height: 0.84em;
         clip: rect(0em, 0.5em, 1em, 0em);
@@ -29,6 +28,19 @@ section: "essentials"
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
+
+    .c100:nth-child(1) .bar,  .c100:nth-child(1) .fill {
+        border: 0.08em solid #27B8B4;
+    }
+
+    .c100:nth-child(2) .bar, .c100:nth-child(2) .fill {
+        border: 0.08em solid #97BA60;
+    }
+
+    .c100:nth-child(3) .bar, .c100:nth-child(3) .fill {
+        border: 0.08em solid #FFA500;
+    }
+
     .pie-fill,
     .c100.p60 .bar:after,
     .c100.p60 .fill,
@@ -44,13 +56,13 @@ section: "essentials"
     }
     .c100 {
         position: relative;
-        font-size: 120px;
-        width: 1em;
-        height: 1em;
+        font-size: 105px;
+        width: 105px;
+        height: 105px;
         border-radius: 50%;
         float: left;
         margin: 0 21px 14px 0;
-        background-color: #cccccc;
+        /*background-color: #cccccc;*/
     }
     .c100 *,
     .c100 *:before,
@@ -75,25 +87,32 @@ section: "essentials"
         left: 0;
         top: 0;
         width: 100%;
-        line-height: 120px;
+        font-family: 'bn-glyphs';
+        line-height: 105px;
         font-size: 17px;
-        color: #BAA4A3;
+        color: #5A3A33;
         display: block;
         text-align: center;
         white-space: nowrap;
-        -webkit-transition-property: all;
-        -moz-transition-property: all;
-        -o-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s;
-        -webkit-transition-timing-function: ease-out;
-        -moz-transition-timing-function: ease-out;
-        -o-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
     }
+
+    .c100:nth-child(1) > span:after {
+        content: '\e901';
+        font-size: 49px;
+    }
+
+    .c100:nth-child(2) > span:after {
+        content: '\f03e';
+        font-size: 35px;
+        font-weight: 100;
+    }
+
+    .c100:nth-child(3) > span:after {
+        content: '\f277';
+        font-size: 35px;
+        font-weight: 100;
+    }
+
     .c100:after {
         position: absolute;
         top: 0.08em;
@@ -101,21 +120,9 @@ section: "essentials"
         display: block;
         content: " ";
         border-radius: 50%;
-        background-color: #f5f5f5;
+        background-color: #FAF5EE;
         width: 0.84em;
         height: 0.84em;
-        -webkit-transition-property: all;
-        -moz-transition-property: all;
-        -o-transition-property: all;
-        transition-property: all;
-        -webkit-transition-duration: 0.2s;
-        -moz-transition-duration: 0.2s;
-        -o-transition-duration: 0.2s;
-        transition-duration: 0.2s;
-        -webkit-transition-timing-function: ease-in;
-        -moz-transition-timing-function: ease-in;
-        -o-transition-timing-function: ease-in;
-        transition-timing-function: ease-in;
     }
     .c100 .slice {
         position: absolute;
@@ -158,6 +165,16 @@ section: "essentials"
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+
+
+    .meter {
+        background: #CCCCCC;
+        border-radius: 17.5px;
+        height: 35px;
+        max-width: 360px;
+        margin: 0 0 21px;
+    }
+
 </style>
 
 
@@ -176,22 +193,22 @@ section: "essentials"
 
 
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-inglewood-bird-sanctuary-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Inglewood Bird Sanctuary</h2>
                 <p>This is the essential location for a Calgarian to go birding and we love it.  Not only is it a beautiful part of the city but it houses some unique species and is solid year round.  Be sure to get there early.</p>
-                <p><strong>Look for: bald eagles, wood ducks.</strong></p>
+                <p><strong>Look for: bald eagles and wood ducks.</strong></p>
                 <br />
                 <div class="scores row">
 
                     <div class="c100 p80">
-                        <span>Bunches</span>
+                        <span></span>
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
@@ -199,7 +216,7 @@ section: "essentials"
                     </div>
 
                     <div class="c100 p80">
-                        <span>Picturesque</span>
+                        <span></span>
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
@@ -207,108 +224,146 @@ section: "essentials"
                     </div>
 
                     <div class="c100 p80">
-                        <span>Handy</span>
+                        <span></span>
                         <div class="slice">
                             <div class="bar"></div>
                             <div class="fill"></div>
                         </div>
                     </div>
             </div>
-
+            <div class="clearfix"></div>
                 <hr />
         </div>
     </div>
 
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-griffith-woods.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Griffith Woods</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <p>Even though Griffith Woods is near our house it took us a while to discover.  The park has mixed forests along the Elbow River and a couple storm ponds.  It is the most westerly birding site within Calgary city limits.</p>
+                <p><strong>Look for: hummingbirds, catbirds and mountain bluebirds.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-brown-lowery-provincial-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
-                <h2>Brown Lowery Provincial Park</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <h2>Brown-lowery Provincial Park</h2>
+                <p>This is a great place to go if you want to get out of the city.  Although we don't see a tonne of birds in this area, when we do see something it's usually pretty interesting.  The "eagle view" lookout is worth checking out.</p>
+                <p><strong>Look for: varied thrushes, grey jays and three-toed woodpeckers.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-kinbrook-island-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Kinbrook Island Provincial Park</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <p>This park is near Brooks Alberta which means there is a lot of good birding in the area.  Kinbrook has protected wetlands with a trail going all the way around them.  The campground is fairly empty during shoulder seasons and is a great place to walk around.</p>
+                <p><strong>Look for: ring-necked pheasants, ring-necked ducks and common grackles.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-carburn-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Carburn Park</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <p>The first time we visited Carburn Park we weren't impressed because we went in the wrong direction.  After hearing about an oriole in the area we decided to check it out again and changed our mind.  It could still be better if there wasn't so much road noise.
+                <p><strong>Look for: baltimore orioles, house wrens and yellow warblers.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-weaselhead-wildlife-area-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Weaselhead Wildlife Area</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <p>This is where the Bird Nerds started out and it's still a favorite place of ours.  There are ponds at the top of North Glenmore Park, the reservoir itself, trails that run next to the residential area, and the Weaselhead itself.  In winter someone puts down seed making this one of the best places from January to May.</p>
+                <p><strong>Look for: blue jays, common redpoll and pine grosbeak.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
-    <div class="hero no-gutter-xs">
+    <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-willow-creek-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-top: 35px;">
+    <div style="padding-bottom: 49px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Willow Creek Campground</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium turpis a augue finibus, at pretium sem tincidunt. Mauris consectetur, massa vitae mattis tristique, neque purus facilisis risus, in dictum enim dolor id mi. Nullam commodo neque ut porttitor facilisis. Morbi sed lectus eleifend, tristique sapien vitae, pulvinar ligula. Nulla facilisi. Nam at orci ipsum. Sed pretium ligula augue, sed convallis mauris aliquam quis. Ut et commodo felis. Morbi at convallis dui. Aliquam condimentum pharetra nisi et consectetur. Vestibulum hendrerit magna at nisl pellentesque, at ornare arcu scelerisque. Duis gravida fermentum sollicitudin.</p>
-                <br />
+                <p>Willow Creek Provincial Park is in a beautiful part of Alberta.  The back roads between Nanton and this destination can yield lots of birds.  The landscape around the campground is flat grassland then all of a sudden there are trees.  Be sure to check out the historical tee-pee rings along the creek.</p>
+                <p><strong>Look for: red-naped sapsuckers, cliff swallows and eastern kingbirds.</strong></p>
+                <hr />
             </div>
         </div>
     </div>
 
+    <div class="no-gutter-xs">
+        <div class="container-image">
+            <img src="{{ '/images/essentials-frank-lake-hero.jpg' | prepend: site.baseurl }}" alt="">
+        </div>
+    </div>
+    <div style="padding-bottom: 49px; padding-top: 28px;">
+        <div class="inner-page">
+            <div class="slim">
+                <h2>Frank Lake</h2>
+                <p>This Ducks Unlimited site in legendary in birding circles.  Located just outside of High River this location has birds you won't see anywhere else.  The scenery isn't the nicest, the smells aren't the greatest, and you may want a mosquito net -- this place is all about the birds!  Be sure to check out Rio Alto for the best Mexican food in Southern Alberta.</p>
+                <p><strong>Look for: white-faced ibises, black-necked stilts and tundra swans.</strong></p>
+                <hr />
+            </div>
+        </div>
+    </div>
 
+    <div class="no-gutter-xs">
+        <div class="container-image">
+            <img src="{{ '/images/essentials-fish-creek-park-hero.jpg' | prepend: site.baseurl }}" alt="">
+        </div>
+    </div>
+    <div style="padding-bottom: 49px; padding-top: 28px;">
+        <div class="inner-page">
+            <div class="slim">
+                <h2>Fish Creek Provincial Park</h2>
+                <p>Fish Creek is one of our favorite places to go single-track mountain biking and it's easy to forget that it's located inside a major city.  We have seen a wide assortment of birds here and some have been pretty rare.  The one drawback is that the birds are often perched high in the trees and the populations are less dense than other places.</p>
+                <p><strong>Look for: pileated woodpeckers, western tanagers, and pygmy owls.</strong></p>
+                <hr />
+            </div>
+        </div>
+    </div>
+
+</div>
 </div>
