@@ -29,15 +29,15 @@ section: "essentials"
         transform: rotate(0deg);
     }
 
-    .c100:nth-child(1) .bar,  .c100:nth-child(1) .fill {
+    .c100.birds .bar,  .c100:nth-child(1) .fill {
         border: 0.08em solid #27B8B4;
     }
 
-    .c100:nth-child(2) .bar, .c100:nth-child(2) .fill {
+    .c100.scenery .bar, .c100:nth-child(2) .fill {
         border: 0.08em solid #97BA60;
     }
 
-    .c100:nth-child(3) .bar, .c100:nth-child(3) .fill {
+    .c100.locality .bar, .c100:nth-child(3) .fill {
         border: 0.08em solid #FFA500;
     }
 
@@ -71,16 +71,6 @@ section: "essentials"
         -moz-box-sizing: content-box;
         box-sizing: content-box;
     }
-    .c100.center {
-        float: none;
-        margin: 0 auto;
-    }
-    .c100.big {
-        font-size: 240px;
-    }
-    .c100.small {
-        font-size: 80px;
-    }
     .c100 > span {
         position: absolute;
         z-index: 1;
@@ -96,21 +86,43 @@ section: "essentials"
         white-space: nowrap;
     }
 
-    .c100:nth-child(1) > span:after {
+    .c100.birds > span:after {
         content: '\e901';
         font-size: 49px;
     }
 
-    .c100:nth-child(2) > span:after {
+    .c100.scenery > span:after {
         content: '\f03e';
         font-size: 35px;
         font-weight: 100;
     }
 
-    .c100:nth-child(3) > span:after {
+    .c100.locality > span:after {
         content: '\f277';
         font-size: 35px;
         font-weight: 100;
+    }
+
+    .c100:before {
+        bottom: -28px;
+        content: "Birds";
+        color: #BAA4A3;
+        font-size: 19px;
+        position:absolute;
+        text-align: center;
+        width: 100%;
+    }
+
+    .c100.birds:before {
+        content: "Birds";
+    }
+
+    .c100.scenery:before {
+        content: "Scenery";
+    }
+
+    .c100.locality:before {
+        content: "Locality";
     }
 
     .c100:after {
@@ -207,7 +219,7 @@ section: "essentials"
                 <br />
                 <div class="scores row">
 
-                    <div class="c100 p80">
+                    <div class="c100 p80 birds">
                         <span></span>
                         <div class="slice">
                             <div class="bar"></div>
@@ -215,7 +227,7 @@ section: "essentials"
                         </div>
                     </div>
 
-                    <div class="c100 p80">
+                    <div class="c100 p60 scenery">
                         <span></span>
                         <div class="slice">
                             <div class="bar"></div>
@@ -223,7 +235,7 @@ section: "essentials"
                         </div>
                     </div>
 
-                    <div class="c100 p80">
+                    <div class="c100 p100 locality">
                         <span></span>
                         <div class="slice">
                             <div class="bar"></div>
@@ -248,6 +260,32 @@ section: "essentials"
                 <h2>Griffith Woods</h2>
                 <p>Even though Griffith Woods is near our house it took us a while to discover.  The park has mixed forests along the Elbow River and a couple storm ponds.  It is the most westerly birding site within Calgary city limits.</p>
                 <p><strong>Look for: hummingbirds, catbirds and mountain bluebirds.</strong></p>
+                <br />
+                <div class="scores row">
+                    <div class="c100 p60 birds">
+                        <span></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="c100 p60 scenery">
+                        <span></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+
+                    <div class="c100 p80 locality">
+                        <span></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill"></div>
+                        </div>
+                    </div>
+                </div>
                 <hr />
             </div>
         </div>
