@@ -158,7 +158,11 @@ body.expeditions {
 }
 
 .badge.thunder:before {
-    content: '\e905'
+    content: '\e905';
+}
+
+.badge.buggy:before {
+    content: '\f188';
 }
 
 .badge.count:before {
