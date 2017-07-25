@@ -78,6 +78,10 @@ ul.definition > li > p {
     z-index: 1;
 }
 
+#locations-article .slim h1:before {
+    content: $badge-sign-post;
+}
+
 #bird-feeder-article .slim h1:before {
     content: $badge-bird-house;
 }
