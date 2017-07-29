@@ -26,6 +26,9 @@
     font-weight: 100;
     padding: 14px 0;
     text-align: center;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 #featured-birds a:before {
@@ -76,6 +79,9 @@ ul.definition > li > p {
     font-size: 112pt;
     font-weight: 100;
     z-index: 1;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 #locations-article .slim h1:before {
@@ -110,6 +116,9 @@ ul.definition > li > p {
     font-family: bn-glyphs;
     font-size: 112pt;
     font-weight: 100;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 .squirrel:before {

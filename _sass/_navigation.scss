@@ -391,6 +391,10 @@ body.about .container-menu div:nth-child(4) a:after{
         max-height: 500px;
     }
 
+    .site-footer {
+        margin-top: 35px;
+    }
+
     .site-footer:before {
         display: none;
     }
@@ -402,6 +406,7 @@ body.about .container-menu div:nth-child(4) a:after{
     #follow {
         right: 50%;
         margin-right: -105px;
+        top: 35px;
     }
 
     .site-footer p {
