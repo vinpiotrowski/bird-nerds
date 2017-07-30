@@ -6,177 +6,157 @@ section: "essentials"
 ---
 
 <style>
-    .rect-auto,
-    .c100.p60 .slice,
-    .c100.p80 .slice,
-    .c100.p100 .slice {
-        clip: rect(auto, auto, auto, auto);
-    }
-    .pie,
-    .c100 .bar,
-    .c100.p60 .fill,
-    .c100.p80 .fill,
-    .c100.p100 .fill {
-        position: absolute;
-        width: 0.84em;
-        height: 0.84em;
-        clip: rect(0em, 0.5em, 1em, 0em);
-        border-radius: 50%;
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
 
-    .c100.birds .bar,  .c100:nth-child(1) .fill {
-        border: 0.08em solid #27B8B4;
-    }
-
-    .c100.scenery .bar, .c100:nth-child(2) .fill {
-        border: 0.08em solid #97BA60;
-    }
-
-    .c100.locality .bar, .c100:nth-child(3) .fill {
-        border: 0.08em solid #FFA500;
-    }
-
-    .pie-fill,
-    .c100.p60 .bar:after,
-    .c100.p60 .fill,
-    .c100.p80 .bar:after,
-    .c100.p80 .fill,
-    .c100.p100 .bar:after,
-    .c100.p100 .fill {
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-    .c100 {
+    .meter {
+        color: #7A5453;
+        display: inline-block;
+        font-size: 13px;
+        height: 77px;
+        line-height: 1.0;
+        margin: 14px 3.5px 0;
         position: relative;
-        font-size: 105px;
-        width: 105px;
-        height: 105px;
-        border-radius: 50%;
-        float: left;
-        margin: 0 21px 14px 0;
-        /*background-color: #cccccc;*/
+        text-align: center;
+        text-transform: capitalize;
+        width: 91px;
+        z-index: 5;
     }
-    .c100 *,
-    .c100 *:before,
-    .c100 *:after {
-        -webkit-box-sizing: content-box;
-        -moz-box-sizing: content-box;
-        box-sizing: content-box;
-    }
-    .c100 > span {
+
+    .meter:before {
+        display: block;
+        font-family: "bn-glyphs";
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 100;
+        padding: 14px 0 0;
         position: absolute;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        font-family: 'bn-glyphs';
-        line-height: 105px;
-        font-size: 17px;
+        top: 3.5px;
+        width: 91px;
+        z-index: 3;
+    }
+
+    .meter.birds:before {
+        content: "\e924";
+    }
+
+    .meter.scenery:before {
+        content: "\f03e";
+    }
+
+    .meter.locality:before {
+        content: "\f277";
+    }
+
+    .meter:after {
+        border: solid 3.5px;
+        border-radius: 50%;
+        content: ' ';
+        display: block;
+        height: 91px;
+        margin: 0;
+        position: absolute;
+        top: -21px;
+        width: 91px;
+        z-index: -1;
+    }
+
+    .gauge.birds:before {
+        color: #27B8B4;
+    }
+
+    .gauge.scenery:before {
+        color: #97BA60;
+    }
+
+    .gauge.locality:before {
+        color: #FFA500;
+    }
+
+    .gauge {
         color: #5A3A33;
-        display: block;
+        display: inline-block;
+        height: 77px;
+        line-height: 1.0;
+        margin: 0 3.5px;
+        position: relative;
         text-align: center;
-        white-space: nowrap;
+        text-transform: capitalize;
+        width: 91px;
+        z-index: 5;
     }
 
-    .c100.birds > span:after {
-        content: '\e924';
-        font-size: 49px;
-        font-weight: 100;
-    }
-
-    .c100.scenery > span:after {
-        content: '\f03e';
-        font-size: 35px;
-        font-weight: 100;
-    }
-
-    .c100.locality > span:after {
-        content: '\f277';
-        font-size: 35px;
-        font-weight: 100;
-    }
-
-    .c100:before {
-        bottom: -28px;
-        content: "Birds";
-        color: #BAA4A3;
-        font-size: 19px;
-        position:absolute;
-        text-align: center;
-        width: 100%;
-    }
-
-    .c100.birds:before {
-        content: "Birds";
-    }
-
-    .c100.scenery:before {
-        content: "Scenery";
-    }
-
-    .c100.locality:before {
-        content: "Locality";
-    }
-
-    .c100:after {
-        position: absolute;
-        top: 0.08em;
-        left: 0.08em;
+    .gauge:before {
         display: block;
-        content: " ";
-        border-radius: 50%;
-        background-color: #FAF5EE;
-        width: 0.84em;
-        height: 0.84em;
+        font-family: "bn-glyphs";
+        font-size: 91px;
+        font-style: normal;
+        font-weight: 100;
+        top: 3.5px;
+        width: 91px;
+        z-index: 3;
     }
-    .c100 .slice {
-        position: absolute;
-        width: 1em;
-        height: 1em;
-        clip: rect(0em, 1em, 1em, 0.5em);
+
+
+    .gauge.birds.none:before {
+        content: '\e933'
     }
-    .c100.p20 .bar {
-        -webkit-transform: rotate(72deg);
-        -moz-transform: rotate(72deg);
-        -ms-transform: rotate(72deg);
-        -o-transform: rotate(72deg);
-        transform: rotate(72deg);
+
+    .gauge.birds.low:before {
+        content: '\e932';
     }
-    .c100.p40 .bar {
-        -webkit-transform: rotate(144deg);
-        -moz-transform: rotate(144deg);
-        -ms-transform: rotate(144deg);
-        -o-transform: rotate(144deg);
-        transform: rotate(144deg);
+
+    .gauge.birds.med:before {
+        content: '\e931';
     }
-    .c100.p60 .bar {
-        -webkit-transform: rotate(216deg);
-        -moz-transform: rotate(216deg);
-        -ms-transform: rotate(216deg);
-        -o-transform: rotate(216deg);
-        transform: rotate(216deg);
+
+    .gauge.birds.high:before {
+        content: '\e930';
     }
-    .c100.p80 .bar {
-        -webkit-transform: rotate(288deg);
-        -moz-transform: rotate(288deg);
-        -ms-transform: rotate(288deg);
-        -o-transform: rotate(288deg);
-        transform: rotate(288deg);
+
+
+    .gauge.scenery.none:before {
+        content: '\e92f'
     }
-    .c100.p100 .bar {
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg);
+
+    .gauge.scenery.low:before {
+        content: '\e92e';
+    }
+
+    .gauge.scenery.med:before {
+        content: '\e92d';
+    }
+
+    .gauge.scenery.high:before {
+        content: '\e929';
+    }
+
+
+    .gauge.locality.none:before {
+        content: '\e934'
+    }
+
+    .gauge.locality.low:before {
+        content: '\e928';
+    }
+
+    .gauge.locality.med:before {
+        content: '\e927';
+    }
+
+    .gauge.locality.high:before {
+        content: '\e926';
+    }
+
+    @media(max-width: 767px) {
+        .meter {
+            display: block;
+            float: left;
+            margin: 14px 3.5px 14px 7px;
+        }
+
+        .meter + div {
+            padding: 7px;
+            text-align: left;
+        }
     }
 
 </style>
@@ -185,73 +165,51 @@ section: "essentials"
 <div class="container-fluid no-gutter-xs" id="locations-article">
 
     <div class="content">
-        <div class="slim brown" style="text-align: center; padding-bottom: 0;">
+        <div class="slim blue" style="text-align: center; padding-bottom: 0;">
             <h1>Where to Bird</h1>
             <p>A huge part of birding is spending time outdoors.  Where you decide to go will determine what birds you'll see and how enjoyable your trip will be.  We've scored some of our favorite locations based on three criteria: </p>
-            <div class="col-md-4">
-                <div class="slim blue">
-                    <h3>Birds:</h3>
-                    <p>How many birds will be seen?<br />(few > flocks > shed-loads)</p>
-                </div>
+            <br />
+            <div class="col-xs-12 col-sm-4">
+                <div class="meter birds">Birds</div>
+                <div>The quantity and uniqueness of birds likely to be encountered.</div>
             </div>
-            <div class="col-md-4">
-                <div class="slim green">
-                    <h3>Scenery:</h3>
-                    <p>How beautiful in the landscape?<br />(squalid > picturesque > postcard)</p>
-                </div>
+            <div class="col-xs-12 col-sm-4 green slim">
+                <div class="meter scenery">Scenery</div>
+                <div>Is the habitat squalid or postcard worthy?</div>
             </div>
-            <div class="col-md-4">
-                <div class="slim yellow">
-                    <h3>Locality:</h3>
-                    <p>How easy is it to get to the site?<br />(overnight > day trip > afternoon)</p>
-                </div>
+            <div class="col-xs-12 col-sm-4 yellow slim">
+                <div class="meter locality">Location</div>
+                <div>How much time will you need to invest to reach the destination.</div>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
 
-
-
-
+    
     <div class="no-gutter-xs">
         <div class="container-image">
             <img src="{{ '/images/essentials-inglewood-bird-sanctuary-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Inglewood Bird Sanctuary</h2>
                 <p>This is the essential location for a Calgarian to go birding and we love it.  Not only is it a beautiful part of the city but it houses some unique species and is solid year round.  Be sure to get there early.</p>
                 <p><strong>Look for: bald eagles and wood ducks.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p60 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds med">
+                        Flocks
                     </div>
-
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery low">
+                        Pretty
                     </div>
-
-                    <div class="c100 p80 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality high">
+                        Nearby
                     </div>
                 </div>
-                <div class="clearfix"></div>
-                <hr />
+            </div>
+            <hr />
         </div>
     </div>
 
@@ -261,35 +219,23 @@ section: "essentials"
             <img src="{{ '/images/essentials-griffith-woods.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Griffith Woods</h2>
                 <p>Even though Griffith Woods is near our house it took us a while to discover.  The park has mixed forests along the Elbow River and a couple storm ponds.  It is the most westerly birding site within Calgary city limits.</p>
                 <p><strong>Look for: hummingbirds, catbirds and mountain bluebirds.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p40 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds med">
+                        Flocks
                     </div>
 
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery med">
+                        Scenic
                     </div>
 
-                    <div class="c100 p80 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality high">
+                        Nearby
                     </div>
                 </div>
                 <hr />
@@ -302,34 +248,21 @@ section: "essentials"
             <img src="{{ '/images/essentials-brown-lowery-provincial-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Brown-lowery Provincial Park</h2>
                 <p>This is a great place to go if you want to get out of the city.  Although we don't see a tonne of birds in this area, when we do see something it's usually pretty interesting.  The "eagle view" lookout is worth checking out.</p>
                 <p><strong>Look for: varied thrushes, grey jays and three-toed woodpeckers.</strong></p>
-               <br />
-                <div class="scores row">
-                    <div class="c100 p40 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds low">
+                        Sparse
                     </div>
-
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery med">
+                        Scenic
                     </div>
-
-                    <div class="c100 p40 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                    <div class="gauge locality med">
+                        Drive
                     </div>
                 </div>
                 <hr />
@@ -342,34 +275,22 @@ section: "essentials"
             <img src="{{ '/images/essentials-kinbrook-island-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Kinbrook Island Provincial Park</h2>
                 <p>This park is near Brooks Alberta which means there is a lot of good birding in the area.  Kinbrook has protected wetlands with a trail going all the way around them.  The campground is fairly empty during shoulder seasons and is a great place to walk around.</p>
                 <p><strong>Look for: ring-necked pheasants, ring-necked ducks and common grackles.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p80 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds high">
+                        Shed load
+                    </div>
+                    <div class="gauge scenery low">
+                        Pretty
                     </div>
 
-                    <div class="c100 p40 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
-                    </div>
-
-                    <div class="c100 p20 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                    <div class="gauge locality none">
+                        Overnight
                     </div>
                 </div>
                 <hr />
@@ -382,35 +303,23 @@ section: "essentials"
             <img src="{{ '/images/essentials-carburn-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Carburn Park</h2>
                 <p>The first time we visited Carburn Park we weren't impressed because we went in the wrong direction.  After hearing about an oriole in the area we decided to check it out again and changed our mind.  It could still be better if there wasn't so much road noise.
                 <p><strong>Look for: baltimore orioles, house wrens and yellow warblers.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p40 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds low">
+                        Sparse
                     </div>
 
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery med">
+                        Scenic
                     </div>
 
-                    <div class="c100 p80 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality high">
+                        Nearby
                     </div>
                 </div>
                 <hr />
@@ -423,36 +332,22 @@ section: "essentials"
             <img src="{{ '/images/essentials-weaselhead-wildlife-area-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Weaselhead Wildlife Area</h2>
                 <p>This is where the Bird Nerds started out and it's still a favorite place of ours.  There are ponds at the top of North Glenmore Park, the reservoir itself, trails that run next to the residential area, and the Weaselhead itself.  In winter someone puts down seed making this one of the best places from January to May.</p>
                 <p><strong>Look for: blue jays, common redpoll and pine grosbeak.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p60 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds low">
+                        Sparse
+                    </div>
+                    <div class="gauge scenery med">
+                        Scenic
                     </div>
 
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
-                    </div>
-
-                    <div class="c100 p80 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality high">
+                        Nearby
                     </div>
                 </div>
                 <hr />
@@ -465,35 +360,21 @@ section: "essentials"
             <img src="{{ '/images/essentials-willow-creek-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Willow Creek Campground</h2>
                 <p>Willow Creek Provincial Park is in a beautiful part of Alberta.  The back roads between Nanton and this destination can yield lots of birds.  The landscape around the campground is flat grassland then all of a sudden there are trees.  Be sure to check out the historical tee-pee rings along the creek.</p>
                 <p><strong>Look for: red-naped sapsuckers, cliff swallows and eastern kingbirds.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p60 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds med">
+                        Flocks
                     </div>
-
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery low">
+                        Pretty
                     </div>
-
-                    <div class="c100 p40 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                    <div class="gauge locality low">
+                        Daytrip
                     </div>
                 </div>
                 <hr />
@@ -506,7 +387,7 @@ section: "essentials"
             <img src="{{ '/images/essentials-frank-lake-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-bottom: 42px; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Frank Lake</h2>
@@ -514,27 +395,14 @@ section: "essentials"
                 <p><strong>Look for: white-faced ibises, black-necked stilts and tundra swans.</strong></p>
                 <br />
                 <div class="scores row">
-                    <div class="c100 p80 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge birds high">
+                        Shed load
                     </div>
-
-                    <div class="c100 p20 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                    <div class="gauge scenery none">
+                        Squalid
                     </div>
-
-                    <div class="c100 p60 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality med">
+                        Drive
                     </div>
                 </div>
                 <hr />
@@ -547,35 +415,21 @@ section: "essentials"
             <img src="{{ '/images/essentials-fish-creek-park-hero.jpg' | prepend: site.baseurl }}" alt="">
         </div>
     </div>
-    <div style="padding-bottom: 49px; padding-top: 28px;">
+    <div class="content" style="background: #FFF; padding-top: 28px;">
         <div class="inner-page">
             <div class="slim">
                 <h2>Fish Creek Provincial Park</h2>
                 <p>Fish Creek is one of our favorite places to go single-track mountain biking and it's easy to forget that it's located inside a major city.  We have seen a wide assortment of birds here and some have been pretty rare.  The one drawback is that the birds are often perched high in the trees and the populations are less dense than other places.</p>
                 <p><strong>Look for: pileated woodpeckers, western tanagers, and pygmy owls.</strong></p>
-                <br />
-                <div class="scores row">
-                    <div class="c100 p40 birds">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                        </div>
+                <div class="row">
+                    <div class="gauge birds low">
+                        Sparse
                     </div>
-
-                    <div class="c100 p60 scenery">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge scenery low">
+                        Pretty
                     </div>
-
-                    <div class="c100 p80 locality">
-                        <span></span>
-                        <div class="slice">
-                            <div class="bar"></div>
-                            <div class="fill"></div>
-                        </div>
+                    <div class="gauge locality med">
+                        Drive
                     </div>
                 </div>
                 <hr />
@@ -583,5 +437,19 @@ section: "essentials"
         </div>
     </div>
 
+    <div class="content">
+        <div class="inner-page">
+            <div class="slim">
+                <h2>Closing thoughts</h2>
+                <p>Being familiar with a set of locations is an essential for any birder.  There isn't a 'best' place for us but rather each place offers it's own unique set of benefits.  In many cases, research leads us to a particular place to find a new bird, but we're always happy to explore a new place.</p>
+                <div class="col-xs-12">
+                    <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Back to Essentials</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
 </div>
 </div>

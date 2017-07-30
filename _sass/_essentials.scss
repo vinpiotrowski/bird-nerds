@@ -1,3 +1,7 @@
+#essentials .hero {
+    border-color: $green;
+}
+
 .headline.fancy.essentials * {
     color: $white;
     line-height: 1.1;
@@ -11,39 +15,6 @@
 
 #essentials .tile a {
     padding-bottom: 49px;
-}
-
-#featured-birds a:before,
-#bird-photography a:before,
-#bird-feeder a:before {
-    background: $orange;
-    border-radius: 6px 6px 0 0;
-    color: $white;
-    content: ' ';
-    display: block;
-    font-family: bn-glyphs;
-    font-size: 112pt;
-    font-weight: 100;
-    padding: 14px 0;
-    text-align: center;
-
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-}
-
-#featured-birds a:before {
-    background: $orange;
-    content: $featured;
-}
-
-#bird-photography a:before {
-    background: $yellow;
-    content: $camera;
-}
-
-#bird-feeder a:before {
-    background: $green;
-    content: $badge-bird-house;
 }
 
 ul.definition > li > p {
@@ -143,7 +114,7 @@ ul.definition > li > p {
     padding: 21px 2% 14px;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 991px) {
     #essentials .fact {
         display: none;
     }

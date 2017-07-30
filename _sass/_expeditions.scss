@@ -2,6 +2,10 @@ body.expeditions {
     background: $white;
 }
 
+#expeditions-list .hero {
+    border-color: $blue;
+}
+
 .headline.fancy.expeditions * {
     color: $white;
     line-height: 1.1;
@@ -185,6 +189,12 @@ body.expeditions {
 }
 
 @media(max-width: 991px) {
+
+    #expedition-article .headline {
+        top: 0;
+        transform: scale(0.77);
+    }
+
     .post-content p {
         margin: 0 7px;
     }
