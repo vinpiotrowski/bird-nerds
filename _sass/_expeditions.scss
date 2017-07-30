@@ -108,13 +108,13 @@ body.expeditions {
     color: $text;
     display: inline-block;
     font-size: 13px;
-    height: 77px;
+    height: 76px;
     line-height: 1.0;
     margin: 14px 3.5px 0;
     position: relative;
     text-align: center;
     text-transform: capitalize;
-    width: 91px;
+    width: 90px;
     z-index: 5;
 }
 
@@ -128,7 +128,7 @@ body.expeditions {
     padding: 14px 0 0;
     position: absolute;
     top: 3.5px;
-    width: 91px;
+    width: 90px;
     z-index: 3;
 }
 
@@ -137,11 +137,11 @@ body.expeditions {
     border-radius: 50%;
     content: ' ';
     display: block;
-    height: 91px;
+    height: 90px;
     margin: 0;
     position: absolute;
     top: -21px;
-    width: 91px;
+    width: 90px;
     z-index: -1;
 }
 
