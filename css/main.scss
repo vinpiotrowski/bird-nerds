@@ -690,6 +690,7 @@ a.scroll-link {
   }
 
   .tile.ess {
+    margin: 7px auto 14px;
     max-width: 560px;
   }
 
@@ -776,11 +777,7 @@ a.scroll-link {
   .tiles {
     padding: 105px 0 21px;
   }
-
-  .tile {
-    padding: 0 21px;
-  }
-
+  
   .tile a {
     min-height: 0;
     padding-bottom: 49px;
