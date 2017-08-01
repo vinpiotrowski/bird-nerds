@@ -391,8 +391,28 @@ body.about .container-menu div:nth-child(4) a:after{
         max-height: 500px;
     }
 
-    .site-footer {
-        margin-top: 35px;
+    .site-header .container-menu div {
+        padding-left: 14px;
+    }
+
+    .site-header .container-menu div:nth-child(1) {
+        background: $brown;
+        color: $pure-white;
+    }
+
+    .site-header .container-menu div:nth-child(2) {
+        background: $blue;
+        color: $pure-white;
+    }
+
+    .site-header .container-menu div:nth-child(3) {
+        background: $green;
+        color: $pure-white;
+    }
+
+    .site-header .container-menu div:nth-child(4) {
+        background: $yellow;
+        color: $pure-white;
     }
 
     .site-footer:before {
@@ -406,7 +426,7 @@ body.about .container-menu div:nth-child(4) a:after{
     #follow {
         right: 50%;
         margin-right: -105px;
-        top: 35px;
+        top: 0;
     }
 
     .site-footer p {

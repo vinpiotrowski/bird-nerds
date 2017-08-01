@@ -717,9 +717,11 @@ a.scroll-link {
 @media(max-width: 767px) {
 
   body, html {
-    background: $white;
     font-size: 11pt;
-    image-rendering: non;
+  }
+
+  main {
+    padding-bottom: 35px;
   }
 
   .content {

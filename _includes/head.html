@@ -19,28 +19,10 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
 
+
+
   <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $(".menu-toggle").on("click", function() {
-        $(this).toggleClass("active");
-      });
-
-      $(".container-photo img").load( function(){
-        var h = $(this).height();
-        if(h) {
-          h = h / 2 - 21;
-          $(".next-link, .prev-link").css("top", h + "px");
-        }
-      });
-      $(".next-link, .prev-link").on("click", function(e) {
-        e.preventDefault();
-      });
-    });
-  </script>
-
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,7 +31,6 @@
 
     ga('create', 'UA-96353040-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 
 
