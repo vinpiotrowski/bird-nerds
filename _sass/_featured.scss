@@ -144,14 +144,22 @@
   }
 
   .counted li {
-    font-size: 12pt;
-    line-height: 2.0;
-    padding: 7px 21px 7px 52.5px;
+    padding: 14px 21px;
   }
 
   .counted li:before {
+    display: none;
+  }
+
+  .featured .counted li {
+    font-size: 12pt;
+    padding: 7px 21px 7px 52.5px;
+  }
+
+  .featured .counted li:before {
+    display: list-item;
     line-height: 1.25;
-    margin: 7px 21px 7px -49px;
+    margin: -7px 21px 7px -56px;
     transform: scale(0.77);
   }
 }
