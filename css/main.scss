@@ -374,7 +374,7 @@ a.scroll-link {
 
 .button:hover {
   background: $blue;
-  color: $pure-white;
+  color: $pure-white!important;
 }
 
 .button:before {

@@ -42,7 +42,7 @@ layout: default
         {% assign minCommonTags =  3 %}
         {% assign maxRelatedCounter = 0 %}
 
-        {% for post in site.posts %}
+        {% for post in site.posts offset:cnt %}
 
             {% assign sameTagCount = 0 %}
             {% assign commonTags = '' %}
@@ -77,6 +77,13 @@ layout: default
             {% endif %}
 
         {% endfor %}
+
+        {% if maxRelatedCounter == 0 %}
+        <div class="col-xs-12">
+            <p><h3>Oops, we couldn't find any related expeditions.</h3></p>
+            <p><a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">See all expeditions</a></p>
+        </div>
+        {% endif %}
         <div class="clearfix"> </div>
     </div>
 </div>
