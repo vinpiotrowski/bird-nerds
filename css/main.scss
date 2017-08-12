@@ -627,12 +627,20 @@ a.scroll-link {
   border-color: $green;
 }
 
+.divider.yellow {
+  border-color: $yellow;
+}
+
 .divider.green > h1, .divider.green > h2 {
   background: $green;
 }
 
 .divider.blue > h1, .divider.blue > h2 {
   background: $blue;
+}
+
+.divider.yellow > h1, .divider.yellow > h2 {
+  background: $yellow;
 }
 
 @media(max-width: 991px) {
