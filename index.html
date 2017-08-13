@@ -49,12 +49,7 @@ title: "Home"
 
         <div class="clearfix"> </div>
 
-        {% for post in site.posts %}
-            {% if post.categories contains 'feature' %}
-                {{ post.content }}
-                {% break %}
-            {% endif %}
-        {% endfor %}
+        {% for post in site.posts %}{% if post.categories contains 'feature' %}{{ post.content }}{% break %}{% endif %}{% endfor %}
 
         <div class="clearfix"> </div>
 
@@ -93,8 +88,7 @@ title: "Home"
             <div class="inner-page tiles">
                 <h1>Recent expeditions</h1>
                 {% assign idx = 0 %}
-                {% for post in site.posts %}
-                    {% if post.categories contains 'expeditions' %}
+                {% for post in site.posts %}{% if post.categories contains 'expeditions' %}
                         <div class="col-xs-12 col-md-3 tile exp blue">
                                 <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
@@ -107,15 +101,10 @@ title: "Home"
                         </div>
                         {% assign idx = idx | plus:1 %}
                         {% assign mod = idx | modulo:2 %}
-                        {% if mod == 0 %}
-
-                        {% endif %}
-                    {% endif %}
-                    {% if idx == 4 %}
+                    {% endif %}{% if idx == 4 %}
                         <div class="clearfix"> </div>
                         {% break %}
-                    {% endif %}
-                {% endfor %}
+                    {% endif %}{% endfor %}
             </div>
         </section>
 
