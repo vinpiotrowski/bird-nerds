@@ -147,23 +147,19 @@ section: "essentials"
     }
 
     @media(max-width: 767px) {
-        .meter {
-            display: block;
-            float: left;
-            margin: 14px 3.5px 14px 7px;
-        }
-
-        .meter + div {
-            padding: 7px;
-            text-align: left;
-        }
-    }
-
-    @media(max-width: 480px) {
         .gauge {
             float: left;
             margin: 14px 0 0;
             transform: scale(0.80);
+        }
+
+        .gauge + .clearfix:after {
+            clear: none;
+        }
+
+        .gauge + div + p {
+            padding: 7px;
+            text-align: left;
         }
     }
 
@@ -176,18 +172,21 @@ section: "essentials"
         <div class="slim blue" style="text-align: center; padding-bottom: 0;">
             <h1>Where to Bird</h1>
             <p>One question we get asked a lot is 'where are the best locations to go birding around Calgary Alberta?'.  Where you decide to go will determine what birds you'll see and how enjoyable your trip will be.  We've scored some of our favorite locations based on three criteria: </p>
-            <br />
+            <hr />
             <div class="col-xs-12 col-sm-4">
-                <div class="meter birds">Birds</div>
-                <div>The quantity and uniqueness of birds likely to be encountered.</div>
+                <div class="gauge birds high"></div>
+                <div class="clearfix"></div>
+                <p>The quantity and uniqueness of birds likely to be encountered.</p>
             </div>
             <div class="col-xs-12 col-sm-4 green slim">
-                <div class="meter scenery">Scenery</div>
-                <div>Is the habitat squalid or postcard worthy?</div>
+                <div class="gauge scenery high"></div>
+                <div class="clearfix"></div>
+                <p>Is the habitat squalid or postcard worthy?</p>
             </div>
             <div class="col-xs-12 col-sm-4 yellow slim">
-                <div class="meter locality">Location</div>
-                <div>How much time will you need to invest to reach the destination.</div>
+                <div class="gauge locality high"></div>
+                <div class="clearfix"></div>
+                <p>How much time will you need to invest to reach the destination.</p>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -292,8 +291,8 @@ section: "essentials"
                 <p>The first time we visited Carburn Park we weren't impressed because we went in the wrong direction.  After hearing about an oriole in the area we decided to check it out again and changed our mind.  It could still be better if there wasn't so much road noise.
                 <p><strong>Look for: baltimore orioles, house wrens and yellow warblers.</strong></p>
                 <div class="row">
-                    <div class="gauge birds low">
-                        Sparse
+                    <div class="gauge birds med">
+                        Lots
                     </div>
 
                     <div class="gauge scenery med">
