@@ -1,13 +1,25 @@
 ---
 layout: default
-section: "home"
+section: "error"
 title: "Home"
 permalink: /404.html
 ---
 
+<style>
+    body.error {
+        background: #FAF5EE;
+    }
+
+    body.error footer, body.error #follow {
+        display: none;
+    }
+
+</style>
+
+
 <div class="content comic" style="background: #FFF; padding: 0 14px 35px;">
     <div class="col-xs-12 col-xs-12 no-gutter-xs">
-        <div class="container-image" style="margin: 21px auto 0; max-width: 320px;">
+        <div class="container-image" style="margin: 21px auto 0; max-width: 480px;">
             <img src="{{ '/images/comic-treespotting-05.png' | prepend: site.baseurl }}" />
         </div>
     </div>
