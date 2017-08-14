@@ -62,6 +62,29 @@ ul.definition > li > p {
     -webkit-font-smoothing: antialiased;
 }
 
+.boxed {
+    border: solid 7px;
+    margin-bottom: 21px;
+    padding: 0 0 14px;
+    text-align: center;
+}
+
+.boxed h3 {
+    background: $white;
+    display: inline-block;
+    left: 50%;
+    margin-top: -17.5px;
+    padding: 0 21px;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.boxed li {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 35px;
+}
+
 #locations-article .slim h1:before {
     content: $badge-sign-post;
 }
@@ -82,6 +105,11 @@ ul.definition > li > p {
     content: $badge-eagle-eye;
 }
 
+body #field-notes-article {
+    font-family: $cursive-font;
+    font-size: 2em;
+    font-weight: 100;
+}
 
 .magpie:before,
 .squirrel:before,
