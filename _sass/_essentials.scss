@@ -106,8 +106,8 @@ ul.definition > li > p {
 }
 
 body #field-notes-article {
-    font-family: $cursive-font;
-    font-size: 2em;
+    /*font-family: $cursive-font;
+    */font-size: 1.4em;
     font-weight: 100;
 }
 
@@ -143,14 +143,14 @@ body #field-notes-article {
     content: $feeder3;
 }
 
-.comic > div.title img {
-    margin: 0;
-    max-width: 240px;
-    padding: 21px 2% 14px;
-}
-
 @media(max-width: 991px) {
     #essentials .fact {
         display: none;
+    }
+
+    .comic > div.title img {
+        margin: 0;
+        max-width: 240px;
+        padding: 21px 2% 14px;
     }
 }

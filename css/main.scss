@@ -360,6 +360,12 @@ a.scroll-link {
   font-family: $cursive-font;
 }
 
+.comic > div.title img {
+  margin: 0;
+  max-width: 360px;
+  padding: 21px 2% 14px;
+}
+
 .button {
   background: $pure-white;
   color: $blue;
@@ -734,6 +740,10 @@ a.scroll-link {
 
   .content {
     padding: 21px;
+  }
+
+  .comic > div.title img {
+    max-width: 240px;
   }
 
   .button.next {
