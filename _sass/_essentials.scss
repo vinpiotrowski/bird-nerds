@@ -105,6 +105,11 @@ ul.definition > li > p {
     content: $badge-eagle-eye;
 }
 
+#field-notes-article .slim h1:before {
+    content: $badge-scapebook;
+}
+
+
 .magpie:before,
 .squirrel:before,
 .feeder-1:before,

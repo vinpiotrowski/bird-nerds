@@ -20,9 +20,9 @@ section: essentials
     <div class="content">
         <div class="inner-page">
             {% for post in site.posts %}
-            {% if post.categories contains 'feature' %}
-            {{ post.content }}
-            {% endif %}
+                {% if post.categories contains 'feature' %}
+                    {{ post.content }}
+                {% endif %}
             {% endfor %}
             <div class="col-xs-12" style="text-align: center;">
                 <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Back to Essentials</a></p>
