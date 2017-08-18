@@ -54,7 +54,7 @@ ul.definition > li > p {
     content: ' ';
     display: block;
     font-family: bn-glyphs;
-    font-size: 112pt;
+    font-size: 140pt;
     font-weight: 100;
     z-index: 1;
 
@@ -142,6 +142,91 @@ ul.definition > li > p {
     content: $feeder3;
 }
 
+
+.gauge.birds:before {
+    color: #27B8B4;
+}
+
+.gauge.scenery:before {
+    color: #97BA60;
+}
+
+.gauge.locality:before {
+    color: #FFA500;
+}
+
+.gauge {
+    color: #5A3A33;
+    display: inline-block;
+    height: 77px;
+    line-height: 1.0;
+    margin: 0 3.5px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    width: 91px;
+    z-index: 5;
+}
+
+.gauge:before {
+    display: block;
+    font-family: "bn-glyphs";
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 100;
+    top: 3.5px;
+    width: 91px;
+    z-index: 3;
+}
+
+.gauge.birds.none:before {
+    content: '\e933'
+}
+
+.gauge.birds.low:before {
+    content: '\e932';
+}
+
+.gauge.birds.med:before {
+    content: '\e931';
+}
+
+.gauge.birds.high:before {
+    content: '\e930';
+}
+
+.gauge.scenery.none:before {
+    content: '\e92f'
+}
+
+.gauge.scenery.low:before {
+    content: '\e92e';
+}
+
+.gauge.scenery.med:before {
+    content: '\e92d';
+}
+
+.gauge.scenery.high:before {
+    content: '\e929';
+}
+
+.gauge.locality.none:before {
+    content: '\e934'
+}
+
+.gauge.locality.low:before {
+    content: '\e928';
+}
+
+.gauge.locality.med:before {
+    content: '\e927';
+}
+
+.gauge.locality.high:before {
+    content: '\e926';
+}
+
 @media(max-width: 991px) {
     #essentials .fact {
         display: none;
@@ -151,5 +236,26 @@ ul.definition > li > p {
         margin: 0;
         max-width: 240px;
         padding: 21px 2% 14px;
+    }
+}
+
+@media(max-width: 767px) {
+    .gauge {
+        float: left;
+        margin: 14px 0 0;
+        transform: scale(0.80);
+    }
+
+    .gauge + .clearfix:after {
+        clear: none;
+    }
+
+    .gauge + div + p {
+        padding: 7px;
+        text-align: left;
+    }
+
+    .boxed ul {
+        padding: 0;
     }
 }
