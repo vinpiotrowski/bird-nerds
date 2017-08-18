@@ -113,6 +113,10 @@
     padding: 28px 0 7px;
 }
 
+.site-header nav a.menu-toggle.active:before {
+    content: '\e92a';
+}
+
 .site-title {
     font-size: 0!important;
 }
