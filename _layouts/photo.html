@@ -40,12 +40,7 @@
     <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
     <script type="text/javascript">
         $(document).ready(function() {
-
-            var ref = document.referrer;
-            if(ref.indexOf("birdnerds.ca") == -1 && ref.indexOf("localhost") == -1) {
-                $(".link-close").removeAttribute("onclick");
-            }
-
+            
             $(".container-photo img").load( function(){
                 var h = $(this).height();
                 if(h) {
