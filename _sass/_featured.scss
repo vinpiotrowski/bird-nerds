@@ -40,11 +40,11 @@
   text-align: center;
 }
 
-.counted {
+ul.counted {
   padding-left: 49px;
 }
 
-.counted li {
+.counted li, .counted .item {
   counter-increment: step-counter;
   min-height: 70px;
   padding: 14px 14px 14px 14px;
@@ -79,7 +79,8 @@
   border-color: $yellow;
 }
 
-.counted li:before {
+.counted li:before,
+.counted .item h2:before {
   background: $orange;
   border-radius: 50%;
   content: counter(step-counter);
@@ -92,6 +93,18 @@
   text-align: center;
   width: 49px;
 }
+
+.counted .item {
+  margin: 7px 0;
+  text-align: center;
+}
+
+.counted .item h2:before {
+  display: block;
+  position: relative;
+  margin: 35px auto 14px;
+}
+
 
 @media(max-width: 1199px) {
 
