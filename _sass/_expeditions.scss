@@ -38,6 +38,20 @@ body.expeditions {
     z-index: 33;
 }
 
+/*#expedition-article .headline:after {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 14%;
+    bottom: -70px;
+    content: ' ';
+    display: block;
+    left: -7px;
+    position: absolute;
+    right: -14px;
+    top: -14px;
+    transform: skew(10deg, 0deg) rotate(5deg);
+    z-index: -1;
+}*/
+
 #expedition-article .headline * {
     color: $brown;
     margin: 3.5px auto;
