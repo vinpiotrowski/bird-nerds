@@ -37,8 +37,10 @@ sitemap:
 
     <div class="content">
         <div class="inner-page">
+ 
             {% for post in site.posts offset:idx %}
                 {% if post.categories contains 'expeditions' %}
+
                     <div class="col-xs-12 col-md-3 tile exp blue">
                         <a href="{{ post.permalink | prepend: site.baseurl }}">
                             <div class="container-image">
@@ -49,8 +51,9 @@ sitemap:
                             <div class="clearfix"></div>
                         </a>
                     </div>
+
                 {%endif%}
-            {% endfor %}
+            {%endfor%}
             <div class="clearfix"> </div>
         </div>
     </div>
