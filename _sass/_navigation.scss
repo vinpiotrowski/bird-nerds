@@ -181,6 +181,17 @@ body.about .container-menu div:nth-child(4) a:after{
     visibility: visible;
 }
 
+.fixed {
+    float: left;
+    min-height: 7px;
+    width: 310px;
+}
+
+.fixed + div {
+    float: left;
+    width: calc(100% - 310px);
+}
+
 .site-footer {
     background: $brown;
     display: inline-block;
@@ -404,6 +415,14 @@ body.about .container-menu div:nth-child(4) a:after{
         background: $grey;
         height: auto;
         padding: 14px;
+    }
+
+    .fixed {
+        background: #FFF;
+        bottom: 0;
+        position:absolute;
+        width: 100%;
+        z-index: 3;
     }
 
     .site-footer:before {

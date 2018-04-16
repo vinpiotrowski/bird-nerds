@@ -8,22 +8,6 @@
   width: 100%;
 }
 
-.container-image.thumbnail:nth-child(odd),
-.container-image.thumbnail:nth-child(odd) a {
-  color: $green;
-}
-
-.container-image.thumbnail:nth-child(even),
-.container-image.thumbnail:nth-child(even) a {
-  color: $yellow;
-}
-
-.container-image.thumbnail:nth-child(2) a,
-.container-image.thumbnail:nth-child(5) a,
-.container-image.thumbnail:nth-child(8) a {
-  color: $blue;
-}
-
 .container-image.thumbnail a:after {
   background: rgba(250,247,242,0.6);
   bottom: 0;
@@ -47,16 +31,23 @@
   color: #FFF;
 }
 
-
-.photo .page-content {
+body.photo .page-content {
   background: #FFF;
 }
 
+body.photo .container-pull-right {
+  width: 100%;
+  width: calc(100% - 310px);
+}
+
 .container-photo {
+  float: left;
   height: calc(100vh - 70px);
   overflow: hidden;
   padding: 21px 21px 21px 0;
   position: relative;
+  max-width: 100%;
+  width: auto;
 }
 
 .container-video {
@@ -65,23 +56,6 @@
   padding: 21px 21px 21px 0;
   position: relative;
   width: 100%;
-}
-
-.fixed {
-  float: left;
-  min-height: 7px;
-  width: 310px;
-}
-
-.fixed + div {
-  float: left;
-  width: calc(100% - 310px);
-}
-
-body.photo .container-photo {
-  float: right;
-  max-width: calc(100% - 310px);
-  width: auto;
 }
 
 .container-photo img {
@@ -101,7 +75,9 @@ body.photo .container-photo {
 }
 
 .photo-description {
-  margin: 35px 35px 14px 21px;
+  margin: 0;
+  max-width: 310px;
+  padding: 14px 21px;
 }
 
 .photo-description:after {
@@ -191,11 +167,20 @@ body.photo .container-photo {
 
 
 @media(max-width: 991px) {
-  body.photo .container-photo {
-    float: none;
+  body.photo .container-pull-right {
+    width: 100%;
+  }
+
+  .container-photo {
     height: auto;
     max-width: 991px;
     padding: 0;
+  }
+
+  .photo-description {
+    clear: both;
+    max-width: 991px;
+    padding: 14px 21px;
   }
 
   .prev-link, .next-link {
@@ -210,14 +195,6 @@ body.photo .container-photo {
 
 @media(max-width: 767px) {
 
-  .fixed {
-    background: #FFF;
-    bottom: 0;
-    position:absolute;
-    width: 100%;
-    z-index: 3;
-  }
-
   .fixed + .container-video {
     max-width: 767px;
     padding: 0;
@@ -229,10 +206,7 @@ body.photo .container-photo {
     top: 0;
     transform: none;
   }
-
-  .photo-description {
-    margin: 7px 21px 14px;
-  }
+  
 }
 
 

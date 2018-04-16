@@ -10,22 +10,22 @@
 
 <main class="page-content clearfix">
 
-    <div class="container-photo">
-        {{ content }}
+    <div class="container-pull-right clearfix">
+        <div class="container-photo">
+            {{ content }}
 
-        {% if page.previousOverride %}
+            {% if page.previousOverride %}
             <a class="prev-link" href="#" onclick="window.location.replace( '{{page.previousOverride | prepend: site.baseurl}}' );">Previous</a>
-        {% else %}
+            {% else %}
             <a class="prev-link" href="#" onclick="window.location.replace( '{{page.previous.url | prepend: site.baseurl}}' );">Previous</a>
-        {% endif %}
+            {% endif %}
 
-        {% if page.nextOverride %}
+            {% if page.nextOverride %}
             <a class="next-link" href="#" onclick="window.location.replace( '{{page.nextOverride | prepend: site.baseurl}}' );">Next</a>
-        {% else %}
+            {% else %}
             <a class="next-link" href="#" onclick="window.location.replace( '{{page.next.url | prepend: site.baseurl}}' );">Next</a>
-        {% endif %}
-
-        <div class="clearfix"> </div>
+            {% endif %}
+        </div>
     </div>
 
     <div class="photo-description">

@@ -358,6 +358,10 @@ a.scroll-link {
   max-width: 100%;
 }
 
+.container-pull-right {
+  float: right!important;
+}
+
 .comic img {
   image-rendering: auto;
 }
@@ -731,6 +735,10 @@ a.scroll-link {
   .tile.exp img {
     border-radius: 7px 0 0 7px;
     border-bottom: none;
+  }
+
+  .container-pull-right {
+    float: left!important;
   }
 }
 
