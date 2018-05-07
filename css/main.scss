@@ -456,7 +456,10 @@ a.scroll-link {
 }
 
 .button.next {
+  background: $blue;
+  border-color: $blue;
   border-radius: 14px 14px 0 0;
+  color: $white!important;
   position: fixed;
   bottom: 0;
   right: 7%;
@@ -468,8 +471,7 @@ a.scroll-link {
 }
 
 .button.next:hover {
-  border-color: $blue;
-  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .tiles {
