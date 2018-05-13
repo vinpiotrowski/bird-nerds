@@ -212,35 +212,17 @@ body.expeditions {
         margin: 0;
     }
 
-    #expedition-article .headline {
-        background: $brown!important;
-        margin: 0 auto 35px;
-        height: auto;
-        padding: 28px 7px 0;
-        position: static;
-        transform: none;
-        width: 100%;
+    #expedition-article .headline.left + img {
+        transform: scaleX(-1);
     }
 
-    #expedition-article .headline:after {
-        content: ' ';
-        border-left: 133px solid transparent;
-        border-right: 133px solid transparent;
-        border-top: 42px solid rgba(250,247,242,0.7);
-        bottom: -42px;
-        display: block;
-        height: 0;
-        left: -7px;
-        position: relative;
-        width: 0;
-        z-index: 33;
-    }
-
-    #expedition-article .headline:after {
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-top: 42px solid $brown;
-        margin-top: -1px;
+    #expedition-article .headline,
+    #expedition-article .headline.left,
+    #expedition-article .headline.right {
+        background: url(/images/headline-background-mobile.png);
+        left: auto;
+        right: 0;
+        transform: scale(0.49) translate(35%,-21%);
     }
 
     #expedition-article .headline,
