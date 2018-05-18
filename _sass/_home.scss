@@ -132,6 +132,20 @@
     padding: 0 21px;
 }
 
+.decoration {
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.decoration img {
+    margin-top: -35px;
+    max-width: 210px;
+    position: absolute;
+    right: 21px;
+    z-index: 14;
+}
+
 @media(max-width: 1199px) {
     .alberta .headline {
         width: 714px;
@@ -185,6 +199,10 @@
 
     .hero.alberta img {
         width: auto;
+    }
+
+    .decoration {
+        display: none;
     }
 }
 

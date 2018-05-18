@@ -8,110 +8,126 @@ sitemap:
 ---
 
 
-    <div class="container-fluid no-gutter-xs">
+<div class="container-fluid no-gutter-xs">
 
-        <section class="hero intro col-xs-12 no-gutter-xs">
+    <section class="hero intro col-xs-12 no-gutter-xs">
+        <div class="container-image">
+            <img src="{{ '/images/hero-homepage.jpg' | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="inner-page">
+            <div class="headline fancy left">
+                <div id="arc">
+                    <span class="w14">T</span><span class="w15">h</span><span class="w16">e</span><span class="w17"> </span><span class="w18">i</span><span class="w19">n</span><span class="w20">t</span><span class="w21">r</span><span class="w22">e</span><span class="w23">p</span><span class="w24">i</span><span class="w25">d</span><span class="w26"> </span><span class="w27">V</span><span class="w28">i</span><span class="w29">n</span><span class="w30">c</span><span class="w31">e</span><span class="w32"> </span><span class="w33">a</span><span class="w34">n</span><span class="w35">d</span><span class="w36"> </span><span class="w37">S</span><span class="w38">a</span><span class="w39">n</span><span class="w40">d</span><span class="w41">r</span><span class="w42">a</span>
+                </div>
+                <h3>– Present –</h3>
+                <h1>Adventures</h1>
+                <h2>in birding</h2>
+                <h4>a website about birds</h4>
+            </div>
+        </div>
+        <a href="#sec" class="scroll-link">scroll south</a>
+    </section>
+
+    <div class="clearfix"> </div>
+
+    <section class="sections inner-page" id="sec">
+        <div class="col-sm-6 section expeditions">
             <div class="container-image">
-                <img src="{{ "/images/hero-homepage.jpg" | prepend: site.baseurl }}" alt="">
+                <img src="{{ '/images/thumb-expeditions.jpg' | prepend: site.baseurl }}" alt="">
             </div>
-            <div class="inner-page">
-                <div class="headline fancy left">
-                    <div id="arc">
-                        <span class="w14">T</span><span class="w15">h</span><span class="w16">e</span><span class="w17"> </span><span class="w18">i</span><span class="w19">n</span><span class="w20">t</span><span class="w21">r</span><span class="w22">e</span><span class="w23">p</span><span class="w24">i</span><span class="w25">d</span><span class="w26"> </span><span class="w27">V</span><span class="w28">i</span><span class="w29">n</span><span class="w30">c</span><span class="w31">e</span><span class="w32"> </span><span class="w33">a</span><span class="w34">n</span><span class="w35">d</span><span class="w36"> </span><span class="w37">S</span><span class="w38">a</span><span class="w39">n</span><span class="w40">d</span><span class="w41">r</span><span class="w42">a</span>
-                    </div>
-                    <h3>– Present –</h3>
-                    <h1>Adventures</h1>
-                    <h2>in birding</h2>
-                    <h4>a website about birds</h4>
-                </div>
-            </div>
-            <a href="#sec" class="scroll-link">scroll south</a>
-        </section>
-
-        <div class="clearfix"> </div>
-
-        <section class="sections inner-page" id="sec">
-            <div class="col-sm-6 section expeditions">
-                <div class="container-image">
-                    <img src="{{ "/images/thumb-expeditions.jpg" | prepend: site.baseurl }}" alt="">
-                </div>
-                <h2>Expeditions</h2>
-                <p>Join Vince and Sandra as they trek through vast tracks of wilderness in search of birds.</p>
-                <a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">Expeditions</a>
-            </div>
-            <div class="col-sm-6 section essentials">
-                <div class="container-image">
-                    <img src="{{ "/images/thumb-essentials.jpg" | prepend: site.baseurl }}" alt="">
-                </div>
-                <h2>Essentials</h2>
-                <p>Become an aficionado with tips, tricks and tools for achieving expert levels of Bird Nerdery.</p>
-                <a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Essentials</a>
-            </div>
-            <div class="clearfix"> </div>
-        </section>
-
-        <div class="clearfix"> </div>
-
-        {% for post in site.posts %}{% if post.categories contains 'feature' %}{{ post.content }}{% break %}{% endif %}{% endfor %}
-
-        <div class="clearfix"> </div>
-
-        <section class="facts inner-page">
-            <div class="col-sm-4 fact nerd">
-                <h2>–Nerd Tip–</h2>
-                <p>Watch out for turtles. They'll bite you if you put your fingers in their mouths.</p>
-            </div>
-            <div class="col-sm-4 fact bird">
-                <h2>–Bird Tip–</h2>
-                <p>Alberta's official provincial bird is the Great Horned Owl.</p>
-            </div>
-            <div class="col-sm-4 fact nerd">
-                <h2>–Nerd Tip–</h2>
-                <p>Throw some pine needles in the air to see which direction the wind is blowing.</p>
-            </div>
-            <div class="clearfix"> </div>
-        </section>
-
-        <div class="clearfix"> </div>
-
-        <section class="alberta hero col-xs-12 no-gutter-xs">
+            <h2>Expeditions</h2>
+            <p>Join Vince and Sandra as they trek through vast tracks of wilderness in search of birds.</p>
+            <a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">Expeditions</a>
+        </div>
+        <div class="col-sm-6 section essentials">
             <div class="container-image">
-                <img src="{{ "/images/hero-alberta.jpg" | prepend: site.baseurl }}" alt="">
+                <img src="{{ '/images/thumb-essentials.jpg' | prepend: site.baseurl }}" alt="">
             </div>
-            <div class="overlay"> </div>
-            <div class="headline top">
-                <h1>We nest in Alberta, Canada</h1>
-                <p>Did you know that Alberta is Canada's duckiest province?  From alpine meadows to prairie fields, with a bird list of 385 species, Alberta offers a wide variety of places for the aspiring birder to explore.  The Bird Nerds are common to uncommon year round, usually spotted in parks and areas around the city of Calgary.  If you see them, be sure to approach and say hi.</p>
-            </div>
-        </section>
-
+            <h2>Essentials</h2>
+            <p>Become an aficionado with tips, tricks and tools for achieving expert levels of Bird Nerdery.</p>
+            <a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Essentials</a>
+        </div>
         <div class="clearfix"> </div>
+    </section>
 
-        <section class="container-fluid">
-            <div class="inner-page tiles">
-                <h1>Recent expeditions</h1>
+    <div class="clearfix"> </div>
+
+    {% for post in site.posts %}{% if post.categories contains 'feature' %}{{ post.content }}{% break %}{% endif %}{% endfor %}
+
+    <div class="clearfix"> </div>
+
+    <section class="facts inner-page">
+        <div class="col-sm-4 fact nerd">
+            <h2>–Nerd Tip–</h2>
+            <p>Watch out for turtles. They'll bite you if you put your fingers in their mouths.</p>
+        </div>
+        <div class="col-sm-4 fact bird">
+            <h2>–Bird Tip–</h2>
+            <p>Alberta's official provincial bird is the Great Horned Owl.</p>
+        </div>
+        <div class="col-sm-4 fact nerd">
+            <h2>–Nerd Tip–</h2>
+            <p>Throw some pine needles in the air to see which direction the wind is blowing.</p>
+        </div>
+        <div class="clearfix"> </div>
+    </section>
+
+    <div class="clearfix"> </div>
+
+    <section class="alberta hero col-xs-12 no-gutter-xs">
+        <div class="container-image">
+            <img src="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="overlay"> </div>
+        <div class="headline top">
+            <h1>We nest in Alberta, Canada</h1>
+            <p>Did you know that Alberta is Canada's duckiest province?  From alpine meadows to prairie fields, with a bird list of 385 species, Alberta offers a wide variety of places for the aspiring birder to explore.  The Bird Nerds are common to uncommon year round, usually spotted in parks and areas around the city of Calgary.  If you see them, be sure to approach and say hi.</p>
+        </div>
+    </section>
+
+    <div class="clearfix"> </div>
+
+    <div class="inner-page">
+        <div class="decoration">
+            <img src="/images/sticker-nuthatch.png" alt="" />
+        </div>
+    </div>
+
+
+    <section class="container-fluid no-gutter-xs">
+        <div class="inner-page tiles horz clearfix">
+            <h1>Recent expeditions</h1>
+            <div class="col-md-1"></div>
+            <div class="col-sm-5 col-md-5" id="homepage-tiles">
+                <div class="container-image">
+                    <img src="{{ '/images/sticker-downy.png' | prepend: site.baseURL }}" alt="" />
+                </div>
+            </div>
+            <div class="col-sm-7 col-md-6">
                 {% assign idx = 0 %}
                 {% for post in site.posts %}{% if post.categories contains 'expeditions' %}
-                        <div class="col-xs-12 col-md-3 tile exp blue">
-                                <a href="{{ post.permalink | prepend: site.baseurl }}">
-                                <div class="container-image">
-                                    <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
-                                </div>
-                                <h3>{{post.title}}</h3>
-                                <p>{{post.description}}</p>
-                                <div class="clearfix"></div>
-                            </a>
+                <div class="col-xs-12 tile horz blue">
+                    <a href="{{ post.permalink | prepend: site.baseurl }}">
+                        <div class="container-image">
+                            <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
                         </div>
-                        {% assign idx = idx | plus:1 %}
-                        {% assign mod = idx | modulo:2 %}
-                    {% endif %}{% if idx == 4 %}
-                        <div class="clearfix"> </div>
-                        {% break %}
-                    {% endif %}{% endfor %}
+                        <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
+                        <h3>{{post.title}}</h3>
+                        <p>{{post.description | truncate: 49}}</p>
+                        <div class="clearfix"></div>
+                    </a>
+                </div>
+                {% assign idx = idx | plus:1 %}
+                {% assign mod = idx | modulo:2 %}
+                {% endif %}{% if idx == 3 %}
+                <div class="clearfix"> </div>
+                {% break %}
+                {% endif %}{% endfor %}
             </div>
-        </section>
+        </div>
+    </section>
 
-    </div>
+</div>
 
 
 

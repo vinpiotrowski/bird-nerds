@@ -29,27 +29,35 @@ sitemap:
 
     <div class="clearfix"> </div>
 
-    <div class="content" style="background: #FFF">
+    <div class="content">
         <div class="slim blue" style="text-align: center">
             <p>For us, birding is a form of meditation that provides relaxation and exercise.  We post our field notes here along with pictures from our trips.</p>
         </div>
     </div>
 
-    <div class="content">
+    <div class="content" style="background: #FFF">
         <div class="inner-page">
 
             {% for post in site.posts offset:idx %}
                 {% if post.categories contains 'expeditions' %}
 
-                    <div class="col-xs-12 col-md-3 tile exp blue">
-                        <a href="{{ post.permalink | prepend: site.baseurl }}">
-                            <div class="container-image">
-                                <img src="{{"/images/" | prepend: site.baseurl | append: post.thumbnail}}" alt="">
-                            </div>
-                            <h3>{{post.title}}</h3>
-                            <p>{{post.description}}</p>
-                            <div class="clearfix"></div>
-                        </a>
+
+                    <div class="col-xs-12 tile full blue">
+                        <div class="col-sm-6">
+                            <a href="{{ post.permalink | prepend: site.baseurl }}">
+                                <div class="container-image">
+                                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="{{ post.permalink | prepend: site.baseurl }}">
+                                <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
+                                <h3>{{post.title}}</h3>
+                                <p>{{post.description}}</p>
+                            </a>
+                        </div>
+                        <div class="clearfix"></div>
                     </div>
 
                 {%endif%}
