@@ -153,12 +153,12 @@
     border-color: $yellow;
 }
 
-#homepage-tiles .container-image {
+#homepage-tiles > div:nth-child(3) .container-image {
     margin: 21px auto 0;
     max-width: 210px;
 }
 
-#homepage-tiles + div {
+#homepage-tiles > div:nth-child(4) {
     padding: 49px 14px 0;
 }
 
@@ -329,12 +329,16 @@
         border-right: none;
     }
 
-    #homepage-tiles .container-image {
+    #homepage-tiles {
+        background: $off-white;
+    }
+
+    #homepage-tiles > div:nth-child(3) .container-image {
         max-width: 140px;
     }
 
-    #homepage-tiles + div {
-        background: $pure-white;
+    #homepage-tiles > div:nth-child(4) {
+        background: $white;
         padding: 0 14px 35px;
     }
 
