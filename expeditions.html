@@ -14,10 +14,10 @@ sitemap:
 
     <div class="hero tall col-xs-12 no-gutter-xs">
         <div class="container-image show-large">
-            <img src="{{ "/images/hero-expeditions.jpg" | prepend: site.baseurl }}" alt="">
+            <img src="{{ '/images/hero-expeditions.jpg' | prepend: site.baseurl }}" alt="">
         </div>
         <div class="container-image show-small">
-            <img src="{{ "/images/hero-expeditions-small.jpg" | prepend: site.baseurl }}" alt="">
+            <img src="{{ '/images/hero-expeditions-small.jpg' | prepend: site.baseurl }}" alt="">
         </div>
         <div class="inner-page">
             <div class="headline fancy right expeditions">
@@ -35,12 +35,28 @@ sitemap:
         </div>
     </div>
 
-    <div class="content" style="background: #FFF">
+    <div class="content" style="background: #FFFFFF">
         <div class="inner-page">
+
+            {% assign initialPostsToShow =  14 %}
+            {% assign postsShownSoFar = 1 %}
 
             {% for post in site.posts offset:idx %}
                 {% if post.categories contains 'expeditions' %}
 
+                    {% if postsShownSoFar == initialPostsToShow %}
+                        <a href="#" class="link-show-all clearfix" id="link-show-all">
+                            <div class="col-sm-4 col-md-5">
+                                <h2 class="cursive">Want more adventures?</h2>
+                            </div>
+                            <div class="col-sm-4 col-md-2"></div>
+                            <div class="col-sm-4 col-md-5">
+                                <h3>Check out owl of our expeditions</h3>
+                                <div class="button primary">Show all posts</div>
+                            </div>
+                        </a>
+                        <div></div>
+                    {% endif %}
 
                     <div class="col-xs-12 tile full blue">
                         <div class="col-sm-6">
@@ -54,11 +70,13 @@ sitemap:
                             <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
                                 <h3>{{post.title}}</h3>
-                                <p>{{post.description}}</p>
+                                <p class="description">{{post.description}}</p>
                             </a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
+
+                {% assign postsShownSoFar = postsShownSoFar | plus: 1 %}
 
                 {%endif%}
             {%endfor%}

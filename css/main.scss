@@ -256,77 +256,6 @@ strong {
   top: 0;
 }
 
-.headline {
-  left: 50%;
-  position: absolute;
-  top: 49px;
-  transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  z-index: 7;
-}
-
-.headline.bottom {
-  bottom: 70px;
-  top: auto;
-}
-
-.headline.left {
-  left: 105px;
-  margin-left: 0;
-  right: auto;
-  transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-}
-
-.headline.right {
-  left: auto;
-  margin-left: 0;
-  right: 105px;
-  transform: translateX(0);
-  -ms-transform: translateX(0);
-  -webkit-transform: translateX(0);
-}
-
-.headline.top {
-  bottom: auto;
-  top: 35px;
-}
-
-.headline.fancy {
-  text-align: center;
-  width: 455px;
-}
-
-.headline.fancy * {
-  color: $brown;
-}
-
-.headline.fancy h1 {
-  font-family: $cursive-font;
-  font-size: 70pt;
-  font-weight: 100;
-  line-height: 1.2;
-  margin: 0;
-  text-shadow: 0 5px 0 $blue;
-}
-
-.headline.fancy h2 {
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 3px;
-}
-
-.headline.fancy h3 {
-  font-family: $cursive-font;
-  margin: 0;
-}
-
-.headline.fancy h4 {
-  letter-spacing: 5px;
-}
-
 a.scroll-link {
   bottom: 14px;
   color: $pure-white;
@@ -526,31 +455,6 @@ a.scroll-link {
     font-size: 21px;
   }
 
-
-  .headline.bottom {
-    bottom: 35px;
-  }
-
-  .headline.left {
-    left: 21px;
-  }
-
-  .headline.fancy.left {
-    left: -14px;
-  }
-
-  .headline.right {
-    right: 21px;
-  }
-
-  .headline.top {
-    top: 35px;
-  }
-
-  .headline-fancy {
-    width: 360px;
-  }
-
   .hero.alberta {
     height: auto;
   }
@@ -607,32 +511,11 @@ a.scroll-link {
     width: auto;
   }
 
-  .headline {
-    left: 0;
-    margin: 0;
-    max-width: 100%;
-    padding: 0 14px;
-  }
-
-  .headline.fancy {
-    left: 50%;
-    top: 35px;
-    transform: translateX(-50%) scale(0.95);
-    -ms-transform: translateX(-50%) scale(0.95);
-    -webkit-transform: translateX(-50%) scale(0.95);
-  }
-
-  .headline.fancy.left {
-    left: 50%;
-  }
-
-  .headline.fancy h1 {
-    font-size: 42pt;
-  }
 }
 
 @import "grid";
 @import "navigation";
+@import "headlines";
 @import "home";
 @import "tiles";
 @import "expeditions";

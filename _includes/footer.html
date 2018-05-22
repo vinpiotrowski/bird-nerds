@@ -25,6 +25,21 @@
             $(this).toggleClass("active");
         });
     });
+
+    var toggleButton = document.getElementById("link-show-all"), body = document.getElementsByTagName("body")[0];
+
+    // Fire toggleClass function when toggleButton is clicked
+    toggleButton.onclick = toggleClass;
+
+    function toggleClass(event) {
+        var el = event.target;
+        if ( -1 !== el.className.indexOf( "active" ) ) {
+            el.className = el.className.replace( " active", "" );
+        } else {
+            el.className += " active"
+        }
+        event.preventDefault();
+    }
 </script>
 
 

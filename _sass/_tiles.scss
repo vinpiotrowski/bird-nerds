@@ -204,7 +204,7 @@
 
 .tile.full {
     background: $pure-white;
-    border-bottom: solid 1px $border;
+    border-bottom: solid 1px $off-white;
     font-size: inherit;
     margin-bottom: 0;
     padding: 49px 105px;
@@ -350,6 +350,10 @@
         padding: 21px;
     }
 
+    .tile.full img {
+        border-radius: 0;
+    }
+
     .tile.full small {
         padding: 7px 21px;
     }
@@ -366,5 +370,11 @@
         bottom: -14px;
         margin-left: 14px;
         transform: scale(0.7);
+    }
+}
+
+@media(max-width: 321px) {
+    .tile.horz p {
+        display: none;
     }
 }

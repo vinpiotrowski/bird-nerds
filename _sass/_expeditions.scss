@@ -181,6 +181,61 @@ body.expeditions {
     margin: 0 0 0 35px;
 }
 
+.link-show-all {
+    background: $white;
+    clear: both;
+    display: inline-block;
+    margin: 70px auto;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+.link-show-all > div {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.link-show-all:before {
+    background-image: url('/images/sticker-gho.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: ' ';
+    height: 280px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -21%);
+    width: 175px;
+    z-index: 14;
+}
+
+.link-show-all:after {
+    bottom: 0;
+    content: ' ';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 21;
+}
+
+.link-show-all ~ .tile {
+    display: none;
+}
+
+.link-show-all.active {
+    height: 0;
+    margin: 0!important;
+    padding: 0!important;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.link-show-all.active ~ .tile {
+    display: block;
+}
+
 @media(max-width: 991px) {
 
     #expedition-article .headline {
@@ -244,6 +299,18 @@ body.expeditions {
 
     .sightings li {
         float: none;
+    }
+
+    .link-show-all {
+        padding: 210px 0 35px;
+    }
+
+    .link-show-all > div {
+        padding: 0;
+    }
+
+    .link-show-all:before {
+        margin-top: -210px;
     }
 
 }
