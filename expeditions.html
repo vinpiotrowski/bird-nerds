@@ -38,7 +38,7 @@ sitemap:
     <div class="content" style="background: #FFFFFF">
         <div class="inner-page">
 
-            {% assign initialPostsToShow =  14 %}
+            {% assign initialPostsToShow =  11 %}
             {% assign postsShownSoFar = 1 %}
 
             {% for post in site.posts offset:idx %}
@@ -62,7 +62,7 @@ sitemap:
                         <div class="col-sm-6">
                             <a href="{{ post.permalink | prepend: site.baseurl }}">
                                 <div class="container-image">
-                                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                    <img {% if postsShownSoFar < initialPostsToShow %}src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}"{% endif %} data-src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="" class="lazy" />
                                 </div>
                             </a>
                         </div>

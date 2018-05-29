@@ -20,18 +20,13 @@
 </footer>
 
 <script type="text/javascript">
-    $(document).ready(function() {
-        $(".menu-toggle").on("click", function () {
-            $(this).toggleClass("active");
-        });
-    });
 
-    var toggleButton = document.getElementById("link-show-all"), body = document.getElementsByTagName("body")[0];
+    var menuButton = document.getElementById("link-menu");
+    if(menuButton) {
+        menuButton.onclick = toggleMenu;
+    }
 
-    // Fire toggleClass function when toggleButton is clicked
-    toggleButton.onclick = toggleClass;
-
-    function toggleClass(event) {
+    function toggleMenu(event) {
         var el = event.target;
         if ( -1 !== el.className.indexOf( "active" ) ) {
             el.className = el.className.replace( " active", "" );
@@ -40,8 +35,27 @@
         }
         event.preventDefault();
     }
-</script>
 
+    var showAllButton = document.getElementById("link-show-all");
+    if(showAllButton) {
+        showAllButton.onclick = showAll;
+    }
+
+    function showAll(event) {
+        var lazy = document.getElementsByClassName("lazy");
+        for(var i=0; i<lazy.length; i++){
+            lazy[i].src = lazy[i].getAttribute("data-src");
+        }
+        var el = event.target;
+        if ( -1 !== el.className.indexOf( "active" ) ) {
+            el.className = el.className.replace( " active", "" );
+        } else {
+            el.className += " active"
+        }
+        event.preventDefault();
+    }
+
+</script>
 
 
 
