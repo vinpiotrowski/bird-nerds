@@ -80,6 +80,8 @@ $feeder2:          '\e922';
 
 $feeder3:          '\e923';
 
+$itunes:           '\e92c';
+
 $map:              '\f278';
 
 $mixed:            '\e902';
@@ -148,6 +150,10 @@ a {
 
 a, a:visited, a:active {
   color: $blue;
+}
+
+.reverse {
+  color: $white;
 }
 
 .orange {
