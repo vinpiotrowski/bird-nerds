@@ -93,38 +93,32 @@ sitemap:
         </div>
     </div>
 
-
     <section class="container-fluid no-gutter-xs">
         <div class="inner-page tiles horz clearfix" id="homepage-tiles">
             <h1>Recent expeditions</h1>
-            <div class="col-md-1"></div>
-            <div class="col-sm-5 col-md-5">
-                <div class="container-image">
-                    <img src="{{ '/images/sticker-downy.png' | prepend: site.baseURL }}" alt="" />
-                </div>
-            </div>
-            <div class="col-sm-7 col-md-6">
+
+
                 {% assign idx = 0 %}
                 {% for post in site.posts %}{% if post.categories contains 'expeditions' %}
-                <div class="col-xs-12 tile horz blue">
+                <div class="col-xs-12 col-md-6 tile horz blue">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
                             <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
                         </div>
                         <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
                         <h3>{{post.title}}</h3>
-                        <p>{{post.description | truncate: 56}}</p>
+                        <p>{{post.description | truncate: 140}}</p>
                         <div class="clearfix"></div>
                     </a>
                 </div>
                 {% assign idx = idx | plus:1 %}
                 {% assign mod = idx | modulo:2 %}
-                {% endif %}{% if idx == 3 %}
+                {% endif %}{% if idx == 4 %}
                 <div class="clearfix"> </div>
                 {% break %}
                 {% endif %}{% endfor %}
             </div>
-        </div>
+
     </section>
 
 </div>
