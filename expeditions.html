@@ -38,8 +38,17 @@ sitemap:
     <div class="content" style="background: #FFFFFF">
         <div class="inner-page">
 
-            {% assign initialPostsToShow =  11 %}
+            {% assign initialPostsToShow =  13 %}
+            {% assign insertPicture2At = 100 %}
             {% assign postsShownSoFar = 1 %}
+
+
+            <!-- <div class="col-xs-12 col-md-4 tile oversize">
+                <div class="container-image">
+                    <img src="{{'/images/sticker-rb-nuthatch.png' | prepend: site.baseurl }}" alt="" />
+                </div>
+            </div> -->
+
 
             {% for post in site.posts offset:idx %}
                 {% if post.categories contains 'expeditions' %}
@@ -58,22 +67,23 @@ sitemap:
                         <div></div>
                     {% endif %}
 
-                    <div class="col-xs-12 tile full blue">
-                        <div class="col-sm-6">
-                            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                                <div class="container-image">
-                                    <img {% if postsShownSoFar < initialPostsToShow %}src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}"{% endif %} data-src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="" class="lazy" />
-                                </div>
-                            </a>
+                    {% if postsShownSoFar == insertPicture2At %}
+                        <div class="col-xs-12 col-md-4 tile oversize">
+                            <div class="container-image">
+                                <img src="{{'/images/sticker-downy.png' | prepend: site.baseurl }}" alt="" />
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                                <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
-                                <h3>{{post.title}}</h3>
-                                <p class="description">{{post.description}}</p>
-                            </a>
-                        </div>
-                        <div class="clearfix"></div>
+                    {% endif %}
+
+                    <div class="col-xs-12 col-sm-6 col-md-4 tile horz blue">
+                        <a href="{{ post.permalink | prepend: site.baseurl }}">
+                            <div class="container-image">
+                                <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                            </div>
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.description | truncate: 140}}</p>
+                            <div class="clearfix"></div>
+                        </a>
                     </div>
 
                 {% assign postsShownSoFar = postsShownSoFar | plus: 1 %}
