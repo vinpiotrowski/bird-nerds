@@ -392,25 +392,6 @@ a.scroll-link {
   color: $pure-white;
 }
 
-.button.next {
-  background: $blue;
-  border-color: $blue;
-  border-radius: 14px 14px 0 0;
-  color: $white!important;
-  position: fixed;
-  bottom: 0;
-  right: 7%;
-  z-index: 700;
-}
-
-.button.next:after {
-  content: $chev-right;
-}
-
-.button.next:hover {
-  text-decoration: underline;
-}
-
 .divider {
   border-top: solid 7px;
   position: relative;
@@ -490,10 +471,6 @@ a.scroll-link {
 
   .comic > div.title img {
     max-width: 240px;
-  }
-
-  .button.next {
-    display: none;
   }
 
   .show-small {
