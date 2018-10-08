@@ -1,0 +1,1 @@
+var contentful = require('contentful')
