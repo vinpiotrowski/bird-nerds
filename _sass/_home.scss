@@ -171,6 +171,7 @@
 
     .hero.intro > div:first-child:after {
         background-image: url(../images/hero-homepage-small.jpg);
+        image-rendering: auto;
     }
 
     .sections .section, .facts .fact {
