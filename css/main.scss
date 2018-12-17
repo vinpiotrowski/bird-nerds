@@ -223,6 +223,11 @@ strong {
   font-weight: 700;
 }
 
+small {
+  display: inline-block;
+  padding: 3px 0 14px;
+}
+
 .hero {
   border-bottom: solid 7px $orange;
   overflow: hidden;
