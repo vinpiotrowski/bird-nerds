@@ -6,7 +6,7 @@
   <title>Bird Nerds | {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta name="image" content="{% if page.thumbnail %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: page.thumbnail | replace:'-sm.','-lg.' }}{% else %}{{ 'http://birdnerds.ca/images/' | prepend: site.baseurl | append: 'thumb-website.png' }}{% endif %}" />
-  <meta name="theme-color" content="#E45238" />
+  <meta name="theme-color" content="#FAF5EE" />
 
   <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:type"               content="article" />
