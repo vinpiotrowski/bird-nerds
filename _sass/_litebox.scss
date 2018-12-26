@@ -9,9 +9,10 @@
 }
 
 .container-image.thumbnail a:after {
-  background: rgba(250,247,242,0.6);
+  background: rgba(250,247,242,0.91);
+  background: $white;
   bottom: 0;
-  color: $brown;
+  color: $blue;
   content: $expand;
   display: block;
   font-family: $glyph-font;
@@ -26,9 +27,9 @@
 }
 
 .container-image.thumbnail a:hover:after {
-  background: $brown;
+  background: $blue;
+  color: $white;
   border: none;
-  color: #FFF;
 }
 
 body.photo .page-content {
