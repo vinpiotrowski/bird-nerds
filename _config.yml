@@ -8,10 +8,12 @@
 # Site settings
 title: Bird Nerds
 email: vin.piotrowski@gmail.com
-description: Join Vince Piotrowski and Sandra Mills as they trek through vast tracks of wilderness around Calgary, Alberta searching for birds.
+description: Join Vince Piotrowski and Sandra Mills as they trek around Calgary, Alberta and abroad searching for birds.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://birdnerds.ca/"
-birdCount: 275
+birdCount: 363
+abBirdCount: 211
+expeditionCount: 52
 
 # Build settings
 markdown: kramdown

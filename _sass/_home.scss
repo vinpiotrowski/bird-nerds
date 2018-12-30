@@ -19,6 +19,25 @@
     top: 0;
 }
 
+.statistics {
+    background: $brown;
+}
+
+.statistic {
+    padding: 35px 0 49px;
+}
+
+.statistic * {
+    display: block;
+    color: $white;
+    text-align: center;
+}
+
+.statistic div {
+    font-size: 42px;
+    font-weight: 100;
+}
+
 .section .container-image {
     border: solid 3.5px $grey;
 }
