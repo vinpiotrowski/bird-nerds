@@ -52,6 +52,28 @@ sitemap:
 
     <div class="clearfix"> </div>
 
+    {% for post in site.posts %}{% if post.categories contains 'feature' %}{{ post.content }}{% break %}{% endif %}{% endfor %}
+
+    <div class="clearfix"> </div>
+
+    <section class="facts inner-page">
+        <div class="col-sm-4 fact nerd">
+            <h2>–Nerd Tip–</h2>
+            <p>Watch out for turtles. They'll bite you if you put your fingers in their mouths.</p>
+        </div>
+        <div class="col-sm-4 fact bird">
+            <h2>–Bird Tip–</h2>
+            <p>Alberta's official provincial bird is the Great Horned Owl.</p>
+        </div>
+        <div class="col-sm-4 fact nerd">
+            <h2>–Nerd Tip–</h2>
+            <p>Throw some pine needles in the air to see which direction the wind is blowing.</p>
+        </div>
+        <div class="clearfix"> </div>
+    </section>
+
+    <div class="clearfix"> </div>
+
     <section class="statistics" id="statistics">
         <div class="inner-page clearfix">
             <div class="statistic col-xs-6 col-sm-3">
@@ -74,28 +96,6 @@ sitemap:
     </section>
 
     <div class="clearfix"></div>
-
-    {% for post in site.posts %}{% if post.categories contains 'feature' %}{{ post.content }}{% break %}{% endif %}{% endfor %}
-
-    <div class="clearfix"> </div>
-
-    <section class="facts inner-page">
-        <div class="col-sm-4 fact nerd">
-            <h2>–Nerd Tip–</h2>
-            <p>Watch out for turtles. They'll bite you if you put your fingers in their mouths.</p>
-        </div>
-        <div class="col-sm-4 fact bird">
-            <h2>–Bird Tip–</h2>
-            <p>Alberta's official provincial bird is the Great Horned Owl.</p>
-        </div>
-        <div class="col-sm-4 fact nerd">
-            <h2>–Nerd Tip–</h2>
-            <p>Throw some pine needles in the air to see which direction the wind is blowing.</p>
-        </div>
-        <div class="clearfix"> </div>
-    </section>
-
-    <div class="clearfix"> </div>
 
     <section class="alberta hero col-xs-12 no-gutter-xs">
         <div class="container-image">
@@ -143,6 +143,8 @@ sitemap:
             </div>
 
     </section>
+
+
 
 </div>
 
