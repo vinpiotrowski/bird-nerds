@@ -32,6 +32,29 @@ sitemap:
     <div class="content" style="background: #FFF">
         <div class="slim blue" style="text-align: center">
             <p>For us, birding is a form of meditation that provides relaxation and exercise.  We post our field notes here along with pictures from our trips.</p>
+
+            <section class="statistics" id="statistics">
+                <div class="inner-page clearfix">
+                    <div class="statistic col-xs-6 col-sm-3">
+                        <div id="bird-count">0</div>
+                        <span>Species Identified</span>
+                    </div>
+                    <div class="statistic col-xs-6 col-sm-3">
+                        <div id="ab-bird-count">0</div>
+                        <span>Species in Alberta</span>
+                    </div>
+                    <div class="statistic col-xs-6 col-sm-3">
+                        <div id="expedition-count">0</div>
+                        <span>Expeditions Logged</span>
+                    </div>
+                    <div class="statistic col-xs-6 col-sm-3">
+                        <div id="mosquito-count">0</div>
+                        <span>Mosquito Bites</span>
+                    </div>
+                </div>
+            </section>
+
+            <div class="clearfix"></div>
         </div>
     </div>
 
@@ -98,3 +121,48 @@ sitemap:
 
 
 <div class="clearfix"></div>
+
+<script type="text/javascript">
+
+    var isStatsAnimationTriggered = false;
+
+    function animateStat(id, start, end, duration) {
+        var range = end - start;
+        var current = start;
+        var increment = end > start? 1 : -1;
+        var stepTime = Math.abs(Math.floor(duration / range));
+        var obj = document.getElementById(id);
+        var timer = setInterval(function() {
+            current += increment;
+            obj.innerHTML = current;
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    function animateStats() {
+        animateStat("bird-count", 0, {{ site.birdCount }}, 2100);
+        animateStat("ab-bird-count", 0, {{ site.abBirdCount }}, 2100);
+        animateStat("expedition-count", 0, {{ site.expeditionCount }}, 2100);
+        animateStat("mosquito-count", 0, 427, 2100);
+    }
+
+    function isStatsInView() {
+        var element = document.getElementById("statistics");
+        var cTop = window.scrollY + window.innerHeight;
+        var eTop = element.offsetTop - 1;
+        return cTop >= eTop;
+    }
+
+    /*window.addEventListener('scroll', function() {
+        if(!isStatsAnimationTriggered && isStatsInView()) {
+            isStatsAnimationTriggered = true;
+
+        }
+    });*/
+
+    animateStats();
+
+
+</script>

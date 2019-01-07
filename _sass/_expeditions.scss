@@ -39,6 +39,21 @@ body.expeditions {
     z-index: 33;
 }
 
+.statistic {
+    padding: 35px 0 49px;
+}
+
+.statistic * {
+    display: block;
+    color: $white;
+    text-align: center;
+}
+
+.statistic div {
+    font-size: 42px;
+    font-weight: 100;
+}
+
 /*#expedition-article .headline {
     background: rgba(250,247,242,0.7);
     background: url(/images/headline-background.png);
