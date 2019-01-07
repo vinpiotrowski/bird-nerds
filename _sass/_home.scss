@@ -211,14 +211,6 @@
     .hero.intro > div:first-child:after {
         background-position: -140px center;
     }
-
-    .statistic {
-        border-bottom: solid 1px $white;
-    }
-
-    .statistic:nth-child(odd) {
-        border-right: solid 1px $white;
-    }
 }
 
 
