@@ -40,6 +40,14 @@ changefreq: 'monthly'
         border-right: solid 1px #CCC;
     }
 
+    .download-tiles.mobile img {
+        max-width: 140px;
+    }
+
+    .colouring .col-sm-4 {
+        margin-bottom: 14px;
+    }
+
     @media(max-width: 767px) {
         .download-tiles > div {
             border: none!important;
@@ -83,6 +91,69 @@ changefreq: 'monthly'
             </div>
         </div>
     </section>
+
+    <div class="content" style="background: #FFF;">
+        <section class="inner-page clearfix">
+
+            <div class="col-xs-12">
+                <h2>Free 4K mobile wallpapers</h2>
+                <h4>Sizing <strong>Reg:</strong> iPhone 7, iPhone 8, Google Pixel XL.  <strong>Tall:</strong> iPhone X, OnePlus 6, Samsung Galaxy S9.</h4>
+            </div>
+            <div class="download-tiles mobile">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <img src="{{ '/images/wallpaper-harris-sm.png' | append: site.baseURL }}" alt="harris hawk wallpaper" />
+                    </div>
+                    <p>Harris hawk wallpaper</p>
+                    <a href="{{ '/images/wallpaper-harris.jpg' | append: site.baseURL }}">Reg size</a>
+                    |
+                    <a href="{{ '/images/wallpaper-harris-lg.jpg' | append: site.baseURL }}">Tall size</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <img src="{{ '/images/wallpaper-toucan-sm.png' | append: site.baseURL }}" alt="toucan wallpaper" />
+                    </div>
+                    <p>Collared aracari wallpaper</p>
+                    <a href="{{ '/images/wallpaper-toucan.jpg' | append: site.baseURL }}">Reg size</a>
+                    |
+                    <a href="{{ '/images/wallpaper-toucan-lg.jpg' | append: site.baseURL }}">Tall size</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <img src="{{ '/images/wallpaper-raven-sm.png' | append: site.baseURL }}" alt="raven wallpaper" />
+                    </div>
+                    <p>Raven wallpaper</p>
+                    <a href="{{ '/images/wallpaper-raven.jpg' | append: site.baseURL }}">Reg size</a>
+                    |
+                    <a href="{{ '/images/wallpaper-raven-lg.jpg' | append: site.baseURL }}">Tall size</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <img src="{{ '/images/wallpaper-downy-sm.png' | append: site.baseURL }}" alt="downy wallpaper" />
+                    </div>
+                    <p>Downy wallpaper</p>
+                    <a href="{{ '/images/wallpaper-downy.jpg' | append: site.baseURL }}">Reg size</a>
+                    |
+                    <a href="{{ '/images/wallpaper-downy-lg.jpg' | append: site.baseURL }}">Tall size</a>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <img src="{{ '/images/wallpaper-eagle-sm.png' | append: site.baseURL }}" alt="bald eagle wallpaper" />
+                    </div>
+                    <p>Bald eagle wallpaper</p>
+                    <a href="{{ '/images/wallpaper-bald-eagle.jpg' | append: site.baseURL }}">Reg size</a>
+                    |
+                    <a href="{{ '/images/wallpaper-bald-eagle-lg.jpg' | append: site.baseURL }}">Tall size</a>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
 
     <div class="content">
         <section class="inner-page clearfix">
@@ -130,6 +201,7 @@ changefreq: 'monthly'
                     <a href="{{ '/images/wallpaper-flycatcher-lg.jpg' | append: site.baseURL }}" class="button primary">Download</a>
                 </div>
             </div>
+
         </section>
 
     </div>
@@ -178,6 +250,34 @@ changefreq: 'monthly'
                     <div class="container-image">
                         <a href="{{ '/media/colouring-sheet-winter.pdf' | prepend: site.baseURL }}" target="_blank">
                             <img src="{{'/images/essentials-colouring-winter.jpg' | prepend: site.baseURL }}" alt="winter birds colouring sheet" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <a href="{{ '/media/colouring-sheet-summer.pdf' | prepend: site.baseURL }}" target="_blank">
+                            <img src="{{'/images/essentials-colouring-summer.jpg' | prepend: site.baseURL }}" alt="summer birds colouring sheet" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <a href="{{ '/media/colouring-sheet-downy.pdf' | prepend: site.baseURL }}" target="_blank">
+                            <img src="{{'/images/essentials-colouring-downy.jpg' | prepend: site.baseURL }}" alt="downy birds colouring sheet" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="container-image">
+                        <a href="{{ '/media/colouring-sheet-owl.pdf' | prepend: site.baseURL }}" target="_blank">
+                            <img src="{{'/images/essentials-colouring-owl.jpg' | prepend: site.baseURL }}" alt="great horned owl colouring sheet" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                    <div class="container-image">
+                        <a href="{{ '/media/colouring-sheet-woodduck.pdf' | prepend: site.baseURL }}" target="_blank">
+                            <img src="{{'/images/essentials-colouring-woodduck.jpg' | prepend: site.baseURL }}" alt="woodduck colouring sheet" />
                         </a>
                     </div>
                 </div>

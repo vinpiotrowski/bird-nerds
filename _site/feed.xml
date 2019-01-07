@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bird Nerds</title>
+    <description>Join Vince Piotrowski and Sandra Mills as they trek around Calgary, Alberta and abroad searching for birds.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 06 Jan 2019 18:53:45 -0700</pubDate>
+    <lastBuildDate>Sun, 06 Jan 2019 18:53:45 -0700</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Playa Grande</title>
+        <description>&lt;section&gt;
+
+    &lt;div class=&quot;container-image col-xs-12 big&quot;&gt;
+        &lt;img src=&quot;/images/2018-12-11-hero-lg.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;div class=&quot;headline top right&quot;&gt;
+            &lt;h3&gt;Costa Rica&lt;/h3&gt;
+            &lt;h1 class=&quot;post-title&quot; itemprop=&quot;name headline&quot;&gt;Playa Grande&lt;/h1&gt;
+            &lt;p&gt;10.3234471,-85.8634116&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;col-xs-12&quot;&gt;
+        &lt;div class=&quot;col-xs-12&quot;&gt;
+            &lt;p class=&quot;post-meta&quot;&gt;&lt;time datetime=&quot;2018-12-12T11:11:11-07:00&quot; itemprop=&quot;datePublished&quot;&gt;Dec 12, 2018&lt;/time&gt;&lt;/p&gt;
+            &lt;h2&gt;Bird nerds notes&lt;/h2&gt;
+            &lt;div class=&quot;post-content&quot;&gt;
+                &lt;p&gt;After some rustic adventures we wanted to relax and stayed in Playa Grande for the last part of our trip to Costa Rica.  Everyone there was a surfer and it reminded us a lot of Tofino, BC in Canada.  On one of our first outings we spotted a motmot and it made our day.  After that any other birds we spotted were just a bonus.  We took a boat into a nearby mangrove estuary, visited Tamarindo (too touristy for us), and sat on the beach watching sunsets.  It really was the perfect way to end a great trip!  &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;col-xs-12 clearfix&quot;&gt;
+        &lt;h3&gt;Photos&lt;/h3&gt;
+        &lt;div class=&quot;col-xs-12 col-md-4 thumbnail container-image&quot;&gt;
+            &lt;img src=&quot;/images/playa-grande-01.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-md-4 thumbnail container-image&quot;&gt;
+            &lt;img src=&quot;/images/playa-grande-02.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-md-4 thumbnail container-image&quot;&gt;
+            &lt;img src=&quot;/images/playa-grande-03.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-md-6 thumbnail container-image&quot;&gt;
+            &lt;img src=&quot;/images/playa-grande-04.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;col-xs-12 col-md-6 thumbnail container-image&quot;&gt;
+            &lt;img src=&quot;/images/playa-grande-05.jpg&quot; alt=&quot;&quot; /&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;blue&quot;&gt;
+            &lt;hr /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;col-xs-12 thumbnails&quot;&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-bullocks-oriole.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-bullocks-oriole-sm.jpg&quot; alt=&quot;bullocks oriole photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-iguana.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-iguana-sm.jpg&quot; alt=&quot;iguana photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-sandpiper.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-sandpiper-sm.jpg&quot; alt=&quot;sandpiper photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-crab.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-crab-sm.jpg&quot; alt=&quot;crab photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-cocodrillo.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-cocodrillo-sm.jpg&quot; alt=&quot;cocodrillo photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-hoffmans-woodpecker.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-hoffmans-woodpecker-sm.jpg&quot; alt=&quot;hoffmans woodpecker photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-white-necked-puffbird.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-white-necked-puffbird-sm.jpg&quot; alt=&quot;white-necked puffbird photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-howler-monkey.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-howler-monkey-sm.jpg&quot; alt=&quot;howler monkey photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-roadside-hawk.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-roadside-hawk-sm.jpg&quot; alt=&quot;roadside hawk photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+       &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-white-collared-seedeater.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-white-collared-seedeater-sm.jpg&quot; alt=&quot;white-collared seedeater photo&quot;&gt;
+            &lt;/a&gt;
+       &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-yellow-crowned-night-heron.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-yellow-crowned-night-heron-sm.jpg&quot; alt=&quot;yellow-crowned night heron photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-turquoise-browed-motmot.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-turquoise-browed-motmot-sm.jpg&quot; alt=&quot;turquoise-browed motmot photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-brown-pelican.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-brown-pelican-sm.jpg&quot; alt=&quot;brown pelican photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-fruit-bat.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-fruit-bat-sm.jpg&quot; alt=&quot;fruit bat photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-tricolored-heron.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-tricolored-heron-sm.jpg&quot; alt=&quot;tri-colored heron photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-rose-throated-becard.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-rose-throated-becard-sm.jpg&quot; alt=&quot;rose-throated becard photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-brown-booby.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-brown-booby-sm.jpg&quot; alt=&quot;brown booby photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-black-headed-trogon.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-black-headed-trogon-sm.jpg&quot; alt=&quot;black-headed trogon photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-lizard.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-lizard-sm.jpg&quot; alt=&quot;lizard photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;container-image thumbnail col-xs-6 col-sm-3&quot;&gt;
+            &lt;a href=&quot;/expeditions/photos/2018-12-11-stripe-headed-sparrow.html&quot;&gt;
+                &lt;img src=&quot;/images/2018-12-11-stripe-headed-sparrow-sm.jpg&quot; alt=&quot;stipe-headed sparrow photo&quot;&gt;
+            &lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+    &lt;div class=&quot;blue&quot;&gt;
+        &lt;hr /&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;badges col-xs-12 col-md-4&quot;&gt;
+        &lt;h3&gt;Conditions&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li class=&quot;badge count&quot; data-count=&quot;9-12&quot;&gt;December&lt;/li&gt;
+            &lt;li class=&quot;badge sunny&quot;&gt;sunny&lt;/li&gt;
+            &lt;li class=&quot;badge count&quot; data-count=&quot;35&amp;deg;&quot;&gt;celsius&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;sightings col-xs-12 col-md-8&quot;&gt;
+        &lt;h3&gt;First sightings (lifers) 10x&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Banded wren&lt;/li&gt;
+            &lt;li&gt;Brown booby&lt;/li&gt;
+            &lt;li&gt;Bullock's oriole&lt;/li&gt;
+            &lt;li&gt;Common black hawk&lt;/li&gt;
+            &lt;li&gt;Mangrove warbler&lt;/li&gt;
+            &lt;li&gt;Ringed kingfisher&lt;/li&gt;
+            &lt;li&gt;Stripe-headed sparrow&lt;/li&gt;
+            &lt;li&gt;Turquoise-browed motmot&lt;/li&gt;
+            &lt;li&gt;White-collared seedeater&lt;/li&gt;
+            &lt;li&gt;White-necked puffbird&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;
+
+&lt;/section&gt;
+
+
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 11:11:11 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/2018-12-12-costa-rica-playa-grande.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/2018-12-12-costa-rica-playa-grande.html</guid>
+        
+        
+        <category>expeditions</category>
+        
+        <category>travel</category>
+        
+        <category>tropical</category>
+        
+        <category>costa</category>
+        
+        <category>rica</category>
+        
+        <category>playa</category>
+        
+        <category>grande</category>
+        
+      </item>
+    
+      <item>
+        <title>Stripe-headed Sparrow</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-stripe-headed-sparrow-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-stripe-headed-sparrow.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-stripe-headed-sparrow.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Lizard</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-lizard-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-lizard.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-lizard.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Black-headed Trogon</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-black-headed-trogon-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-black-headed-trogon.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-black-headed-trogon.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Brown Booby</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-brown-booby-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-brown-booby.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-brown-booby.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Rose-throated Becard</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-rose-throated-becard-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-rose-throated-becard.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-rose-throated-becard.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Tricolored heron</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-tricolored-heron-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-tricolored-heron.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-tricolored-heron.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Fruit Bat</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-fruit-bat-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-fruit-bat.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-fruit-bat.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>Brown Pelican</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-brown-pelican-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-brown-pelican.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-brown-pelican.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+      <item>
+        <title>White-collared Seedeater</title>
+        <description>&lt;img src=&quot;/images/2018-12-11-turquoise-browed-motmot-lg.jpg&quot; alt=&quot;&quot;&gt;
+
+
+</description>
+        <pubDate>Wed, 12 Dec 2018 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/expeditions/photos/2018-12-11-turquoise-browed-motmot.html</link>
+        <guid isPermaLink="true">http://localhost:4000/expeditions/photos/2018-12-11-turquoise-browed-motmot.html</guid>
+        
+        
+        <category>photo</category>
+        
+      </item>
+    
+  </channel>
+</rss>

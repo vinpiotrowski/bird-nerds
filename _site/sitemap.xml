@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+        <url>
+        <loc>http://localhost:4000/about/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/backyard-bird-feeder-tips.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/bird-nerds-field-notes.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/eagle-eye-bird-identification-tips.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/best-calgary-alberta-birding-locations.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/bird-photography-best-of-2017.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/bird-photography-best-of-2018.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/bird-photography-gear-and-tips.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/essentials/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        </url>
+    
+
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-12-12-costa-rica-playa-grande.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-12-06-costa-rica-rainforests.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-12-04-costa-rica-palo-verde.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-10-10-transition-to-winter.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-09-25-where-is-fall.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-08-30-duncan-and-sooke-birds.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-08-25-cold-lake-warblers.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-08-08-birds-of-the-alberta-foothills.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-06-21-wild-burrowing-owls-in-alberta.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-05-27-species-count-2.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-05-05-grebes-in-calgary-parks.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-04-12-spring-question-mark.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-03-11-mexican-birds.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-02-26-stellar-winter-birds.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2018-01-26-phoenix-arizona.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-12-27-snowy-owl-near-calgary.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-11-27-northern-pygmy-owl.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-10-22-fall-owls.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-09-22-saw-whet-owl-in-bragg-creek.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-08-28-warbler-migration-calgary.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-08-19-frank-lake-summer-migration.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-08-19-backpacking-birds-in-kananaskis.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-08-04-great-egret-in-alberta.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-07-22-burrowing-by-brooks.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-07-11-summer-adventure-dinosaur-provincial-park.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-07-09-summer-adventure-cypress-hills-provincial-park.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-07-07-summer-adventure-waterton-national-park.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-07-03-three-toed-woodpeckers-in-bragg-creek.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-06-18-sapsuckers-and-nighthawks-in-willow-creek.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-06-15-cedar-waxwings-and-bird-babies.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-06-02-harlequin-duck-and-others.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-05-29-inglewood-bird-sanctuary-species-count.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-05-22-shore-birds-of-frank-lake-alberta.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-05-19-storm-ponds-in-northeast-calgary.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-05-06-mountain-bluebirds-near-bragg-creek.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-04-30-sharp-tailed-grouse-lek.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-04-23-raptors-in-british-columbia.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-04-05-baby-owls-in-urban-calgary.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-04-05-birding-in-kinbrook-island-provincial-park.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-04-05-wood-duck-in-inglewood.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-03-28-mammal-ramble.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-03-18-spring-fever.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-03-13-early-migrators-in-inglewood.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-03-04-calgary-snowy-owls.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-02-26-banff-weekend.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-01-14-weaselhead-barred-owl.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-01-14-weaselhead-redpoll.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2017-01-08-weaselhead-redpoll.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2016-12-13-weaselhead-grosbeak.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2016-12-18-inglewood-bird-sanctuary-eagles.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2016-12-12-weaselhead.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+        <url>
+        <loc>http://localhost:4000/expeditions/2016-10-30-bird-nerds-begin.html</loc>
+        <priority>0.7</priority>
+        </url>
+    
+
+</urlset>
