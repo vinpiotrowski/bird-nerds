@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="346" selection-start-line="34" selection-start-column="346" selection-end-line="34" selection-end-column="346" />
+            <state relative-caret-position="51">
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -107,7 +107,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="559" />
     <option name="y" value="452" />
     <option name="width" value="1742" />
@@ -174,12 +174,12 @@
       <workItem from="1557093549375" duration="5072000" />
       <workItem from="1559481493199" duration="8642000" />
       <workItem from="1561335391623" duration="7428000" />
-      <workItem from="1564351828918" duration="5216000" />
+      <workItem from="1564351828918" duration="5879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38097000" />
+    <option name="totallyTimeSpent" value="38760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="559" y="452" width="1742" height="1000" extended-state="0" />
@@ -552,8 +552,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="34" column="346" selection-start-line="34" selection-start-column="346" selection-end-line="34" selection-end-column="346" />
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
