@@ -7,7 +7,7 @@
 
 {% include header-light.html %}
 
-{% if page.parent %}
+{% if false and page.parent %}
 <a class="close-link" href="{{ page.parent | prepend: site.baseurl }}" onclick="window.history.back();return false;">Close</a>
 {% else %}
 <a class="close-link" href="~" onclick="window.history.back();return false;">Close</a>

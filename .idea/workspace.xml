@@ -13,92 +13,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_layouts/post-data.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="117" selection-start-line="40" selection-start-column="117" selection-end-line="40" selection-end-column="117" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-15.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-16.html">
+        <entry file="file://$PROJECT_DIR$/_layouts/photo-data.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-17.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-18.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-19.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-20.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-21.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-22.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-23.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -141,9 +78,7 @@
         <option value="$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html" />
         <option value="$PROJECT_DIR$/_posts/2018-08-31-photo-04.html" />
         <option value="$PROJECT_DIR$/_layouts/post-data.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-01.html" />
-        <option value="$PROJECT_DIR$/_layouts/photo-data.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-02.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-03.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-04.html" />
@@ -157,16 +92,18 @@
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-12.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-13.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-14.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-15.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-16.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-17.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-18.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-19.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-20.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-21.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-22.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-23.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-15.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-16.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-17.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-18.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-19.html" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html" />
+        <option value="$PROJECT_DIR$/_layouts/photo-data.html" />
       </list>
     </option>
   </component>
@@ -188,6 +125,11 @@
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
+              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,12 +177,12 @@
       <workItem from="1561335391623" duration="7428000" />
       <workItem from="1564351828918" duration="5879000" />
       <workItem from="1566531485729" duration="8020000" />
-      <workItem from="1567998890174" duration="19883000" />
+      <workItem from="1567998890174" duration="20849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66663000" />
+    <option name="totallyTimeSpent" value="67629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="250" y="224" width="1742" height="1001" extended-state="0" />
@@ -450,17 +392,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/post-data.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="40" column="117" selection-start-line="40" selection-start-column="117" selection-end-line="40" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_layouts/photo-data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -548,13 +483,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="680" selection-start-line="18" selection-start-column="656" selection-end-line="18" selection-end-column="680" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-13.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -571,36 +499,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-15.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="68">
+          <caret line="4" column="101" selection-start-line="4" selection-start-column="101" selection-end-line="4" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-16.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="68">
+          <caret line="4" column="75" lean-forward="true" selection-start-line="4" selection-start-column="75" selection-end-line="4" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-17.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="68">
+          <caret line="4" column="111" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-18.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="68">
+          <caret line="4" column="111" selection-start-line="4" selection-start-column="111" selection-end-line="4" selection-end-column="111" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-photo-19.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="68">
+          <caret line="4" column="97" lean-forward="true" selection-start-line="4" selection-start-column="97" selection-end-line="4" selection-end-column="97" />
         </state>
       </provider>
     </entry>
@@ -632,10 +560,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="119">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="117" selection-start-line="40" selection-start-column="117" selection-end-line="40" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/photo-data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
