@@ -18,16 +18,17 @@ body.expeditions {
 }
 
 #expedition-article .headline {
-    background: rgba(250,247,242,0.63);
-    border-radius: 7px 7px 0 0;
+    /*background: rgba(250,247,242,0.63);
+    border-radius: 7px 7px 0 0;*/
     padding: 28px 7px 0;
     text-align: center;
     width: 280px;
 }
 
 #expedition-article .headline:after {
+    background: url(/images/background-badge.png) no-repeat;
     content: ' ';
-    border-left: 140px solid transparent;
+    /*border-left: 140px solid transparent;
     border-right: 140px solid transparent;
     border-top: 42px solid rgba(250,247,242,0.63);
     bottom: -42px;
@@ -36,7 +37,14 @@ body.expeditions {
     left: -7px;
     position: relative;
     width: 0;
-    z-index: 33;
+    z-index: 33;*/
+    display: block;
+    height: 370px;
+    left: -42px;
+    position: absolute;
+    top: -21px;;
+    width: 370px;
+    z-index: -1;
 }
 
 .statistic {
@@ -95,9 +103,9 @@ body.expeditions {
 }
 
 #expedition-article .headline p:before {
-    content: 'coords : ';
+   /* content: 'coords : ';
     display: inline;
-    font-family: $cursive-font;
+    font-family: $cursive-font;*/
 }
 
 #expedition-article .headline h1:after {
@@ -321,16 +329,17 @@ body.expeditions {
     }
 
     #expedition-article .headline {
-        background: $brown;
-        border-radius: 0;
-        margin: 0 auto 49px;
-        padding: 35px 0 0;
-        position: static;
-        transform: none;
-        width: 100%;
+        bottom: 0;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%) scale(0.84);
     }
 
     #expedition-article .headline:after {
+        background: url(/images/background-badge-mob.png) no-repeat;
+    }
+
+    /*#expedition-article .headline:after {
         border-left: 50vw solid transparent;
         border-right: 50vw solid transparent;
         border-top: 42px solid $brown;
@@ -339,17 +348,16 @@ body.expeditions {
         margin-top: -3px;
     }
 
+    #expedition-article .headline * {
+        margin-top: -14px;
+        max-width: none!important;
+    }*/
+
     #expedition-article .headline,
     #expedition-article .headline *,
     #expedition-article .headline.reverse,
     #expedition-article .headline.reverse * {
         color: $white;
-    }
-
-    #expedition-article .headline * {
-        margin-top: -14px;
-        max-width: none!important;
-        transform: scale(0.77);
     }
 
     #expedition-article .content {
@@ -386,8 +394,13 @@ body.expeditions {
 
 @media(max-width: 480px) {
 
-    .container-image.big {
-        overflow: hidden;
+    #expedition-article section {
+        overflow-x: hidden;
+    }
+
+    #expedition-article .container-image.big {
+        margin-bottom: 49px;
+        padding-bottom: 140px;
     }
 
     .big img {
@@ -402,7 +415,7 @@ body.expeditions {
     .badge {
         float: left;
         margin: 14px 0 0;
-        transform: scale(0.80);
+        transform: scale(0.77);
     }
 
     .statistic:nth-child(1), .statistic:nth-child(2) {

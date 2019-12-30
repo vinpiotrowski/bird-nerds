@@ -13,11 +13,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+            <state relative-caret-position="544">
+              <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/_headlines.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sass/_expeditions.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="848">
+              <caret line="404" selection-start-line="404" selection-end-line="404" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="127" selection-start-line="57" selection-start-column="127" selection-end-line="57" selection-end-column="127" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-08-08-expedition-turner-valley.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="103" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-07-01-expedition-borrowing-owls.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -26,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/2017/_posts/2017-07-07-expedition-big-trip-pt-1.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="55" />
+              <caret line="6" column="55" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -40,33 +103,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-expedition-aug-day-trips.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post-data.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#article#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>stat</find>
       <find>.thumbnail</find>
+      <find>:after</find>
+      <find>coords</find>
+      <find>background</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Wince\bird-nerds\_sass</dir>
@@ -78,10 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-07-12-photo-01.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-02.html" />
-        <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-04.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-03.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-05.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-06.html" />
@@ -94,10 +135,8 @@
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-13.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-14.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-photo-01.html" />
-        <option value="$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html" />
         <option value="$PROJECT_DIR$/_posts/2018-09-25-expedition-where-is-fall.html" />
         <option value="$PROJECT_DIR$/_posts/2018-09-25-photo-09.html" />
-        <option value="$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html" />
         <option value="$PROJECT_DIR$/_posts/2018-08-31-photo-04.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-01.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-02.html" />
@@ -129,6 +168,12 @@
         <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-23.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-expedition-aug-day-trips.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html" />
+        <option value="$PROJECT_DIR$/_sass/_expeditions.scss" />
+        <option value="$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html" />
+        <option value="$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html" />
+        <option value="$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html" />
+        <option value="$PROJECT_DIR$/_posts/2018-08-08-expedition-turner-valley.html" />
+        <option value="$PROJECT_DIR$/_posts/2018-07-01-expedition-borrowing-owls.html" />
       </list>
     </option>
   </component>
@@ -153,18 +198,12 @@
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-              <item name="2017" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-              <item name="2017" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
@@ -219,12 +258,12 @@
       <workItem from="1566531485729" duration="8020000" />
       <workItem from="1567998890174" duration="20849000" />
       <workItem from="1574051830298" duration="606000" />
-      <workItem from="1577671288807" duration="2789000" />
+      <workItem from="1577671288807" duration="8155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71024000" />
+    <option name="totallyTimeSpent" value="76390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="0" width="2455" height="1600" extended-state="0" />
@@ -272,34 +311,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-photo-06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="68" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-photo-08.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-photo-07.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-photo-09.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="77" selection-start-line="4" selection-start-column="77" selection-end-line="4" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-08-17-photo-12.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -342,13 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="151" column="10" selection-start-line="151" selection-start-column="10" selection-end-line="151" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-08-31-photo-04.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -360,13 +364,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1989">
           <caret line="132" column="38" selection-start-line="132" selection-start-column="38" selection-end-line="132" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
         </state>
       </provider>
     </entry>
@@ -538,13 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_sass/_expeditions.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="364" column="13" selection-start-line="364" selection-start-column="13" selection-end-line="364" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_sass/_litebox.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -612,7 +602,7 @@
     <entry file="file://$PROJECT_DIR$/2017/_posts/2017-07-07-expedition-big-trip-pt-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="55" />
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
@@ -625,8 +615,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+        <state relative-caret-position="544">
+          <caret line="32" column="85" selection-start-line="32" selection-start-column="85" selection-end-line="32" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_headlines.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_expeditions.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="404" selection-start-line="404" selection-end-line="404" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="14" selection-start-line="57" selection-start-column="14" selection-end-line="57" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="127" selection-start-line="57" selection-start-column="127" selection-end-line="57" selection-end-column="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-08-08-expedition-turner-valley.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="103" selection-start-line="55" selection-start-column="103" selection-end-line="55" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-07-01-expedition-borrowing-owls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
