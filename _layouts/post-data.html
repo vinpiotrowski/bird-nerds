@@ -5,11 +5,7 @@ layout: default
 <article class="post inner-page" id="expedition-article" itemscope itemtype="http://schema.org/BlogPosting">
     <div class="content" style="background: #FFF;">
 
-
-
-
         <section>
-
             <div class="container-image col-xs-12 big">
                 <img src="{{ '/images/' | prepend: site.baseurl | append: page.thumbnail | replace: '-sm.jpg', '-lg.jpg'}}" alt="" />
                 <div class="headline top {{ page.title-alignment }}">
@@ -37,7 +33,7 @@ layout: default
                 <h3>Photos</h3>
                 {{ content }}
                 {% for thumb in page.photos %}
-                <div class="container-image thumbnail col-xs-6 col-sm-3">
+                <div class="container-image thumbnail col-sm-3">
                     <a href="{{ '/expeditions/photos/' | prepend: site.baseurl | append: thumb | append: '.html' }}">
                         <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
                     </a>
