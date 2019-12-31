@@ -329,35 +329,17 @@ body.expeditions {
     }
 
     #expedition-article .headline {
-        bottom: 0;
-        left: 50%;
-        top: auto;
-        transform: translateX(-50%) scale(0.84);
+        left: 25%;
+        top: -35px;
+        transform: translateX(-50%) scale(0.56);
+    }
+
+    #expedition-article .headline.right {
+        left: 75%;
     }
 
     #expedition-article .headline:after {
         background: url(/images/background-badge-mob.png) no-repeat;
-    }
-
-    /*#expedition-article .headline:after {
-        border-left: 50vw solid transparent;
-        border-right: 50vw solid transparent;
-        border-top: 42px solid $brown;
-        bottom: -41px;
-        left: 0;
-        margin-top: -3px;
-    }
-
-    #expedition-article .headline * {
-        margin-top: -14px;
-        max-width: none!important;
-    }*/
-
-    #expedition-article .headline,
-    #expedition-article .headline *,
-    #expedition-article .headline.reverse,
-    #expedition-article .headline.reverse * {
-        color: $white;
     }
 
     #expedition-article .content {
@@ -396,11 +378,6 @@ body.expeditions {
 
     #expedition-article section {
         overflow-x: hidden;
-    }
-
-    #expedition-article .container-image.big {
-        margin-bottom: 49px;
-        padding-bottom: 140px;
     }
 
     .big img {
