@@ -29,9 +29,12 @@ layout: default
 
             <div class="clearfix"></div>
 
-            <div class="col-xs-12 thumbnails">
-                <h3>Photos</h3>
+            <div class="col-xs-12">
                 {{ content }}
+            </div>
+
+            <div class="col-xs-12 thumbnails">
+                <h3>Bird Photos</h3>
                 {% for thumb in page.photos %}
                 <div class="container-image thumbnail col-sm-3">
                     <a href="{{ '/expeditions/photos/' | prepend: site.baseurl | append: thumb | append: '.html' }}">
