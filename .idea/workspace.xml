@@ -22,11 +22,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-12-26-expedition-snowshoe.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="305" selection-start-line="17" selection-start-column="305" selection-end-line="17" selection-end-column="305" />
+            <state relative-caret-position="663">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -114,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-09-05-photo-23.html" />
         <option value="$PROJECT_DIR$/_posts/2019-08-17-expedition-aug-day-trips.html" />
         <option value="$PROJECT_DIR$/_posts/2019-07-12-expedition-cold-lake-ii.html" />
         <option value="$PROJECT_DIR$/_posts/2018-08-30-expedition-duncan-and-sooke.html" />
@@ -165,6 +173,7 @@
         <option value="$PROJECT_DIR$/_posts/2019-12-26-photo-08.html" />
         <option value="$PROJECT_DIR$/_posts/2019-09-05-expedition-saskatchewan.html" />
         <option value="$PROJECT_DIR$/_posts/2019-12-26-expedition-snowshoe.html" />
+        <option value="$PROJECT_DIR$/_config.yml" />
       </list>
     </option>
   </component>
@@ -186,11 +195,6 @@
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
@@ -245,12 +249,12 @@
       <workItem from="1566531485729" duration="8020000" />
       <workItem from="1567998890174" duration="20849000" />
       <workItem from="1574051830298" duration="606000" />
-      <workItem from="1577671288807" duration="24438000" />
+      <workItem from="1577671288807" duration="25362000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92673000" />
+    <option name="totallyTimeSpent" value="93597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="714" y="190" width="1667" height="989" extended-state="0" />
@@ -298,13 +302,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2018-08-25-expedition-cold-lake-warblers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2018-08-08-expedition-turner-valley.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -645,8 +642,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-12-26-expedition-snowshoe.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="305" selection-start-line="17" selection-start-column="305" selection-end-line="17" selection-end-column="305" />
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>

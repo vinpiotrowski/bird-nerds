@@ -7,13 +7,13 @@
 
 # Site settings
 title: Bird Nerds
-email: vin.piotrowski@gmail.com
+email: vinpiot@gmail.com
 description: Join Vince Piotrowski and Sandra Mills as they trek around Calgary, Alberta and abroad searching for birds.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://birdnerds.ca/"
-birdCount: 365
-abBirdCount: 213
-expeditionCount: 59
+birdCount: 367
+abBirdCount: 215
+expeditionCount: 60
 
 # Build settings
 markdown: kramdown
