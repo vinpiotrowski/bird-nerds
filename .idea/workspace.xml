@@ -31,11 +31,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2018-03-04-expedition-mexico.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="782">
               <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/essentials-photography-best-2019.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/essentials-photography-best-2018.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2567">
+              <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -69,8 +87,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/2017/_posts/2017-07-07-expedition-big-trip-pt-1.html" />
-        <option value="$PROJECT_DIR$/2017/_posts/2017-07-03-expedition-three-toed.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-06-18-expedition-sapsucker.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-05-29-expedition-species-count.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-05-22-expeditions-ibis.html" />
@@ -120,13 +136,16 @@
         <option value="$PROJECT_DIR$/_posts/2018-10-10-expedition-transition-to-winter.html" />
         <option value="$PROJECT_DIR$/_posts/2019-12-26-expedition-snowshoe.html" />
         <option value="$PROJECT_DIR$/_posts/2018-03-04-expedition-mexico.html" />
+        <option value="$PROJECT_DIR$/essentials-photography-best-2018.html" />
+        <option value="$PROJECT_DIR$/essentials-photography-best-2019.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1247" />
-    <option name="width" value="1247" />
-    <option name="height" value="1600" />
+    <option name="x" value="571" />
+    <option name="y" value="42" />
+    <option name="width" value="1667" />
+    <option name="height" value="989" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -149,11 +168,6 @@
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -168,6 +182,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wince\bird-nerds" />
       <recent name="C:\Users\Wince\bird-nerds\_posts" />
       <recent name="C:\Users\Wince\bird-nerds\_layouts" />
     </key>
@@ -204,18 +219,19 @@
       <workItem from="1566531485729" duration="8020000" />
       <workItem from="1567998890174" duration="20849000" />
       <workItem from="1574051830298" duration="606000" />
-      <workItem from="1577671288807" duration="38322000" />
+      <workItem from="1577671288807" duration="42925000" />
+      <workItem from="1578450908801" duration="2150000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106557000" />
+    <option name="totallyTimeSpent" value="113310000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1247" y="0" width="1247" height="1600" extended-state="0" />
+    <frame x="571" y="42" width="1667" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28122416" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.208717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -257,16 +273,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2017/_posts/2017-06-18-expedition-sapsucker.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2017/_posts/2017-06-15-expedition-waxwings.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/2017/_posts/2017-06-02-expedition-harlequin.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -606,6 +612,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
           <caret line="46" column="55" selection-start-line="46" selection-start-column="55" selection-end-line="46" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials-photography-best-2018.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2567">
+          <caret line="151" column="76" selection-start-line="151" selection-start-column="76" selection-end-line="151" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials-photography-best-2019.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
