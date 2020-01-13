@@ -40,11 +40,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/essentials-photography-best-2019.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/essentials.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="176" column="80" selection-start-line="176" selection-start-column="80" selection-end-line="176" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -87,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/2017/_posts/2017-06-18-expedition-sapsucker.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-05-29-expedition-species-count.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-05-22-expeditions-ibis.html" />
         <option value="$PROJECT_DIR$/2017/_posts/2017-05-19-expeditions-saddlebird.html" />
@@ -138,6 +146,7 @@
         <option value="$PROJECT_DIR$/_posts/2018-03-04-expedition-mexico.html" />
         <option value="$PROJECT_DIR$/essentials-photography-best-2018.html" />
         <option value="$PROJECT_DIR$/essentials-photography-best-2019.html" />
+        <option value="$PROJECT_DIR$/essentials.html" />
       </list>
     </option>
   </component>
@@ -220,12 +229,13 @@
       <workItem from="1567998890174" duration="20849000" />
       <workItem from="1574051830298" duration="606000" />
       <workItem from="1577671288807" duration="42925000" />
-      <workItem from="1578450908801" duration="2150000" />
+      <workItem from="1578450908801" duration="2749000" />
+      <workItem from="1578888655709" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113310000" />
+    <option name="totallyTimeSpent" value="113956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="571" y="42" width="1667" height="989" extended-state="0" />
@@ -273,9 +283,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/2017/_posts/2017-06-02-expedition-harlequin.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/2017/_posts/2017-05-29-expedition-species-count.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -626,6 +633,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="46" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="176" column="80" selection-start-line="176" selection-start-column="80" selection-end-line="176" selection-end-column="80" />
         </state>
       </provider>
     </entry>
