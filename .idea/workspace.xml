@@ -13,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-expedition-mexico.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="223">
@@ -23,28 +23,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-06.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-07.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-16.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-21.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_sass/_home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
               <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-27.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="67" selection-start-line="8" selection-start-column="67" selection-end-line="8" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-01.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="64" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -68,6 +95,7 @@
       <find>height</find>
       <find>&quot;</find>
       <find>hero</find>
+      <find>max-width</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Wince\bird-nerds\_sass</dir>
@@ -79,7 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2019-12-26-photo-05.html" />
         <option value="$PROJECT_DIR$/_posts/2019-12-26-photo-06.html" />
         <option value="$PROJECT_DIR$/_posts/2019-12-26-photo-07.html" />
         <option value="$PROJECT_DIR$/_posts/2019-12-26-photo-01.html" />
@@ -106,8 +133,6 @@
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-04.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-05.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-08.html" />
-        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-06.html" />
-        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-07.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-09.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-10.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-11.html" />
@@ -115,12 +140,10 @@
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-13.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-14.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-15.html" />
-        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-16.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-17.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-18.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-19.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-20.html" />
-        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-21.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-22.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-23.html" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-24.html" />
@@ -130,10 +153,15 @@
         <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-27.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2020-02-07-expedition-mexico.html" />
+        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-06.html" />
+        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-07.html" />
+        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-16.html" />
+        <option value="$PROJECT_DIR$/_posts/2020-02-07-photo-21.html" />
+        <option value="$PROJECT_DIR$/_sass/_home.scss" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="613" />
     <option name="y" value="252" />
     <option name="width" value="1667" />
@@ -150,6 +178,11 @@
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
               <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bird-nerds" type="462c0819:PsiDirectoryNode" />
+              <item name="_sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bird-nerds" type="b2602c69:ProjectViewProjectNode" />
@@ -211,12 +244,12 @@
       <workItem from="1578888655709" duration="1293000" />
       <workItem from="1578975093554" duration="1854000" />
       <workItem from="1579313151163" duration="598000" />
-      <workItem from="1582481638871" duration="13751000" />
+      <workItem from="1582481638871" duration="14737000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131405000" />
+    <option name="totallyTimeSpent" value="132391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="613" y="252" width="1667" height="989" extended-state="0" />
@@ -264,13 +297,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2019-12-26-photo-06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-12-26-photo-07.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -453,20 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-06.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="101" selection-start-line="4" selection-start-column="101" selection-end-line="4" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-07.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-09.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -516,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-16.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-17.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -548,13 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="116" selection-start-line="4" selection-start-column="116" selection-end-line="4" selection-end-column="116" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-21.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -618,6 +616,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
           <caret line="20" column="305" selection-start-line="20" selection-start-column="305" selection-end-line="20" selection-end-column="305" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-06.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="74" selection-start-line="4" selection-start-column="74" selection-end-line="4" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-07.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-16.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2020-02-07-photo-21.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="60" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_sass/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
         </state>
       </provider>
     </entry>
