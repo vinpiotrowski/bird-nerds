@@ -1,0 +1,43 @@
+---
+layout: post
+permalink: /essentials/featured-bird-wood-duck.html
+title:  "Wood Duck"
+description: "Our featured Alberta bird this season is the wood duck."
+date:   2020-03-21 11:11:11 -0700
+categories: feature wood duck
+photo: hero-featured-wood-duck
+thumbnail: hero-featured-wood-duck-sm.jpg
+section: essentials
+---
+<style>
+    #wood-duck > div:first-child:after {
+        background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }} );
+    }
+
+    @media(max-width: 767px) {
+        #wood-duck > div:first-child:after {
+            background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }} );
+        }
+    }
+</style>
+
+
+<section class="featured hero col-xs-12 no-gutter-xs yellow" id="wood-duck">
+
+    <div class="container-image">
+    </div>
+
+    <div class="headline right top reverse">
+        <h3>–Featured Bird–</h3>
+        <h1>Wood Duck</h1>
+        <ol class="counted">
+            <li>Males are iridescent chestnut and green, with ornate patterns on nearly every feather.</li>
+            <li>These birds live in wooded swamps, where they nest in holes in trees.</li>
+            <li>The wood duck is the only North American duck that regularly produces two broods in one year.</li>
+        </ol>
+    </div>
+
+</section>
+<div class="clearfix"> </div>
+
+

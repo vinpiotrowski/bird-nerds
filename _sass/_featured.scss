@@ -1,178 +1,195 @@
 .hero.featured {
   height: 540px;
   margin-bottom: 35px;
-}
 
-.hero.featured > div:first-child:after {
-  background: url(../images/hero-homepage.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  content: '';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.featured .headline * {
-   color: $brown;
- }
-
-.featured .headline.reverse * {
-  color: $white;
-}
-
-.featured .headline {
-  max-width: 540px;
-}
-
-.featured h3 {
-  font-family: $cursive-font;
-}
-
-.featured h1,
-.featured h3,
-.featured a.button {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-ul.counted {
-  padding-left: 49px;
-}
-
-.counted li, .counted .item {
-  counter-increment: step-counter;
-  min-height: 70px;
-  padding: 14px 14px 14px 14px;
-  list-style: none;
-}
-
-.blue .counted li:before {
-  background: $blue;
-}
-
-.yellow .counted li:before {
-  background: $yellow;
-}
-
-.featured.blue {
-  border-color: $blue;
-}
-
-.green .counted li:before {
-  background: $green;
-}
-
-.featured.green {
-  border-color: $green;
-}
-
-.yellow .counted li:before {
-  background: $yellow;
-}
-
-.featured.yellow {
-  border-color: $yellow;
-}
-
-.counted li:before,
-.counted .item h2:before {
-  background: $orange;
-  border-radius: 50%;
-  content: counter(step-counter);
-  color: $white;
-  font-size: 28px;
-  height: 49px;
-  margin: 0 0 0 -63px;
-  padding: 7px 0 0;
-  position: absolute;
-  text-align: center;
-  width: 49px;
-}
-
-.counted .item {
-  margin: 7px 0;
-  text-align: center;
-}
-
-.counted .item h2:before {
-  display: block;
-  position: relative;
-  margin: 35px auto 14px;
-}
-
-
-@media(max-width: 1199px) {
-
-  .featured .headline {
-    width: 480px;
+  > div:first-child:after {
+    background: url(../images/hero-homepage.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
-@media(max-width: 991px) {
 
-  .featured .headline {
-    top: 14px;
-    width: 420px;
+
+.featured {
+
+  .headline {
+    padding: 0 35px;
+    max-width: 600px;
+    top: 49%;
+    transform: translate(0, -56%);
+
+    &.right {
+      left: 45.5%;
+      right: auto;
+    }
   }
-}
 
-@media(max-width: 767px) {
-  .featured {
-    background: $grey;
+  .headline * {
+    color: $brown;
   }
 
-  .hero.featured {
-    height: auto;
-  }
-
-  .featured .headline * {
+  .headline.reverse * {
     color: $white;
   }
 
-  .hero.featured > div:first-child {
-    height: 240px;
+  h3 {
+    font-family: $cursive-font;
   }
 
-  .hero.featured > div:first-child:after {
-    bottom: auto;
-    height: 240px;
+  h1,
+  h3,
+  a.button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+  ul.counted {
+    padding-left: 49px;
   }
 
-  .featured .headline, .featured .inner-page {
-    position: static;
-    width: 100%;
+  .counted li, .counted .item {
+    counter-increment: step-counter;
+    min-height: 70px;
+    padding: 14px 14px 14px 14px;
+    list-style: none;
   }
 
-  .featured .inner-page {
-    transform: translateX(0);
+  .blue .counted li:before {
+    background: $blue;
   }
 
-  .counted {
-    padding: 0;
+  .yellow .counted li:before {
+    background: $yellow;
   }
 
-  .counted li {
-    padding: 14px 21px;
+  .featured.blue {
+    border-color: $blue;
   }
 
-  /*.counted li:before {
-    display: none;
-  }*/
-
-  .featured .counted li {
-    font-size: 12pt;
-    padding: 7px 21px 7px 52.5px;
+  .green .counted li:before {
+    background: $green;
   }
 
-  .featured .counted li:before {
-    display: list-item;
-    line-height: 1.25;
-    margin: -7px 21px 7px -56px;
-    transform: scale(0.77);
+  .featured.green {
+    border-color: $green;
   }
+
+  .yellow .counted li:before {
+    background: $yellow;
+  }
+
+  .featured.yellow {
+    border-color: $yellow;
+  }
+
+  .counted li:before,
+  .counted .item h2:before {
+    background: $orange;
+    border-radius: 50%;
+    content: counter(step-counter);
+    color: $white;
+    font-size: 28px;
+    height: 49px;
+    margin: 0 0 0 -63px;
+    padding: 7px 0 0;
+    position: absolute;
+    text-align: center;
+    width: 49px;
+  }
+
+  .counted .item {
+    margin: 7px 0;
+    text-align: center;
+  }
+
+  .counted .item h2:before {
+    display: block;
+    position: relative;
+    margin: 35px auto 14px;
+  }
+
+
+  @media(max-width: 1199px) {
+
+    .featured .headline {
+      width: 480px;
+    }
+  }
+
+  @media(max-width: 991px) {
+
+    .featured .headline {
+      width: 420px;
+
+      &.right {
+        left: 40%;
+      }
+    }
+  }
+
+  @media(max-width: 767px) {
+    .featured {
+      background: $grey;
+
+      .headline {
+        margin-top: 0;
+        max-width: 100%;
+        padding: 35px 14px 35px 35px;
+        position: static;
+        transform: none;
+        width: 100%;
+      }
+    }
+
+    .hero.featured {
+      height: auto;
+    }
+
+    .featured .headline * {
+      color: $white;
+    }
+
+    .hero.featured > div:first-child {
+      height: 240px;
+    }
+
+    .hero.featured > div:first-child:after {
+      bottom: auto;
+      height: 240px;
+    }
+
+    .counted {
+      padding: 0;
+    }
+
+    .counted li {
+      padding: 14px 21px;
+    }
+
+    /*.counted li:before {
+      display: none;
+    }*/
+
+    .featured .counted li {
+      font-size: 12pt;
+      padding: 7px 21px 7px 52.5px;
+    }
+
+    .featured .counted li:before {
+      display: list-item;
+      line-height: 1.25;
+      margin: -7px 21px 7px -56px;
+      transform: scale(0.77);
+    }
+
 }
