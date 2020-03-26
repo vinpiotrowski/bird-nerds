@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="326">
@@ -31,14 +31,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/essentials-field-notes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="599">
-              <caret line="242" column="33" lean-forward="true" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
+            <state relative-caret-position="347">
+              <caret line="273" column="143" selection-start-line="273" selection-start-column="143" selection-end-line="273" selection-end-column="143" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#6;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,8 +133,8 @@
         <option value="$PROJECT_DIR$/2017/_posts/2017-07-14-feature-sharp-tailed-grouse.html" />
         <option value="$PROJECT_DIR$/_posts/2020-03-21-feature-wood-duck.html" />
         <option value="$PROJECT_DIR$/_sass/_home.scss" />
-        <option value="$PROJECT_DIR$/essentials-field-notes.html" />
         <option value="$PROJECT_DIR$/css/main.scss" />
+        <option value="$PROJECT_DIR$/essentials-field-notes.html" />
       </list>
     </option>
   </component>
@@ -221,12 +225,12 @@
       <workItem from="1583120408460" duration="632000" />
       <workItem from="1584812657529" duration="10042000" />
       <workItem from="1585008548203" duration="10000" />
-      <workItem from="1585100512248" duration="4084000" />
+      <workItem from="1585100512248" duration="5933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147358000" />
+    <option name="totallyTimeSpent" value="149207000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="512" y="341" width="1667" height="986" extended-state="0" />
@@ -615,21 +619,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/essentials-field-notes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="242" column="33" lean-forward="true" selection-start-line="242" selection-start-column="33" selection-end-line="242" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="319" column="1" selection-start-line="319" selection-start-column="1" selection-end-line="319" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials-field-notes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="273" column="143" selection-start-line="273" selection-start-column="143" selection-end-line="273" selection-end-column="143" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#6;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
