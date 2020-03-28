@@ -26,7 +26,7 @@
 .section.expeditions:before,
 .section.essentials:before {
     color: $blue;
-    content: '–\00a0\f278\00a0–';
+    content: '—\00a0\f278\00a0—';
     display: block;
     font-family: bn-glyphs;
     font-size: 49px;
@@ -34,7 +34,7 @@
 }
 
 .section.essentials:before {
-    content: '–\00a0\f1e5\00a0–';
+    content: '—\00a0\f1e5\00a0—';
     color: $green;
 }
 
