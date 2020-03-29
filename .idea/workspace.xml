@@ -43,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/essentials-field-notes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="442" column="81" selection-start-line="442" selection-start-column="81" selection-end-line="442" selection-end-column="81" />
+            <state relative-caret-position="279">
+              <caret line="516" column="98" lean-forward="true" selection-start-line="516" selection-start-column="98" selection-end-line="516" selection-end-column="98" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -58,6 +58,9 @@
                 <element signature="n#style#0;n#div#10;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#11;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#12;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#13;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#14;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#15;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -251,12 +254,12 @@
       <workItem from="1583120408460" duration="632000" />
       <workItem from="1584812657529" duration="10042000" />
       <workItem from="1585008548203" duration="10000" />
-      <workItem from="1585100512248" duration="15437000" />
+      <workItem from="1585100512248" duration="18698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158711000" />
+    <option name="totallyTimeSpent" value="161972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="414" y="399" width="1667" height="986" extended-state="0" />
@@ -656,8 +659,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/essentials-field-notes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="442" column="81" selection-start-line="442" selection-start-column="81" selection-end-line="442" selection-end-column="81" />
+        <state relative-caret-position="279">
+          <caret line="516" column="98" lean-forward="true" selection-start-line="516" selection-start-column="98" selection-end-line="516" selection-end-column="98" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -671,6 +674,9 @@
             <element signature="n#style#0;n#div#10;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#11;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#12;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#13;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#14;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#15;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
