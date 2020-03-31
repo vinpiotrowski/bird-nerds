@@ -91,9 +91,9 @@ sitemap:
                     {% endif %}
 
                     {% if postsShownSoFar == insertPicture2At %}
-                        <div class="col-xs-12 col-md-4 tile oversize">
+                        <div class="col-xs-12 col-md-4 tile" style="margin-bottom: 14px; max-height: 182px;">
                             <div class="container-image">
-                                <img src="{{'/images/sticker-downy.png' | prepend: site.baseurl }}" alt="" />
+                                <img src="{{'/images/sticker-pintail.png' | prepend: site.baseurl }}" alt="" style="position: relative; z-index: 21;" />
                             </div>
                         </div>
                     {% endif %}
@@ -101,7 +101,11 @@ sitemap:
                     <div class="col-xs-12 col-sm-6 col-md-4 tile horz blue">
                         <a href="{{ post.permalink | prepend: site.baseurl }}">
                             <div class="container-image">
-                                <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                {% if postsShownSoFar < initialPostsToShow %}
+                                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                {% else %}
+                                    <img src="" alt="" data-src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" class="lazy">
+                                {% endif %}
                             </div>
                             <h3>{{post.title}}</h3>
                             <p>{{post.description | truncate: 140}}</p>
