@@ -313,6 +313,10 @@ a.scroll-link {
   float: right!important;
 }
 
+.comic img {
+  image-rendering: auto!important;
+}
+
 .comic h1, .comic h2, .comic h3 {
   font-family: $cursive-font;
 }
