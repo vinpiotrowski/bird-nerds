@@ -107,7 +107,6 @@ body, html {
   font-family: $base-font;
   font-size: 13pt;
   font-weight: 700;
-  image-rendering: -webkit-optimize-contrast;
   margin: 0;
   padding: 0;
 
@@ -239,6 +238,7 @@ small {
 
 .hero {
   border-bottom: solid 7px $orange;
+  image-rendering: -webkit-optimize-contrast;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -311,10 +311,6 @@ a.scroll-link {
 
 .container-pull-right {
   float: right!important;
-}
-
-.comic img {
-  image-rendering: auto;
 }
 
 .comic h1, .comic h2, .comic h3 {
@@ -473,6 +469,7 @@ a.scroll-link {
 
   body, html {
     font-size: 11pt;
+    image-rendering: -webkit-optimize-contrast;
   }
 
   main {
