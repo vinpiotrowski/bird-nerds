@@ -85,6 +85,8 @@ $feeder2:          '\e922';
 
 $feeder3:          '\e923';
 
+$fly-south:        '\e917';
+
 $itunes:           '\e92c';
 
 $map:              '\f278';
@@ -480,7 +482,7 @@ a.scroll-link {
   }
 
   .content {
-    padding: 21px 7px;
+    padding: 21px 14px;
   }
 
   .comic > div.title img {
@@ -508,6 +510,12 @@ a.scroll-link {
     width: auto;
   }
 
+}
+
+@media(max-width: 321px) {
+  .content {
+    padding: 21px 7px;
+  }
 }
 
 @import "grid";

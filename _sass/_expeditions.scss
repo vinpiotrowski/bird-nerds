@@ -48,12 +48,12 @@ body.expeditions {
 }
 
 .statistic {
-    padding: 35px 0 49px;
+    padding: 0 0 49px;
 }
 
 .statistic {
     div:before {
-        content: $bird-stroke;
+        content: $fly-south;
         display: block;
         font-family: $glyph-font;
         font-size: 49px;
@@ -61,6 +61,11 @@ body.expeditions {
         padding: 28px 0 7px;
         text-align: center;
         vertical-align: bottom;
+    }
+
+    div#bird-count:before {
+        transform: rotate(-180deg);
+        padding: 7px 0 28px;
     }
 
     div#ab-bird-count:before {
