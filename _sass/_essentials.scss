@@ -357,6 +357,7 @@ $label-font-size: 13pt;
             color: $white;
             flex-grow: 1;
             flex-basis: 0;
+            min-width: 126px;
             padding: 7px 21px;
 
             &.active {
