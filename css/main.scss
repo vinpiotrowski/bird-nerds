@@ -163,7 +163,10 @@ a, a:active {
 }
 
 .reverse {
-  color: $white;
+  color: $pure-white!important;
+  * {
+    color: $pure-white!important;
+  }
 }
 
 .orange {
@@ -456,10 +459,6 @@ a.scroll-link {
 
   h3 {
     font-size: 21px;
-  }
-
-  .hero.alberta {
-    height: auto;
   }
 
   .headline.fancy h1 {

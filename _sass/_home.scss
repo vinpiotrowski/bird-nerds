@@ -2,214 +2,209 @@
     background: $white;
 }
 
-.hero.intro, .hero.alberta {
+.hero.intro, .hero.location {
     height: 540px;
 }
 
-.hero.intro > div:after {
-    background: url(../images/hero-homepage.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+.hero.intro {
+    > div:after {
+        background: url(../images/hero-homepage.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    @media(max-width: 767px) {
+        > div:first-child:after {
+            background-image: url(../images/hero-homepage-small.jpg);
+        }
+    }
+
+    @media(max-width: 479px) {
+        > div:first-child:after {
+            background-position: -140px center;
+        }
+    }
 }
 
-.section .container-image {
-    border: solid 3.5px $grey;
-}
-
-.section.expeditions:before,
-.section.essentials:before {
-    color: $blue;
-    content: '—\00a0\f278\00a0—';
-    display: block;
-    font-family: bn-glyphs;
-    font-size: 49px;
-    font-weight: 100;
-}
-
-.section.essentials:before {
-    content: '—\00a0\f1e5\00a0—';
-    color: $green;
-}
-
-.sections .section,
-.facts .fact {
+.feature-column {
     border-left: solid 1px $border;
     margin-bottom: 28px;
     margin-top: 28px;
     padding: 21px 35px 35px;
     text-align: center;
-}
 
-.sections .section:first-child,
-.facts .fact:first-child {
-    border-left: none;
-}
-
-.section *,
-.fact * {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 320px;
-}
-
-.section * {
-    max-width: 375px;
-}
-
-.fact * {
-    padding: 0 21px;
-}
-
-.section h2 {
-    font-family: $cursive-font;
-}
-
-.fact h2, .fact h3 {
-    font-family: $cursive-font;
-    text-align: center;
-}
-
-.section.expeditions h2,
-.expeditions .button {
-    color: $blue;
-}
-
-.section.essentials h2,
-.section.essentials .button {
-    color: $green;
-}
-
-.section.about h2, .section.about h4 {
-    color: $yellow;
-}
-
-.section.expeditions .button:hover {
-    background: $blue;
-    color: $white;
-}
-
-.section.essentials .button:hover {
-    background: $green;
-    color: $white;
-}
-
-.fact:before {
-    color: $brown;
-    content: '\e910';
-    display: block;
-    font-family: bn-glyphs;
-    font-size: 112pt;
-    font-weight: 100;
-    text-align: center;
-}
-
-.fact.bird:before {
-    content: '\e911';
-}
-
-.alberta .headline {
-    width: 960px;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.alberta .headline:before {
-    content: '\e912';
-    display: block;
-    font-family: bn-glyphs;
-    font-size: 70pt;
-    font-weight: 100;
-}
-
-.alberta * {
-    color: $white;
-}
-
-.alberta p {
-    font-weight: 700;
-    padding: 0 21px;
-}
-
-.decoration {
-    left: 0;
-    position: absolute;
-    right: 0;
-}
-
-.decoration img {
-    margin-top: -35px;
-    max-width: 210px;
-    position: absolute;
-    right: 21px;
-    z-index: 14;
-}
-
-@media(max-width: 1199px) {
-    .alberta .headline {
-        width: 714px;
-    }
-}
-
-
-@media(max-width: 991px) {
-    .hero.alberta {
-        height: auto;
+    &:first-child {
+        border-left: none;
     }
 
-    .expeditions .badges {
-        float: left;
+    &.expeditions {
+        h2, .button {
+            color: $blue;
+        }
+
+        .button:hover {
+            background: $blue;
+            color: $white;
+        }
     }
-}
 
-@media(max-width: 767px) {
+    &.essentials {
+        h2, .button {
+            color: $green;
+        }
 
-    .hero.intro > div:first-child:after {
-        background-image: url(../images/hero-homepage-small.jpg);
-        image-rendering: auto;
+        .button:hover {
+            background: $green;
+            color: $white;
+        }
     }
 
-    .sections .section, .facts .fact {
+    &.about {
+        h2, .button {
+            color: $yellow;
+        }
+
+        .button:hover {
+            background: $yellow;
+            color: $white;
+        }
+    }
+
+    &.expeditions:before,
+    &.essentials:before {
+        color: $blue;
+        content: '-\00a0\f278\00a0-';
+        display: block;
+        font-family: bn-glyphs;
+        font-size: 49px;
+        font-weight: 100;
+    }
+
+    &.essentials:before {
+        content: '-\00a0\f1e5\00a0-';
+        color: $green;
+    }
+
+    * {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 396px;
+    }
+
+    h2, h3 {
+        font-family: $cursive-font;
+    }
+
+    .container-image {
+        border: solid 3.5px $grey;
+    }
+
+    @media(max-width: 767px) {
         border-left: none;
         border-top: solid 1px $border;
         padding: 35px;
         margin: 21px auto 21px;
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+}
+
+
+.fact {
+    &:before {
+        color: $brown;
+        content: '\e910';
+        display: block;
+        font-family: $glyph-font;
+        font-size: 112pt;
+        font-weight: 100;
+        text-align: center;
     }
 
-    .sections .section:first-child, .facts .fact:first-child {
-        border-top: none;
+    &.bird:before {
+        content: '\e911';
+    }
+}
+
+
+.location {
+    .headline {
+        text-align: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 960px;
+
+        &:before {
+            content: '\e912';
+            display: block;
+            font-family: bn-glyphs;
+            font-size: 70pt;
+            font-weight: 100;
+        }
+
+        p {
+            padding: 0 21px;
+        }
+    }
+    @media(max-width: 1199px) {
+        .headline {
+            width: 714px;
+        }
     }
 
-    .hero.alberta {
-        height: 595px;
+    @media(max-width: 991px) {
+        &.hero {
+            height: auto;
+        }
+    }
+    @media(max-width: 767px) {
+        &.hero {
+            height: 595px;
+        }
+
+        .headline {
+            left: 50%;
+            max-width: 100%;
+        }
+
+        &.hero img {
+            width: auto;
+        }
+    }
+}
+
+
+
+.decoration {
+
+    &.nuthatch {
+        left: 0;
+        position: absolute;
+        right: 0;
+
+        img {
+            margin-top: -35px;
+            max-width: 210px;
+            position: absolute;
+            right: 21px;
+            z-index: 14;
+        }
     }
 
-    .alberta .headline {
-        left: 50%;
-        max-width: 100%;
-    }
-
-    .hero.alberta img {
-        width: auto;
-    }
-
-    .decoration {
+    @media(max-width: 767px) {
         top: 49px;
     }
 }
 
-@media(max-width: 479px) {
-    .hero.intro > div:first-child:after {
-        background-position: -140px center;
-    }
-}
 
 
 #arc {position: relative; display: block; height:33px; margin: 0 auto; width: 270px;}
@@ -337,6 +332,8 @@
 #arc .w42 {-moz-transform: rotate(0.57rad);-webkit-transform: rotate(0.57rad);-o-transform:
         rotate(0.57rad);-ms-transform: rotate(0.57rad); transform: rotate(0.57rad);
     width: 10px; height: 10px; left: 264.64px; top: 39.27px;}
+
+
 
 
 
