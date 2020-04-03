@@ -33,6 +33,16 @@
     }
 }
 
+.feature-block {
+    margin-bottom: 28px;
+    margin-top: 28px;
+    padding: 21px 35px 35px;
+
+    .container-image {
+        margin: 21px auto;
+    }
+}
+
 .feature-column {
     border-left: solid 1px $border;
     margin-bottom: 28px;

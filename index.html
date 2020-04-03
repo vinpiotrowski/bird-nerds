@@ -90,7 +90,7 @@ sitemap:
         <h1>Recent expeditions</h1>
         {% assign idx = 0 %}
         {% for post in site.posts %}{% if post.categories contains 'expeditions' %}
-        <div class="col-xs-12 col-md-6 tile horz blue">
+        <div class="col-xs-12 col-md-6 tile horizontal-variant blue">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">
                     <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">

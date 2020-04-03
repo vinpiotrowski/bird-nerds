@@ -60,7 +60,7 @@ layout: default
             {% endfor %}
 
             {% if sameTagCount >= minCommonTags %}
-                <div class="col-xs-12 col-md-6 tile horz blue">
+                <div class="col-xs-12 col-md-6 tile horizontal-variant blue">
                     <a href="{{ post.permalink | prepend: site.baseurl }}">
                         <div class="container-image">
                             <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
@@ -98,7 +98,7 @@ layout: default
         {% endfor %}
 
         {% if sameTagCount >= minCommonTags %}
-        <div class="col-xs-12 col-md-6 tile horz blue">
+        <div class="col-xs-12 col-md-6 tile horizontal-variant blue">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">
                     <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
