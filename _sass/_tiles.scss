@@ -73,6 +73,7 @@
         border: solid 1px;
         border-radius: 3px;
         display:block;
+        padding-bottom: 49px;
         position:relative;
     }
 
@@ -197,6 +198,51 @@
         .container-image:after {
             display: none;
         }
+    }
+}
+
+
+.tile.showcase-variant {
+
+    a {
+        padding-bottom: 0;
+    }
+
+    a:after {
+        bottom: 35px;
+        left: auto;
+        transform: scale(1.4);
+        right: 35px;
+    }
+
+    p {
+       font-size: initial;
+        padding: 0;
+    }
+
+    .feature-block {
+        float: left;
+        max-width: 50%;
+    }
+
+    .container-image {
+        float: left;
+        max-width: 50%;
+    }
+
+    .container-image:after {
+        content: ' ';
+        border-bottom: 28px solid transparent;
+        border-top: 28px solid transparent;
+        border-right: 28px solid #FFFFFF;
+        display: block;
+        height: 0;
+        left: auto;
+        right: -1px;
+        position: absolute;
+        top: 35px;
+        width: 0;
+        z-index: 49;
     }
 }
 
