@@ -57,7 +57,7 @@ body.expeditions {
 
     p {
         font-size: 11pt;
-        height: 14px;
+        height: 0;
 
         &:after {
             content: $bird;
@@ -65,7 +65,7 @@ body.expeditions {
             font-size: 35pt;
             display: block;
             position: relative;
-            top: 21px;
+            top: 7px;
             z-index:14;
         }
     }
@@ -142,7 +142,8 @@ body.expeditions {
             height: 14px;
 
             &:after {
-                font-size: 28px;
+                font-size: 31.5px;
+                top: 14px;
             }
         }
     }
