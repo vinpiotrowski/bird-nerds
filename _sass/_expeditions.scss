@@ -19,9 +19,11 @@ body.expeditions {
 
 
 #expedition-article .headline {
-    padding: 28px 7px 0;
+    background: rgba(249,244,235,0.63);
+    border-radius: 14px;
+    padding: 14px 7px 0;
     text-align: center;
-    width: 280px;
+    width: 266px;
 
     * {
         color: $brown;
@@ -55,7 +57,7 @@ body.expeditions {
 
     p {
         font-size: 11pt;
-        height: 0;
+        height: 14px;
 
         &:after {
             content: $bird;
@@ -68,25 +70,46 @@ body.expeditions {
         }
     }
 
-    &:after {
-        background: url(/images/background-badge.png) no-repeat;
+    &:before {
         content: ' ';
+        border-left: 122.5px solid transparent;
+        border-right: 122.5px solid transparent;
+        border-bottom: 7px solid rgba(249,244,235,0.63);
         display: block;
-        height: 370px;
-        left: -42px;
+        height: 0;
+        margin-left: 3.5px;
         position: absolute;
-        top: -21px;;
-        width: 370px;
-        opacity: 0.7;
-        z-index: -1;
+        transform: translateY(-100%);
+        top: 0;
+        width: 0;
+        z-index: 49;
+    }
+
+    &:after {
+        content: ' ';
+        border-left: 122.5px solid transparent;
+        border-right: 122.5px solid transparent;
+        border-top: 42px solid rgba(249,244,235,0.63);
+        display: block;
+        height: 0;
+        margin-left: 3.5px;
+        position: static;
+        transform: translateY(100%);
+        width: 0;
+        z-index: 7;
     }
 
     @media(max-width: 767px) {
         background: $brown;
+        border-radius: 0;
         margin-bottom: 21px;
         padding: 14px 0 0;
         position: static;
         width: 100%;
+
+        &:before {
+            content: none;
+        }
 
         &:after {
             content: ' ';
@@ -95,7 +118,7 @@ body.expeditions {
             border-top: 35px solid $brown;
             display: block;
             height: 0;
-            opacity: 1;
+            margin-left: 0;
             position: static;
             transform: translateY(100%);
             width: 0;
@@ -137,7 +160,7 @@ body.expeditions {
         text-align: center;
     }
 
-    .statistic div {
+    div {
         font-size: 42px;
         font-weight: 100;
     }
