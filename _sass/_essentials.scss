@@ -21,6 +21,24 @@ body.essentials.alt {
     text-shadow: 0 5px 0 $green;
 }
 
+#essentials .tile a {
+    min-height: 525px;
+}
+
+#essentials .fact {
+    background: $pure-white;
+    border: solid 2px $text;
+    border-radius: 3px;
+    margin-top: 0;
+    min-height: 525px;
+
+    @media(max-width: 991px) {
+        background: none;
+        border: solid 2px $brown;
+        min-height: 420px;
+    }
+}
+
 ul.definition > li > p {
     color: $text;
 }
@@ -154,7 +172,7 @@ ul.definition > li > p {
 
 @media(max-width: 991px) {
     #essentials .fact {
-        display: none;
+        max-width: 595px;
     }
 
     .comic > div.title img {

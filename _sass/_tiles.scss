@@ -70,7 +70,7 @@
 
     a {
         background: $pure-white;
-        border: solid 1px;
+        border: solid 2px;
         border-radius: 3px;
         display:block;
         padding-bottom: 49px;
@@ -115,7 +115,8 @@
     }
 
     @media(max-width: 991px) {
-        margin: 7px auto 14px;
+        margin: 14px auto 21px;
+        max-width: 595px;
 
         a {
             min-height: 0;
@@ -204,15 +205,24 @@
 
 .tile.showcase-variant {
 
+    h2 {
+        padding: 21px 0 0;
+    }
+
+    h3 {
+        font-weight: 700;
+        padding: 0;
+    }
+
     a {
+        border: solid 2px;
+        min-height: 0!important;
         padding-bottom: 0;
     }
 
     a:after {
-        bottom: 35px;
-        left: auto;
-        transform: scale(1.4);
-        right: 35px;
+        left: 83.3333333333%;
+        transform: none;
     }
 
     p {
@@ -220,32 +230,104 @@
         padding: 0;
     }
 
-    .feature-block {
-        float: left;
-        max-width: 50%;
+    img {
+        border-radius: 3px 0 0 3px;
+        text-align: center;
     }
 
     .container-image {
         float: left;
-        max-width: 50%;
+        margin-right: 35px;
+        width: 66.666666666%;
+
+        img {
+            margin: 0;
+        }
     }
 
     .container-image:after {
         content: ' ';
-        border-bottom: 28px solid transparent;
-        border-top: 28px solid transparent;
-        border-right: 28px solid #FFFFFF;
+        border-bottom: 21px solid transparent;
+        border-top: 21px solid transparent;
+        border-right: 21px solid #FFFFFF;
         display: block;
         height: 0;
         left: auto;
         right: -1px;
         position: absolute;
-        top: 35px;
+        top: 28px;
         width: 0;
         z-index: 49;
     }
+
+    @media(max-width: 991px) {
+
+        a {
+            padding-bottom: 49px;
+        }
+
+        a:after {
+            left: 50%!important;
+            margin-left: -24.5px!important;
+        }
+
+        h2 {
+            &:before {
+                background: $brown;
+                color: $pure-white;
+                content: "Popular";
+                display: table;
+                font-size: 21px;
+                font-weight: 700;
+                margin-bottom: 14px;
+                padding: 7px;
+                text-transform: uppercase;
+            }
+        }
+
+        .container-image {
+            float: none!important;
+            margin-right: 0;
+            margin-left: 0!important;
+            width: auto;
+        }
+
+        .container-image:after {
+            content: ' ';
+            border-left: 14px solid transparent!important;
+            border-right: 14px solid transparent!important;
+            border-bottom: 14px solid $pure-white!important;
+            border-top: none!important;
+            bottom: -1px!important;
+            left: 21px!important;
+            top: auto!important;
+        }
+    }
 }
 
+.tile.align-right {
+
+    a:after {
+        left: 16.66666666%;
+        transform: none;
+    }
+
+    .container-image {
+        float: right;
+        margin-left: 35px;
+        margin-right: 0;
+    }
+
+    .container-image:after {
+        content: ' ';
+        border-bottom: 21px solid transparent;
+        border-top: 21px solid transparent;
+        border-left: 21px solid #FFFFFF;
+        border-right: none;
+        left: -1px;
+        right: auto;
+    }
+}
 
 .tile {
     &.orange {
@@ -253,6 +335,7 @@
             border-color: $orange;
         }
         a:after {
+            background: none;
             color: $orange;
         }
         a:hover:after {
@@ -265,6 +348,7 @@
             border-color: $brown;
         }
         a:after {
+            background: none;
             color: $brown;
         }
         a:hover:after {
@@ -277,6 +361,7 @@
             border-color: $blue;
         }
         a:after {
+            background: none;
             color: $blue;
         }
 
@@ -290,6 +375,7 @@
             border-color: $green;
         }
         a:after {
+            background: none;
             color: $green;
         }
         a:hover:after {
@@ -302,6 +388,7 @@
             border-color: $yellow;
         }
         a:after {
+            background: none;
             color: $yellow;
         }
         a:hover:after {
