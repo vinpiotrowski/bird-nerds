@@ -87,7 +87,7 @@
     position: absolute;
 
     img {
-      left: -70px;
+      left: 140px;
       margin-top: -189px;
       max-width: 210px;
       position: absolute;
@@ -103,6 +103,7 @@
       }
     }
   }
+
 
   &.kingfisher {
     img {
@@ -127,7 +128,9 @@
     }
 
     @media(max-width: 767px) {
-      top: 49px;
+      img {
+        top: 63px;
+      }
     }
   }
 
@@ -135,7 +138,7 @@
   &.pintail {
     img {
       bottom: -14px;
-      max-width: 210px;
+      max-width: 248px;
       position: absolute;
       right: 126px;
       z-index: 14;
@@ -144,6 +147,7 @@
     @media(max-width: 767px) {
       img {
         bottom: -42px;
+        max-width: 210px;
         right: -70px;
       }
 
@@ -153,7 +157,7 @@
 
   &.rb-nuthatch {
     img {
-      left: -70px;
+      left: 0;
       max-width: 168px;
       position: absolute;
       top: -189px;
@@ -205,7 +209,7 @@
 
   &.vulture {
     img {
-      max-width: 175px;
+      max-width: 210px;
     }
   }
 
