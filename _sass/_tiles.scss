@@ -53,6 +53,7 @@
     }
 
     h3 {
+        margin: 0 0 7px;
         padding: 14px 21px 0;
     }
 
@@ -275,9 +276,9 @@
             &:before {
                 background: $brown;
                 color: $pure-white;
-                content: "Popular";
+                content: "Trending";
                 display: table;
-                font-size: 21px;
+                font-size: 12pt;
                 font-weight: 700;
                 margin-bottom: 14px;
                 padding: 7px;

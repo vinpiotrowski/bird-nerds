@@ -26,15 +26,12 @@ body.essentials.alt {
 }
 
 #essentials .fact {
-    background: $pure-white;
-    border: solid 2px $text;
+    border: solid 2px $border;
     border-radius: 3px;
     margin-top: 0;
     min-height: 525px;
 
     @media(max-width: 991px) {
-        background: none;
-        border: solid 2px $brown;
         min-height: 420px;
     }
 }
@@ -101,6 +98,10 @@ ul.definition > li > p {
 
 #locations-article .slim h1:before {
     content: $badge-sign-post;
+}
+
+#virtual-birding .slim h1:before {
+    content: $badge-eagle-eye;
 }
 
 #bird-feeder-article .slim h1:before {

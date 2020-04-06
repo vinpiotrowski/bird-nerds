@@ -118,7 +118,10 @@ sitemap:
             <ul class="counted green">
                 <li>
                     <h3>House finch</h3>
-                    <div class="container-image">
+                    <div class="container-image" style="position: relative;">
+                        <div class="decoration chickadee">
+                            <img src="{{ '/images/sticker-chickadee.png' | prepend: site.baseurl }}" alt="" />
+                        </div>
                         <img src="{{ '/images/backard-birding-finch-flying-lg.jpg' | prepend: site.baseurl }}" />
                     </div>
                 </li>
@@ -245,14 +248,23 @@ sitemap:
     </div>
 
 
-
-    <div class="content" style="background: #FFF;">
+    <div class="content green" style="background: #FFFFFF;">
         <div class="inner-page">
             <div class="slim">
-                <h2>Closing thoughts</h2>
-                <p>Birds are the best!  Having birds in your backyard is even better.  Our experience has shown that bird feeders will attract more birds than nothing at all so our recommendation is to get a feeder.  Be prepared to go up against the neighbourhood squirrels and magpies to protect your feed.</p>
+                <div class="col-xs-2 col-sm-12"> </div>
+                <div class="col-xs-8 col-sm-12">
+                    <div class="container-image" style="padding: 21px;">
+                        <div class="decoration bluejay">
+                            <img src="{{ '/images/sticker-bluejay.png' | prepend: site.baseurl }}" alt="" />
+                        </div>
+                    </div>
+                </div>
                 <div class="col-xs-12">
-                    <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Back to Essentials</a></p>
+                    <h2>Closing thoughts</h2>
+                    <p>Birds are the best!  Having birds in your backyard is even better.  Our experience has shown that bird feeders will attract more birds than nothing at all so our recommendation is to get a feeder.  Be prepared to go up against the neighbourhood squirrels and magpies to protect your feed.</p>
+                    <div class="col-xs-12 no-gutter-xs">
+                        <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Back to Essentials</a></p>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>

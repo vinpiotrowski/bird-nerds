@@ -129,7 +129,7 @@
 
 .fact {
 
-    margin: 0 auto;
+    margin: 28px auto;
 
     &:before {
         color: $brown;
@@ -194,27 +194,6 @@
 }
 
 
-
-.decoration {
-
-    &.nuthatch {
-        left: 0;
-        position: absolute;
-        right: 0;
-
-        img {
-            margin-top: -35px;
-            max-width: 210px;
-            position: absolute;
-            right: 21px;
-            z-index: 14;
-        }
-    }
-
-    @media(max-width: 767px) {
-        top: 49px;
-    }
-}
 
 
 

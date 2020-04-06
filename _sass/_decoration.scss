@@ -1,0 +1,249 @@
+
+.decoration {
+
+  left: 0;
+  right: 0;
+
+  &.bluejay {
+    img {
+      max-width: 280px;
+    }
+  }
+
+
+  &.chickadee {
+    img {
+      max-width: 189px;
+      position: absolute;
+      right: 0;
+      transform: translate(35%, -94%);
+    }
+
+    @media(max-width: 767px) {
+      img {
+        max-width: 168px;
+      }
+    }
+  }
+
+  &.eagle {
+    img {
+      max-width: 140px;
+      position: absolute;
+      right: 0;
+      transform: translate(0%, -84%);
+    }
+
+    @media(max-width: 767px) {
+      img {
+        max-width: 119px;
+      }
+    }
+  }
+
+
+  &.flicker {
+
+    position: absolute;
+
+    img {
+      max-width: 175px;
+      position: absolute;
+      left: 42%;
+      top: 0;
+      transform: translate(-50%, -3.5%);
+    }
+  }
+
+
+  &.goldfinch {
+    max-width: 140px;
+  }
+
+
+  &.goldeneye {
+    img {
+      max-width: 224px;
+    }
+  }
+
+
+  &.grosbeak {
+    text-align: center;
+
+    img {
+      transform: translate(-49px, 28px);
+    }
+
+    @media(max-width: 767px) {
+      img {
+        max-width: 210px!important;
+      }
+    }
+  }
+
+  &.kestrel {
+
+    position: absolute;
+
+    img {
+      left: -70px;
+      margin-top: -189px;
+      max-width: 210px;
+      position: absolute;
+      z-index:21;
+    }
+
+    @media(max-width: 767px) {
+
+      img {
+        left: -28px;
+        margin-top: -157px;
+        max-width: 175px;
+      }
+    }
+  }
+
+  &.kingfisher {
+    img {
+      max-width: 147px;
+      position: absolute;
+      top: -70px;
+      right: 0;
+    }
+  }
+
+
+  &.nuthatch {
+
+    position: absolute;
+
+    img {
+      margin-top: -35px;
+      max-width: 210px;
+      position: absolute;
+      right: 21px;
+      z-index: 14;
+    }
+
+    @media(max-width: 767px) {
+      top: 49px;
+    }
+  }
+
+
+  &.pintail {
+    img {
+      bottom: -14px;
+      max-width: 210px;
+      position: absolute;
+      right: 126px;
+      z-index: 14;
+    }
+
+    @media(max-width: 767px) {
+      img {
+        bottom: -42px;
+        right: -70px;
+      }
+
+    }
+  }
+
+
+  &.rb-nuthatch {
+    img {
+      left: -70px;
+      max-width: 168px;
+      position: absolute;
+      top: -189px;
+      z-index: 14;
+    }
+
+    @media(max-width: 767px) {
+      img {
+        left: 14px;
+        max-width: 140px;
+        top: -56px;
+      }
+    }
+  }
+
+  &.stilt {
+
+    position: absolute;
+
+    img {
+      max-width: 175px;
+      position: absolute;
+      right: 21%;
+      transform: translateY(-77%);
+    }
+
+    @media(max-width: 767px) {
+
+      img {
+        left: 21px;
+        max-width: 105px;
+        right: auto;
+        transform: scaleX(-1) translateY(-84%);
+      }
+    }
+  }
+
+  &.warbler {
+    img {
+      max-width: 175px;
+    }
+  }
+
+  &.woodduck {
+    img {
+      max-width: 210px;
+    }
+  }
+
+  &.vulture {
+    img {
+      max-width: 175px;
+    }
+  }
+
+}
+
+.stickers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  .container-image {
+    max-width: 30%;
+    padding: 21px;
+    text-align: center;
+  }
+
+  img {
+    filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(100%);
+    filter: contrast(0%) brightness(50%);
+  }
+
+  .active img {
+    filter: none;
+  }
+
+  @media(max-width: 767px) {
+
+    .container-image {
+      flex-shrink: 3;
+      max-width: 33.333333333%;
+      padding: 7px;
+    }
+
+    img {
+      max-height: 105px;
+    }
+  }
+}
+
+
