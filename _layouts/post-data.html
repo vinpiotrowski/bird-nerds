@@ -37,9 +37,15 @@ layout: default
                 <h3>Bird Photos</h3>
                 {% for thumb in page.photos %}
                 <div class="container-image thumbnail col-sm-3">
-                    <a href="{{ '/expeditions/photos/' | prepend: site.baseurl | append: thumb | append: '.html' }}">
-                        <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
-                    </a>
+                    {% if page.photo-descriptions.size > 0 %}
+                        <a href="{{ '#' | append: thumb }}" class="link-litebox">
+                            <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
+                        </a>
+                    {% else %}
+                        <a href="{{ '/expeditions/photos/' | prepend: site.baseurl | append: thumb | append: '.html' }}">
+                            <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
+                        </a>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
@@ -71,10 +77,6 @@ layout: default
             <div class="clearfix"></div>
 
         </section>
-
-
-
-
 
 
         <!-- next button -->
@@ -197,4 +199,36 @@ layout: default
         {% endif %}
         <div class="clearfix"> </div>
     </div>
+
+
+    <!-- photo liteboxes -->
+    {% if page.photo-descriptions.size > 0 %}
+        {% assign idx = 0 %}
+        {% for thumb in page.photos %}
+            {% assign pho = page.photos[idx] %}
+            {% assign des = page.photo-descriptions[idx] %}
+            {% assign prevIdx = idx | minus:1 %}
+            {% assign prev = page.photos[prevIdx] %}
+            {% assign nextIdx = idx | plus:1 %}
+            {% assign next = page.photos[nextIdx] %}
+            {% if idx == 0 %}
+                {% assign prevIdx = page.photos.size | minus:1 %}
+                {% assign prev = page.photos[prevIdx] %}
+            {% endif %}
+            {% if nextIdx == page.photos.size %}
+                {% assign next = page.photos[0] %}
+            {% endif %}
+            {%
+                include litebox.html
+                photo=pho
+                description=des
+                previous=prev
+                next=next
+            %}
+            {% assign idx = idx | plus:1 %}
+        {% endfor %}
+    {% endif %}
+
+
+
 </div>

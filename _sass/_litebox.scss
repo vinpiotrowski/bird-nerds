@@ -1,3 +1,18 @@
+body.litebox-open {
+
+  &:after {
+    background: $pure-white;
+    bottom: 0;
+    content: ' ';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 6300;
+  }
+}
+
 .container-image.thumbnail {
   display: block;
   margin: 7px 0;
@@ -32,13 +47,32 @@
   border: none;
 }
 
-body.photo .page-content {
+.photo .page-content {
   background: #FFF;
 }
 
-body.photo .container-pull-right {
+.photo .container-pull-right {
   width: 100%;
   width: calc(100% - 310px);
+}
+
+.container-litebox {
+  background: $pure-white;
+  bottom: -105vh;
+  pointer-events: none;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  transition: opacity ease-in-out 0.14s;
+  z-index: 7000;
+
+  &.active {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
+    top: 0;
+  }
 }
 
 .container-photo {
@@ -127,7 +161,6 @@ body.photo .container-pull-right {
   text-align: center;
   text-decoration: none;
   top: 50%;
-  top: calc(50% - 42px);
   width: 63px;
   z-index: 22;
 }
@@ -145,14 +178,10 @@ body.photo .container-pull-right {
   font-family: bn-glyphs;
   left: 0;
   padding: 7px 0;
-  position: absolute;
+  position: relative;
   font-size: 70px;
   font-weight: 100;
-  text-align: center;
-  text-decoration: none;
-  top: 0;
-  width: 56px;
-  z-index: 21;
+  transform: translateY(-50%);
 }
 
 .container-photo .next-link:after {
@@ -168,7 +197,7 @@ body.photo .container-pull-right {
 
 
 @media(max-width: 991px) {
-  body.photo .container-pull-right {
+  .photo .container-pull-right {
     width: 100%;
   }
 
@@ -232,12 +261,11 @@ body.photo .container-pull-right {
 @media(max-width: 480px) {
   .prev-link, .next-link {
     top: 50%!important;
-    top: calc(50% - 18px)!important;
+    width: 35px;
   }
 
   .container-photo .prev-link:before, .container-photo .next-link:after {
-    font-size: 35px;
-    padding: 0;
-    width: 28px;
+    font-size: 42px;
+    width: 35px;
   }
 }

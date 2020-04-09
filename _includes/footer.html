@@ -21,6 +21,8 @@
 
 <script type="text/javascript">
 
+    // -> hamburger nav
+
     var menuButton = document.getElementById("link-menu");
     if(menuButton) {
         menuButton.onclick = toggleMenu;
@@ -35,6 +37,9 @@
         }
         event.preventDefault();
     }
+
+
+    // -> pagination
 
     var showAllButton = document.getElementById("link-show-all");
     if(showAllButton) {
@@ -54,6 +59,87 @@
         }
         event.preventDefault();
     }
+
+
+    // -> liteboxes
+
+    var liteboxLinks = document.querySelectorAll(".link-litebox");
+    for (var i=0; i < liteboxLinks.length; i++) {
+        liteboxLinks[i].addEventListener("click", showLitebox);
+    }
+
+    var prevNextLinks = document.querySelectorAll(".prev-link, .next-link");
+    for (var i=0; i < prevNextLinks.length; i++) {
+        prevNextLinks[i].addEventListener("click", switchLitebox);
+    }
+
+    var closeLinks = document.querySelectorAll(".close-link");
+    for (var i=0; i < closeLinks.length; i++) {
+        closeLinks[i].addEventListener("click", hideAllLiteboxes);
+    }
+
+    function showLitebox(event) {
+        var id = this.getAttribute("href").replace("#", "");
+        var litebox = document.getElementById(id);
+        var lazy = litebox.querySelector(".lazy");
+        lazy.src = lazy.getAttribute("data-src");
+        document.body.style.top = "-" + window.scrollY + "px";
+        document.body.style.position = "fixed"
+        document.body.classList.add("litebox-open");
+        litebox.classList.add("active");
+    }
+
+    function switchLitebox(event) {
+        var id = this.getAttribute("href").replace("#", "");
+        var litebox = document.getElementById(id);
+        var lazy = litebox.querySelector(".lazy");
+        lazy.src = lazy.getAttribute("data-src");
+        hideAllLiteboxes();
+        litebox.classList.add("active");
+    }
+
+    function hideAllLiteboxes(event) {
+        if(event) {
+            event.preventDefault();
+            const scrollY = document.body.style.top;
+            document.body.style.position = "";
+            document.body.style.top = '';
+            document.body.classList.remove("litebox-open");
+            window.scrollTo(0, parseInt(scrollY || '0') * -1);
+        }
+        var openLitebox = document.querySelectorAll(".container-litebox.active");
+        for (var i=0; i < openLitebox.length; i++) {
+            openLitebox[i].classList.remove("active");
+        }
+    }
+
+    function positionPrevNext() {
+        var w = document.querySelector(".container-pull-right").offsetWidth - 21;
+        var h = document.querySelector(".container-pull-right").offsetHeight - 42;
+        var prevNext = document.querySelectorAll(".prev-link, .next-link");
+        if(w / h < 1.5) {
+            var top = (w * (2 / 3 )) / 2;
+            for(var i=0; i < prevNext.length; i++) {
+                prevNext[i].style.top =  top + 10.5 + 'px';
+            }
+        }
+    }
+
+    document.addEventListener("keyup", function (event) {
+        if ( event.key == "Escape" )   {
+            hideAllLiteboxes(event);
+        }
+    });
+
+    var hasLitebox = document.querySelector(".container-litebox");
+    if(hasLitebox) {
+        positionPrevNext();
+        window.addEventListener("resize", positionPrevNext);
+    }
+
+
+
+    // -> tab
 
     var tabs = document.querySelectorAll("#locations-article .tab");
     for (var i=0; i < tabs.length; i++) {
