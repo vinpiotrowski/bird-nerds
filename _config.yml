@@ -17,3 +17,5 @@ expeditionCount: 61
 
 # Build settings
 markdown: kramdown
+
+exclude: ['_site', '.idea']

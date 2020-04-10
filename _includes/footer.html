@@ -79,6 +79,9 @@
     }
 
     function showLitebox(event) {
+        if(event) {
+            event.preventDefault();
+        }
         var id = this.getAttribute("href").replace("#", "");
         var litebox = document.getElementById(id);
         var lazy = litebox.querySelector(".lazy");
@@ -90,6 +93,9 @@
     }
 
     function switchLitebox(event) {
+        if(event) {
+            event.preventDefault();
+        }
         var id = this.getAttribute("href").replace("#", "");
         var litebox = document.getElementById(id);
         var lazy = litebox.querySelector(".lazy");
@@ -106,6 +112,8 @@
             document.body.style.top = '';
             document.body.classList.remove("litebox-open");
             window.scrollTo(0, parseInt(scrollY || '0') * -1);
+            const loc = window.location;
+            // history.pushState("", document.title, loc.pathname + loc.search);
         }
         var openLitebox = document.querySelectorAll(".container-litebox.active");
         for (var i=0; i < openLitebox.length; i++) {

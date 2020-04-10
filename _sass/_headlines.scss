@@ -118,6 +118,12 @@
         -webkit-transform: translateX(-50%) scale(0.95);
     }
 
+    .headline.center {
+        transform: translateX(0);
+        -ms-transform: translateX(0);
+        -webkit-transform: translateX(0);
+    }
+
     .headline.fancy.left {
         left: 50%;
     }
