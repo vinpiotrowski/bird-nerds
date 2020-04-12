@@ -27,16 +27,17 @@ changefreq: 'monthly'
                     {{ post.content }}
                 {% endif %}
             {% endfor %}
-            <div class="col-xs-12" style="padding: 49px 0; text-align: center;">
-                <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button">Back to Essentials</a></p>
+            <div class="col-xs-12" style="text-align: center;">
+                <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button back">Back to Essentials</a></p>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
 
-    <div class="inner-page">
-        <div class="decoration pintail">
-            <img src="{{ '/images/sticker-pintail.png' | prepend: site.baseurl }}" alt="" />
-        </div>
+</div>
+
+<div class="inner-page">
+    <div class="decoration pintail">
+        <img src="{{ '/images/sticker-pintail.png' | prepend: site.baseurl }}" alt="" />
     </div>
 </div>

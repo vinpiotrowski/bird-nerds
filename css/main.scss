@@ -251,6 +251,14 @@ small {
   padding: 3px 0 14px;
 }
 
+.page-content .content:last-child {
+  padding-bottom: 70px;
+
+  @media(max-width: 479px) {
+    padding-bottom: 49px;
+  }
+}
+
 .hero {
   border-bottom: solid 7px $orange;
   image-rendering: -webkit-optimize-contrast;
@@ -359,21 +367,27 @@ a.scroll-link {
   color: $pure-white!important;
 }
 
-.button:before {
-  bottom: 0;
-  content: ' ';
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 .button:after {
   content: $arrow;
   display: inline-block;
   font-family: $glyph-font;
   padding: 0 0 0 3.5px;
   vertical-align: middle;
+}
+
+.button.back {
+  &:before {
+    content: $arrow;
+    display: inline-block;
+    font-family: $glyph-font;
+    padding: 3.5px 0 0 3.5px;
+    transform: rotate(180deg);
+    vertical-align: middle;
+  }
+
+  &:after {
+    content: none;
+  }
 }
 
 .brown .button {
