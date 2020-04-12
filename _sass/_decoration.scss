@@ -5,6 +5,7 @@
 
   img {
     cursor: zoom-in;
+    cursor: url("../images/binoculars.png"), pointer;
     pointer-events: auto;
   }
 
@@ -255,10 +256,18 @@
   img {
     filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(100%);
     filter: contrast(0%) brightness(50%);
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      opacity: 0.21;  // Internet Explorer Only
+    }
   }
 
   .active img {
     filter: none;
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      opacity: 1;
+    }
   }
 
   @media(max-width: 767px) {
@@ -337,7 +346,7 @@
   }
 
   &:after {
-    content: $badge-scapebook;
+    content: $sticker-book;
     font-size: 35pt;
     font-weight: 100;
     top: 50%;
