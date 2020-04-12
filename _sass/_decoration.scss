@@ -66,7 +66,6 @@
     position: absolute;
 
     img {
-      height: 280px;
       left: 50%;
       position: absolute;
       transform: translate(-50%, -49%);
@@ -75,8 +74,12 @@
     }
 
     @media(max-width: 767px) {
+      position: static;
+
       img {
-        margin-top: -210px;
+        position: static;
+        margin-top: -49px;
+        transform: none;
       }
     }
   }
