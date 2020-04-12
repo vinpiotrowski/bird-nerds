@@ -352,7 +352,7 @@ body.expeditions {
     text-align: center;
 }
 
-.link-show-all:before {
+/*.link-show-all:before {
     background-image: url('/images/sticker-gho.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -363,7 +363,7 @@ body.expeditions {
     transform: translate(-50%, -21%);
     width: 175px;
     z-index: 14;
-}
+}*/
 
 .link-show-all:after {
     bottom: 0;
@@ -381,6 +381,7 @@ body.expeditions {
 }
 
 .link-show-all.active {
+    display: block;
     height: 0;
     margin: 0!important;
     padding: 0!important;

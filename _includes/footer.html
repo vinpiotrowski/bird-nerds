@@ -47,17 +47,18 @@
     }
 
     function showAll(event) {
-        var lazy = document.getElementsByClassName("lazy");
-        for(var i=0; i<lazy.length; i++){
-            lazy[i].src = lazy[i].getAttribute("data-src");
+        var showAllButton = document.getElementById("link-show-all");
+        if(showAllButton) {
+            var lazy = document.getElementsByClassName("lazy");
+            for(var i=0; i<lazy.length; i++){
+                lazy[i].src = lazy[i].getAttribute("data-src");
+            }
+            showAllButton.classList.add("active");
+            if(event) {
+                event.preventDefault();
+            }
         }
-        var el = event.target;
-        if ( -1 !== el.className.indexOf( "active" ) ) {
-            el.className = el.className.replace( " active", "" );
-        } else {
-            el.className += " active"
-        }
-        event.preventDefault();
+
     }
 
 
@@ -146,7 +147,6 @@
     }
 
 
-
     // -> tab
 
     var tabs = document.querySelectorAll("#locations-article .tab");
@@ -165,6 +165,36 @@
             tabs[i].classList.remove("active");
         }
         this.classList.add("active");
+    }
+
+
+    // -> virtual birding
+
+    var decorations = document.querySelectorAll(".decoration img");
+    for(var i=0; i<decorations.length; i++) {
+        decorations[i].addEventListener("click", birdFound);
+    }
+
+    function birdFound(event) {
+        var birdList = window.sessionStorage.getItem("birdList");
+        birdList = birdList ? birdList : "";
+        var bird = this.parentElement.classList[1];
+        if(birdList.indexOf(bird) < 0) {
+            birdList = birdList ? birdList.split(",") : [];
+            birdList.push(bird);
+            window.sessionStorage.setItem("birdList", birdList.join(","));
+
+        }
+        var button = document.querySelector(".button.virtual-birding");
+        if(button) {
+            button.classList.add("active");
+            button.classList.add("updated");
+            setTimeout(function() { button.classList.remove("updated")}, 3500);
+        }
+        if(event) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
     }
 
 </script>
