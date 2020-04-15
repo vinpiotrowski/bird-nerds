@@ -12,8 +12,8 @@ description: Join Vince Piotrowski and Sandra Mills as they trek around Calgary,
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://birdnerds.ca/"
 birdCount: 390
-abBirdCount: 231
-expeditionCount: 61
+abBirdCount: 233
+expeditionCount: 62
 
 # Build settings
 markdown: kramdown
