@@ -74,14 +74,13 @@
         prevNextLinks[i].addEventListener("click", switchLitebox);
     }
 
-    var closeLinks = document.querySelectorAll(".close-link");
-    for (var i=0; i < closeLinks.length; i++) {
-        closeLinks[i].addEventListener("click", hideAllLiteboxes);
-    }
-
     function showLitebox(event) {
         if(event) {
             event.preventDefault();
+            if (window.history && window.history.pushState) {
+                var loc = window.location.href;
+                window.history.pushState(loc, null, "#photographs");
+            }
         }
         var id = this.getAttribute("href").replace("#", "");
         var litebox = document.getElementById(id);
@@ -138,6 +137,10 @@
         if ( event.key == "Escape" )   {
             hideAllLiteboxes(event);
         }
+    });
+
+    window.addEventListener('popstate', function(event) {
+        hideAllLiteboxes(event);
     });
 
     var hasLitebox = document.querySelector(".container-litebox");
