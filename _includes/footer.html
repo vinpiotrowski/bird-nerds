@@ -215,7 +215,9 @@ function isHidden(el) {
 
 if(criteria && searchButton) {
     criteria.addEventListener("input", function(e) {
-        let filter = e.target.value;
+        let filter = e.target.value.toString().toLowerCase();
+        filter = filter.replace(/(~|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g," ")
+        filter = filter.replace(/(`|\"|')/g,"").trim();
         let css = filter ? '#bird-search-results .thumbnail { display: none; } #bird-search-results .thumbnail[data-tags*="' + filter + '" i] {display: block;}'  : '';
         if(!filter.length) {
             window.birdSearchFilter.innerHTML = css;
@@ -224,13 +226,17 @@ if(criteria && searchButton) {
                 resultsList.classList.add("active");
             } else {
                 resultsList.classList.remove("active");
+                var resultHeading = document.querySelector("#bird-search-results h2");
+                resultHeading.setAttribute("data-count", 0);
             }
         }
     });
 
     searchButton.addEventListener("click", function(e) {
         e.preventDefault();
-        let filter = criteria.value.toString().toLowerCase();;
+        let filter = criteria.value.toString().toLowerCase();
+        filter = filter.replace(/(~|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g," ")
+        filter = filter.replace(/(`|\"|')/g,"").trim();
         let css = filter ? '#bird-search-results .thumbnail { display: none; } #bird-search-results .thumbnail[data-tags*="' + filter + '"] {display: block;}' : '';
         if(filter.length) {
             window.birdSearchFilter.innerHTML = css;
@@ -250,7 +256,7 @@ if(criteria && searchButton) {
                 lazy.src = lazy.getAttribute("data-src");
             }
         }
-        var resultHeading = document.querySelector("#bird-search-results h1");
+        var resultHeading = document.querySelector("#bird-search-results h2");
         resultHeading.setAttribute("data-count", resultCount);
     });
 }

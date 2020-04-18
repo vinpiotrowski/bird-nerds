@@ -84,21 +84,40 @@
     min-height: 315px;
     padding: 0 0 70px;
 
+    .inner-page {
+        background-image: url(/images/essentials-skeleton-loader.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% calc((2 / 3) * 100vw);
+        background-position: 0 49px;
+        min-height: 280px;
+
+        @media(min-width: 768px) {
+            background-repeat: repeat;
+            background-repeat-y: no-repeat;
+            background-size: 25% calc((2 / 3) * 25vw);
+            background-position: 0 56px;
+
+        }
+
+        @media(min-width: 1200px) {
+            background-repeat-y: no-repeat;
+            background-position: 0 70px;
+            background-size: 25% 196px;
+
+        }
+    }
+
+    &.active .inner-page {
+        background-image: none;
+    }
+
     .thumbnail {
         display: none;
     }
 
-    h1 {
-        display: none;
-
+    h2 {
         &:after {
             content: '('attr(data-count)'):'
-        }
-    }
-
-    &.active {
-        h1 {
-            display: block;
         }
     }
   }
