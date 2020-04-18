@@ -200,6 +200,61 @@
         }
     }
 
+
+
+    
+// -> Bird search
+
+var criteria = document.getElementById("bird-search-criteria");
+var searchButton = document.getElementById("bird-search");
+
+function isHidden(el) {
+    var style = window.getComputedStyle(el);
+    return style.display === 'none';
+}
+
+if(criteria && searchButton) {
+    criteria.addEventListener("input", function(e) {
+        let filter = e.target.value;
+        let css = filter ? '#bird-search-results .thumbnail { display: none; } #bird-search-results .thumbnail[data-tags*="' + filter + '" i] {display: block;}'  : '';
+        if(!filter.length) {
+            window.birdSearchFilter.innerHTML = css;
+            let resultsList = document.getElementById("bird-search-results")
+            if( filter.length ) {
+                resultsList.classList.add("active");
+            } else {
+                resultsList.classList.remove("active");
+            }
+        }
+    });
+
+    searchButton.addEventListener("click", function(e) {
+        e.preventDefault();
+        let filter = criteria.value.toString().toLowerCase();;
+        let css = filter ? '#bird-search-results .thumbnail { display: none; } #bird-search-results .thumbnail[data-tags*="' + filter + '"] {display: block;}' : '';
+        if(filter.length) {
+            window.birdSearchFilter.innerHTML = css;
+            let resultList = document.getElementById("bird-search-results")
+            if( filter.length ) {
+                resultList.classList.add("active");
+            } else {
+                resultList.classList.remove("active");
+            }
+        }
+        var thumbs = document.querySelectorAll("#bird-search-results .thumbnail");
+        var resultCount = 0;
+        for(var i=0; i<thumbs.length; i++){
+            if(!isHidden(thumbs[i])) {
+                resultCount += 1;
+                var lazy = thumbs[i].querySelector(".lazy");
+                lazy.src = lazy.getAttribute("data-src");
+            }
+        }
+        var resultHeading = document.querySelector("#bird-search-results h1");
+        resultHeading.setAttribute("data-count", resultCount);
+    });
+}
+
 </script>
 
 

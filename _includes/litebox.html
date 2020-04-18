@@ -8,10 +8,10 @@
         <div class="container-pull-right clearfix">
             <div class="container-photo">
                 <img src="" data-src="{{ '/images/' | prepend: site.baseurl | append: include.photo | append: '-lg.jpg' }}" class="lazy" alt="">
-
-                <a class="prev-link" href="#{{ include.previous }}">Previous</a>
-
-                <a class="next-link" href="#{{ include.next }}">Next</a>
+                {% if include.previous != "" %}
+                    <a class="prev-link" href="#{{ include.previous }}">Previous</a>
+                    <a class="next-link" href="#{{ include.next }}">Next</a>
+                {% endif %}
             </div>
         </div>
 

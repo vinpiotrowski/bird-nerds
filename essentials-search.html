@@ -1,0 +1,86 @@
+---
+layout: default
+permalink: /essentials/search.html
+title:  "Bird Nerds' Bird Search"
+description: "Search for birds that have been photographed on BirdNerds.ca"
+date:   2011-11-11 11:11:11 -0700
+categories: essentials search
+section: essentials
+sitemap:
+priority: 0.8
+changefreq: 'monthly'
+---
+
+<div id="bird-search-page" class="blue">
+    <div class="content">
+        <div class="slim blue" style="text-align: center;">
+            <h1>Bird Nerds' Bird Search</h1>
+            <p>We're closing in on 1000 photos on this website so we made this handy tool to help us easily find a particular bird or photograph.</p>
+        </div>
+    </div>
+
+    <div class="content" style="background: #FFFFFF;">
+        <div class="slim orange">
+            <div class="container-search">
+                <form>
+                    <label for="bird-search-criteria">Search:</label>
+                    <input type="search" id="bird-search-criteria" name="q" placeholder="Search for birds..." aria-label="Search for birds" autocomplete="off">
+                    <button class="button secondary reverse" id="bird-search"><span>Search</span></button>
+                    <small>E.g. chickadee, burrowing owl</small>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content" id="bird-search-results" style="background: #FFFFFF">
+        <div class="inner-page">
+            <div class="col-xs-12">
+                <h1 data-count="0">Results</h1>
+            </div>
+            {% for post in site.posts %}
+                {% if post.categories contains 'expeditions' %}
+                    {% assign idx = 0 %}
+                    {% for thumb in post.photos %}
+                    <div class="container-image thumbnail col-sm-3" data-tags="{{ thumb | replace: '-', ' '}}">
+                        <a href="{{ '#' | append: thumb }}" class="link-litebox">
+                            <img src="" data-src="{{ '/images/' | prepend: site.baseurl | append: post.photos[idx] | append: '-sm.jpg' }}" alt="bird photo" class="lazy">
+                        </a>
+                    </div>
+                    {% assign idx = idx | plus:1 %}
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="col-xs-12" style="text-align: center;">
+            <p><a href="{{ '/essentials/' | prepend: site.baseurl }}" class="button back">Back to Essentials</a></p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <!-- photo liteboxes -->
+    {% for post in site.posts %}
+        {% if post.categories contains 'expeditions' %}
+            {% assign idx = 0 %}
+            {% for thumb in post.photos %}
+                {% assign pho = post.photos[idx] %}
+                {% assign des = post.photo-descriptions[idx] %}
+                {% assign des = des | append: "<p><a href='" | append: post.url | append: "'>View the expedition</a>" %}
+                {%
+                    include litebox.html
+                    photo=pho
+                    description=des
+                    previous=""
+                    next=""
+                %}
+                {% assign idx = idx | plus:1 %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+
+</div>

@@ -1,0 +1,105 @@
+.container-search {
+    color: $orange;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+
+    label {
+      font-size: 0;
+    }
+
+    input[type=search] {
+      background: $pure-white;
+      border: 1px solid $orange;
+      border-radius: 0;
+      color: $orange;
+      display: table-cell;
+      float: left;
+      font-size: 1.188rem;
+      font-weight: 700;
+      height: 49px;
+      line-height: 2.75rem;
+      padding: 14px;
+      position: relative;
+      outline: none;
+      transition: .6s ease;
+      width: calc(100% - 105px);
+      -webkit-appearance: none;
+
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $orange;
+        opacity: 1; /* Firefox */
+      }
+      
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $orange;
+      }
+      
+      &::-ms-input-placeholder { /* Microsoft Edge */
+        color: $orange;
+      }
+    }
+
+    button {
+      background: $orange;
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      display: table-cell;
+      font-size: 1.188rem;
+      float: right;
+      min-width: 0;
+      outline: none;
+      padding: 14px;
+      position: relative;
+      right: 0;
+      width: 98px;
+      -webkit-appearance: button;
+
+      &:after {
+          content: none;
+      }
+    }
+
+    small {
+        color: $orange!important;
+        padding: 7px 0;
+    }
+
+    @media(min-width: 768px) {
+      width: 70%;
+
+      input[type=search] {
+        width: calc(100% - 175px);
+      }
+
+      button {
+        min-width: 140px;
+      }
+    }
+  }
+
+  #bird-search-results {
+    min-height: 315px;
+    padding: 0 0 70px;
+
+    .thumbnail {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+
+        &:after {
+            content: '('attr(data-count)'):'
+        }
+    }
+
+    &.active {
+        h1 {
+            display: block;
+        }
+    }
+  }
+  

@@ -112,7 +112,8 @@ ul.definition > li > p {
     content: $camera;
 }
 
-#featured-birds-article .slim h1:before {
+#featured-birds-article .slim h1:before,
+#bird-search-page .slim h1:before {
     content: $featured;
 }
 
