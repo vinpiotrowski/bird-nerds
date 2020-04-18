@@ -37,15 +37,9 @@ layout: default
                 <h3>Bird Photos</h3>
                 {% for thumb in page.photos %}
                 <div class="container-image thumbnail col-sm-3">
-                    {% if page.photo-descriptions.size > 0 %}
-                        <a href="{{ '#' | append: thumb }}" class="link-litebox">
-                            <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
-                        </a>
-                    {% else %}
-                        <a href="{{ '/expeditions/photos/' | prepend: site.baseurl | append: thumb | append: '.html' }}">
-                            <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
-                        </a>
-                    {% endif %}
+                    <a href="{{ '#' | append: thumb }}" class="link-litebox">
+                        <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
+                    </a>
                 </div>
                 {% endfor %}
             </div>
@@ -69,7 +63,7 @@ layout: default
                 <h3>First sightings (lifers) {% if page.lifer-count > 0 %} {{ page.lifer-count }}x {% endif %}</h3>
                 <ul>
                     {% for lifer in page.lifers %}
-                    <li>{{ lifer }}</li>
+                        <li>{{ lifer }}</li>
                     {% endfor %}
                 </ul>
             </div>
@@ -99,18 +93,19 @@ layout: default
             {% endif %}
             {% assign idx = idx | plus:1 %}
         {% endfor %}
-        {% assign idx = idx | plus:1 %}
-        {% for post in site.posts limit:1 offset:cnt %}
-            <div class="col-xs-12" style="text-align: right">
-                <a href="{{ post.permalink | prepend: site.baseurl }}" class="button next">Next expedition</a>
-            </div>
-            <div class="clearfix"></div>
+        {% for post in site.posts offset:cnt %}
+            {% if post.categories contains 'expeditions' %}
+                <div class="col-xs-12" style="text-align: right">
+                    <a href="{{ post.permalink | prepend: site.baseurl }}" class="button next">Next expedition</a>
+                </div>
+                <div class="clearfix"></div>
+                {% break %}
+            {% endif %}
         {% endfor %}
     </div>
 </article>
 
 <div class="container-fluid">
-
     <div class="inner-page tiles" style="border-top: solid 7px #E45238;">
         <h2>More adventures</h2>
 
@@ -121,19 +116,14 @@ layout: default
         {% for post in site.posts offset: cnt %}
 
             {% assign sameTagCount = 0 %}
-            {% assign commonTags = '' %}
 
-            {% for category in post.categories %}
-                {% if post.categories contains 'expeditions' %}
-                {% if post.url != page.url %}
+            {% if post.categories contains 'expeditions' and post.url != page.url %}
+                {% for category in post.categories %}
                     {% if page.categories contains category %}
                         {% assign sameTagCount = sameTagCount | plus: 1 %}
-                        {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-                        {% assign commonTags = commonTags | append: tagmarkup %}
                     {% endif %}
-                {% endif %}
-                {% endif %}
-            {% endfor %}
+                {% endfor %}
+            {% endif %}
 
             {% if sameTagCount >= minCommonTags %}
                 <div class="col-xs-12 col-md-6 tile horizontal-variant blue">
@@ -156,49 +146,42 @@ layout: default
 
 
         {% if maxRelatedCounter < maxRelated %}
-        {% for post in site.posts limit: cnt %}
+            {% for post in site.posts limit: cnt %}
 
-        {% assign sameTagCount = 0 %}
-        {% assign commonTags = '' %}
+                {% assign sameTagCount = 0 %}
 
-        {% for category in post.categories %}
-        {% if post.categories contains 'expeditions' %}
-        {% if post.url != page.url %}
-        {% if page.categories contains category %}
-        {% assign sameTagCount = sameTagCount | plus: 1 %}
-        {% capture tagmarkup %} <span class="label label-default">{{ category }}</span> {% endcapture %}
-        {% assign commonTags = commonTags | append: tagmarkup %}
-        {% endif %}
-        {% endif %}
-        {% endif %}
-        {% endfor %}
+                {% if post.categories contains 'expeditions' and post.url != page.url %}
+                    {% for category in post.categories %}
+                        {% if page.categories contains category %}
+                            {% assign sameTagCount = sameTagCount | plus: 1 %}
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
 
-        {% if sameTagCount >= minCommonTags %}
-        <div class="col-xs-12 col-md-6 tile  horizontal-variant blue">
-            <a href="{{ post.permalink | prepend: site.baseurl }}">
-                <div class="container-image">
-                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
-                </div>
-                <h3>{{post.title}}</h3>
-                <p>{{post.description | truncate: 140}}</p>
-                <div class="clearfix"></div>
-            </a>
-        </div>
-        {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
-        {% if maxRelatedCounter >= maxRelated %}
-        {% break %}
-        {% endif %}
-        {% endif %}
-
-        {% endfor %}
-
+                {% if sameTagCount >= minCommonTags %}
+                    <div class="col-xs-12 col-md-6 tile  horizontal-variant blue">
+                        <a href="{{ post.permalink | prepend: site.baseurl }}">
+                            <div class="container-image">
+                                <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                            </div>
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.description | truncate: 140}}</p>
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                    {% assign maxRelatedCounter = maxRelatedCounter | plus: 1 %}
+                    {% if maxRelatedCounter >= maxRelated %}
+                        {% break %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
         {% endif %}
 
         {% if maxRelatedCounter == 0 %}
-        <div class="col-xs-12">
-            <p><h3>Oops, we couldn't find any related expeditions.</h3></p>
-            <p><a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">See all expeditions</a></p>
-        </div>
+            <div class="col-xs-12">
+                <p><h3>Oops, we couldn't find any related expeditions.</h3></p>
+                <p><a href="{{ '/expeditions/' | prepend: site.baseurl }}" class="button">See all expeditions</a></p>
+            </div>
         {% endif %}
         <div class="clearfix"> </div>
     </div>
@@ -231,7 +214,5 @@ layout: default
             {% assign idx = idx | plus:1 %}
         {% endfor %}
     {% endif %}
-
-
 
 </div>
