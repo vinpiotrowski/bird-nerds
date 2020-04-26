@@ -11,9 +11,9 @@ email: vinpiot@gmail.com
 description: Join Vince and Sandra as they trek around Calgary, Alberta and abroad searching for birds.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://birdnerds.ca/"
-birdCount: 407
-abBirdCount: 224
-expeditionCount: 62
+birdCount: 409
+abBirdCount: 226
+expeditionCount: 63
 
 # Build settings
 markdown: kramdown
