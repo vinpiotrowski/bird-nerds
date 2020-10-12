@@ -96,6 +96,14 @@ ul.definition > li > p {
     margin: 0 0 0 35px;
 }
 
+.feature-block {	
+    padding: 21px 35px 35px;	
+
+    .container-image {	
+        margin: 21px auto;	
+    }	
+}
+
 #locations-article .slim h1:before {
     content: $badge-sign-post;
 }

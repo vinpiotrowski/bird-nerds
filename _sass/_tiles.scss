@@ -118,7 +118,10 @@
 
     @media(max-width: 991px) {
         margin: 14px auto 21px;
-        max-width: 595px;
+
+        &:not(.horizontal-variant) {
+            max-width: 595px;
+        }
 
         a {
             min-height: 0;

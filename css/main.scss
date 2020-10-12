@@ -101,14 +101,6 @@ $sign-post:        '\f277';
 
 $sticker-book:     '\e926';
 
-@font-face {
-  font-family: 'bn-glyphs';
-  src: url('../fonts/icomoon.eot?v=3.2.1');
-  src: url('../fonts/icomoon.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/icomoon.woff?v=3.2.1') format('woff'), url('../fonts/icomoon.ttf?v=3.2.1') format('truetype'), url('../fonts/icomoon.svg#fontawesomeregular?v=3.2.1') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body, html {
   font-family: $base-font;
   font-size: 13pt;
