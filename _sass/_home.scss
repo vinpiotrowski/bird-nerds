@@ -6,41 +6,6 @@
     height: 540px;
 }
 
-.hero.intro {
-    > div:after {
-        background: url(../images/hero-homepage.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        bottom: 0;
-        content: '';
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    @media(max-width: 767px) {
-        > div:first-child:after {
-            background-image: url(../images/hero-homepage-small.jpg);
-        }
-    }
-
-    @media(max-width: 479px) {
-        > div:first-child:after {
-            background-position: -140px center;
-        }
-    }
-}
-
-.feature-block {
-    padding: 21px 35px 35px;
-
-    .container-image {
-        margin: 21px auto;
-    }
-}
-
 .feature-column {
     border-left: solid 1px $border;
     margin-bottom: 28px;
@@ -111,7 +76,7 @@
     }
 
     .container-image {
-        border: solid 3.5px $grey;
+        border: solid 5px $grey;
     }
 
     @media(max-width: 767px) {

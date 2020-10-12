@@ -10,22 +10,21 @@ thumbnail: 2016-12-12-downy-sm.jpg
 section: essentials
 ---
 
-<style>
-    #sharp-tailed-grouse > div:first-child:after {
-        background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }} );
-    }
-
-    @media(max-width: 767px) {
-        #sharp-tailed-grouse > div:first-child:after {
-            background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-small.jpg' }} );
-        }
-    }
-</style>
-
-
 <section class="featured hero col-xs-12 no-gutter-xs yellow" id="sharp-tailed-grouse">
 
     <div class="container-image">
+        <picture>
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.webp' }}" type="image/webp" media="(min-width: 768px)">
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }}" type="image/jpeg" media="(min-width: 768px)"> 
+
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-small.webp' }}" type="image/webp" media="(max-width: 767px)"> 
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-small.jpg' }}" type="image/jpeg" media="(max-width: 767px)"> 
+            
+            <img  srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }} 1920w, 
+                          {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-small.jpg' }} 1200w"
+                  sizes="(max-width: 767px) 1200px, 1920px"
+                  src="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '.jpg' }}" alt="">
+        </picture>
     </div>
 
     <div class="headline left top reverse">

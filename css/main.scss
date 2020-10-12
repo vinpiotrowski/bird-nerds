@@ -265,6 +265,16 @@ small {
   overflow: hidden;
   position: relative;
   z-index: 1;
+
+  .container-image {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
 }
 
 .show-small {

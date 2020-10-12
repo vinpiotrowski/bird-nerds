@@ -9,22 +9,22 @@ photo: hero-featured-wood-duck
 thumbnail: hero-featured-wood-duck-sm.jpg
 section: essentials
 ---
-<style>
-    #wood-duck > div:first-child:after {
-        background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }} );
-    }
-
-    @media(max-width: 767px) {
-        #wood-duck > div:first-child:after {
-            background-image: url( {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }} );
-        }
-    }
-</style>
-
 
 <section class="featured hero col-xs-12 no-gutter-xs yellow" id="wood-duck">
 
     <div class="container-image">
+        <picture>
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.webp' }}" type="image/webp" media="(min-width: 768px)">
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }}" type="image/jpeg" media="(min-width: 768px)"> 
+
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.webp' }}" type="image/webp" media="(max-width: 767px)"> 
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }}" type="image/jpeg" media="(max-width: 767px)"> 
+            
+            <img  srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }} 1920w, 
+                          {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }} 1200w"
+                  sizes="(max-width: 767px) 1200px, 1920px"
+                  src="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }}" alt="">
+        </picture>
     </div>
 
     <div class="headline right top reverse">

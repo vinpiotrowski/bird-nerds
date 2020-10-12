@@ -2,21 +2,10 @@
   height: 540px;
   margin-bottom: 35px;
 
-  > div:first-child:after {
-    background: url(../images/hero-homepage.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+  img {
+    object-position: top center;
   }
 }
-
-
 
 .featured {
 
@@ -27,9 +16,9 @@
     transform: translate(0, -56%);
 
     &.right {
-      left: 45.5%;
-      right: auto;
-    }
+        left: 45.5%;
+        right: auto;
+      }
   }
 
   .headline * {

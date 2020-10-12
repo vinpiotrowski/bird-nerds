@@ -96,6 +96,7 @@ body.litebox-open {
 .container-photo img {
   display: block;
   height: auto;
+  image-rendering: pixelated;
   max-height: 100%;
   max-width: 100%;
   width: auto;
