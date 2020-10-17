@@ -1,5 +1,4 @@
 body.litebox-open {
-
   &:after {
     background: $pure-white;
     bottom: 0;
@@ -96,7 +95,6 @@ body.litebox-open {
 .container-photo img {
   display: block;
   height: auto;
-  image-rendering: pixelated;
   max-height: 100%;
   max-width: 100%;
   width: auto;
