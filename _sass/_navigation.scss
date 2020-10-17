@@ -324,44 +324,34 @@ body.about .container-menu div:nth-child(4) a:after{
 #garnish span{font-size:12pt;font-weight:700;font-style:normal;
     line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
 
-#garnish .w01 {-moz-transform: rotate(160deg);-webkit-transform: rotate(160deg);-o-transform:
-        rotate(160deg);-ms-transform: rotate(160deg); transform: rotate(160deg);
+#garnish .w01 {transform: rotate(160deg);
     width: 10px; height: 10px; left: -35px; top: -5px;}
 
-#garnish .w02 {-moz-transform: rotate(140deg);-webkit-transform: rotate(140deg);-o-transform:
-        rotate(140deg);-ms-transform: rotate(140deg); transform: rotate(140deg);
+#garnish .w02 {transform: rotate(140deg);
     width: 10px; height: 10px; left: 14px; top: 21px;}
 
-#garnish .w03 {-moz-transform: rotate(130deg);-webkit-transform: rotate(130deg);-o-transform:
-        rotate(130deg);-ms-transform: rotate(130deg); transform: rotate(130deg);
+#garnish .w03 {transform: rotate(130deg);
     width: 10px; height: 10px; left: 63px; top: 42px;}
 
-#garnish .w04 {-moz-transform: rotate(90deg);-webkit-transform: rotate(90deg);-o-transform:
-        rotate(90deg);-ms-transform: rotate(90deg); transform: rotate(90deg);
+#garnish .w04 {transform: rotate(90deg);
     width: 10px; height: 10px; left: 112px; top: 42px;}
 
-#garnish .w05 {-moz-transform: rotate(80deg);-webkit-transform: rotate(80deg);-o-transform:
-        rotate(80deg);-ms-transform: rotate(80deg); transform: rotate(80deg);
+#garnish .w05 {transform: rotate(80deg);
     width: 10px; height: 10px; left: 154px; top: 35px;}
 
-#garnish .w06 {-moz-transform: rotate(102deg);-webkit-transform: rotate(102deg);-o-transform:
-        rotate(102deg);-ms-transform: rotate(102deg); transform: rotate(102deg);
+#garnish .w06 {transform: rotate(102deg);
     width: 10px; height: 10px; left: 217px; top: 28px;}
 
-#garnish .w07 {-moz-transform: rotate(63deg);-webkit-transform: rotate(63deg);-o-transform:
-        rotate(63deg);-ms-transform: rotate(63deg); transform: rotate(63deg);
+#garnish .w07 {transform: rotate(63deg);
     width: 10px; height: 10px; left: 462px; top: 21px;}
 
-#garnish .w08 {-moz-transform: rotate(56deg);-webkit-transform: rotate(56deg);-o-transform:
-        rotate(56deg);-ms-transform: rotate(56deg); transform: rotate(56deg);
+#garnish .w08 {transform: rotate(56deg);
     width: 10px; height: 10px; left: 511px; top: 7px;}
 
-#garnish .w09 {-moz-transform: rotate(70deg);-webkit-transform: rotate(70deg);-o-transform:
-        rotate(70deg);-ms-transform: rotate(70deg); transform: rotate(70deg);
+#garnish .w09 {transform: rotate(70deg);
     width: 10px; height: 10px; left: 568px; top: -4px}
 
-#garnish .w10 {-moz-transform: rotate(49deg);-webkit-transform: rotate(49deg);-o-transform:
-        rotate(49deg);-ms-transform: rotate(49deg); transform: rotate(49deg);
+#garnish .w10 {transform: rotate(49deg);
     width: 10px; height: 10px; left: 623px; top: -30px;}
 
 @media(max-width: 991px) {

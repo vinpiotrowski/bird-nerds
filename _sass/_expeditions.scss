@@ -195,23 +195,6 @@ body.expeditions {
     }
 }
 
-
-
-
-/*#expedition-article .headline {
-    background: rgba(250,247,242,0.7);
-    background: url(/images/headline-background.png);
-    background-repeat: no-repeat;
-    height: 335px;
-    padding: 49px 7px 0;
-    text-align: center;
-    width: 297px;
-}*/
-
-
-
-
-
 .post-content {
     border-left: solid $blue 3.5px;
     margin: 0 0 35px 7px;
@@ -352,19 +335,6 @@ body.expeditions {
     text-align: center;
 }
 
-/*.link-show-all:before {
-    background-image: url('/images/sticker-gho.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: ' ';
-    height: 280px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -21%);
-    width: 175px;
-    z-index: 14;
-}*/
-
 .link-show-all:after {
     bottom: 0;
     content: ' ';
@@ -394,6 +364,18 @@ body.expeditions {
 }
 
 @media(max-width: 991px) {
+
+    .link-show-all {
+        padding: 210px 0 35px;
+    }
+
+    .link-show-all > div {
+        padding: 0;
+    }
+
+    .link-show-all:before {
+        margin-top: -210px;
+    }
 
     .post-content p {
         margin: 0 7px;
@@ -436,19 +418,6 @@ body.expeditions {
     .sightings li {
         float: none;
     }
-
-    .link-show-all {
-        padding: 210px 0 35px;
-    }
-
-    .link-show-all > div {
-        padding: 0;
-    }
-
-    .link-show-all:before {
-        margin-top: -210px;
-    }
-
 }
 
 @media(max-width: 480px) {

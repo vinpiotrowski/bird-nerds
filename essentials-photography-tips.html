@@ -93,11 +93,13 @@ sitemap:
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 no-gutter-xs">
-            <div class="container-image show-small">
-                <img src="{{ '/images/comic-pro-gear-01-mobile.png' | prepend: site.baseurl }}" />
-            </div>
-            <div class="container-image show-large">
-                <img src="{{ '/images/comic-pro-gear-01.png' | prepend: site.baseurl }}" />
+            <div class="container-image">
+                <picture>
+                    <img  srcset="{{ '/images/comic-pro-gear-01.png' | prepend: site.baseurl }} 1920w, 
+                                  {{ '/images/comic-pro-gear-01-mobile.png' | prepend: site.baseurl }} 1200w"
+                          sizes="(max-width: 767px) 1200px, 1920px"
+                          src="{{ '/images/comic-pro-gear-01.png' | prepend: site.baseurl }}" alt="">
+                </picture>
             </div>
         </div>
         <div class="col-xs-12 col-sm-3 no-gutter-xs">
