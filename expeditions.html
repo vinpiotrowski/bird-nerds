@@ -12,12 +12,20 @@ sitemap:
 <div class="container-fluid no-gutter-xs" id="expeditions-list">
 
 
-    <div class="hero tall col-xs-12 no-gutter-xs">
-        <div class="container-image show-large">
-            <img src="{{ '/images/hero-expeditions.jpg' | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="container-image show-small">
-            <img src="{{ '/images/hero-expeditions-small.jpg' | prepend: site.baseurl }}" alt="">
+    <section class="hero tall col-xs-12 no-gutter-xs">
+        <div class="container-image">
+            <picture>
+                <source srcset="{{ '/images/hero-expeditions.webp' | prepend: site.baseurl }}" type="image/webp" media="(min-width: 768px)">
+                <source srcset="{{ '/images/hero-expeditions.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(min-width: 768px)"> 
+    
+                <source srcset="{{ '/images/hero-expeditions-small.webp' | prepend: site.baseurl }}" type="image/webp" media="(max-width: 767px)"> 
+                <source srcset="{{ '/images/hero-expeditions-small.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(max-width: 767px)"> 
+                
+                <img  srcset="{{ '/images/hero-expeditions.jpg' | prepend: site.baseurl }} 1920w, 
+                              {{ '/images/hero-expeditions-small.jpg' | prepend: site.baseurl }} 1200w"
+                      sizes="(max-width: 767px) 1200px, 1920px"
+                      src="{{ '/images/hero-expeditions.jpg' | prepend: site.baseurl }}" alt="">
+            </picture>
         </div>
         <div class="inner-page">
             <div class="headline fancy right expeditions">
@@ -25,7 +33,7 @@ sitemap:
                 <h1>Expeditions</h1>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="clearfix"> </div>
 
