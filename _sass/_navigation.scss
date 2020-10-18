@@ -1,6 +1,6 @@
 
 .site-header {
-    min-height: 105px;
+    min-height: $nav-height-lg;
 }
 
 .site-header.light {
@@ -11,7 +11,7 @@
     background: $pure-white;
     background: rgba(255,255,255,0.98);
     left: 0;
-    min-height: 105px;
+    min-height: $nav-height-lg;
     position: fixed;
     right: 0;
     top: 0;
@@ -26,7 +26,7 @@
 
 .site-header nav div:first-child {
     color: $pure-white;
-    height: 105px;
+    height: $nav-height-lg;
 }
 
 .site-header.light nav div:first-child {
@@ -110,7 +110,7 @@
 
 .site-header nav a.menu-toggle:before {
     content: '\e9bd';
-    padding: 28px 0 7px;
+    padding: 10.5px 0 0;
 }
 
 .site-header nav a.menu-toggle.active:before {
@@ -306,10 +306,6 @@ body.about .container-menu div:nth-child(4) a:after{
 
 #garnish>span[class^=w]:nth-of-type(n+0){
     display:block; position:absolute;
-    -moz-transform-origin:50% 100%;
-    -webkit-transform-origin:50% 100%;
-    -o-transform-origin:50% 100%;
-    -ms-transform-origin:50% 100%;
     transform-origin:50% 100%;
 }
 
@@ -362,10 +358,32 @@ body.about .container-menu div:nth-child(4) a:after{
 }
 
 @media(max-width: 767px) {
+
+    .site-header {
+        min-height: $nav-height-sm;
+    }
+
+    .site-header > nav {
+        min-height: $nav-height-sm;
+    }
+
+    .site-header nav div:first-child {
+        height: $nav-height-sm;
+    }
+
+    .site-header .container-menu div {
+        height: $nav-height-sm;
+    }
+
+    .site-header nav a.site-title:before {
+        font-size: 49pt;
+        padding: 7px 0;
+    }
+
     .site-header nav:after {
         background-image: linear-gradient(to right, 
-            $text,
-            $text 25%,
+            $brown,
+            $brown 25%,
             $blue 25%,
             $blue 50%,
             $green 50%,
@@ -375,7 +393,7 @@ body.about .container-menu div:nth-child(4) a:after{
         left: 0;
         position: absolute;
         height: 7px;
-        top: 105px;
+        top: $nav-height-sm;
         width: 100%;
         z-index: 7;
     }
