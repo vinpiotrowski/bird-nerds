@@ -146,7 +146,7 @@
     .headline.fancy {
         left: 50%;
         top: 35px;
-        transform: translateX(-50%) scale(0.84);
+        transform: translateX(-50%) scale(1);
     }
 
     .headline.center {
@@ -159,5 +159,11 @@
 
     .headline.fancy h1 {
         font-size: 42pt;
+    }
+}
+
+@media(max-width: 321px) {
+    .headline.fancy {
+        transform: translateX(-50%) scale(0.84);
     }
 }

@@ -362,9 +362,35 @@ body.about .container-menu div:nth-child(4) a:after{
 }
 
 @media(max-width: 767px) {
+    .site-header nav:after {
+        background-image: linear-gradient(to right, 
+            $text,
+            $text 25%,
+            $blue 25%,
+            $blue 50%,
+            $green 50%,
+            $green 75%,
+            $yellow 75%);
+        content: '';
+        left: 0;
+        position: absolute;
+        height: 7px;
+        top: 105px;
+        width: 100%;
+        z-index: 7;
+    }
+
+    .site-header.light nav:after {
+        content: none;
+    }
 
     .site-header > nav {
         position: absolute;
+    }
+
+    .site-header .container-menu {
+        position: relative;
+        z-index: 14;
     }
 
     .site-header .container-menu div,

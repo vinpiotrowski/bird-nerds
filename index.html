@@ -6,6 +6,11 @@ sitemap:
     priority: 1.0
     changefreq: 'weekly'
 ---
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <section class="hero intro">
     <div class="container-image">
         <picture>
@@ -87,9 +92,16 @@ sitemap:
 <section class="hero location">
     <div class="container-image">
         <picture>
-            <source srcset="{{ '/images/hero-alberta.webp' | prepend: site.baseurl }}" type="image/webp">
-            <source srcset="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" type="image/jpeg">
-            <img src="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" alt="">
+            <source srcset="{{ '/images/hero-alberta.webp' | prepend: site.baseurl }}" type="image/webp" media="(min-width: 768px)">
+            <source srcset="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(min-width: 768px)"> 
+
+            <source srcset="{{ '/images/hero-alberta-small.webp' | prepend: site.baseurl }}" type="image/webp" media="(max-width: 767px)"> 
+            <source srcset="{{ '/images/hero-alberta-small.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(max-width: 767px)"> 
+            
+            <img  srcset="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }} 1920w, 
+                            {{ '/images/hero-alberta-small.jpg' | prepend: site.baseurl }} 1200w"
+                    sizes="(max-width: 767px) 1200px, 1920px"
+                    src="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" alt="">
         </picture>
     </div>
     <div class="overlay"> </div>

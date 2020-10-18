@@ -127,27 +127,20 @@
     }
     @media(max-width: 1199px) {
         .headline {
-            width: 714px;
+            width: 84vw;
         }
     }
 
-    @media(max-width: 991px) {
-        &.hero {
-            height: auto;
-        }
-    }
     @media(max-width: 767px) {
+
         &.hero {
-            height: 595px;
+            height: 630px;
         }
 
         .headline {
             left: 50%;
             max-width: 100%;
-        }
-
-        &.hero img {
-            width: auto;
+            width: 100vw;
         }
     }
 }

@@ -259,19 +259,15 @@ body.expeditions {
 }
 
 .badge.windy:before {
-    content: '\e8f5';
-}
-
-.badge.stormy:before {
     content: '\e8f9';
 }
 
-.badge.mixed:before {
-    content: $mixed;
+.badge.storm:before {
+    content: '\e90a';
 }
 
-.badge.thunder:before {
-    content: '\e905';
+.badge.mixed:before {
+    content: '\e902';
 }
 
 .badge.rain:before {
