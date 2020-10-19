@@ -110,7 +110,7 @@
 
 .site-header nav a.menu-toggle:before {
     content: '\e9bd';
-    padding: 10.5px 0 0;
+    padding: 21px 0 0;
 }
 
 .site-header nav a.menu-toggle.active:before {
@@ -373,11 +373,6 @@ body.about .container-menu div:nth-child(4) a:after{
 
     .site-header .container-menu div {
         height: $nav-height-sm;
-    }
-
-    .site-header nav a.site-title:before {
-        font-size: 49pt;
-        padding: 7px 0;
     }
 
     .site-header nav:after {
