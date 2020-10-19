@@ -7,7 +7,7 @@ layout: default
 
         <section>
             <div class="container-image col-xs-12 big">
-                <img src="{{ '/images/' | prepend: site.baseurl | append: page.thumbnail | replace: '-sm.jpg', '-lg.jpg'}}" alt="" />
+                <img src="{{ '/images/' | prepend: site.baseurl | append: page.thumbnail | replace: '-sm.jpg', '-lg.jpg'}}" alt="" width="1200" height="660" />
                 <div class="headline top {{ page.title-alignment }}">
                     <h3>{{ page.title-location }}</h3>
                     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
@@ -38,7 +38,7 @@ layout: default
                 {% for thumb in page.photos %}
                 <div class="container-image thumbnail col-sm-4">
                     <a href="{{ '#' | append: thumb }}" class="link-litebox">
-                        <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo">
+                        <img src="{{ '/images/' | prepend: site.baseurl | append: thumb | append: '-sm.jpg' }}" alt="bird photo" width="640" height="427">
                     </a>
                 </div>
                 {% endfor %}
