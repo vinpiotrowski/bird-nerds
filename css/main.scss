@@ -412,6 +412,16 @@ hr {
     font-size: 21px;
   }
 
+  .side-by-side {
+    overflow: hidden;
+
+    img {
+      max-width: 150%;
+      transform: translateX(-15%);
+      width: 150%;
+    }
+  }
+
   .container-pull-right {
     float: none!important;
   }

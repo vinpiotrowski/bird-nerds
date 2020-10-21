@@ -45,22 +45,22 @@ sitemap:
         <div class="inner-page comic">
             <div class="col-xs-12 title">
                 <div class="container-image">
-                    <img src="{{ '/images/comic-origins-00.png' | prepend: site.baseurl }}" style="margin: 0 auto;"/>
+                    <img src="{{ '/images/comic-origins-00.png' | prepend: site.baseurl }}" width="794" height="248" style="margin: 0 auto;"/>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 no-gutter-xs">
                 <div class="container-image">
-                    <img src="{{ '/images/comic-origins-01.png' | prepend: site.baseurl }}" />
+                    <img src="{{ '/images/comic-origins-01.png' | prepend: site.baseurl }}"  width="874" height="742" />
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 no-gutter-xs">
                 <div class="container-image">
-                    <img src="{{ '/images/comic-origins-02.png' | prepend: site.baseurl }}" />
+                    <img src="{{ '/images/comic-origins-02.png' | prepend: site.baseurl }}"  width="874" height="742" />
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 no-gutter-xs">
                 <div class="container-image">
-                    <img src="{{ '/images/comic-origins-03.png' | prepend: site.baseurl }}" />
+                    <img src="{{ '/images/comic-origins-03.png' | prepend: site.baseurl }}"  width="874" height="742" />
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -71,7 +71,7 @@ sitemap:
         <section class="inner-page">
             <div class="col-sm-6 feature-column about">
                 <div class="container-image">
-                    <img src="{{ '/images/bird-nerd-vincent-piotrowski-square.jpg' | prepend: site.baseurl }}" alt="">
+                    <img src="{{ '/images/bird-nerd-vincent-piotrowski-sm.jpg' | prepend: site.baseurl }}" width="640" height="640" alt="">
                 </div>
                 <h2>Vincent</h2>
                 <h4>Special Agent in Charge of Birds</h4>
@@ -79,7 +79,7 @@ sitemap:
             </div>
             <div class="col-sm-6 feature-column about">
                 <div class="container-image">
-                    <img src="{{ '/images/bird-nerd-sandra-mills-square.jpg' | prepend: site.baseurl }}" alt="">
+                    <img src="{{ '/images/bird-nerd-sandra-mills-sm.jpg' | prepend: site.baseurl }}"  width="640" height="640" alt="">
                 </div>
                 <h2>Sandra</h2>
                 <h4>Chief Nerd & Bird Relations Lead</h4>
@@ -89,13 +89,19 @@ sitemap:
         </section>
 
         <div class="col-xs-6 no-gutter-xs">
-            <div class="container-image">
-                <img src="{{ '/images/2017-02-26-puffed-out-raven-lg.jpg' | prepend: site.baseurl }}" />
+            <div class="container-image side-by-side">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{ '/images/2017-02-26-puffed-out-raven-sm.jpg' | prepend: site.baseurl }} 640w">
+                    <img src="{{ '/images/2017-02-26-puffed-out-raven-lg.jpg' | prepend: site.baseurl }}" alt="" />
+                </picture>
             </div>
         </div>
         <div class="col-xs-6 no-gutter-xs">
-            <div class="container-image">
-                <img src="{{ '/images/2017-06-03-harlequin-duck-standing-lg.jpg' | prepend: site.baseurl }}" />
+            <div class="container-image side-by-side">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{  '/images/2017-06-03-harlequin-duck-standing-sm.jpg' | prepend: site.baseurl }} 640w">
+                    <img src="{{  '/images/2017-06-03-harlequin-duck-standing-lg.jpg' | prepend: site.baseurl }}" alt="" />
+                </picture>
             </div>
         </div>
 
