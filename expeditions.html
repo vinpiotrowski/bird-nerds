@@ -96,7 +96,7 @@ sitemap:
                         <a href="{{ post.permalink | prepend: site.baseurl }}">
                             <div class="container-image">
                                 {% if postsShownSoFar < initialPostsToShow %}
-                                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="" width="360" height="240">
                                 {% else %}
                                     <img src="" alt="" data-src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" class="lazy">
                                 {% endif %}

@@ -20,10 +20,7 @@ sitemap:
             <source srcset="{{ '/images/hero-homepage-small.webp' | prepend: site.baseurl }}" type="image/webp" media="(max-width: 767px)"> 
             <source srcset="{{ '/images/hero-homepage-small.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(max-width: 767px)"> 
             
-            <img  srcset="{{ '/images/hero-homepage.jpg' | prepend: site.baseurl }} 1920w, 
-                          {{ '/images/hero-homepage-small.jpg' | prepend: site.baseurl }} 1200w"
-                  sizes="(max-width: 767px) 1200px, 1920px"
-                  src="{{ '/images/hero-homepage.jpg' | prepend: site.baseurl }}" alt="">
+            <img  src="{{ '/images/hero-homepage.jpg' | prepend: site.baseurl }}" alt="">
         </picture>
     </div>
     <div class="inner-page">
@@ -98,10 +95,7 @@ sitemap:
             <source srcset="{{ '/images/hero-alberta-small.webp' | prepend: site.baseurl }}" type="image/webp" media="(max-width: 767px)"> 
             <source srcset="{{ '/images/hero-alberta-small.jpg' | prepend: site.baseurl }}" type="image/jpeg" media="(max-width: 767px)"> 
             
-            <img  srcset="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }} 1920w, 
-                            {{ '/images/hero-alberta-small.jpg' | prepend: site.baseurl }} 1200w"
-                    sizes="(max-width: 767px) 1200px, 1920px"
-                    src="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" alt="">
+            <img src="{{ '/images/hero-alberta.jpg' | prepend: site.baseurl }}" alt="">
         </picture>
     </div>
     <div class="overlay"> </div>
@@ -127,7 +121,7 @@ sitemap:
         <div class="col-xs-12 col-md-6 tile horizontal-variant blue">
             <a href="{{ post.permalink | prepend: site.baseurl }}">
                 <div class="container-image">
-                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="">
+                    <img src="{{'/images/' | prepend: site.baseurl | append: post.thumbnail}}" alt="" width="360" height="240">
                 </div>
                 <small><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time></small>
                 <h3>{{post.title}}</h3>
