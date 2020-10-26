@@ -831,3 +831,26 @@ sitemap:
     </div>
 </div>
 </div>
+
+<script type="text/javascript">
+
+    // -> tab
+
+    var tabs = document.querySelectorAll("#locations-article .tab");
+    for (var i=0; i < tabs.length; i++) {
+        tabs[i].addEventListener("click", showTab);
+    }
+
+    function showTab(event) {
+        var parent = document.getElementById("locations-article");
+        var spot = this.getAttribute("data-spot");
+        parent.classList.remove("calgary-spot");
+        parent.classList.remove("alberta-spot");
+        parent.classList.add(spot);
+        var tabs = document.querySelectorAll("#locations-article .tab");
+        for (var i=0; i < tabs.length; i++) {
+            tabs[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+</script>
