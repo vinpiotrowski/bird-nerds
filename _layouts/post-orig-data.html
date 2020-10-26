@@ -248,6 +248,94 @@ layout: default
         {% endfor %}
     {% endif %}
 
-
-
 </div>
+
+<script type="text/javascript">
+
+    // -> liteboxes
+ 
+    var liteboxLinks = document.querySelectorAll(".link-litebox");
+     for (var i=0; i < liteboxLinks.length; i++) {
+         liteboxLinks[i].addEventListener("click", showLitebox);
+     }
+ 
+     var prevNextLinks = document.querySelectorAll(".prev-link, .next-link");
+     for (var i=0; i < prevNextLinks.length; i++) {
+         prevNextLinks[i].addEventListener("click", switchLitebox);
+     }
+ 
+     function showLitebox(event) {
+         if(event) {
+             event.preventDefault();
+             if (window.history && window.history.pushState) {
+                 var loc = window.location.href;
+                 window.history.pushState(loc, null, "#photographs");
+             }
+         }
+         var id = this.getAttribute("href").replace("#", "");
+         var litebox = document.getElementById(id);
+         var lazy = litebox.querySelector(".lazy");
+         lazy.src = lazy.getAttribute("data-src");
+         document.body.style.top = "-" + window.scrollY + "px";
+         document.body.style.position = "fixed"
+         document.body.classList.add("litebox-open");
+         litebox.classList.add("active");
+     }
+ 
+     function switchLitebox(event) {
+         if(event) {
+             event.preventDefault();
+         }
+         var id = this.getAttribute("href").replace("#", "");
+         var litebox = document.getElementById(id);
+         var lazy = litebox.querySelector(".lazy");
+         lazy.src = lazy.getAttribute("data-src");
+         hideAllLiteboxes();
+         litebox.classList.add("active");
+     }
+ 
+     function hideAllLiteboxes(event) {
+         if(event) {
+             event.preventDefault();
+             const scrollY = document.body.style.top;
+             document.body.style.position = "";
+             document.body.style.top = '';
+             document.body.classList.remove("litebox-open");
+             window.scrollTo(0, parseInt(scrollY || '0') * -1);
+             const loc = window.location;
+             // history.pushState("", document.title, loc.pathname + loc.search);
+         }
+         var openLitebox = document.querySelectorAll(".container-litebox.active");
+         for (var i=0; i < openLitebox.length; i++) {
+             openLitebox[i].classList.remove("active");
+         }
+     }
+ 
+     function positionPrevNext() {
+         var w = document.querySelector(".container-pull-right").offsetWidth - 21;
+         var h = document.querySelector(".container-pull-right").offsetHeight - 42;
+         var prevNext = document.querySelectorAll(".prev-link, .next-link");
+         if(w / h < 1.5) {
+             var top = (w * (2 / 3 )) / 2;
+             for(var i=0; i < prevNext.length; i++) {
+                 prevNext[i].style.top =  top + 10.5 + 'px';
+             }
+         }
+     }
+ 
+     document.addEventListener("keyup", function (event) {
+         if ( event.key == "Escape" )   {
+             hideAllLiteboxes(event);
+         }
+     });
+ 
+     window.addEventListener('popstate', function(event) {
+         hideAllLiteboxes(event);
+     });
+ 
+     var hasLitebox = document.querySelector(".container-litebox");
+     if(hasLitebox) {
+         positionPrevNext();
+         window.addEventListener("resize", positionPrevNext);
+     }
+ </script>
