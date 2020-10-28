@@ -278,6 +278,10 @@ body.expeditions {
     content: '\f188';
 }
 
+.badge.cloudy:before {
+    content: '\e904';
+}
+
 .badge.count:before {
     content: attr(data-count);
     font-family: $base-font;
