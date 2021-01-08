@@ -86,6 +86,21 @@
     color: $pure-white;
 }
 
+.site-header .container-menu div:nth-child(5) {
+    border-bottom: 11px solid $grey;
+    color: $grey;
+
+    @media(max-width: 767px) {
+        border-bottom: 11px solid $pure-white;
+        color: $pure-white;
+    }
+}
+
+.site-header .container-menu div:nth-child(5) a:hover {
+    background: $grey;
+    color: $pure-white;
+}
+
 
 .site-header nav a {
     color: inherit;
@@ -125,10 +140,10 @@
     content: '\e920';
     display: block;
     font-family: $glyph-font;
-    font-size: 63pt;
+    font-size: 58pt;
     font-style: normal;
     font-weight: normal;
-    padding: 7px 7px 7px 14px;
+    padding: 14px 7px 7px 14px;
     position: absolute;
     text-align: center;
     top: 0;
@@ -162,6 +177,15 @@
     content: '\f02d';
 }
 
+.site-header nav a.shop:before {
+    content: '\e903';
+}
+
+.container-menu div {
+    float: left;
+    width: 20%;
+}
+
 .container-menu div a:after {
     content: '\e901';
     font-family: $glyph-font;
@@ -177,7 +201,8 @@
 body.home .container-menu div:nth-child(1) a:after,
 body.expeditions .container-menu div:nth-child(2) a:after,
 body.essentials .container-menu div:nth-child(3) a:after,
-body.about .container-menu div:nth-child(4) a:after{
+body.about .container-menu div:nth-child(4) a:after,
+body.shop .container-menu div:nth-child(5) a:after {
     visibility: visible;
 }
 
@@ -402,8 +427,14 @@ body.about .container-menu div:nth-child(4) a:after{
     }
 
     .site-header .container-menu {
+        min-height: 0;
         position: relative;
         z-index: 14;
+    }
+
+    .container-menu div {
+        float: none;
+        width: auto;
     }
 
     .site-header .container-menu div,
