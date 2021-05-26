@@ -1,0 +1,43 @@
+---
+layout: post
+permalink: /essentials/featured-bird-yellow-rumped-warbler.html
+title:  "Wood Duck"
+description: "Our featured Alberta bird this season is the wood duck."
+date:   2021-05-21 11:11:11 -0700
+categories: feature yellow-rumped warbler
+photo: hero-featured-yellow-rumped-warbler
+thumbnail: hero-featured-wood-duck-sm.jpg
+section: essentials
+---
+
+<section class="featured hero col-xs-12 no-gutter-xs blue" id="yellow-rumped">
+
+    <div class="container-image">
+        <picture>
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.webp' }}" type="image/webp" media="(min-width: 768px)">
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }}" type="image/jpeg" media="(min-width: 768px)"> 
+
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.webp' }}" type="image/webp" media="(max-width: 767px)"> 
+            <source srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }}" type="image/jpeg" media="(max-width: 767px)"> 
+            
+            <img  srcset="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }} 1920w, 
+                          {{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-sm.jpg' }} 1200w"
+                  sizes="(max-width: 767px) 1200px, 1920px"
+                  src="{{ '/images/' | prepend: site.baseurl | append: page.photo | append: '-lg.jpg' }}" alt="">
+        </picture>
+    </div>
+
+    <div class="headline right top reverse">
+        <h3>–Featured Bird–</h3>
+        <h1>Yellow-rumped Warbler</h1>
+        <ol class="counted">
+            <li>The most abundant and widespread wood warbler in North America.</li>
+            <li>Although their colours are subdued in winter these birds absolutely *pop* in spring.</li>
+            <li>Audubon's (yellow throat) and Myrtle (white throat) are two races of yellow-rumped warbler -- both occur in Alberta.</li>
+        </ol>
+    </div>
+
+</section>
+<div class="clearfix"> </div>
+
+
