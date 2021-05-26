@@ -15,8 +15,8 @@
 .featured {
 
   .headline {
-    padding: 0 35px;
-    max-width: 600px;
+    padding: 0;
+    max-width: 540px;
     top: 49%;
     transform: translate(0, -56%);
 
@@ -116,17 +116,16 @@
   @media(max-width: 1199px) {
 
     .featured .headline {
-      width: 480px;
+      width: 48vw;
     }
   }
 
   @media(max-width: 991px) {
 
     .featured .headline {
-      width: 420px;
-
       &.right {
-        left: 40%;
+        left: auto;
+        right: 35px;
       }
     }
   }
@@ -154,12 +153,7 @@
     }
 
     .hero.featured > div:first-child {
-      height: 240px;
-    }
-
-    .hero.featured > div:first-child:after {
-      bottom: auto;
-      height: 240px;
+      height: 60vw;
     }
 
     .counted {
