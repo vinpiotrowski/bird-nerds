@@ -19,7 +19,7 @@ body.expeditions {
 
 
 #expedition-article .headline {
-    background: rgba(249,244,235,0.63);
+    background: rgba(249,244,235,1);
     border-radius: 14px;
     padding: 14px 7px 0;
     text-align: center;
@@ -74,7 +74,7 @@ body.expeditions {
         content: ' ';
         border-left: 122.5px solid transparent;
         border-right: 122.5px solid transparent;
-        border-bottom: 10px solid rgba(249,244,235,0.63);
+        border-bottom: 10px solid rgba(249,244,235,1);
         display: block;
         height: 0;
         margin-left: 3.5px;
@@ -89,12 +89,12 @@ body.expeditions {
         content: ' ';
         border-left: 122.5px solid transparent;
         border-right: 122.5px solid transparent;
-        border-top: 49px solid rgba(249,244,235,0.63);
+        border-top: 49px solid rgba(249,244,235,1);
         display: block;
         height: 0;
         margin-left: 3.5px;
         position: static;
-        transform: translateY(100%);
+        transform: translateY(99%);
         width: 0;
         z-index: 7;
     }

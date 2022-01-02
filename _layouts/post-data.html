@@ -50,14 +50,16 @@ layout: default
                 <hr />
             </div>
 
-            <div class="badges col-xs-12 col-md-4">
-                <h3>Conditions</h3>
-                <ul>
-                    <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
-                    <li class="badge {{ page.weather }}">{{ page.weather }}</li>
-                    <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
-                </ul>
-            </div>
+            {% if page.hideConditions != true %}
+                <div class="badges col-xs-12 col-md-4">
+                    <h3>Conditions</h3>
+                    <ul>
+                        <li class="badge count" data-count="{{page.day}}">{{ page.month}}</li>
+                        <li class="badge {{ page.weather }}">{{ page.weather }}</li>
+                        <li class="badge count" data-count="{{ page.temperature }}&deg;">celsius</li>
+                    </ul>
+                </div>
+            {% endif %}
 
             <div class="sightings col-xs-12 col-md-8">
                 <h3>First sightings (lifers) {% if page.lifer-count > 0 %} {{ page.lifer-count }}x {% endif %}</h3>
