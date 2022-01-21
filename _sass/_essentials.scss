@@ -120,6 +120,12 @@ ul.definition > li > p {
     content: $camera;
 }
 
+#bird-photography-article .counted .item {
+    @media(max-width: 767px) {
+        margin-bottom: 35px;
+    }
+}
+
 #featured-birds-article .slim h1:before,
 #bird-search-page .slim h1:before {
     content: $featured;
