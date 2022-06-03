@@ -6,7 +6,7 @@ layout: default
     <div class="content" style="background: #FFF;">
 
         <section>
-            <div class="container-image col-xs-12 big">
+            <div class="container-image col-xs-12 big {{ page.title-alignment }}">
                 <img src="{{ '/images/' | prepend: site.baseurl | append: page.thumbnail | replace: '-sm.jpg', '-lg.jpg'}}" alt="" width="1200" height="660" />
                 <div class="headline top {{ page.title-alignment }}">
                     <h3>{{ page.title-location }}</h3>
