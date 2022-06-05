@@ -1,5 +1,4 @@
 .hero {
-    border-bottom: solid 7px $orange;
     image-rendering: -webkit-optimize-contrast;
     overflow: hidden;
     position: relative;
@@ -39,7 +38,35 @@
             width: auto;
           }
       }
+
+      &:after {
+          background-color: $orange;
+          bottom: 0;
+          content: '';
+          height: 7px;
+          left: 0;
+          position: absolute;
+          right: 0;
+      }
+
+      &.blue:after {
+          background-color: $blue;
+      }
+
+      &.brown:after {
+        background-color: $brown;
+      }
+
+      &.green:after {
+        background-color: $green;
+      }
+
+      &.yellow:after {
+        background-color: $yellow;
+      }
   }
+
+
   
 
 .headline {
@@ -109,7 +136,7 @@
     }
 
     .headline.fancy {
-        transform: scale(0.84);
+        transform: scale(0.91);
     }
 }
 

@@ -2,10 +2,6 @@ body.expeditions {
     background: $white;
 }
 
-#expeditions-list .hero {
-    border-color: $blue;
-}
-
 .headline.fancy.expeditions * {
     color: $white;
     line-height: 1.1;
@@ -63,8 +59,7 @@ body.expeditions {
 
     h1 {
         font-family: $cursive-font;
-        font-weight: 100;
-        line-height: 1.26em;
+        line-height: 1.1;
         text-shadow: 0 3px 0 $blue;
 
         &:after {

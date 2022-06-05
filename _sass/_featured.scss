@@ -67,7 +67,7 @@
   }
 
   .featured.blue {
-    border-color: $blue;
+    outline-color: $blue;
   }
 
   .green .counted li:before {
@@ -75,7 +75,7 @@
   }
 
   .featured.green {
-    border-color: $green;
+    outline-color: $green;
   }
 
   .yellow .counted li:before {
@@ -83,7 +83,7 @@
   }
 
   .featured.yellow {
-    border-color: $yellow;
+    outline-color: $yellow;
   }
 
   .counted li:before,

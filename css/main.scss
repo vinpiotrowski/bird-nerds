@@ -378,6 +378,7 @@ hr {
   line-height: 1.1;
   margin: 0;
   padding: 7px 21px 21px;
+  position: relative;
   top: -1px;
 }
 
@@ -456,7 +457,7 @@ hr {
 
 @import "grid";
 @import "navigation";
-@import "headlines";
+@import "hero";
 @import "home";
 @import "tiles";
 @import "expeditions";
