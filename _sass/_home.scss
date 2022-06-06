@@ -2,9 +2,6 @@
     background: $white;
 }
 
-.hero.homepage, .hero.location {
-    height: 540px;
-}
 
 .feature-column {
     border-left: solid 1px $border;
@@ -102,46 +99,6 @@
 
     &.bird:before {
         content: '\e911';
-    }
-}
-
-
-.location {
-    .headline {
-        text-align: center;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 960px;
-
-        &:before {
-            content: '\e912';
-            display: block;
-            font-family: bn-glyphs;
-            font-size: 70pt;
-            font-weight: 100;
-        }
-
-        p {
-            padding: 0 21px;
-        }
-    }
-    @media(max-width: 1199px) {
-        .headline {
-            width: 84vw;
-        }
-    }
-
-    @media(max-width: 767px) {
-
-        &.hero {
-            height: 630px;
-        }
-
-        .headline {
-            left: 50%;
-            max-width: 100%;
-            width: 100vw;
-        }
     }
 }
 
