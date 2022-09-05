@@ -13,7 +13,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://birdnerds.ca/"
 birdCount: 422
 abBirdCount: 238
-expeditionCount: 79
+expeditionCount: 80
 
 # Build settings
 markdown: kramdown
